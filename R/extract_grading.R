@@ -13,4 +13,4 @@ extract_grading <- function(grading_string){
   grading_string %>% stringr::str_remove("_.*") %>% as.numeric(.)
 }
 
-usethis::use_test("extract_grading")
+# usethis::use_test("extract_grading")
