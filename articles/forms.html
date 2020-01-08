@@ -111,19 +111,29 @@
 <ul>
 <li>Design form in <a href="https://build.opendatakit.org/">ODK Build</a>
 </li>
-<li>Include form (XML) in this package</li>
-<li>Deploy form to an ODK Central server, e.g. the <a href="https://odkcentral.dbca.wa.gov.au/#/projects/2">DBCA ODK Central server</a>
+<li>The GeoCBI burn grading form is included in three versions in this package:
+<ul>
+<li>ODK Build save file (resume form design from this file): <code><a href="https://rdrr.io/r/base/system.file.html">system.file("odk/BurnGrading01.odkbuild", package = "rGeoCBI")</a></code>
+</li>
+<li>XForm (upload to ODK Central): <code><a href="https://rdrr.io/r/base/system.file.html">system.file("odk/BurnGrading01.xml", package = "rGeoCBI")</a></code>
+</li>
+<li>XlsForm (can edit by hand and add embedded media): <code><a href="https://rdrr.io/r/base/system.file.html">system.file("odk/BurnGrading01.xlsx", package = "rGeoCBI")</a></code>
+</li>
+</ul>
+</li>
+<li>Deploy Xform (or XlsForm) to an ODK Central server, e.g. the <a href="https://odkcentral.dbca.wa.gov.au/#/projects/2">DBCA ODK Central server</a>
 </li>
 </ul>
 </div>
 <div id="setting-up-a-data-capture-device" class="section level2">
 <h2 class="hasAnchor">
 <a href="#setting-up-a-data-capture-device" class="anchor"></a>Setting up a data capture device</h2>
-<p><img src="../man/figures/odkcentral.gif" align="right" alt="ODK Central setup QR code" width="120"></p>
+<p><img src="../man/figures/odkcentral.png" align="right" alt="ODK Central setup QR code" width="120"></p>
 <ul>
-<li>Install ODK Collect on an Android tablet and from Admin settings &gt; Import settings, scan the QR code shown here. This configures the tablet to the DBCA server.</li>
-<li>“Get blank forms” and select the form “Burn Grading”.</li>
-<li>Adjust settings to taste - auto-upload data in WiFi, reduce camera resolution.</li>
+<li>Install <a href="https://play.google.com/store/apps/details?id=org.odk.collect.android">ODK Collect from Google Play</a> onto an Android tablet and from Admin settings &gt; Import settings, scan the QR code shown here. This configures the tablet to our DBCA server.</li>
+<li>“Delete saved form” &gt; “Blank forms” &gt; delete older form versions.</li>
+<li>“Get blank form” and select the form “Burn Grading”.</li>
+<li>Adjust settings to taste - auto-upload data in WiFi, optimise camera resolution between clarity and file size.</li>
 </ul>
 </div>
 <div id="capture-data" class="section level2">
@@ -132,7 +142,7 @@
 <ul>
 <li>Follow the protocol on how to collect data.</li>
 <li>Consult the <a href="https://docs.opendatakit.org/collect-intro/">ODK Collect user guide</a> on how to use the app in general.</li>
-<li>Nitpick: take photos in landscape orientation (turn tablet sideways), as this displays better on computer screens and in documents.</li>
+<li>Nitpick: Aim to take all photos in landscape orientation (turn tablet sideways), as this displays nicer on computer screens and in documents.</li>
 </ul>
 </div>
 <div id="upload-data" class="section level2">

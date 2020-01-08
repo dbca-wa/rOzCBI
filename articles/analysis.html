@@ -131,7 +131,7 @@
 <a class="sourceLine" id="cb2-5" data-line-number="5">ODKC_UN=<span class="st">"YOUR_EMAIL"</span></a>
 <a class="sourceLine" id="cb2-6" data-line-number="6">ODKC_PW=<span class="st">"YOUR_PASSWORD"</span></a>
 <a class="sourceLine" id="cb2-7" data-line-number="7">ODKC_PID=<span class="dv">27</span></a>
-<a class="sourceLine" id="cb2-8" data-line-number="8">ODKC_FID=<span class="st">"FID"</span></a>
+<a class="sourceLine" id="cb2-8" data-line-number="8">ODKC_FID=<span class="st">"build_Burn-Grading-0-1_1578487677"</span></a>
 <a class="sourceLine" id="cb2-9" data-line-number="9"></a>
 <a class="sourceLine" id="cb2-10" data-line-number="10"><span class="co"># Save .Renviron and restart your R session.</span></a></code></pre></div>
 <p>Since we’ll only work with one form and have set the neccessary settings as defaults, <code>ruODK</code> will default to our form without any further ado.</p>
@@ -140,7 +140,7 @@
 <a class="sourceLine" id="cb3-2" data-line-number="2"><span class="co"># ODK Central credentials can live in .Renviron, see vignette "setup"</span></a>
 <a class="sourceLine" id="cb3-3" data-line-number="3">ruODK<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/ruODK/man/ru_setup.html">ru_setup</a></span>(</a>
 <a class="sourceLine" id="cb3-4" data-line-number="4">  <span class="dt">svc =</span> <span class="kw"><a href="https://rdrr.io/r/base/paste.html">paste0</a></span>(<span class="st">"https://odkcentral.dbca.wa.gov.au/v1/projects/27/"</span>,</a>
-<a class="sourceLine" id="cb3-5" data-line-number="5">               <span class="st">"forms/build_burn_grading_0.1_hash.svc"</span>),</a>
+<a class="sourceLine" id="cb3-5" data-line-number="5">               <span class="st">"forms/build_Burn-Grading-0-1_1578487677.svc"</span>),</a>
 <a class="sourceLine" id="cb3-6" data-line-number="6">  <span class="dt">un =</span> <span class="kw"><a href="https://rdrr.io/r/base/Sys.getenv.html">Sys.getenv</a></span>(<span class="st">"ODKC_UN"</span>),</a>
 <a class="sourceLine" id="cb3-7" data-line-number="7">  <span class="dt">pw =</span> <span class="kw"><a href="https://rdrr.io/r/base/Sys.getenv.html">Sys.getenv</a></span>(<span class="st">"ODKC_PW"</span>)</a>
 <a class="sourceLine" id="cb3-8" data-line-number="8">)</a></code></pre></div>
@@ -150,6 +150,7 @@
 <a href="#download-data" class="anchor"></a>Download data</h2>
 <p>For an overview on accessing data from ODK Central, read the <a href="https://docs.opendatakit.org/central-submissions/#">ODK Central docs</a>.</p>
 <p>For a background on accessing data from R, refer to <a href="https://dbca-wa.github.io/ruODK/articles/odata-api.html">ruODK vignette “odata-api”</a>.</p>
+<p>In a pinch, we can always download a ZIP archive of all submissions and all photos from ODK Central.</p>
 <p>Here, we’ll use <code>ruODK</code> to download submissions from ODK Central.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1">tz &lt;-<span class="st"> "Australia/Perth"</span></a>
 <a class="sourceLine" id="cb4-2" data-line-number="2">loc &lt;-<span class="st"> </span>fs<span class="op">::</span><span class="kw"><a href="http://fs.r-lib.org/reference/path.html">path</a></span>(<span class="st">"media"</span>)</a>
@@ -200,16 +201,16 @@
 <a class="sourceLine" id="cb5-24" data-line-number="24">        <span class="co"># overlayGroups = "",</span></a>
 <a class="sourceLine" id="cb5-25" data-line-number="25">        <span class="dt">options =</span> leaflet<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/leaflet/man/addLayersControl.html">layersControlOptions</a></span>(<span class="dt">collapsed =</span> <span class="ot">FALSE</span>)</a>
 <a class="sourceLine" id="cb5-26" data-line-number="26">      )</a></code></pre></div>
-<div id="htmlwidget-5ba91d4b8a52bd7eb94b" style="width:800px;height:600px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-5ba91d4b8a52bd7eb94b">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Aerial",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["OpenStreetMap.Mapnik",null,"Place names",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addLayersControl","args":[["Aerial","Place names"],[],{"collapsed":false,"autoZIndex":true,"position":"topright"}]}],"setView":[[-33,130],4,[]]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-43f5ad5e394670b15c5f" style="width:800px;height:600px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-43f5ad5e394670b15c5f">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Aerial",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["OpenStreetMap.Mapnik",null,"Place names",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addLayersControl","args":[["Aerial","Place names"],[],{"collapsed":false,"autoZIndex":true,"position":"topright"}]}],"setView":[[-33,130],4,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="table" class="section level3">
 <h3 class="hasAnchor">
 <a href="#table" class="anchor"></a>Table</h3>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/utils/data.html">data</a></span>(<span class="st">"mtcars"</span>)</a>
 <a class="sourceLine" id="cb6-2" data-line-number="2"><span class="kw"><a href="https://rdrr.io/r/utils/head.html">head</a></span>(mtcars) <span class="op">%&gt;%</span><span class="st"> </span>reactable<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/reactable/man/reactable.html">reactable</a></span>(<span class="dt">sortable =</span> T, <span class="dt">filterable =</span> T)</a></code></pre></div>
-<div id="htmlwidget-a270c81dcf08c955b2d1" class="reactable html-widget" style="width:auto;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-a270c81dcf08c955b2d1">{"x":{"tag":{"name":"Reactable","attribs":{"data":{".rownames":["Mazda RX4","Mazda RX4 Wag","Datsun 710","Hornet 4 Drive","Hornet Sportabout","Valiant"],"mpg":[21,21,22.8,21.4,18.7,18.1],"cyl":[6,6,4,6,8,6],"disp":[160,160,108,258,360,225],"hp":[110,110,93,110,175,105],"drat":[3.9,3.9,3.85,3.08,3.15,2.76],"wt":[2.62,2.875,2.32,3.215,3.44,3.46],"qsec":[16.46,17.02,18.61,19.44,17.02,20.22],"vs":[0,0,1,1,0,1],"am":[1,1,1,0,0,0],"gear":[4,4,4,3,3,3],"carb":[4,4,1,1,2,1]},"columns":[{"accessor":".rownames","name":"","type":"character","sortable":false,"filterable":false},{"accessor":"mpg","name":"mpg","type":"numeric"},{"accessor":"cyl","name":"cyl","type":"numeric"},{"accessor":"disp","name":"disp","type":"numeric"},{"accessor":"hp","name":"hp","type":"numeric"},{"accessor":"drat","name":"drat","type":"numeric"},{"accessor":"wt","name":"wt","type":"numeric"},{"accessor":"qsec","name":"qsec","type":"numeric"},{"accessor":"vs","name":"vs","type":"numeric"},{"accessor":"am","name":"am","type":"numeric"},{"accessor":"gear","name":"gear","type":"numeric"},{"accessor":"carb","name":"carb","type":"numeric"}],"filterable":true,"defaultPageSize":10,"paginationType":"numbers","showPageInfo":true,"minRows":1,"dataKey":"2688811c34b1adf14ccd28e4121501a6"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-18c8ba4d1c6e356149dc" class="reactable html-widget" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-18c8ba4d1c6e356149dc">{"x":{"tag":{"name":"Reactable","attribs":{"data":{".rownames":["Mazda RX4","Mazda RX4 Wag","Datsun 710","Hornet 4 Drive","Hornet Sportabout","Valiant"],"mpg":[21,21,22.8,21.4,18.7,18.1],"cyl":[6,6,4,6,8,6],"disp":[160,160,108,258,360,225],"hp":[110,110,93,110,175,105],"drat":[3.9,3.9,3.85,3.08,3.15,2.76],"wt":[2.62,2.875,2.32,3.215,3.44,3.46],"qsec":[16.46,17.02,18.61,19.44,17.02,20.22],"vs":[0,0,1,1,0,1],"am":[1,1,1,0,0,0],"gear":[4,4,4,3,3,3],"carb":[4,4,1,1,2,1]},"columns":[{"accessor":".rownames","name":"","type":"character","sortable":false,"filterable":false},{"accessor":"mpg","name":"mpg","type":"numeric"},{"accessor":"cyl","name":"cyl","type":"numeric"},{"accessor":"disp","name":"disp","type":"numeric"},{"accessor":"hp","name":"hp","type":"numeric"},{"accessor":"drat","name":"drat","type":"numeric"},{"accessor":"wt","name":"wt","type":"numeric"},{"accessor":"qsec","name":"qsec","type":"numeric"},{"accessor":"vs","name":"vs","type":"numeric"},{"accessor":"am","name":"am","type":"numeric"},{"accessor":"gear","name":"gear","type":"numeric"},{"accessor":"carb","name":"carb","type":"numeric"}],"filterable":true,"defaultPageSize":10,"paginationType":"numbers","showPageInfo":true,"minRows":1,"dataKey":"2688811c34b1adf14ccd28e4121501a6"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div id="publish" class="section level2">
