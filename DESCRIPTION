@@ -13,6 +13,7 @@ Description: rGeoCBI contains background, digital data capture, analysis, and
              visualisation for the calculation of GeoCBI, a composite burn index
              for the initial assessment of the short-term burn severity from
              remotely sensed data.
+URL: https://dbca-wa.github.io/rGeoCBI, https://github.com/dbca-wa/rGeoCBI
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
