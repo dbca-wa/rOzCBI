@@ -1,0 +1,5 @@
+destination: docs
+authors:
+  DBCA:
+    html: "<img src='man/figures/dbca_bcs.png' width='150' alt='DBCA'/>"
+    href: https://www.dbca.wa.gov.au/science/

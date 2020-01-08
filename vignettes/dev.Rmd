@@ -1,0 +1,62 @@
+---
+title: "Development"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{dev}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(rGeoCBI)
+```
+
+This vignette contains handy commands for the package development workflow.
+
+
+## Documentation
+
+```{r, eval=F}
+styler::style_pkg()
+devtools::document(roclets = c("rd", "collate", "namespace"))
+spelling::spell_check_package(here::here())
+spelling::spell_check_files(here::here("README.Rmd"), lang = "en_AU")
+spelling::update_wordlist(here::here())
+codemetar::write_codemeta("rGeoCBI")
+if (fs::file_info(here::here("README.md"))$modification_time <
+  fs::file_info(here::here("README.Rmd"))$modification_time) {
+  rmarkdown::render("README.Rmd", encoding = "UTF-8", clean = TRUE)
+  if (fs::file_exists("README.html")) fs::file_delete("README.html")
+}
+```
+
+## Hex sticker
+
+```{r, eval=F}
+# remotes::install_github("GuangchuangYu/hexSticker")
+library(hexSticker)
+library(showtext)
+sysfonts::font_add_google("Fredoka One", "fire")
+# odklogo <- here::here("man", "figures", "odk.png")
+bgphoto <- here::here("man", "figures", "fire.jpg")
+logo <- here::here("man", "figures", "rGeoCBI.png")
+darkred <- "#a50b0b"
+# logo s_, text p_, bg h_
+hexSticker::sticker(
+  bgphoto,
+  asp = 1,
+  s_x = 1.0, s_y = 1.05, s_width = 1.5, # s_height = 0.1,
+  package = "rGeoCBI", p_x = 1, p_y = 0.7, p_size = 30,
+  p_family = "fire", p_color = "#ffffff",
+  h_fill = "#aaaaaa", h_color = "#000000",
+  white_around_sticker = T,
+  filename = logo
+)
+```
