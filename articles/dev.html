@@ -31,7 +31,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">rGeoCBI</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.1</span>
       </span>
     </div>
 
@@ -57,6 +57,9 @@
       <a href="../articles/dev.html">Development</a>
     </li>
   </ul>
+</li>
+<li>
+  <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
 <ul class="nav navbar-nav navbar-right"></ul>
@@ -84,9 +87,21 @@
     
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(rGeoCBI)</a></code></pre></div>
 <p>This vignette contains handy commands for the package development workflow.</p>
-<div id="documentation" class="section level2">
+<div id="develop" class="section level2">
 <h2 class="hasAnchor">
-<a href="#documentation" class="anchor"></a>Documentation</h2>
+<a href="#develop" class="anchor"></a>Develop</h2>
+<ul>
+<li>Create <a href="https://github.com/dbca-wa/rGeoCBI/issues">issue</a>
+</li>
+<li>Add new code, docs, tests. Update or expand vignettes where applicable.</li>
+<li>Once tests pass, commit referencing the issue.</li>
+<li>If the change is user-facing, add a line in <code>NEWS.md</code> referencing the issue.</li>
+<li>Increase version number.</li>
+</ul>
+</div>
+<div id="release" class="section level2">
+<h2 class="hasAnchor">
+<a href="#release" class="anchor"></a>Release</h2>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1">styler<span class="op">::</span><span class="kw">style_pkg</span>()</a>
 <a class="sourceLine" id="cb2-2" data-line-number="2">devtools<span class="op">::</span><span class="kw">document</span>(<span class="dt">roclets =</span> <span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"rd"</span>, <span class="st">"collate"</span>, <span class="st">"namespace"</span>))</a>
 <a class="sourceLine" id="cb2-3" data-line-number="3">spelling<span class="op">::</span><span class="kw">spell_check_package</span>(here<span class="op">::</span><span class="kw">here</span>())</a>
@@ -99,25 +114,22 @@
 <div id="hex-sticker" class="section level2">
 <h2 class="hasAnchor">
 <a href="#hex-sticker" class="anchor"></a>Hex sticker</h2>
+<p><img src="../man/figures/rGeoCBI.png" align="right" alt="How good was that burn?" width="120"></p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="co"># remotes::install_github("GuangchuangYu/hexSticker")</span></a>
 <a class="sourceLine" id="cb3-2" data-line-number="2"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(hexSticker)</a>
 <a class="sourceLine" id="cb3-3" data-line-number="3"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(showtext)</a>
 <a class="sourceLine" id="cb3-4" data-line-number="4">sysfonts<span class="op">::</span><span class="kw">font_add_google</span>(<span class="st">"Fredoka One"</span>, <span class="st">"fire"</span>)</a>
-<a class="sourceLine" id="cb3-5" data-line-number="5"><span class="co"># odklogo &lt;- here::here("man", "figures", "odk.png")</span></a>
-<a class="sourceLine" id="cb3-6" data-line-number="6">bgphoto &lt;-<span class="st"> </span>here<span class="op">::</span><span class="kw">here</span>(<span class="st">"man"</span>, <span class="st">"figures"</span>, <span class="st">"fire.jpg"</span>)</a>
-<a class="sourceLine" id="cb3-7" data-line-number="7">logo &lt;-<span class="st"> </span>here<span class="op">::</span><span class="kw">here</span>(<span class="st">"man"</span>, <span class="st">"figures"</span>, <span class="st">"rGeoCBI.png"</span>)</a>
-<a class="sourceLine" id="cb3-8" data-line-number="8">darkred &lt;-<span class="st"> "#a50b0b"</span></a>
-<a class="sourceLine" id="cb3-9" data-line-number="9"><span class="co"># logo s_, text p_, bg h_</span></a>
-<a class="sourceLine" id="cb3-10" data-line-number="10">hexSticker<span class="op">::</span><span class="kw">sticker</span>(</a>
-<a class="sourceLine" id="cb3-11" data-line-number="11">  bgphoto,</a>
-<a class="sourceLine" id="cb3-12" data-line-number="12">  <span class="dt">asp =</span> <span class="dv">1</span>,</a>
-<a class="sourceLine" id="cb3-13" data-line-number="13">  <span class="dt">s_x =</span> <span class="fl">1.0</span>, <span class="dt">s_y =</span> <span class="fl">1.05</span>, <span class="dt">s_width =</span> <span class="fl">1.5</span>, <span class="co"># s_height = 0.1,</span></a>
-<a class="sourceLine" id="cb3-14" data-line-number="14">  <span class="dt">package =</span> <span class="st">"rGeoCBI"</span>, <span class="dt">p_x =</span> <span class="dv">1</span>, <span class="dt">p_y =</span> <span class="fl">0.7</span>, <span class="dt">p_size =</span> <span class="dv">30</span>,</a>
-<a class="sourceLine" id="cb3-15" data-line-number="15">  <span class="dt">p_family =</span> <span class="st">"fire"</span>, <span class="dt">p_color =</span> <span class="st">"#ffffff"</span>,</a>
-<a class="sourceLine" id="cb3-16" data-line-number="16">  <span class="dt">h_fill =</span> <span class="st">"#aaaaaa"</span>, <span class="dt">h_color =</span> <span class="st">"#000000"</span>,</a>
-<a class="sourceLine" id="cb3-17" data-line-number="17">  <span class="dt">white_around_sticker =</span> T,</a>
-<a class="sourceLine" id="cb3-18" data-line-number="18">  <span class="dt">filename =</span> logo</a>
-<a class="sourceLine" id="cb3-19" data-line-number="19">)</a></code></pre></div>
+<a class="sourceLine" id="cb3-5" data-line-number="5"><span class="co"># logo s_, text p_, bg h_</span></a>
+<a class="sourceLine" id="cb3-6" data-line-number="6">hexSticker<span class="op">::</span><span class="kw">sticker</span>(</a>
+<a class="sourceLine" id="cb3-7" data-line-number="7">  here<span class="op">::</span><span class="kw">here</span>(<span class="st">"man"</span>, <span class="st">"figures"</span>, <span class="st">"fire.jpg"</span>),</a>
+<a class="sourceLine" id="cb3-8" data-line-number="8">  <span class="dt">asp =</span> <span class="dv">1</span>,</a>
+<a class="sourceLine" id="cb3-9" data-line-number="9">  <span class="dt">s_x =</span> <span class="fl">1.0</span>, <span class="dt">s_y =</span> <span class="fl">1.05</span>, <span class="dt">s_width =</span> <span class="fl">1.5</span>, <span class="co"># s_height = 0.1,</span></a>
+<a class="sourceLine" id="cb3-10" data-line-number="10">  <span class="dt">package =</span> <span class="st">"rGeoCBI"</span>, <span class="dt">p_x =</span> <span class="dv">1</span>, <span class="dt">p_y =</span> <span class="fl">0.7</span>, <span class="dt">p_size =</span> <span class="dv">30</span>,</a>
+<a class="sourceLine" id="cb3-11" data-line-number="11">  <span class="dt">p_family =</span> <span class="st">"fire"</span>, <span class="dt">p_color =</span> <span class="st">"#ffffff"</span>,</a>
+<a class="sourceLine" id="cb3-12" data-line-number="12">  <span class="dt">h_fill =</span> <span class="st">"#aaaaaa"</span>, <span class="dt">h_color =</span> <span class="st">"#000000"</span>,</a>
+<a class="sourceLine" id="cb3-13" data-line-number="13">  <span class="dt">white_around_sticker =</span> T,</a>
+<a class="sourceLine" id="cb3-14" data-line-number="14">  <span class="dt">filename =</span> here<span class="op">::</span><span class="kw">here</span>(<span class="st">"man"</span>, <span class="st">"figures"</span>, <span class="st">"rGeoCBI.png"</span>)</a>
+<a class="sourceLine" id="cb3-15" data-line-number="15">)</a></code></pre></div>
 </div>
   </div>
 
@@ -127,7 +139,8 @@
       <h2 class="hasAnchor">
 <a href="#tocnav" class="anchor"></a>Contents</h2>
       <ul class="nav nav-pills nav-stacked">
-<li><a href="#documentation">Documentation</a></li>
+<li><a href="#develop">Develop</a></li>
+      <li><a href="#release">Release</a></li>
       <li><a href="#hex-sticker">Hex sticker</a></li>
       </ul>
 </div>
