@@ -95,3 +95,11 @@ citation("rGeoCBI")
 #>     url = {https://github.com/dbca-wa/rGeoCBI},
 #>   }
 ```
+
+## Contribute
+
+Feedback and bug reports are welcome as
+[issues](https://github.com/dbca-wa/rGeoCBI/issues).
+
+The development workflow is described in vignette
+[Development](https://dbca-wa.github.io/rGeoCBI/articles/dev.html).

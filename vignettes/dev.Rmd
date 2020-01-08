@@ -20,8 +20,15 @@ library(rGeoCBI)
 
 This vignette contains handy commands for the package development workflow.
 
+## Develop
 
-## Documentation
+* Create [issue](https://github.com/dbca-wa/rGeoCBI/issues)
+* Add new code, docs, tests. Update or expand vignettes where applicable.
+* Once tests pass, commit referencing the issue.
+* If the change is user-facing, add a line in `NEWS.md` referencing the issue.
+* Increase version number.
+
+## Release
 
 ```{r, eval=F}
 styler::style_pkg()
@@ -34,26 +41,24 @@ rmarkdown::render(here::here("README.Rmd"), encoding = "UTF-8", clean = TRUE)
 if (fs::file_exists(here::here("README.html"))) fs::file_delete(here::here("README.html"))
 ```
 
-## Hex sticker
+## Hex sticker 
+
+<img src="../man/figures/rGeoCBI.png" align="right" alt="How good was that burn?" width="120" />
 
 ```{r, eval=F}
 # remotes::install_github("GuangchuangYu/hexSticker")
 library(hexSticker)
 library(showtext)
 sysfonts::font_add_google("Fredoka One", "fire")
-# odklogo <- here::here("man", "figures", "odk.png")
-bgphoto <- here::here("man", "figures", "fire.jpg")
-logo <- here::here("man", "figures", "rGeoCBI.png")
-darkred <- "#a50b0b"
 # logo s_, text p_, bg h_
 hexSticker::sticker(
-  bgphoto,
+  here::here("man", "figures", "fire.jpg"),
   asp = 1,
   s_x = 1.0, s_y = 1.05, s_width = 1.5, # s_height = 0.1,
   package = "rGeoCBI", p_x = 1, p_y = 0.7, p_size = 30,
   p_family = "fire", p_color = "#ffffff",
   h_fill = "#aaaaaa", h_color = "#000000",
   white_around_sticker = T,
-  filename = logo
+  filename = here::here("man", "figures", "rGeoCBI.png")
 )
 ```
