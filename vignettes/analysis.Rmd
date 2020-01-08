@@ -73,10 +73,13 @@ ruODK::ru_setup(
 ```
 
 ## Download data
-For details, refer to 
+For an overview on accessing data from ODK Central, read the 
+[ODK Central docs](https://docs.opendatakit.org/central-submissions/#).
+
+For a background on accessing data from R, refer to 
 [ruODK vignette "odata-api"](https://dbca-wa.github.io/ruODK/articles/odata-api.html).
 
-Use ruODK to download submissions from ODK Central.
+Here, we'll use `ruODK` to download submissions from ODK Central.
 
 ```{r, eval=F}
 tz <- "Australia/Perth"
