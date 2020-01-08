@@ -97,34 +97,28 @@
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co"># install.packages("devtools")</span></a>
 <a class="sourceLine" id="cb1-2" data-line-number="2">remotes<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/remotes/man/install_github.html">install_github</a></span>(<span class="st">"dbca-wa/rGeoCBI"</span>)</a></code></pre></div>
 </div>
-<div id="usage" class="section level2">
+<div id="what" class="section level2">
 <h2 class="hasAnchor">
-<a href="#usage" class="anchor"></a>Usage</h2>
-<div id="background-on-geocbi" class="section level3">
-<h3 class="hasAnchor">
-<a href="#background-on-geocbi" class="anchor"></a>Background on GeoCBI</h3>
-<p><a href="https://doi.org/10.1016/j.rse.2008.10.011">paper</a> <a href="https://www.researchgate.net/publication/229043914_GeoCBI_A_modified_version_of_the_Composite_Burn_Index_for_the_initial_assessment_of_the_short-term_burn_severity_from_remotely_sensed_data">pdf</a></p>
-<p>Santis, Angela &amp; Chuvieco, Emilio. (2009). GeoCBI: A modified version of the Composite Burn Index for the initial assessment of the short-term burn severity from remotely sensed data. Remote Sensing of Environment - REMOTE SENS ENVIRON. 113. 10.1016/j.rse.2008.10.011. Burn severity estimation is a key factor in the post-fire management. Previous studies using remotely sensed data to retrieve burn severity, as measured by the Composite Burn Index (CBI), have found inconsistencies, since spectral indices work well in some ecosystems but not in others. These inconsistencies may be caused by the lack of spectral uniqueness in the CBI definition, or by the performance of the spectral indices used. This paper analyses the former aspect, using a simulation analysis to study the relationships between the CBI and reflectance. Subsequently, a modified version of this index, called GeoCBI, is proposed to improve the retrieval of burn severity from remotely sensed data. GeoCBI takes into account the fraction of cover (FCOV) of the different vegetation strata used to compute the CBI. Moreover, it also includes the changes in the leaf area index (LAI) for the intermediate and tall tree strata (D+E). Field and simulation results show that GeoCBI is more consistently related to spectral reflectance than CBI for different ranges of burn severities, while keeping its ecological meaning.</p>
+<a href="#what" class="anchor"></a>What</h2>
+<p>GeoCBI was described in <a href="https://doi.org/10.1016/j.rse.2008.10.011">Santis, Angela &amp; Chuvieco, Emilio. (2009)</a> (<a href="https://www.researchgate.net/publication/229043914_GeoCBI_A_modified_version_of_the_Composite_Burn_Index_for_the_initial_assessment_of_the_short-term_burn_severity_from_remotely_sensed_data">Fulltext (pdf)</a>).</p>
+<p>Santis, Angela &amp; Chuvieco, Emilio. (2009). GeoCBI: A modified version of the Composite Burn Index for the initial assessment of the short-term burn severity from remotely sensed data. Remote Sensing of Environment</p>
+<ol>
+<li>DOI 10.1016/j.rse.2008.10.011.</li>
+</ol>
+<p>Burn severity estimation is a key factor in the post-fire management. Previous studies using remotely sensed data to retrieve burn severity, as measured by the Composite Burn Index (CBI), have found inconsistencies, since spectral indices work well in some ecosystems but not in others. These inconsistencies may be caused by the lack of spectral uniqueness in the CBI definition, or by the performance of the spectral indices used. This paper analyses the former aspect, using a simulation analysis to study the relationships between the CBI and reflectance. Subsequently, a modified version of this index, called GeoCBI, is proposed to improve the retrieval of burn severity from remotely sensed data. GeoCBI takes into account the fraction of cover (FCOV) of the different vegetation strata used to compute the CBI. Moreover, it also includes the changes in the leaf area index (LAI) for the intermediate and tall tree strata (D+E). Field and simulation results show that GeoCBI is more consistently related to spectral reflectance than CBI for different ranges of burn severities, while keeping its ecological meaning.</p>
 </div>
-<div id="data-capture" class="section level3">
-<h3 class="hasAnchor">
-<a href="#data-capture" class="anchor"></a>Data capture</h3>
-<p>Use supplied Xform to capture data digitally using OpenDataKit.</p>
-</div>
-<div id="data-access" class="section level3">
-<h3 class="hasAnchor">
-<a href="#data-access" class="anchor"></a>Data access</h3>
-<p>Use ruODK to access captured data.</p>
-</div>
-<div id="data-analysis" class="section level3">
-<h3 class="hasAnchor">
-<a href="#data-analysis" class="anchor"></a>Data analysis</h3>
-<p>Use this package to calculate GeoCBI from captured data.</p>
-</div>
-</div>
-<div id="attribution-and-citation" class="section level2">
+<div id="how" class="section level2">
 <h2 class="hasAnchor">
-<a href="#attribution-and-citation" class="anchor"></a>Attribution and Citation</h2>
+<a href="#how" class="anchor"></a>How</h2>
+<p><code>rGeoCBI</code> supplies an Xform to capture data digitally using OpenDataKit, then goes on to access the data directly from R using the package <code>ruODK</code>, and provides helper methods to calculate the GeoCBI from the captured data.</p>
+<p>The overall data flow is described at <a href="https://dbca-wa.github.io/ruODK/index.html">ruODK</a>.</p>
+<p><img src="https://www.lucidchart.com/publicSegments/view/952c1350-3003-48c1-a2c8-94bad74cdb46/image.png" alt="An ODK setup with ODK Build, Central, Collect, and ruODK"></p>
+<p>Read vignette <a href="https://dbca-wa.github.io/rGeoCBI/articles/forms.html">Digital Data Capture</a> on the design and setup of the digital data capture form and infrastructure.</p>
+<p>Read vignette <a href="https://dbca-wa.github.io/rGeoCBI/articles/analysis.html">Data analysis</a> on access, analysis, and visualisation of the captured burn grading data using the GeoCBI assessment method.</p>
+</div>
+<div id="who" class="section level2">
+<h2 class="hasAnchor">
+<a href="#who" class="anchor"></a>Who</h2>
 <p><code>rGeoCBI</code> was developed, and is maintained, by Florian Mayer for the Western Australian <a href="https://www.dbca.wa.gov.au/">Department of Biodiversity, Conservation and Attractions (DBCA)</a>.</p>
 <p>The background image in package logo shows the aerial view of a prescribed burn in the Pilbara. Photo: Paul Rampant (DBCA).</p>
 <p>To cite package <code>rGeoCBI</code> in publications use:</p>
