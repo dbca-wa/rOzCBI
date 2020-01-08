@@ -1,3 +1,4 @@
 # rGeoCBI 0.0.1
 
-* Add a `NEWS.md` file to track changes to the package.
+* Add package infrastructure: hosted documentation, continuous integration,
+  code coverage, GitHub issue templates, license, citation and attribution.
