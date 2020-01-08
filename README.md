@@ -49,6 +49,9 @@ Use this package to calculate GeoCBI from captured data.
 Western Australian [Department of Biodiversity, Conservation and
 Attractions (DBCA)](https://www.dbca.wa.gov.au/).
 
+The background image in package logo shows the aerial view of a
+prescribed burn in the Pilbara. Photo: Paul Rampant (DBCA).
+
 To cite package `rGeoCBI` in publications use:
 
 ``` r
@@ -56,8 +59,8 @@ citation("ruODK")
 #> 
 #> To cite ruODK in publications use:
 #> 
-#>   Florian W. Mayer (2019). ruODK: Client for the ODK Central API. R
-#>   package version 0.6.6. https://github.com/dbca-wa/ruODK
+#>   Florian W. Mayer (2019). ruODK: Client for the ODK Central API. R package version 0.6.6.
+#>   https://github.com/dbca-wa/ruODK
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
