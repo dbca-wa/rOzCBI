@@ -8,3 +8,5 @@
 ^pkgdown$
 ^codecov\.yml$
 ^ISSUE_TEMPLATE\.md$
+^appveyor\.yml$
+^.github$
