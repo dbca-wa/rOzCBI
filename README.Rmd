@@ -42,8 +42,8 @@ GeoCBI was described in
 
 Santis, Angela & Chuvieco, Emilio. (2009). GeoCBI: A modified version of the 
 Composite Burn Index for the initial assessment of the short-term burn severity 
-from remotely sensed data. Remote Sensing of Environment 113. 
-DOI 10.1016/j.rse.2008.10.011. 
+from remotely sensed data. 
+Remote Sensing of Environment 113. DOI 10.1016/j.rse.2008.10.011. 
 
 Burn severity estimation is a key factor in the post-fire management. 
 Previous studies using remotely sensed data to retrieve burn severity, as 
