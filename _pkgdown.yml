@@ -6,3 +6,22 @@ authors:
 template:
   params:
     bootswatch: yeti
+components:
+  home: ~
+  articles:
+    text: Articles
+    menu:
+    - text: Data collectors
+    - text: Digital data capture
+      href: articles/forms.html
+    - text: -------
+    - text: Data analysts
+    - text: Data analysis
+      href: articles/analysis.html
+    - text: -------
+    - text: Developers
+    - text: Development
+      href: articles/dev.html
+   twitter:
+     icon: "fab fa-twitter fa-lg"
+     href: https://twitter.com/fistful_of_bass
