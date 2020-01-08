@@ -1,0 +1,64 @@
+---
+title: "Data analysis"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{data-download}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(rGeoCBI)
+library(ruODK)
+library(magrittr)
+library(leaflet)
+library(reactable)
+```
+
+This vignette will provide a worked example of accessing and downloading the
+burn grading submissions, and calculating the GeoCBI from the raw data.
+
+Coming soon!
+
+## Setup ruODK
+
+Configure `.Renviron`. Restart session. `ru_setup(svc="")`.
+
+## Download data
+
+Use ruODK to download submissions from ODK Central.
+
+## Calculate GeoCBI
+
+Parse raw data into numeric scale values, apply GeoCBI formula.
+
+## Visualise
+
+```{r}
+leaflet::leaflet(width = 800, height = 600) %>%
+    leaflet::addProviderTiles("Esri.WorldImagery", group = "Aerial") %>%
+    leaflet::addProviderTiles("OpenStreetMap.Mapnik", group = "Place names") %>%
+    leaflet::clearBounds() %>%
+    leaflet::setView(130,-33, 4) %>% 
+    # add data here
+      leaflet::addLayersControl(
+        baseGroups = c("Aerial", "Place names"),
+        # overlayGroups = "",
+        options = leaflet::layersControlOptions(collapsed = FALSE)
+      )
+
+```
+
+Here we'll show the actual data soon.
+
+```{r}
+data("mtcars")
+head(mtcars) %>% reactable::reactable(sortable = T, filterable = T)
+```
