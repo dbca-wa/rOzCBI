@@ -7,6 +7,8 @@
 
 [![Travis build
 status](https://travis-ci.org/dbca-wa/rGeoCBI.svg?branch=master)](https://travis-ci.org/dbca-wa/rGeoCBI)
+[![Codecov test
+coverage](https://codecov.io/gh/dbca-wa/rGeoCBI/branch/master/graph/badge.svg)](https://codecov.io/gh/dbca-wa/rGeoCBI?branch=master)
 <!-- badges: end -->
 
 rGeoCBI contains background, digital data capture, analysis, and
@@ -59,8 +61,8 @@ citation("ruODK")
 #> 
 #> To cite ruODK in publications use:
 #> 
-#>   Florian W. Mayer (2019). ruODK: Client for the ODK Central API. R package version 0.6.6.
-#>   https://github.com/dbca-wa/ruODK
+#>   Florian W. Mayer (2019). ruODK: Client for the ODK Central API. R
+#>   package version 0.6.6. https://github.com/dbca-wa/ruODK
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
