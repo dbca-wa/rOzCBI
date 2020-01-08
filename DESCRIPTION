@@ -43,17 +43,13 @@ Suggests:
     knitr (>= 1.26),
     listviewer (>= 3.0.0),
     plyr (>= 1.8.4),
-    rmarkdown (>= 1.17),
+    rmarkdown (>= 2.0),
     skimr (>= 1.0.7),
     tidyverse (>= 1.2.1),
     tidyr (>= 1.0.0),
     testthat (>= 2.3.0),
+    covr (>= 3.4.0),
     roxygen2 (>= 7.0.2)
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.0.2
-Suggests: 
-    testthat (>= 2.1.0),
-    knitr (>= 1.26),
-    rmarkdown (>= 2.0),
-    covr (>= 3.4.0)
 VignetteBuilder: knitr

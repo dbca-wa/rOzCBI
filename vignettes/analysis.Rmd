@@ -35,6 +35,8 @@ to ODK Central, the place where burn grading submissions are uploaded to.
 This step is required only once for every data analyst.
 
 ## Setup ruODK
+For details, refer to 
+[ruODK vignette "setup"](https://dbca-wa.github.io/ruODK/articles/setup.html).
 
 Set default credentials and settings to simplify work with `ruODK` later.
 Credentials live as environment variables in your `.Renviron` file.
@@ -60,14 +62,33 @@ If you need to navigate between forms, you can setup `ruODK` with the
 respective OData service URL:
 
 ```{r, eval=F}
-ruODK::ru_setup(svc="...")
+# ODK Central's OData URL contains base URL, project ID, and form ID
+# ODK Central credentials can live in .Renviron, see vignette "setup"
+ruODK::ru_setup(
+  svc = paste0("https://odkcentral.dbca.wa.gov.au/v1/projects/27/",
+               "forms/build_burn_grading_0.1_hash.svc"),
+  un = Sys.getenv("ODKC_UN"),
+  pw = Sys.getenv("ODKC_PW")
+)
 ```
 
 ## Download data
+For details, refer to 
+[ruODK vignette "odata-api"](https://dbca-wa.github.io/ruODK/articles/odata-api.html).
 
 Use ruODK to download submissions from ODK Central.
 
-TODO: save example data to the package.
+```{r, eval=F}
+tz <- "Australia/Perth"
+loc <- fs::path("media")
+
+# There is only one table in this form, no repeting subgroups
+bg_svc <- ruODK::odata_service_get()
+bg_svc %>% knitr::kable(.)
+
+# The submission data
+# bg_data <- ruODK::odata_submission_get(verbose = TRUE, tz = tz, local_dir = loc)
+```
 
 ## Calculate GeoCBI
 
@@ -87,7 +108,22 @@ leaflet::leaflet(width = 800, height = 600) %>%
     leaflet::addProviderTiles("OpenStreetMap.Mapnik", group = "Place names") %>%
     leaflet::clearBounds() %>%
     leaflet::setView(130,-33, 4) %>% 
-    # add data here
+    # leaflet::addAwesomeMarkers(
+      #   data = bg_data,
+      #   lng = ~location_longitude, lat = ~location_latitude,
+      #   icon = leaflet::makeAwesomeIcon(text = "X", markerColor = "red"),
+      #   # label = ~ glue::glue("{plot_name} {observation_start_datetime}"),
+      #   # popup = ~ glue::glue(
+      #     # "<h3>{plot_name}</h3>",
+      #     # "Survey start {observation_start_datetime}</br>",
+      #     # "Reporter {reporter}</br>",
+      #     # "Device {device_id}</br>",
+      #     # "<h5>Plot</h5>",
+      #     # '<div><img src="{plot_photo}"',
+      #     # ' height="150px" alt="Plot photo"></img></div>',
+      #   # ),
+      #   clusterOptions = leaflet::markerClusterOptions()
+      # ) %>%
       leaflet::addLayersControl(
         baseGroups = c("Aerial", "Place names"),
         # overlayGroups = "",
