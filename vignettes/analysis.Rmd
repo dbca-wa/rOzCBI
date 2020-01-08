@@ -50,7 +50,7 @@ ODKC_URL="https://odkcentral.dbca.wa.gov.au"
 ODKC_UN="YOUR_EMAIL"
 ODKC_PW="YOUR_PASSWORD"
 ODKC_PID=27
-ODKC_FID="FID"
+ODKC_FID="build_Burn-Grading-0-1_1578487677"
 
 # Save .Renviron and restart your R session.
 ```
@@ -66,7 +66,7 @@ respective OData service URL:
 # ODK Central credentials can live in .Renviron, see vignette "setup"
 ruODK::ru_setup(
   svc = paste0("https://odkcentral.dbca.wa.gov.au/v1/projects/27/",
-               "forms/build_burn_grading_0.1_hash.svc"),
+               "forms/build_Burn-Grading-0-1_1578487677.svc"),
   un = Sys.getenv("ODKC_UN"),
   pw = Sys.getenv("ODKC_PW")
 )

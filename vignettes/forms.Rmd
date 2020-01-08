@@ -30,24 +30,26 @@ of burn grading surveys.
 
 ## Setting up a data capture device
 
-<img src="../man/figures/odkcentral.gif" align="right" alt="ODK Central setup QR code" width="120" />
+<img src="../man/figures/odkcentral.png" align="right" alt="ODK Central setup QR code" width="120" />
 
-* Install ODK Collect on an Android tablet and from Admin settings > Import 
-  settings, scan the QR code shown here. This configures the tablet to the 
-  DBCA server.
-* "Get blank forms" and select the form "Burn Grading".
-* Adjust settings to taste - auto-upload data in WiFi, reduce camera resolution.
+* Install [ODK Collect from Google Play](https://play.google.com/store/apps/details?id=org.odk.collect.android) 
+  onto an Android tablet and from Admin settings > Import settings, 
+  scan the QR code shown here. This configures the tablet to our DBCA server.
+* "Delete saved form" > "Blank forms" > delete older form versions.
+* "Get blank form" and select the form "Burn Grading".
+* Adjust settings to taste - auto-upload data in WiFi, optimise camera 
+  resolution between clarity and file size.
 
 ## Capture data
 
 * Follow the protocol on how to collect data.
-* Consult the [ODK Collect user guide](https://docs.opendatakit.org/collect-intro/) 
+* Consult the 
+  [ODK Collect user guide](https://docs.opendatakit.org/collect-intro/) 
   on how to use the app in general.
-* Nitpick: take photos in landscape orientation (turn tablet sideways), as 
-  this displays better on computer screens and in documents.
+* Nitpick: Aim to take all photos in landscape orientation (turn tablet 
+  sideways), as this displays nicer on computer screens and in documents.
   
 ## Upload data
 
 * Adjust ODK Collect settings to auto-upload data where WiFi is available.
 * Bring the tablets into an area with WiFi.
-
