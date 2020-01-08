@@ -16,9 +16,9 @@ The grading as numeric value.
 Extract the grading from a string
 }
 \examples{
-testthat::expect_equal(parse_grading("0.0_test"), 0.0)
-testthat::expect_equal(parse_grading("0.5_test"), 0.5)
-testthat::expect_equal(parse_grading("1.0_test"), 1.0)
-testthat::expect_equal(parse_grading("1.5_test"), 1.5)
-testthat::expect_equal(parse_grading("2.5_test-with-long-label"), 2.5)
+testthat::expect_equal(extract_grading("0.0_test"), 0.0)
+testthat::expect_equal(extract_grading("0.5_test"), 0.5)
+testthat::expect_equal(extract_grading("1.0_test"), 1.0)
+testthat::expect_equal(extract_grading("1.5_test"), 1.5)
+testthat::expect_equal(extract_grading("2.5_test-with-long-label"), 2.5)
 }
