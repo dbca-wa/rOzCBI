@@ -31,7 +31,7 @@ spelling::spell_check_files(here::here("README.Rmd"), lang = "en_AU")
 spelling::update_wordlist(here::here())
 codemetar::write_codemeta("rGeoCBI")
 rmarkdown::render(here::here("README.Rmd"), encoding = "UTF-8", clean = TRUE)
-fs::file_delete(here::here("README.html"))
+if (fs::file_exists(here::here("README.html"))) fs::file_delete(here::here("README.html"))
 ```
 
 ## Hex sticker
