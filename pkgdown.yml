@@ -2,5 +2,7 @@ pandoc: '2.2'
 pkgdown: 1.4.1
 pkgdown_sha: ~
 articles:
+  analysis: analysis.html
   dev: dev.html
+  forms: forms.html
 
