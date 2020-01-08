@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: ruODK is missing something
+about: rGeoCBI is missing something
 title: ''
 labels: enhancement
 assignees: florianm
