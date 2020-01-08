@@ -79,6 +79,9 @@ For an overview on accessing data from ODK Central, read the
 For a background on accessing data from R, refer to 
 [ruODK vignette "odata-api"](https://dbca-wa.github.io/ruODK/articles/odata-api.html).
 
+In a pinch, we can always download a ZIP archive of all submissions and all
+photos from ODK Central.
+
 Here, we'll use `ruODK` to download submissions from ODK Central.
 
 ```{r, eval=F}

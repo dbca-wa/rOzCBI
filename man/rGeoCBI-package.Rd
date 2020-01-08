@@ -11,6 +11,14 @@ rGeoCBI contains background, digital data capture, analysis, and
              for the initial assessment of the short-term burn severity from
              remotely sensed data.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://dbca-wa.github.io/rGeoCBI}
+  \item \url{https://github.com/dbca-wa/rGeoCBI}
+}
+
+}
 \author{
 \strong{Maintainer}: Florian Mayer \email{Florian.Mayer@dbca.wa.gov.au} (\href{https://orcid.org/0000-0003-4269-4242}{ORCID})
 
