@@ -25,21 +25,61 @@ library(reactable)
 This vignette will provide a worked example of accessing and downloading the
 burn grading submissions, and calculating the GeoCBI from the raw data.
 
-Coming soon!
+## Request an ODK Central account
+
+Request an ODK Central account [here](https://github.com/dbca-wa/rGeoCBI/issues).
+You will receive a registration email. Your username will be your email address,
+you can choose your own password. With those credentials, you have read access
+to ODK Central, the place where burn grading submissions are uploaded to.
+
+This step is required only once for every data analyst.
 
 ## Setup ruODK
 
-Configure `.Renviron`. Restart session. `ru_setup(svc="")`.
+Set default credentials and settings to simplify work with `ruODK` later.
+Credentials live as environment variables in your `.Renviron` file.
+Changes to `.Renviron` require a restart of the R session.
+
+```{r, eval=F}
+usethis::edit_r_environ()
+
+# Paste with your credentials
+ODKC_URL="https://odkcentral.dbca.wa.gov.au"
+ODKC_UN="YOUR_EMAIL"
+ODKC_PW="YOUR_PASSWORD"
+ODKC_PID=27
+ODKC_FID="FID"
+
+# Save .Renviron and restart your R session.
+```
+
+Since we'll only work with one form and have set the neccessary settings as defaults, 
+`ruODK` will default to our form without any further ado.
+
+If you need to navigate between forms, you can setup `ruODK` with the
+respective OData service URL:
+
+```{r, eval=F}
+ruODK::ru_setup(svc="...")
+```
 
 ## Download data
 
 Use ruODK to download submissions from ODK Central.
 
+TODO: save example data to the package.
+
 ## Calculate GeoCBI
 
 Parse raw data into numeric scale values, apply GeoCBI formula.
 
+TODO: write helpers as R functions.
+
 ## Visualise
+
+TODO: use actual data.
+
+### Map
 
 ```{r}
 leaflet::leaflet(width = 800, height = 600) %>%
@@ -56,9 +96,17 @@ leaflet::leaflet(width = 800, height = 600) %>%
 
 ```
 
-Here we'll show the actual data soon.
+### Table
 
 ```{r}
 data("mtcars")
 head(mtcars) %>% reactable::reactable(sortable = T, filterable = T)
 ```
+
+
+## Publish
+
+Options:
+
+* Upload results to CKAN data catalogue to share with DBCA colleagues.
+* Upload results to Google Drive folder to share with external collaborators.
