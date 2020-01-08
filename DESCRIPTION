@@ -20,7 +20,7 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.0.2
 Suggests: 
     testthat (>= 2.1.0),
-    knitr,
-    rmarkdown,
-    covr
+    knitr (>= 1.26),
+    rmarkdown (>= 2.0),
+    covr (>= 3.4.0)
 VignetteBuilder: knitr
