@@ -78,20 +78,20 @@ prescribed burn in the Pilbara. Photo: Paul Rampant (DBCA).
 To cite package `rGeoCBI` in publications use:
 
 ``` r
-citation("ruODK")
+citation("rGeoCBI")
 #> 
-#> To cite ruODK in publications use:
+#> To cite rGeoCBI in publications use:
 #> 
-#>   Florian W. Mayer (2019). ruODK: Client for the ODK Central API. R
-#>   package version 0.6.6. https://github.com/dbca-wa/ruODK
+#>   Florian W. Mayer (2020). rrGeoCBI: A burn severity assessment
+#>   toolkit. R package version 0.0.1. https://github.com/dbca-wa/rGeoCBI
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
 #>   @Misc{,
-#>     title = {ruODK: Client for the ODK Central API},
+#>     title = {rGeoCBI: A burn severity assessment toolkit},
 #>     author = {Florian W. Mayer},
-#>     note = {R package version 0.6.6},
+#>     note = {R package version 0.0.1},
 #>     year = {2019},
-#>     url = {https://github.com/dbca-wa/ruODK},
+#>     url = {https://github.com/dbca-wa/rGeoCBI},
 #>   }
 ```
