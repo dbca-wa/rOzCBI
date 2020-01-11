@@ -10,3 +10,4 @@
 ^ISSUE_TEMPLATE\.md$
 ^appveyor\.yml$
 ^.github$
+^data-raw$
