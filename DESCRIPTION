@@ -1,6 +1,6 @@
 Package: rGeoCBI
 Title: A burn severity assessment toolkit
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: 
     c(person(given = "Florian",
            family = "Mayer",
