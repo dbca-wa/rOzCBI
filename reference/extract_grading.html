@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Extract the grading from a string — extract_grading • rGeoCBI</title>
+<title>Extract the grading from a Burn Grading field value — extract_grading • rGeoCBI</title>
 
 
 <!-- jquery -->
@@ -35,8 +35,8 @@
 
 
 
-<meta property="og:title" content="Extract the grading from a string — extract_grading" />
-<meta property="og:description" content="Extract the grading from a string" />
+<meta property="og:title" content="Extract the grading from a Burn Grading field value — extract_grading" />
+<meta property="og:description" content="Extract the grading from a Burn Grading field value" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -79,7 +79,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">rGeoCBI</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.2</span>
       </span>
     </div>
 
@@ -136,13 +136,13 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Extract the grading from a string</h1>
+    <h1>Extract the grading from a Burn Grading field value</h1>
     <small class="dont-index">Source: <a href='https://github.com/dbca-wa/rGeoCBI/blob/master/R/extract_grading.R'><code>R/extract_grading.R</code></a></small>
     <div class="hidden name"><code>extract_grading.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Extract the grading from a string</p>
+    <p>Extract the grading from a Burn Grading field value</p>
     </div>
 
     <pre class="usage"><span class='fu'>extract_grading</span>(<span class='no'>grading_string</span>)</pre>
@@ -152,13 +152,15 @@
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>grading_string</th>
-      <td><p>A string in the format &lt;grading&gt;_&lt;label&gt;.</p></td>
+      <td><p>A string in the format <code>&lt;grading&gt;_&lt;label&gt;</code>.
+These strings are field values of the form "Burn Grading".
+E.g. "0.5_test-label", "2.0_other-label".</p></td>
     </tr>
     </table>
 
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>The grading as numeric value.</p>
+    <p>The grading as numeric value, e.g. 0.5, 2.0.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='kw pkg'>testthat</span><span class='kw ns'>::</span><span class='fu'><a href='https://rdrr.io/pkg/testthat/man/equality-expectations.html'>expect_equal</a></span>(<span class='fu'>extract_grading</span>(<span class='st'>"0.0_test"</span>), <span class='fl'>0.0</span>)
