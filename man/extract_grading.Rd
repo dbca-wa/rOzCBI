@@ -2,18 +2,20 @@
 % Please edit documentation in R/extract_grading.R
 \name{extract_grading}
 \alias{extract_grading}
-\title{Extract the grading from a string}
+\title{Extract the grading from a Burn Grading field value}
 \usage{
 extract_grading(grading_string)
 }
 \arguments{
-\item{grading_string}{A string in the format <grading>_<label>.}
+\item{grading_string}{A string in the format \verb{<grading>_<label>}.
+These strings are field values of the form "Burn Grading".
+E.g. "0.5_test-label", "2.0_other-label".}
 }
 \value{
-The grading as numeric value.
+The grading as numeric value, e.g. 0.5, 2.0.
 }
 \description{
-Extract the grading from a string
+Extract the grading from a Burn Grading field value
 }
 \examples{
 testthat::expect_equal(extract_grading("0.0_test"), 0.0)
