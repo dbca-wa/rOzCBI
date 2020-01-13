@@ -5,6 +5,7 @@
 #'   E.g. "0.5_test-label", "2.0_other-label".
 #' @return The grading as numeric value, e.g. 0.5, 2.0.
 #' @export
+#' @family helpers
 #' @examples
 #' testthat::expect_equal(extract_grading("0.0_test"), 0.0)
 #' testthat::expect_equal(extract_grading("0.5_test"), 0.5)

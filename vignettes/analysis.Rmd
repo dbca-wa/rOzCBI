@@ -1,6 +1,10 @@
 ---
-title: "Data analysis"
+title: "02 Data analysis"
 output: rmarkdown::html_vignette
+template:
+  params:
+    bootswatch: yeti
+    ganalytics: UA-155735563-1
 vignette: >
   %\VignetteIndexEntry{data-download}
   %\VignetteEngine{knitr::rmarkdown}

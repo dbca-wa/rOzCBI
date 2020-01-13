@@ -11,3 +11,13 @@ components:
    twitter:
      icon: "fab fa-twitter fa-lg"
      href: https://twitter.com/fistful_of_bass
+reference:
+- title: GeoCBI
+  contents:
+  - has_concept("geocbi")
+- title: Helpers
+  contents:
+  - has_concept("helpers")
+- title: Example data
+  contents:
+  - has_concept("included")

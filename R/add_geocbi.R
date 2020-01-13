@@ -5,6 +5,7 @@
 #'   `ruODK::odata_submission_get(wkt=T)`.
 #' @return The input data.frame with an extra variable, 'geocbi'.
 #' @export
+#' @family geocbi
 #' @examples
 #' data("burngrading01")
 #' data_with_geocbi <- add_geocbi(burngrading01)

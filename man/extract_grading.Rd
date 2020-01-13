@@ -24,3 +24,4 @@ testthat::expect_equal(extract_grading("1.0_test"), 1.0)
 testthat::expect_equal(extract_grading("1.5_test"), 1.5)
 testthat::expect_equal(extract_grading("2.5_test-with-long-label"), 2.5)
 }
+\concept{helpers}

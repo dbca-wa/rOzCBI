@@ -152,4 +152,8 @@ calculate_geocbi(
   s5_fcov = 0,
   verbose = TRUE)
 }
+\seealso{
+Other geocbi: 
+\code{\link{add_geocbi}()}
+}
 \concept{geocbi}

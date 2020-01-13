@@ -22,3 +22,8 @@ data("burngrading01")
 data_with_geocbi <- add_geocbi(burngrading01)
 names(data_with_geocbi)
 }
+\seealso{
+Other geocbi: 
+\code{\link{calculate_geocbi}()}
+}
+\concept{geocbi}
