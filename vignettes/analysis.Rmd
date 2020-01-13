@@ -6,7 +6,18 @@ template:
     bootswatch: yeti
     ganalytics: UA-155735563-1
 resource_files:
-- vignettes/media/*.jpg
+  - /home/florian/projects/rGeoCBI/vignettes/media/1578488994992.jpg
+  - /home/florian/projects/rGeoCBI/vignettes/media/1578489033729.jpg
+  - /home/florian/projects/rGeoCBI/vignettes/media/1578489072292.jpg
+  - /home/florian/projects/rGeoCBI/vignettes/media/1578489127335.jpg
+  - /home/florian/projects/rGeoCBI/vignettes/media/1578489161012.jpg
+  - /home/florian/projects/rGeoCBI/vignettes/media/1578489206390.jpg
+  - /home/florian/projects/rGeoCBI/vignettes/media/1578785576392.jpg
+  - /home/florian/projects/rGeoCBI/vignettes/media/1578785648115.jpg
+  - /home/florian/projects/rGeoCBI/vignettes/media/1578785727152.jpg
+  - /home/florian/projects/rGeoCBI/vignettes/media/1578785808711.jpg
+  - /home/florian/projects/rGeoCBI/vignettes/media/1578785863925.jpg
+  - /home/florian/projects/rGeoCBI/vignettes/media/1578785920077.jpg
 vignette: >
   %\VignetteIndexEntry{data-analysis}
   %\VignetteEngine{knitr::rmarkdown}

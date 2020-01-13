@@ -23,4 +23,4 @@ fs::dir_delete(fs::path("media"))
 usethis::use_data(burngrading01, overwrite = T, compress = "xz")
 
 # Update vignette "analysis" header with:
-ymlthis::yml_resource_files(ymlthis::yml(), here::here("vignettes/media"))
+ymlthis::yml_resource_files(ymlthis::yml(), fs::dir_ls(here::here("vignettes/media")))
