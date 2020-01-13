@@ -180,9 +180,21 @@ leaflet::leaflet(width = 800, height = 600) %>%
 ```
 
 ### Table
+Each row expands to show details. Here, we show all linked photos.
 
 ```{r}
-bg_geocbi %>% reactable::reactable(sortable = T, filterable = T)
+bg_geocbi %>% reactable::reactable(
+  sortable = T, 
+  filterable = T,
+  details = function(index) {
+    htmltools::tags$div(
+      htmltools::tags$img(width="200px;", alt="Plot photo", src=bg_geocbi[index,]$plot_photo),
+      htmltools::tags$img(width="200px;", alt="Stratum 1 photo", src=bg_geocbi[index,]$s1_photo),
+      htmltools::tags$img(width="200px;", alt="Stratum 1 photo", src=bg_geocbi[index,]$s2_photo),
+      htmltools::tags$img(width="200px;", alt="Stratum 1 photo", src=bg_geocbi[index,]$s3_photo),
+      htmltools::tags$img(width="200px;", alt="Stratum 1 photo", src=bg_geocbi[index,]$s4_photo),
+      htmltools::tags$img(width="200px;", alt="Stratum 1 photo", src=bg_geocbi[index,]$s5_photo)
+    )})
 ```
 
 
