@@ -1,8 +1,6 @@
 ---
 title: "Data analysis"
 output: rmarkdown::html_vignette
-resource_files:
-  - media/*.jpg
 template:
   params:
     bootswatch: yeti
@@ -11,6 +9,8 @@ vignette: >
   %\VignetteIndexEntry{data-analysis}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
+resource_files:
+  - media/*.jpg
 ---
 
 ```{r, include = FALSE}
