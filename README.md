@@ -8,7 +8,7 @@
 [![Travis build
 status](https://travis-ci.org/dbca-wa/rGeoCBI.svg?branch=master)](https://travis-ci.org/dbca-wa/rGeoCBI)
 [![AppVeyor build
-status](https://ci.appveyor.com/api/projects/status/github/dbca-wa/rGeoCBI?branch=master&svg=true)](https://ci.appveyor.com/project/dbca-wa/rGeoCBI)
+status](https://ci.appveyor.com/api/projects/status/github/florianm/rGeoCBI?branch=master&svg=true)](https://ci.appveyor.com/project/florianm/rGeoCBI)
 [![Codecov test
 coverage](https://codecov.io/gh/dbca-wa/rGeoCBI/branch/master/graph/badge.svg)](https://codecov.io/gh/dbca-wa/rGeoCBI?branch=master)
 [![Project Status: Active – The project has reached a stable, usable
