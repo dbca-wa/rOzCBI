@@ -183,7 +183,7 @@ calculate_geocbi <- function(s1_fcov_post_fire_leaf_fall = NA_real_,
   s2_score <- s2_cbi * s2_fcov
   if (verbose == T) {
     message(
-      glue::glue("Stratum 2: CBI {s2_cbi} * FCOV {s2_fcov} = SCore {s2_score}")
+      glue::glue("Stratum 2: CBI {s2_cbi} * FCOV {s2_fcov} = Score {s2_score}")
     )
   }
 
@@ -198,7 +198,7 @@ calculate_geocbi <- function(s1_fcov_post_fire_leaf_fall = NA_real_,
   s3_score <- s3_cbi * s3_fcov
   if (verbose == T) {
     message(
-      glue::glue("Stratum 3: CBI {s3_cbi} * FCOV {s3_fcov} = SCore {s3_score}")
+      glue::glue("Stratum 3: CBI {s3_cbi} * FCOV {s3_fcov} = Score {s3_score}")
     )
   }
 
@@ -214,7 +214,7 @@ calculate_geocbi <- function(s1_fcov_post_fire_leaf_fall = NA_real_,
   s4_score <- s4_cbi * s4_fcov
   if (verbose == T) {
     message(
-      glue::glue("Stratum 4: CBI {s4_cbi} * FCOV {s4_fcov} = SCore {s4_score}")
+      glue::glue("Stratum 4: CBI {s4_cbi} * FCOV {s4_fcov} = Score {s4_score}")
     )
   }
 
