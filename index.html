@@ -102,19 +102,20 @@
 </h1></div>
 <!-- badges: start -->
 
-<p>rGeoCBI contains background, digital data capture, analysis, and visualisation for the calculation of GeoCBI, a composite burn index for the initial assessment of the short-term burn severity from remotely sensed data.</p>
-<p>NOTICE - in development - do not use this package in production until this warning disappears. The workhorse function to calculate the GeoCBI from form data is pending verification.</p>
-<div id="installation" class="section level2">
-<h2 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h2>
-<p>You can install the development version from <a href="https://github.com/">GitHub</a> with:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co"># install.packages("devtools")</span></a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">remotes<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/remotes/man/install_github.html">install_github</a></span>(<span class="st">"dbca-wa/rGeoCBI"</span>)</a></code></pre></div>
-</div>
+<p>rGeoCBI in a nutshell:</p>
+<ul>
+<li>
+<a href="https://opendatakit.org/">OpenDataKit</a> forms to evaluate a burnt site.</li>
+<li>Helpers to calculate the GeoCBI from the burn grading field data.</li>
+<li>Instructions to get up and running with digital data capture and data anlysis.</li>
+<li>Working examples of the entire data flow.</li>
+</ul>
 <div id="what" class="section level2">
 <h2 class="hasAnchor">
 <a href="#what" class="anchor"></a>What</h2>
-<p>GeoCBI was described in <a href="https://doi.org/10.1016/j.rse.2008.10.011">Santis, Angela &amp; Chuvieco, Emilio. (2009)</a> (<a href="https://www.researchgate.net/publication/229043914_GeoCBI_A_modified_version_of_the_Composite_Burn_Index_for_the_initial_assessment_of_the_short-term_burn_severity_from_remotely_sensed_data">Fulltext (pdf)</a>).</p>
+<p>To evaluate the severity of burns, the differential NDVI of a burnt site (pre-and post-burn) can be derived from satellite imagery cost-effectively and on a large scale. To calibrate the dNDVI, ground truthing field work can derive an index called “GeoCBI” from the condition and composition of a burnt site.</p>
+<p>rGeoCBI contains background, digital data capture, analysis, and visualisation for the calculation of GeoCBI, a composite burn index for the initial assessment of the short-term burn severity from remotely sensed data.</p>
+<p>The GeoCBI was first described in <a href="https://doi.org/10.1016/j.rse.2008.10.011">Santis, Angela &amp; Chuvieco, Emilio. (2009)</a> (<a href="https://www.researchgate.net/publication/229043914_GeoCBI_A_modified_version_of_the_Composite_Burn_Index_for_the_initial_assessment_of_the_short-term_burn_severity_from_remotely_sensed_data">Fulltext (pdf)</a>).</p>
 <p>Santis, Angela &amp; Chuvieco, Emilio. (2009). GeoCBI: A modified version of the Composite Burn Index for the initial assessment of the short-term burn severity from remotely sensed data. Remote Sensing of Environment</p>
 <ol>
 <li>DOI 10.1016/j.rse.2008.10.011.</li>
@@ -124,6 +125,9 @@
 <div id="how" class="section level2">
 <h2 class="hasAnchor">
 <a href="#how" class="anchor"></a>How</h2>
+<p>You can install the development version from <a href="https://github.com/">GitHub</a> with:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co"># install.packages("devtools")</span></a>
+<a class="sourceLine" id="cb1-2" data-line-number="2">remotes<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/remotes/man/install_github.html">install_github</a></span>(<span class="st">"dbca-wa/rGeoCBI"</span>)</a></code></pre></div>
 <p><code>rGeoCBI</code> supplies an Xform to capture data digitally using OpenDataKit, then goes on to access the data directly from R using the package <code>ruODK</code>, and provides helper methods to calculate the GeoCBI from the captured data.</p>
 <p>The overall data flow is described at <a href="https://dbca-wa.github.io/ruODK/index.html">ruODK</a>.</p>
 <p><img src="https://www.lucidchart.com/publicSegments/view/952c1350-3003-48c1-a2c8-94bad74cdb46/image.png" alt="An ODK setup with ODK Build, Central, Collect, and ruODK"></p>
