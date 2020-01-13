@@ -181,10 +181,10 @@ calculate_geocbi(
   s5_resprouting_on_live_trees = 1,
   s5_char_height = 1,
   s1_fcov = 1,
-  s2_fcov = 0,
-  s3_fcov = 0,
-  s4_fcov = 0,
-  s5_fcov = 0,
+  s2_fcov = 1,
+  s3_fcov = 1,
+  s4_fcov = 1,
+  s5_fcov = 1,
   verbose = TRUE)
 }
 \seealso{
