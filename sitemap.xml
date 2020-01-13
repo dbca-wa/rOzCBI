@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://dbca-wa.github.io/rGeoCBI/index.html</loc>
+  </url>
+  <url>
+    <loc>https://dbca-wa.github.io/rGeoCBI/reference/add_geocbi.html</loc>
+  </url>
+  <url>
+    <loc>https://dbca-wa.github.io/rGeoCBI/reference/burngrading01.html</loc>
+  </url>
+  <url>
+    <loc>https://dbca-wa.github.io/rGeoCBI/reference/calculate_geocbi.html</loc>
+  </url>
+  <url>
+    <loc>https://dbca-wa.github.io/rGeoCBI/reference/extract_grading.html</loc>
+  </url>
+  <url>
+    <loc>https://dbca-wa.github.io/rGeoCBI/reference/pipe.html</loc>
+  </url>
+  <url>
+    <loc>https://dbca-wa.github.io/rGeoCBI/reference/rGeoCBI-package.html</loc>
+  </url>
+  <url>
+    <loc>https://dbca-wa.github.io/rGeoCBI/articles/analysis.html</loc>
+  </url>
+  <url>
+    <loc>https://dbca-wa.github.io/rGeoCBI/articles/dev.html</loc>
+  </url>
+  <url>
+    <loc>https://dbca-wa.github.io/rGeoCBI/articles/forms.html</loc>
+  </url>
+</urlset>

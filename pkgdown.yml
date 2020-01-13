@@ -5,4 +5,7 @@ articles:
   analysis: analysis.html
   dev: dev.html
   forms: forms.html
+urls:
+  reference: https://dbca-wa.github.io/rGeoCBI/reference
+  article: https://dbca-wa.github.io/rGeoCBI/articles
 
