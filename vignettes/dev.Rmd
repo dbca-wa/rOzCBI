@@ -6,7 +6,7 @@ template:
     bootswatch: yeti
     ganalytics: UA-155735563-1
 vignette: >
-  %\VignetteIndexEntry{dev}
+  %\VignetteIndexEntry{development}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
