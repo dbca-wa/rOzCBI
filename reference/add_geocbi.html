@@ -145,13 +145,13 @@
     <p>Add the GeoCBI calculated from the burn grading data</p>
     </div>
 
-    <pre class="usage"><span class='fu'>add_geocbi</span>(<span class='no'>data</span>)</pre>
+    <pre class="usage"><span class='fu'>add_geocbi</span>(<span class='no'>burngrading</span>)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>data</th>
+      <th>burngrading</th>
       <td><p>A data.frame of burn grading data, collected with ODK Collect
 from the form "Burn Grading 0.1" and downloaded with
 <code><a href='https://rdrr.io/pkg/ruODK/man/odata_submission_get.html'>ruODK::odata_submission_get(wkt=T)</a></code>.</p></td>
@@ -162,12 +162,45 @@ from the form "Burn Grading 0.1" and downloaded with
 
     <p>The input data.frame with an extra variable, 'geocbi'.</p>
 
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='st'>"burngrading01"</span>)
+<span class='no'>data_with_geocbi</span> <span class='kw'>&lt;-</span> <span class='fu'>add_geocbi</span>(<span class='no'>burngrading01</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/names.html'>names</a></span>(<span class='no'>data_with_geocbi</span>)</div><div class='output co'>#&gt;  [1] "id"                              "observation_start_time"         
+#&gt;  [3] "reporter"                        "device_id"                      
+#&gt;  [5] "observation_end_time"            "submission_date"                
+#&gt;  [7] "submitter_id"                    "submitter_name"                 
+#&gt;  [9] "instance_id"                     "location_longitude"             
+#&gt; [11] "location_latitude"               "location_altitude"              
+#&gt; [13] "plot_photo"                      "plot_name"                      
+#&gt; [15] "homogeneous_burn_severity"       "s1_fcov_post_fire_leaf_fall"    
+#&gt; [17] "s1_area_unburnt"                 "s1_duff"                        
+#&gt; [19] "s1_coarse_fuel"                  "s1_photo"                       
+#&gt; [21] "s2_dominant_vegetation"          "s2_fcov"                        
+#&gt; [23] "s2_area_unburnt"                 "s2_grass_trees_with_skirts"     
+#&gt; [25] "s2_unburnt_shrub_density"        "s2_fcov_regenerating_plants"    
+#&gt; [27] "s2_photo"                        "s3_dominant_vegetation"         
+#&gt; [29] "s3_fcov"                         "s3_fcov_original_crown_intact"  
+#&gt; [31] "s3_density_bare_shrubs"          "s3_photo"                       
+#&gt; [33] "s4_dominant_vegetation"          "s4_fcov"                        
+#&gt; [35] "s4_avg_tree_height_m"            "s4_fcov_original_crown_intact"  
+#&gt; [37] "s4_resprouting_on_live_trees"    "s4_char_height"                 
+#&gt; [39] "s4_photo"                        "s5_dominant_vegetation"         
+#&gt; [41] "s5_fcov"                         "s5_avg_tree_height_m"           
+#&gt; [43] "s5_fcov_original_crown_intact"   "s5_no_trees_over_20cm_fallen"   
+#&gt; [45] "s5_resprouting_on_live_trees"    "s5_char_height"                 
+#&gt; [47] "s5_photo"                        "no_grass_trees"                 
+#&gt; [49] "no_hollow_logs"                  "no_standing_trees_gt20cm"       
+#&gt; [51] "no_standing_trees_with_hollows"  "depth_leaf_litter_cm"           
+#&gt; [53] "avg_gap_between_unburnt_patches" "evidence_of_native_fauna"       
+#&gt; [55] "evidence_of_feral_fauna"         "odata_context"                  
+#&gt; [57] "geocbi"                         </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       <li><a href="#arguments">Arguments</a></li>
       <li><a href="#value">Value</a></li>
+      <li><a href="#examples">Examples</a></li>
     </ul>
 
   </div>

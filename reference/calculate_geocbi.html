@@ -145,14 +145,205 @@
     <p>Calculate the GeoCBI from input variables</p>
     </div>
 
-    <pre class="usage"><span class='fu'>calculate_geocbi</span>()</pre>
+    <pre class="usage"><span class='fu'>calculate_geocbi</span>(
+  <span class='kw'>s1_fcov_post_fire_leaf_fall</span> <span class='kw'>=</span> <span class='fl'>NA_real_</span>,
+  <span class='kw'>s1_area_unburnt</span> <span class='kw'>=</span> <span class='fl'>NA_real_</span>,
+  <span class='kw'>s1_duff</span> <span class='kw'>=</span> <span class='fl'>NA_real_</span>,
+  <span class='kw'>s1_coarse_fuel</span> <span class='kw'>=</span> <span class='fl'>NA_real_</span>,
+  <span class='kw'>s2_area_unburnt</span> <span class='kw'>=</span> <span class='fl'>NA_real_</span>,
+  <span class='kw'>s2_grass_trees_with_skirts</span> <span class='kw'>=</span> <span class='fl'>NA_real_</span>,
+  <span class='kw'>s2_unburnt_shrub_density</span> <span class='kw'>=</span> <span class='fl'>NA_real_</span>,
+  <span class='kw'>s2_fcov_regenerating_plants</span> <span class='kw'>=</span> <span class='fl'>NA_real_</span>,
+  <span class='kw'>s3_fcov_original_crown_intact</span> <span class='kw'>=</span> <span class='fl'>NA_real_</span>,
+  <span class='kw'>s3_density_bare_shrubs</span> <span class='kw'>=</span> <span class='fl'>NA_real_</span>,
+  <span class='kw'>s4_fcov_original_crown_intact</span> <span class='kw'>=</span> <span class='fl'>NA_real_</span>,
+  <span class='kw'>s4_resprouting_on_live_trees</span> <span class='kw'>=</span> <span class='fl'>NA_real_</span>,
+  <span class='kw'>s4_char_height</span> <span class='kw'>=</span> <span class='fl'>NA_real_</span>,
+  <span class='kw'>s5_fcov_original_crown_intact</span> <span class='kw'>=</span> <span class='fl'>NA_real_</span>,
+  <span class='kw'>s5_no_trees_over_20cm_fallen</span> <span class='kw'>=</span> <span class='fl'>NA_real_</span>,
+  <span class='kw'>s5_resprouting_on_live_trees</span> <span class='kw'>=</span> <span class='fl'>NA_real_</span>,
+  <span class='kw'>s5_char_height</span> <span class='kw'>=</span> <span class='fl'>NA_real_</span>,
+  <span class='kw'>s1_fcov</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>s2_fcov</span> <span class='kw'>=</span> <span class='fl'>0</span>,
+  <span class='kw'>s3_fcov</span> <span class='kw'>=</span> <span class='fl'>0</span>,
+  <span class='kw'>s4_fcov</span> <span class='kw'>=</span> <span class='fl'>0</span>,
+  <span class='kw'>s5_fcov</span> <span class='kw'>=</span> <span class='fl'>0</span>,
+  <span class='kw'>verbose</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>
+)</pre>
+
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>s1_fcov_post_fire_leaf_fall</th>
+      <td><p>A numeric grade from 0.0 to 3.0</p></td>
+    </tr>
+    <tr>
+      <th>s1_area_unburnt</th>
+      <td><p>A numeric grade from 0.0 to 3.0</p></td>
+    </tr>
+    <tr>
+      <th>s1_duff</th>
+      <td><p>A numeric grade from 0.0 to 3.0</p></td>
+    </tr>
+    <tr>
+      <th>s1_coarse_fuel</th>
+      <td><p>A numeric grade from 0.0 to 3.0</p></td>
+    </tr>
+    <tr>
+      <th>s2_area_unburnt</th>
+      <td><p>A numeric grade from 0.0 to 3.0</p></td>
+    </tr>
+    <tr>
+      <th>s2_grass_trees_with_skirts</th>
+      <td><p>A numeric grade from 0.0 to 3.0</p></td>
+    </tr>
+    <tr>
+      <th>s2_unburnt_shrub_density</th>
+      <td><p>A numeric grade from 0.0 to 3.0</p></td>
+    </tr>
+    <tr>
+      <th>s2_fcov_regenerating_plants</th>
+      <td><p>A numeric grade from 0.0 to 3.0</p></td>
+    </tr>
+    <tr>
+      <th>s3_fcov_original_crown_intact</th>
+      <td><p>A numeric grade from 0.0 to 3.0</p></td>
+    </tr>
+    <tr>
+      <th>s3_density_bare_shrubs</th>
+      <td><p>A numeric grade from 0.0 to 3.0</p></td>
+    </tr>
+    <tr>
+      <th>s4_fcov_original_crown_intact</th>
+      <td><p>A numeric grade from 0.0 to 3.0</p></td>
+    </tr>
+    <tr>
+      <th>s4_resprouting_on_live_trees</th>
+      <td><p>A numeric grade from 0.0 to 3.0</p></td>
+    </tr>
+    <tr>
+      <th>s4_char_height</th>
+      <td><p>A numeric grade from 0.0 to 3.0</p></td>
+    </tr>
+    <tr>
+      <th>s5_fcov_original_crown_intact</th>
+      <td><p>A numeric grade from 0.0 to 3.0</p></td>
+    </tr>
+    <tr>
+      <th>s5_no_trees_over_20cm_fallen</th>
+      <td><p>A numeric grade from 0.0 to 3.0</p></td>
+    </tr>
+    <tr>
+      <th>s5_resprouting_on_live_trees</th>
+      <td><p>A numeric grade from 0.0 to 3.0</p></td>
+    </tr>
+    <tr>
+      <th>s5_char_height</th>
+      <td><p>A numeric grade from 0.0 to 3.0</p></td>
+    </tr>
+    <tr>
+      <th>s1_fcov</th>
+      <td><p>The fraction of coverage of stratum 1, default: 1. This value
+is never captured as it always is 1 (100%).</p></td>
+    </tr>
+    <tr>
+      <th>s2_fcov</th>
+      <td><p>The fraction of coverage of stratum 2 in quarter steps
+from 0.0 to 1.0. Default: 0.</p></td>
+    </tr>
+    <tr>
+      <th>s3_fcov</th>
+      <td><p>The fraction of coverage of stratum 2 in quarter steps
+from 0.0 to 1.0. Default: 0.</p></td>
+    </tr>
+    <tr>
+      <th>s4_fcov</th>
+      <td><p>The fraction of coverage of stratum 2 in quarter steps
+from 0.0 to 1.0. Default: 0.</p></td>
+    </tr>
+    <tr>
+      <th>s5_fcov</th>
+      <td><p>The fraction of coverage of stratum 2 in quarter steps
+from 0.0 to 1.0. Default: 0.</p></td>
+    </tr>
+    <tr>
+      <th>verbose</th>
+      <td><p>Whether to display diagnostic messages, default: FALSE.</p></td>
+    </tr>
+    </table>
+
+    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
+
+    <p>The GeoCBI is calculated from the following components:</p><ul>
+<li><p>Stratum 1 fraction of cover: always 1 (100%), therefore never captured.</p></li>
+<li><p>Stratum 2..5 fcov: the extracted gradings of surface cover in quarter
+steps from 0 to 1: 0.0, 0.25, 0.5, 0.75, 1.0</p></li>
+<li><p>Stratum scores (CBI): The average grading from all non-null gradings out of
+all captured variables for each stratum.
+The variables are named with a stratum prefix.
+E.g., all variables for stratum 1 are prefixed <code>s1_</code>.</p></li>
+</ul>
+<h3>Overall index: GeoCBI</h3>
 
 
+<p>The GeoCBI is calculated as:</p>
+<p>(sum of stratum scores) / (sum of stratum fraction of cover)</p>
 
+<h3>Vars not used in GeoCBI formula</h3>
+
+
+<p>Some variables are captured, but not used for GeoCBI calculation:</p>
+<p>"id" "observation_start_time" "reporter" "device_id" "observation_end_time"
+"submission_date" "submitter_id" "submitter_name" "instance_id"
+"location_longitude" "location_latitude" "location_altitude" "plot_photo"
+"plot_name" "homogeneous_burn_severity" "s1_photo" "s2_dominant_vegetation"
+"s2_photo" "s3_dominant_vegetation" "s3_photo" "s4_dominant_vegetation"
+"s4_photo" "s5_dominant_vegetation" "s5_photo" "no_grass_trees"
+"no_hollow_logs" "no_standing_trees_gt20cm" "no_standing_trees_with_hollows"
+"depth_leaf_litter_cm" "avg_gap_between_unburnt_patches"
+"evidence_of_native_fauna" "evidence_of_feral_fauna" "odata_context"</p>
+
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='co'># With missing variables</span>
+<span class='fu'>calculate_geocbi</span>(
+  <span class='kw'>s1_fcov_post_fire_leaf_fall</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>s2_area_unburnt</span> <span class='kw'>=</span> <span class='fl'>2.5</span>,
+  <span class='kw'>s2_fcov</span> <span class='kw'>=</span> <span class='fl'>0.5</span>,
+  <span class='kw'>verbose</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</div><div class='output co'>#&gt; <span class='message'>Stratum 1: CBI 1 * FCOV 1 = CBI 1</span></div><div class='output co'>#&gt; <span class='message'>Stratum 2: CBI 2.5 * FCOV 0.5 = CBI 2.5</span></div><div class='output co'>#&gt; <span class='message'>Stratum 3: CBI NaN * FCOV 0 = CBI NaN</span></div><div class='output co'>#&gt; <span class='message'>Stratum 4: CBI NaN * FCOV 0 = CBI NaN</span></div><div class='output co'>#&gt; <span class='message'>Stratum 5: CBI NaN * FCOV 0 = CBI NaN</span></div><div class='output co'>#&gt; <span class='message'>GeoCBI: 1.5 = Sum CBI 2.25 / Sum FCOV 1.5</span></div><div class='output co'>#&gt; [1] 1.5</div><div class='input'>
+<span class='co'># With complete variables, all set to 1</span>
+<span class='fu'>calculate_geocbi</span>(
+  <span class='kw'>s1_fcov_post_fire_leaf_fall</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>s1_area_unburnt</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>s1_duff</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>s1_coarse_fuel</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>s2_area_unburnt</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>s2_grass_trees_with_skirts</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>s2_unburnt_shrub_density</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>s2_fcov_regenerating_plants</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>s3_fcov_original_crown_intact</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>s3_density_bare_shrubs</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>s4_fcov_original_crown_intact</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>s4_resprouting_on_live_trees</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>s4_char_height</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>s5_fcov_original_crown_intact</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>s5_no_trees_over_20cm_fallen</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>s5_resprouting_on_live_trees</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>s5_char_height</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>s1_fcov</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>s2_fcov</span> <span class='kw'>=</span> <span class='fl'>0</span>,
+  <span class='kw'>s3_fcov</span> <span class='kw'>=</span> <span class='fl'>0</span>,
+  <span class='kw'>s4_fcov</span> <span class='kw'>=</span> <span class='fl'>0</span>,
+  <span class='kw'>s5_fcov</span> <span class='kw'>=</span> <span class='fl'>0</span>,
+  <span class='kw'>verbose</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</div><div class='output co'>#&gt; <span class='message'>Stratum 1: CBI 1 * FCOV 1 = CBI 1</span></div><div class='output co'>#&gt; <span class='message'>Stratum 2: CBI 1 * FCOV 0 = CBI 1</span></div><div class='output co'>#&gt; <span class='message'>Stratum 3: CBI 1 * FCOV 0 = CBI 1</span></div><div class='output co'>#&gt; <span class='message'>Stratum 4: CBI 1 * FCOV 0 = CBI 1</span></div><div class='output co'>#&gt; <span class='message'>Stratum 5: CBI 1 * FCOV 0 = CBI 1</span></div><div class='output co'>#&gt; <span class='message'>GeoCBI: 1 = Sum CBI 1 / Sum FCOV 1</span></div><div class='output co'>#&gt; [1] 1</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
+      <li><a href="#arguments">Arguments</a></li>
+      <li><a href="#details">Details</a></li>
+      <li><a href="#examples">Examples</a></li>
     </ul>
 
   </div>
