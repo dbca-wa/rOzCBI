@@ -10,7 +10,7 @@ vignette: >
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 resource_files:
-  - media/*.jpg
+  - ./media/*.jpg
 ---
 
 ```{r, include = FALSE}
