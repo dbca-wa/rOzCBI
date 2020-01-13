@@ -4,10 +4,10 @@
 \alias{add_geocbi}
 \title{Add the GeoCBI calculated from the burn grading data}
 \usage{
-add_geocbi(data)
+add_geocbi(burngrading)
 }
 \arguments{
-\item{data}{A data.frame of burn grading data, collected with ODK Collect
+\item{burngrading}{A data.frame of burn grading data, collected with ODK Collect
 from the form "Burn Grading 0.1" and downloaded with
 \code{ruODK::odata_submission_get(wkt=T)}.}
 }
@@ -16,4 +16,9 @@ The input data.frame with an extra variable, 'geocbi'.
 }
 \description{
 Add the GeoCBI calculated from the burn grading data
+}
+\examples{
+data("burngrading01")
+data_with_geocbi <- add_geocbi(burngrading01)
+names(data_with_geocbi)
 }

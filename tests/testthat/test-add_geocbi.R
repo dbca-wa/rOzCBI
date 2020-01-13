@@ -14,12 +14,11 @@ test_that("add_geocbi adds a column geocbi", {
   # To test for validity of the geocbi values, see tests for "calculate_geocbi"
   testthat::expect_true("geocbi" %in% names(data_with_geocbi))
 
-  # add_geocbi adds exactly one variable
+  # add_geocbi adds more variables
   testthat::expect_equal(
-    ncol(data_witout_geocbi) + 1,
-    ncol(data_with_geocbi)
+    ncol(data_with_geocbi),
+    ncol(data_witout_geocbi) + 1
   )
-
 })
 
 # usethis::use_r("add_geocbi")

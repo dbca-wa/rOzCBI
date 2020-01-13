@@ -55,3 +55,4 @@ Suggests:
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.0.2
 VignetteBuilder: knitr
+BugReports: https://github.com/dbca-wa/rGeoCBI/issues

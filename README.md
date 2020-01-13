@@ -11,12 +11,22 @@ status](https://travis-ci.org/dbca-wa/rGeoCBI.svg?branch=master)](https://travis
 coverage](https://codecov.io/gh/dbca-wa/rGeoCBI/branch/master/graph/badge.svg)](https://codecov.io/gh/dbca-wa/rGeoCBI?branch=master)
 [![AppVeyor build
 status](https://ci.appveyor.com/api/projects/status/github/dbca-wa/rGeoCBI?branch=master&svg=true)](https://ci.appveyor.com/project/dbca-wa/rGeoCBI)
+[![Project Status: Active – The project has reached a stable, usable
+state and is being actively
+developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+[![Last-changedate](https://img.shields.io/github/last-commit/dbca-wa/rGeoCBI.svg)](https://github.com/dbca-wa/rGeoCBI/commits/master)
+[![GitHub
+issues](https://img.shields.io/github/issues/dbca-wa/rGeoCBI.svg?style=popout)](https://github.com/dbca-wa/rGeoCBI/issues/)
 <!-- badges: end -->
 
 rGeoCBI contains background, digital data capture, analysis, and
 visualisation for the calculation of GeoCBI, a composite burn index for
 the initial assessment of the short-term burn severity from remotely
 sensed data.
+
+NOTICE - in development - do not use this package in production until
+this warning disappears. The workhorse function to calculate the GeoCBI
+from form data is pending verification.
 
 ## Installation
 

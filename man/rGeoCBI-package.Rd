@@ -16,6 +16,7 @@ Useful links:
 \itemize{
   \item \url{https://dbca-wa.github.io/rGeoCBI}
   \item \url{https://github.com/dbca-wa/rGeoCBI}
+  \item Report bugs at \url{https://github.com/dbca-wa/rGeoCBI/issues}
 }
 
 }
