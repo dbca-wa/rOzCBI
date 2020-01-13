@@ -8,10 +8,6 @@ template:
   params:
     bootswatch: yeti
     ganalytics: UA-155735563-1
-components:
-   twitter:
-     icon: "fab fa-twitter fa-lg"
-     href: https://twitter.com/fistful_of_bass
 reference:
 - title: GeoCBI
   contents:
@@ -25,10 +21,24 @@ reference:
 articles:
 - title: Digital Data Capture
   contents:
-  - forms
+  - '`forms`'
 - title: Data Analysis
   contents:
-  - analysis
+  - '`analysis`'
 - title: Development
   contents:
-  - dev
+  - '`dev`'
+navbar:
+  components:
+    twitter:
+      icon: "fab fa-twitter fa-lg"
+      href: https://twitter.com/fistful_of_bass
+    articles:
+      text: Articles
+      menu:
+      - text: Digital Data Capture
+        href: articles/forms.html
+      - text: Data analysis
+        href: articles/analysis.html
+      - text: Development
+        href: articles/dev.html
