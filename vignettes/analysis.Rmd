@@ -10,7 +10,18 @@ vignette: >
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 resource_files:
-  - vignettes/media/*.jpg
+- vignettes/media/1578488994992.jpg
+- vignettes/media/1578489033729.jpg
+- vignettes/media/1578489072292.jpg
+- vignettes/media/1578489127335.jpg
+- vignettes/media/1578489161012.jpg
+- vignettes/media/1578489206390.jpg
+- vignettes/media/1578785576392.jpg
+- vignettes/media/1578785648115.jpg
+- vignettes/media/1578785727152.jpg
+- vignettes/media/1578785808711.jpg
+- vignettes/media/1578785863925.jpg
+- vignettes/media/1578785920077.jpg
 ---
 
 ```{r, include = FALSE}
