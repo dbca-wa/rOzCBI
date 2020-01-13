@@ -1,3 +1,6 @@
+# ---------------------------------------------------------------------------- #
+# This file generates and updates the provided package data "burngrading01".
+#
 ruODK::ru_setup(
   svc = paste0(
     "https://odkcentral.dbca.wa.gov.au/v1/projects/27/",

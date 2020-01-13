@@ -31,42 +31,76 @@ calculate_geocbi(
 )
 }
 \arguments{
-\item{s1_fcov_post_fire_leaf_fall}{A numeric grade from 0.0 to 3.0}
+\item{s1_fcov_post_fire_leaf_fall}{A numeric grade from 0.0 to 3.0.
+Post-fire leaf fall cover.
+Includes leaves that have fallen after the burn but not unburned patches.}
 
-\item{s1_area_unburnt}{A numeric grade from 0.0 to 3.0}
+\item{s1_area_unburnt}{A numeric grade from 0.0 to 3.0.
+Unburnt area.
+The approximate percentage of area not burned.}
 
-\item{s1_duff}{A numeric grade from 0.0 to 3.0}
+\item{s1_duff}{A numeric grade from 0.0 to 3.0.
+Duff condition (crushed sticks and leaves).
+Broken leaf pieces that form a type of mulch under the litter layer.
+If necessary, scrape down to mineral soil to see how deeply the char has
+penetrated.}
 
-\item{s1_coarse_fuel}{A numeric grade from 0.0 to 3.0}
+\item{s1_coarse_fuel}{A numeric grade from 0.0 to 3.0.
+Coarse fuel condition (logs).
+Logs greater than 6 mm diameter that were on the ground prior to the burn.}
 
-\item{s2_area_unburnt}{A numeric grade from 0.0 to 3.0}
+\item{s2_area_unburnt}{A numeric grade from 0.0 to 3.0.
+Unburnt area.
+The approximate percentage of area not burned.}
 
-\item{s2_grass_trees_with_skirts}{A numeric grade from 0.0 to 3.0}
+\item{s2_grass_trees_with_skirts}{A numeric grade from 0.0 to 3.0.
+Grass trees with skirts.
+How many grass trees still have skirts?}
 
-\item{s2_unburnt_shrub_density}{A numeric grade from 0.0 to 3.0}
+\item{s2_unburnt_shrub_density}{A numeric grade from 0.0 to 3.0.
+Density of unburnt shrubs.
+When walking across plot, how would you touch shrubs below 1m?}
 
-\item{s2_fcov_regenerating_plants}{A numeric grade from 0.0 to 3.0}
+\item{s2_fcov_regenerating_plants}{A numeric grade from 0.0 to 3.0.
+Regenerating plants cover.
+All green growth associated at the base of shrubs or apparently out in the
+open. Include seedlings in the approximate area.}
 
-\item{s3_fcov_original_crown_intact}{A numeric grade from 0.0 to 3.0}
+\item{s3_fcov_original_crown_intact}{A numeric grade from 0.0 to 3.0.
+Intact original crown cover.
+How much original crown is intact?}
 
-\item{s3_density_bare_shrubs}{A numeric grade from 0.0 to 3.0}
+\item{s3_density_bare_shrubs}{A numeric grade from 0.0 to 3.0.
+Density of bare shrubs > 1m.}
 
-\item{s4_fcov_original_crown_intact}{A numeric grade from 0.0 to 3.0}
+\item{s4_fcov_original_crown_intact}{A numeric grade from 0.0 to 3.0.
+Intact original crown cover.
+How much original crown is intact?}
 
-\item{s4_resprouting_on_live_trees}{A numeric grade from 0.0 to 3.0}
+\item{s4_resprouting_on_live_trees}{A numeric grade from 0.0 to 3.0.
+Resprouting on live trees.}
 
-\item{s4_char_height}{A numeric grade from 0.0 to 3.0}
+\item{s4_char_height}{A numeric grade from 0.0 to 3.0.
+Char height.
+Fraction of total stratum height charred.}
 
-\item{s5_fcov_original_crown_intact}{A numeric grade from 0.0 to 3.0}
+\item{s5_fcov_original_crown_intact}{A numeric grade from 0.0 to 3.0.
+Intact original crown cover.
+How much original crown is intact?}
 
-\item{s5_no_trees_over_20cm_fallen}{A numeric grade from 0.0 to 3.0}
+\item{s5_no_trees_over_20cm_fallen}{A numeric grade from 0.0 to 3.0.
+Number of trees > 20cm fallen.}
 
-\item{s5_resprouting_on_live_trees}{A numeric grade from 0.0 to 3.0}
+\item{s5_resprouting_on_live_trees}{A numeric grade from 0.0 to 3.0.
+Resprouting on live trees.}
 
-\item{s5_char_height}{A numeric grade from 0.0 to 3.0}
+\item{s5_char_height}{A numeric grade from 0.0 to 3.0.
+Char height.
+Fraction of total stratum height charred.}
 
 \item{s1_fcov}{The fraction of coverage of stratum 1, default: 1. This value
-is never captured as it always is 1 (100\%).}
+is never captured in the digital form as it always is 1 (100\%).
+The variable is however provided here to allow different values.}
 
 \item{s2_fcov}{The fraction of coverage of stratum 2 in quarter steps
 from 0.0 to 1.0. Default: 0.}
@@ -105,7 +139,8 @@ The GeoCBI is calculated as:
 
 \subsection{Vars not used in GeoCBI formula}{
 
-Some variables are captured, but not used for GeoCBI calculation:
+Some variables are captured, but not used for GeoCBI calculation.
+They provide context and metadata, and include representative photos.
 
 "id" "observation_start_time" "reporter" "device_id" "observation_end_time"
 "submission_date" "submitter_id" "submitter_name" "instance_id"
