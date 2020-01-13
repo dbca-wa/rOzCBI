@@ -1,6 +1,8 @@
 ---
 title: "Data analysis"
-output: rmarkdown::html_vignette
+output: 
+  rmarkdown::html_vignette:
+    theme: yeti
 template:
   params:
     bootswatch: yeti
