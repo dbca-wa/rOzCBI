@@ -165,7 +165,7 @@ calculate_geocbi <- function(s1_fcov_post_fire_leaf_fall = NA_real_,
   s1_score <- s1_cbi * s1_fcov
   if (verbose == T) {
     message(
-      glue::glue("Stratum 1: CBI {s1_cbi} * FCOV {s1_fcov} = CBI {s1_cbi}")
+      glue::glue("Stratum 1: CBI {s1_cbi} * FCOV {s1_fcov} = Score {s1_score}")
     )
   }
 
@@ -183,7 +183,7 @@ calculate_geocbi <- function(s1_fcov_post_fire_leaf_fall = NA_real_,
   s2_score <- s2_cbi * s2_fcov
   if (verbose == T) {
     message(
-      glue::glue("Stratum 2: CBI {s2_cbi} * FCOV {s2_fcov} = CBI {s2_cbi}")
+      glue::glue("Stratum 2: CBI {s2_cbi} * FCOV {s2_fcov} = SCore {s2_score}")
     )
   }
 
@@ -198,7 +198,7 @@ calculate_geocbi <- function(s1_fcov_post_fire_leaf_fall = NA_real_,
   s3_score <- s3_cbi * s3_fcov
   if (verbose == T) {
     message(
-      glue::glue("Stratum 3: CBI {s3_cbi} * FCOV {s3_fcov} = CBI {s3_cbi}")
+      glue::glue("Stratum 3: CBI {s3_cbi} * FCOV {s3_fcov} = SCore {s3_score}")
     )
   }
 
@@ -214,7 +214,7 @@ calculate_geocbi <- function(s1_fcov_post_fire_leaf_fall = NA_real_,
   s4_score <- s4_cbi * s4_fcov
   if (verbose == T) {
     message(
-      glue::glue("Stratum 4: CBI {s4_cbi} * FCOV {s4_fcov} = CBI {s4_cbi}")
+      glue::glue("Stratum 4: CBI {s4_cbi} * FCOV {s4_fcov} = SCore {s4_score}")
     )
   }
 
@@ -231,18 +231,18 @@ calculate_geocbi <- function(s1_fcov_post_fire_leaf_fall = NA_real_,
   s5_score <- s5_cbi * s5_fcov
   if (verbose == T) {
     message(
-      glue::glue("Stratum 5: CBI {s5_cbi} * FCOV {s5_fcov} = CBI {s5_cbi}")
+      glue::glue("Stratum 5: CBI {s5_cbi} * FCOV {s5_fcov} = Score {s5_score}")
     )
   }
 
   # GeoCBI
-  sum_of_cbi <- sum(s1_score, s2_score, s3_score, s4_score, s5_score, na.rm = T)
-  sum_of_fcov <- sum(s1_fcov, s2_fcov, s3_fcov, s4_fcov, s5_fcov)
-  geocbi <- sum_of_cbi / sum_of_fcov
+  score_sum <- sum(s1_score, s2_score, s3_score, s4_score, s5_score, na.rm = T)
+  fcov_sum <- sum(s1_fcov, s2_fcov, s3_fcov, s4_fcov, s5_fcov)
+  geocbi <- score_sum / fcov_sum
   if (verbose == T)
     message(
       glue::glue(
-        "GeoCBI: {geocbi} = Sum CBI {sum_of_cbi} / Sum FCOV {sum_of_fcov}"
+        "GeoCBI: {geocbi} = Score sum {score_sum} / FCOV sums {fcov_sum}"
         )
     )
   geocbi
