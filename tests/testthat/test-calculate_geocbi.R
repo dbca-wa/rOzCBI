@@ -2,6 +2,10 @@ test_that("calculate_geocbi returns 0 if no data given", {
   testthat::expect_equal(calculate_geocbi(), 0)
 })
 
+test_that("calculate_geocbi sends its regards", {
+  testthat::expect_message(calculate_geocbi(verbose = TRUE))
+})
+
 test_that("calculate_geocbi is 1 if all scores are 1", {
   testthat::expect_equal(
     calculate_geocbi(
