@@ -21,3 +21,6 @@ fs::dir_copy(fs::path("media"), here::here("vignettes/media"), overwrite = TRUE)
 fs::dir_delete(fs::path("media"))
 
 usethis::use_data(burngrading01, overwrite = T, compress = "xz")
+
+# Update vignette "analysis" header with:
+ymlthis::yml_resource_files(ymlthis::yml(), here::here("vignettes/media"))
