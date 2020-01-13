@@ -19,28 +19,29 @@ developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.re
 issues](https://img.shields.io/github/issues/dbca-wa/rGeoCBI.svg?style=popout)](https://github.com/dbca-wa/rGeoCBI/issues/)
 <!-- badges: end -->
 
+rGeoCBI in a nutshell:
+
+  - [OpenDataKit](https://opendatakit.org/) forms to evaluate a burnt
+    site.
+  - Helpers to calculate the GeoCBI from the burn grading field data.
+  - Instructions to get up and running with digital data capture and
+    data anlysis.
+  - Working examples of the entire data flow.
+
+## What
+
+To evaluate the severity of burns, the differential NDVI of a burnt site
+(pre-and post-burn) can be derived from satellite imagery
+cost-effectively and on a large scale. To calibrate the dNDVI, ground
+truthing field work can derive an index called “GeoCBI” from the
+condition and composition of a burnt site.
+
 rGeoCBI contains background, digital data capture, analysis, and
 visualisation for the calculation of GeoCBI, a composite burn index for
 the initial assessment of the short-term burn severity from remotely
 sensed data.
 
-NOTICE - in development - do not use this package in production until
-this warning disappears. The workhorse function to calculate the GeoCBI
-from form data is pending verification.
-
-## Installation
-
-You can install the development version from
-[GitHub](https://github.com/) with:
-
-``` r
-# install.packages("devtools")
-remotes::install_github("dbca-wa/rGeoCBI")
-```
-
-## What
-
-GeoCBI was described in [Santis, Angela & Chuvieco, Emilio.
+The GeoCBI was first described in [Santis, Angela & Chuvieco, Emilio.
 (2009)](https://doi.org/10.1016/j.rse.2008.10.011) ([Fulltext
 (pdf)](https://www.researchgate.net/publication/229043914_GeoCBI_A_modified_version_of_the_Composite_Burn_Index_for_the_initial_assessment_of_the_short-term_burn_severity_from_remotely_sensed_data)).
 
@@ -68,6 +69,14 @@ reflectance than CBI for different ranges of burn severities, while
 keeping its ecological meaning.
 
 ## How
+
+You can install the development version from
+[GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+remotes::install_github("dbca-wa/rGeoCBI")
+```
 
 `rGeoCBI` supplies an Xform to capture data digitally using OpenDataKit,
 then goes on to access the data directly from R using the package

@@ -23,7 +23,7 @@ This vignette contains handy commands for the package development workflow.
 ## Develop
 
 * Create [issue](https://github.com/dbca-wa/rGeoCBI/issues)
-* Add new code, docs, tests. Update or expand vignettes where applicable.
+* Add new code, docs, tests. Update or expand vignettes and README where applicable.
 * Once tests pass, commit referencing the issue.
 * If the change is user-facing, add a line in `NEWS.md` referencing the issue.
 * Increase version number.
