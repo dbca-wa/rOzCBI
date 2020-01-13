@@ -1,5 +1,5 @@
 ---
-title: "01 Digital Data Capture"
+title: "Digital Data Capture"
 output: rmarkdown::html_vignette
 template:
   params:

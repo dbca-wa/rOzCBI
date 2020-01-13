@@ -1,5 +1,5 @@
 ---
-title: "00 Development"
+title: "Development"
 output: rmarkdown::html_vignette
 template:
   params:

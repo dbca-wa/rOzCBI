@@ -1,6 +1,8 @@
 ---
-title: "02 Data analysis"
+title: "Data analysis"
 output: rmarkdown::html_vignette
+resource_files:
+  - media/*.jpg
 template:
   params:
     bootswatch: yeti
@@ -88,13 +90,17 @@ photos from ODK Central.
 
 Here, we'll use `ruODK` to download submissions from ODK Central.
 
-```{r}
-bg_data <- ruODK::odata_submission_get(
+```{r, eval=FALSE}
+burngrading01 <- ruODK::odata_submission_get(
   verbose = T, 
   tz = "Australia/Perth", 
   local_dir = fs::path("media"), 
   wkt=T
 )
+```
+
+```{r, echo=F}
+data("burngrading01")
 ```
 
 ## Calculate GeoCBI
@@ -107,7 +113,7 @@ names. Fraction of coverages (fcov) also are prefixed with their grade, which
 ranges from 0.0 to 1.0 in increments of 0.25.
 
 ```{r}
-data_geocbi <- add_geocbi(bg_data)
+bg_geocbi <- add_geocbi(burngrading01)
 ```
 
 ## Visualise
@@ -123,7 +129,7 @@ leaflet::leaflet(width = 800, height = 600) %>%
     leaflet::clearBounds() %>%
     # leaflet::setView(130,-33, 4) %>% 
     leaflet::addAwesomeMarkers(
-        data = data_geocbi,
+        data = bg_geocbi,
         lng = ~location_longitude, lat = ~location_latitude,
         icon = leaflet::makeAwesomeIcon(text = ~geocbi, markerColor = "red"),
         label = ~ glue::glue("[{geocbi}] {plot_name} {observation_start_time}"),
@@ -176,7 +182,7 @@ leaflet::leaflet(width = 800, height = 600) %>%
 ### Table
 
 ```{r}
-bg_data %>% reactable::reactable(sortable = T, filterable = T)
+bg_geocbi %>% reactable::reactable(sortable = T, filterable = T)
 ```
 
 

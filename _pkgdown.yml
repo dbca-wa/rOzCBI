@@ -1,4 +1,5 @@
 destination: docs
+url: https://dbca-wa.github.io/rGeoCBI
 authors:
   DBCA:
     html: "<img src='man/figures/dbca_bcs.png' width='150' alt='DBCA'/>"
@@ -21,3 +22,13 @@ reference:
 - title: Example data
   contents:
   - has_concept("included")
+articles:
+- title: Digital Data Capture
+  contents:
+  - forms
+- title: Data Analysis
+  contents:
+  - analysis
+- title: Development
+  contents:
+  - dev
