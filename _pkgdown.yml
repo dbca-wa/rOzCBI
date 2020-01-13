@@ -19,7 +19,7 @@ reference:
   contents:
   - has_concept("included")
 articles:
-- title: Digital Data Capture
+- title: Data Capture
   contents:
   - '`forms`'
 - title: Data Analysis
