@@ -13,8 +13,11 @@ ruODK::ru_setup(
 burngrading01 <- ruODK::odata_submission_get(
   verbose = TRUE,
   tz = "Australia/Perth",
-  local_dir = fs::path(here::here("vignettes/media")),
+  local_dir = fs::path("media"),
   wkt = T
 )
+
+fs::dir_copy(fs::path("media"), here::here("vignettes/media"), overwrite = TRUE)
+fs::dir_delete(fs::path("media"))
 
 usethis::use_data(burngrading01, overwrite = T, compress = "xz")
