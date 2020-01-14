@@ -1,3 +1,6 @@
+# rGeoCBI 0.0.3
+* Fix media attachments in package vignettes.
+
 # rGeoCBI 0.0.2
 
 * Some improvements to form "Burn Grading 0.1" identified and in preparation
