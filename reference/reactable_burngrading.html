@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Map Burn Grading data (incl GeoCBI) with labels and popups — map_burngrading • rGeoCBI</title>
+<title>Display a reactable of Burn Grading data (incl GeoCBI) with details — reactable_burngrading • rGeoCBI</title>
 
 
 <!-- jquery -->
@@ -35,8 +35,8 @@
 
 
 
-<meta property="og:title" content="Map Burn Grading data (incl GeoCBI) with labels and popups — map_burngrading" />
-<meta property="og:description" content="Map Burn Grading data (incl GeoCBI) with labels and popups" />
+<meta property="og:title" content="Display a reactable of Burn Grading data (incl GeoCBI) with details — reactable_burngrading" />
+<meta property="og:description" content="Display a reactable of Burn Grading data (incl GeoCBI) with details" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -142,16 +142,16 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Map Burn Grading data (incl GeoCBI) with labels and popups</h1>
-    <small class="dont-index">Source: <a href='https://github.com/dbca-wa/rGeoCBI/blob/master/R/map_burngrading.R'><code>R/map_burngrading.R</code></a></small>
-    <div class="hidden name"><code>map_burngrading.Rd</code></div>
+    <h1>Display a reactable of Burn Grading data (incl GeoCBI) with details</h1>
+    <small class="dont-index">Source: <a href='https://github.com/dbca-wa/rGeoCBI/blob/master/R/reactable_burngrading.R'><code>R/reactable_burngrading.R</code></a></small>
+    <div class="hidden name"><code>reactable_burngrading.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Map Burn Grading data (incl GeoCBI) with labels and popups</p>
+    <p>Display a reactable of Burn Grading data (incl GeoCBI) with details</p>
     </div>
 
-    <pre class="usage"><span class='fu'>map_burngrading</span>(<span class='no'>data</span>)</pre>
+    <pre class="usage"><span class='fu'>reactable_burngrading</span>(<span class='no'>data</span>)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -164,19 +164,19 @@
 
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>A leaflet map</p>
+    <p>An interactive reactable.</p>
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
     <div class='dont-index'><p>Other helpers: 
 <code><a href='extract_grading.html'>extract_grading</a>()</code>,
-<code><a href='reactable_burngrading.html'>reactable_burngrading</a>()</code></p></div>
+<code><a href='map_burngrading.html'>map_burngrading</a>()</code></p></div>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fl'>FALSE</span>) {
 <span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='st'>"burngrading01"</span>)
 <span class='no'>burngrading01</span> <span class='kw'>%&gt;%</span>
   <span class='fu'><a href='add_geocbi.html'>add_geocbi</a></span>() <span class='kw'>%&gt;%</span>
-  <span class='fu'>map_burngrading</span>()
+  <span class='fu'>reactable_burngrading</span>()
 }</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
