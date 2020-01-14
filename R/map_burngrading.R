@@ -42,7 +42,7 @@ Device {device_id}</br>
 </ol>
 
 <!-- Wrapper for slides -->
-<div class="carousel-inner" style="height:200px;" role="listbox">
+<div class="carousel-inner" role="listbox">
 <div class="item active">
 <img src="{plot_photo}" alt="Plot overview">
 <div class="carousel-caption">Plot overview</div>
