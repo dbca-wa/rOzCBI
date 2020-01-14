@@ -101,7 +101,8 @@ For a background on accessing data from R, refer to
 In a pinch, we can always download a ZIP archive of all submissions and all
 photos from ODK Central.
 
-Here, we'll use `ruODK` to download submissions from ODK Central.
+Here, we'll use `ruODK` to download submissions from ODK Central with `verbose`
+output.
 
 ```{r, eval=FALSE}
 burngrading01 <- ruODK::odata_submission_get(
@@ -125,6 +126,10 @@ Values are coded as `<grade>_<url-safe-label>`, where grade are numbers 0.0, 0.5
 names. Fraction of coverages (fcov) also are prefixed with their grade, which
 ranges from 0.0 to 1.0 in increments of 0.25.
 
+The function `add_geocbi()` is highly specific to the underlying form "Burn Grading 0.1".
+It translates the form fields to the generic form `calculate_geocbi()`, which
+can be fed by data from any other compatible data source.
+
 ```{r}
 bg_geocbi <- burngrading01 %>% add_geocbi()
 ```
@@ -144,28 +149,10 @@ bg_geocbi %>% map_burngrading()
 
 
 ### Table
-Each row expands to show details. Here, we show all linked photos, but the
-function to display details could be expanded to include more details.
+Each row expands to show details.
 
 ```{r}
-bg_geocbi %>% reactable::reactable(
-  sortable = T,
-  filterable = T,
-  details = function(index) {
-    htmltools::tags$div(
-      htmltools::tags$img(
-        width="200px;", alt="Plot photo", src=bg_geocbi[index,]$plot_photo),
-      htmltools::tags$img(
-        width="200px;", alt="Stratum 1 photo", src=bg_geocbi[index,]$s1_photo),
-      htmltools::tags$img(
-        width="200px;", alt="Stratum 2 photo", src=bg_geocbi[index,]$s2_photo),
-      htmltools::tags$img(
-        width="200px;", alt="Stratum 3 photo", src=bg_geocbi[index,]$s3_photo),
-      htmltools::tags$img(
-        width="200px;", alt="Stratum 4 photo", src=bg_geocbi[index,]$s4_photo),
-      htmltools::tags$img(
-        width="200px;", alt="Stratum 5 photo", src=bg_geocbi[index,]$s5_photo)
-    )})
+bg_geocbi %>% reactable_burngrading()
 ```
 
 ## Publish

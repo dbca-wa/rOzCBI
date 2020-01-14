@@ -26,6 +26,7 @@ testthat::expect_equal(extract_grading("2.5_test-with-long-label"), 2.5)
 }
 \seealso{
 Other helpers: 
-\code{\link{map_burngrading}()}
+\code{\link{map_burngrading}()},
+\code{\link{reactable_burngrading}()}
 }
 \concept{helpers}

@@ -12,6 +12,17 @@
 #'   map_burngrading()
 #' }
 map_burngrading <- function(data) {
+
+  getColour <- function(geocbi) {
+      if(geocbi <= 1) {
+        "green"
+      } else if(geocbi <= 2) {
+        "orange"
+      } else {
+        "red"
+      }
+  }
+
   leaflet::leaflet(width = 800, height = 600) %>%
     leaflet::addProviderTiles("Esri.WorldImagery", group = "Aerial") %>%
     leaflet::addProviderTiles("OpenStreetMap.Mapnik", group = "Place names") %>%
@@ -20,10 +31,13 @@ map_burngrading <- function(data) {
     leaflet::addAwesomeMarkers(
       data = data,
       lng = ~location_longitude, lat = ~location_latitude,
-      icon = leaflet::makeAwesomeIcon(text = ~geocbi, markerColor = "red"),
+      icon = leaflet::makeAwesomeIcon(
+        text = ~round(as.numeric(geocbi), 2),
+        markerColor = ~ getColour(geocbi)
+      ),
       label = ~ glue::glue("[{geocbi}] {plot_name} {observation_start_time}"),
       popup = ~ glue::glue('
-<h3>{plot_name}</h3><h4>GeoCBI {geocbi}</h4>
+<h3>{plot_name}</h3><h4>GeoCBI {round(as.numeric(geocbi), 4)}</h4>
 Survey start {observation_start_time}</br>
 Reporter {reporter}</br>
 Device {device_id}</br>
@@ -101,5 +115,6 @@ standing trees with hollows</div>
       options = leaflet::layersControlOptions(collapsed = FALSE)
     )
 }
+
 
 # usethis::use_test("map_burngrading")

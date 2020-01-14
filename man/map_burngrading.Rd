@@ -25,6 +25,7 @@ burngrading01 \%>\%
 }
 \seealso{
 Other helpers: 
-\code{\link{extract_grading}()}
+\code{\link{extract_grading}()},
+\code{\link{reactable_burngrading}()}
 }
 \concept{helpers}
