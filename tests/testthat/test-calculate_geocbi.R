@@ -100,7 +100,7 @@ test_that("calculate_geocbi ignores grades from strata with fcov 0", {
 })
 
 
-test_that("calculate_geocbi gets different geocbi from real data with different values", {
+test_that("calculate_geocbi gets different geocbi from real data", {
   data("burngrading01")
 
   data_with_geocbi <- burngrading01 %>% add_geocbi()

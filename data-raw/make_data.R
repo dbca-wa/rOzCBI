@@ -24,3 +24,7 @@ usethis::use_data(burngrading01, overwrite = T, compress = "xz")
 
 # Update vignette "analysis" header with:
 ymlthis::yml_resource_files(ymlthis::yml(), fs::dir_ls(here::here("vignettes/media")))
+
+
+# Resize images to minimise package size
+system("find vignettes/media -name *.jpg -exec mogrify -resize 200x150 {} \\;")

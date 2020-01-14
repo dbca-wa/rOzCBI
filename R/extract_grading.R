@@ -13,10 +13,10 @@
 #' testthat::expect_equal(extract_grading("1.5_test"), 1.5)
 #' testthat::expect_equal(extract_grading("2.5_test-with-long-label"), 2.5)
 extract_grading <- function(grading_string) {
-    grading_string %>%
-      stringr::str_remove("_.*") %>%
-      stringr::str_replace_all("na", "") %>%
-      as.numeric(.)
+  grading_string %>%
+    stringr::str_remove("_.*") %>%
+    stringr::str_replace_all("na", "") %>%
+    as.numeric(.)
 }
 
 # usethis::use_test("extract_grading")

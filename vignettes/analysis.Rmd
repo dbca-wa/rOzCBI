@@ -7,19 +7,19 @@ output:
     toc_float: true
     theme: yeti
     highlight: tango
-resource_files:
-  - media/1578488994992.jpg
-  - media/1578489033729.jpg
-  - media/1578489072292.jpg
-  - media/1578489127335.jpg
-  - media/1578489161012.jpg
-  - media/1578489206390.jpg
-  - media/1578785576392.jpg
-  - media/1578785648115.jpg
-  - media/1578785727152.jpg
-  - media/1578785808711.jpg
-  - media/1578785863925.jpg
-  - media/1578785920077.jpg
+  resource_files:
+    - media/1578488994992.jpg
+    - media/1578489033729.jpg
+    - media/1578489072292.jpg
+    - media/1578489127335.jpg
+    - media/1578489161012.jpg
+    - media/1578489206390.jpg
+    - media/1578785576392.jpg
+    - media/1578785648115.jpg
+    - media/1578785727152.jpg
+    - media/1578785808711.jpg
+    - media/1578785863925.jpg
+    - media/1578785920077.jpg
 vignette: >
   %\VignetteIndexEntry{data-analysis}
   %\VignetteEngine{knitr::rmarkdown}
@@ -126,7 +126,7 @@ names. Fraction of coverages (fcov) also are prefixed with their grade, which
 ranges from 0.0 to 1.0 in increments of 0.25.
 
 ```{r}
-bg_geocbi <- add_geocbi(burngrading01)
+bg_geocbi <- burngrading01 %>% add_geocbi()
 ```
 
 ## Visualise
@@ -134,70 +134,22 @@ The data shown here are test data (not real burn gradings) and
 come from the real form.
 
 ### Map
+The helper function `map_burngrading()` provides a leaflet map with labels and popups.
+The source code of `map_burngrading()` can serve as a starting point for other
+customised maps.
 
 ```{r}
-leaflet::leaflet(width = 800, height = 600) %>%
-    leaflet::addProviderTiles("Esri.WorldImagery", group = "Aerial") %>%
-    leaflet::addProviderTiles("OpenStreetMap.Mapnik", group = "Place names") %>%
-    leaflet::clearBounds() %>%
-    # leaflet::setView(130,-33, 4) %>% 
-    leaflet::addAwesomeMarkers(
-        data = bg_geocbi,
-        lng = ~location_longitude, lat = ~location_latitude,
-        icon = leaflet::makeAwesomeIcon(text = ~geocbi, markerColor = "red"),
-        label = ~ glue::glue("[{geocbi}] {plot_name} {observation_start_time}"),
-        popup = ~ glue::glue(
-          "<h3>{plot_name} - GeoCBI {geocbi}</h3>",
-          "Survey start {observation_start_time}</br>",
-          "Reporter {reporter}</br>",
-          "Device {device_id}</br>",
-          
-          "<h5>Plot</h5>",
-          "<div>Burn homogeneous throughout plot: ",
-          "{homogeneous_burn_severity}</div>",
-          '<img src="{plot_photo}" height="150px" alt="Plot photo"></img>',
-          
-          "<h5>Lower strata 1-3</h5>",
-          "<div>Stratum 2: Dom veg {s2_dominant_vegetation}</div>",
-          "<div>Stratum 3: Dom veg {s3_dominant_vegetation}</div>",
-          "<div>Stratum 4: Dom veg {s4_dominant_vegetation}</div>",
-          "<div>Stratum 5: Dom veg {s5_dominant_vegetation}</div>",
-          '<img src="{s1_photo}" height="150px" alt="Stratum 1 photo"></img>',
-          '<img src="{s2_photo}" height="150px" alt="Stratum 2 photo"></img>',
-          '<img src="{s3_photo}" height="150px" alt="Stratum 3 photo"></img>',
-          
-          "<h5>Upper strata 4-5</h5>",
-          '<img src="{s4_photo}" height="150px" alt="Stratum 4 photo"></img>',
-          '<img src="{s5_photo}" height="150px" alt="Stratum 5 photo"></img>',
-          
-          "<h5>Additional observations</h5>",
-          "<div>{no_grass_trees} grass trees</div>",
-          "<div>{no_hollow_logs} hollow logs</div>",
-          "<div>{no_standing_trees_gt20cm} standing trees &gt;20cm</div>",
-          "<div>{no_standing_trees_with_hollows} ",
-          "standing trees with hollows</div>",
-          "<div>Litter leaf depth {depth_leaf_litter_cm}cm</div>",
-          "<div>Avg gap between unburnt patches:",
-          " {avg_gap_between_unburnt_patches}m</div>",
-          "<div>Evidence of native fauna: {evidence_of_native_fauna}</div>",
-          "<div>Evidence of feral fauna: {evidence_of_feral_fauna}</div>"
-        ),
-        clusterOptions = leaflet::markerClusterOptions()
-      ) %>%
-      leaflet::addLayersControl(
-        baseGroups = c("Aerial", "Place names"),
-        # overlayGroups = "",
-        options = leaflet::layersControlOptions(collapsed = FALSE)
-      )
-
+bg_geocbi %>% map_burngrading()
 ```
 
+
 ### Table
-Each row expands to show details. Here, we show all linked photos.
+Each row expands to show details. Here, we show all linked photos, but the
+function to display details could be expanded to include more details.
 
 ```{r}
 bg_geocbi %>% reactable::reactable(
-  sortable = T, 
+  sortable = T,
   filterable = T,
   details = function(index) {
     htmltools::tags$div(
@@ -215,7 +167,6 @@ bg_geocbi %>% reactable::reactable(
         width="200px;", alt="Stratum 5 photo", src=bg_geocbi[index,]$s5_photo)
     )})
 ```
-
 
 ## Publish
 

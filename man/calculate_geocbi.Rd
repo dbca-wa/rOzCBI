@@ -33,7 +33,7 @@ calculate_geocbi(
 \arguments{
 \item{s1_fcov_post_fire_leaf_fall}{A numeric grade from 0.0 to 3.0.
 Post-fire leaf fall cover.
-Includes leaves that have fallen after the burn but not unburned patches.}
+Includes leaves that have fallen after the burn but not unburnt patches.}
 
 \item{s1_area_unburnt}{A numeric grade from 0.0 to 3.0.
 Unburnt area.
@@ -159,7 +159,8 @@ calculate_geocbi(
   s1_fcov_post_fire_leaf_fall = 1,
   s2_area_unburnt = 2.5,
   s2_fcov = 0.5,
-  verbose = TRUE)
+  verbose = TRUE
+)
 
 # With complete variables, all set to 1
 calculate_geocbi(
@@ -180,12 +181,12 @@ calculate_geocbi(
   s5_no_trees_over_20cm_fallen = 1,
   s5_resprouting_on_live_trees = 1,
   s5_char_height = 1,
-  s1_fcov = 1,
   s2_fcov = 1,
   s3_fcov = 1,
   s4_fcov = 1,
   s5_fcov = 1,
-  verbose = TRUE)
+  verbose = TRUE
+)
 }
 \seealso{
 Other geocbi: 
