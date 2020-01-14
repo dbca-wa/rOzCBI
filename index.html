@@ -119,14 +119,10 @@
 <div id="what" class="section level2">
 <h2 class="hasAnchor">
 <a href="#what" class="anchor"></a>What</h2>
-<p>To evaluate the severity of burns, the differential NDVI of a burnt site (pre-and post-burn) can be derived from satellite imagery cost-effectively and on a large scale. To calibrate the dNDVI, ground truthing field work can derive an index called “GeoCBI” from the condition and composition of a burnt site.</p>
+<p>To evaluate the severity of burns, the differential normalised burn ratio (dNBR) of a burnt site can be derived from satellite imagery cost-effectively and on a large scale. To calibrate the dNDVI, ground truthing field work can derive an index called “GeoCBI” from the condition and composition of a burnt site.</p>
 <p>rGeoCBI contains background, digital data capture, analysis, and visualisation for the calculation of GeoCBI, a composite burn index for the initial assessment of the short-term burn severity from remotely sensed data.</p>
-<p>The GeoCBI was first described in <a href="https://doi.org/10.1016/j.rse.2008.10.011">Santis, Angela &amp; Chuvieco, Emilio. (2009)</a> (<a href="https://www.researchgate.net/publication/229043914_GeoCBI_A_modified_version_of_the_Composite_Burn_Index_for_the_initial_assessment_of_the_short-term_burn_severity_from_remotely_sensed_data">Fulltext (pdf)</a>).</p>
-<p>Santis, Angela &amp; Chuvieco, Emilio. (2009). GeoCBI: A modified version of the Composite Burn Index for the initial assessment of the short-term burn severity from remotely sensed data. Remote Sensing of Environment</p>
-<ol>
-<li>DOI 10.1016/j.rse.2008.10.011.</li>
-</ol>
-<p>Burn severity estimation is a key factor in the post-fire management. Previous studies using remotely sensed data to retrieve burn severity, as measured by the Composite Burn Index (CBI), have found inconsistencies, since spectral indices work well in some ecosystems but not in others. These inconsistencies may be caused by the lack of spectral uniqueness in the CBI definition, or by the performance of the spectral indices used. This paper analyses the former aspect, using a simulation analysis to study the relationships between the CBI and reflectance. Subsequently, a modified version of this index, called GeoCBI, is proposed to improve the retrieval of burn severity from remotely sensed data. GeoCBI takes into account the fraction of cover (FCOV) of the different vegetation strata used to compute the CBI. Moreover, it also includes the changes in the leaf area index (LAI) for the intermediate and tall tree strata (D+E). Field and simulation results show that GeoCBI is more consistently related to spectral reflectance than CBI for different ranges of burn severities, while keeping its ecological meaning.</p>
+<p>The GeoCBI was first described in <a href="https://doi.org/10.1016/j.rse.2008.10.011">De Santis, Angela &amp; Chuvieco, Emilio. (2009)</a> (<a href="https://www.researchgate.net/publication/229043914_GeoCBI_A_modified_version_of_the_Composite_Burn_Index_for_the_initial_assessment_of_the_short-term_burn_severity_from_remotely_sensed_data">Fulltext (pdf)</a>) GeoCBI: A modified version of the Composite Burn Index for the initial assessment of the short-term burn severity from remotely sensed data. Remote Sensing of Environment 113<br><a href="https://www.sciencedirect.com/science/article/abs/pii/S0034425708003246">DOI 10.1016/j.rse.2008.10.011</a></p>
+<p>The GeoCBI we use here was further modified to suit Australian vegetation communities by Valerie Densmore at DBCA in Western Australia. This version of the GeoCBI is currently being tested and validated so the current version may not reflect the final form. Feedback on the use and validity of the Australian GeoCBI is welcome as <a href="https://github.com/dbca-wa/rGeoCBI/issues">GitHub issues</a>.</p>
 </div>
 <div id="how" class="section level2">
 <h2 class="hasAnchor">
@@ -150,18 +146,19 @@
 <a class="sourceLine" id="cb2-2" data-line-number="2"><span class="co">#&gt; </span></a>
 <a class="sourceLine" id="cb2-3" data-line-number="3"><span class="co">#&gt; To cite rGeoCBI in publications use:</span></a>
 <a class="sourceLine" id="cb2-4" data-line-number="4"><span class="co">#&gt; </span></a>
-<a class="sourceLine" id="cb2-5" data-line-number="5"><span class="co">#&gt;   Florian W. Mayer (2020). rrGeoCBI: A burn severity assessment</span></a>
-<a class="sourceLine" id="cb2-6" data-line-number="6"><span class="co">#&gt;   toolkit. R package version 0.0.1. https://github.com/dbca-wa/rGeoCBI</span></a>
-<a class="sourceLine" id="cb2-7" data-line-number="7"><span class="co">#&gt; </span></a>
-<a class="sourceLine" id="cb2-8" data-line-number="8"><span class="co">#&gt; A BibTeX entry for LaTeX users is</span></a>
-<a class="sourceLine" id="cb2-9" data-line-number="9"><span class="co">#&gt; </span></a>
-<a class="sourceLine" id="cb2-10" data-line-number="10"><span class="co">#&gt;   @Misc{,</span></a>
-<a class="sourceLine" id="cb2-11" data-line-number="11"><span class="co">#&gt;     title = {rGeoCBI: A burn severity assessment toolkit},</span></a>
-<a class="sourceLine" id="cb2-12" data-line-number="12"><span class="co">#&gt;     author = {Florian W. Mayer},</span></a>
-<a class="sourceLine" id="cb2-13" data-line-number="13"><span class="co">#&gt;     note = {R package version 0.0.1},</span></a>
-<a class="sourceLine" id="cb2-14" data-line-number="14"><span class="co">#&gt;     year = {2019},</span></a>
-<a class="sourceLine" id="cb2-15" data-line-number="15"><span class="co">#&gt;     url = {https://github.com/dbca-wa/rGeoCBI},</span></a>
-<a class="sourceLine" id="cb2-16" data-line-number="16"><span class="co">#&gt;   }</span></a></code></pre></div>
+<a class="sourceLine" id="cb2-5" data-line-number="5"><span class="co">#&gt;   Valerie Densmore, Florian W. Mayer (2020). rGeoCBI: A burn severity</span></a>
+<a class="sourceLine" id="cb2-6" data-line-number="6"><span class="co">#&gt;   assessment toolkit. R package version 0.0.2.</span></a>
+<a class="sourceLine" id="cb2-7" data-line-number="7"><span class="co">#&gt;   https://github.com/dbca-wa/rGeoCBI</span></a>
+<a class="sourceLine" id="cb2-8" data-line-number="8"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb2-9" data-line-number="9"><span class="co">#&gt; A BibTeX entry for LaTeX users is</span></a>
+<a class="sourceLine" id="cb2-10" data-line-number="10"><span class="co">#&gt; </span></a>
+<a class="sourceLine" id="cb2-11" data-line-number="11"><span class="co">#&gt;   @Misc{,</span></a>
+<a class="sourceLine" id="cb2-12" data-line-number="12"><span class="co">#&gt;     title = {rGeoCBI: A burn severity assessment toolkit},</span></a>
+<a class="sourceLine" id="cb2-13" data-line-number="13"><span class="co">#&gt;     author = {Valerie Densmore and Florian W. Mayer},</span></a>
+<a class="sourceLine" id="cb2-14" data-line-number="14"><span class="co">#&gt;     note = {R package version 0.0.2},</span></a>
+<a class="sourceLine" id="cb2-15" data-line-number="15"><span class="co">#&gt;     year = {2020},</span></a>
+<a class="sourceLine" id="cb2-16" data-line-number="16"><span class="co">#&gt;     url = {https://github.com/dbca-wa/rGeoCBI},</span></a>
+<a class="sourceLine" id="cb2-17" data-line-number="17"><span class="co">#&gt;   }</span></a></code></pre></div>
 </div>
 <div id="contribute" class="section level2">
 <h2 class="hasAnchor">
@@ -199,6 +196,7 @@
 <h2>Developers</h2>
 <ul class="list-unstyled">
 <li>Florian Mayer <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0003-4269-4242" target="orcid.widget"><img src="https://members.orcid.org/sites/default/files/vector_iD_icon.svg" class="orcid" alt="ORCID"></a> </li>
+<li>Valerie Densmore <br><small class="roles"> Author </small>  </li>
 <li>
 <a href="https://www.dbca.wa.gov.au/science/"><img src="reference/figures/dbca_bcs.png" width="150" alt="DBCA"></a> <br><small class="roles"> Copyright holder, funder </small>  </li>
 </ul>
@@ -220,7 +218,7 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by Florian Mayer, <a href="https://www.dbca.wa.gov.au/science/"><img src="reference/figures/dbca_bcs.png" width="150" alt="DBCA"></a>.</p>
+  <p>Developed by Florian Mayer, Valerie Densmore, <a href="https://www.dbca.wa.gov.au/science/"><img src="reference/figures/dbca_bcs.png" width="150" alt="DBCA"></a>.</p>
 </div>
 
 <div class="pkgdown">
