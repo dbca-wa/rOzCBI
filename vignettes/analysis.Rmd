@@ -8,18 +8,18 @@ output:
     theme: yeti
     highlight: tango
 resource_files:
-- man/figures/odk/1578488994992.jpg
-- man/figures/odk/1578489033729.jpg
-- man/figures/odk/1578489072292.jpg
-- man/figures/odk/1578489127335.jpg
-- man/figures/odk/1578489161012.jpg
-- man/figures/odk/1578489206390.jpg
-- man/figures/odk/1578785576392.jpg
-- man/figures/odk/1578785648115.jpg
-- man/figures/odk/1578785727152.jpg
-- man/figures/odk/1578785808711.jpg
-- man/figures/odk/1578785863925.jpg
-- man/figures/odk/1578785920077.jpg
+- media/1578488994992.jpg
+- media/1578489033729.jpg
+- media/1578489072292.jpg
+- media/1578489127335.jpg
+- media/1578489161012.jpg
+- media/1578489206390.jpg
+- media/1578785576392.jpg
+- media/1578785648115.jpg
+- media/1578785727152.jpg
+- media/1578785808711.jpg
+- media/1578785863925.jpg
+- media/1578785920077.jpg
 vignette: >
   %\VignetteIndexEntry{data-analysis}
   %\VignetteEngine{knitr::rmarkdown}

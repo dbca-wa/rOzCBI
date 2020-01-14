@@ -4,6 +4,8 @@
   as "Burn Grading 0.2". Pending review and QA.
 * Add workhorse function `calculate_geocbi`. Example see vignette "analysis".
 * Move helper `map_burngrading` from vignette to own function.
+* Add Valerie Densmore as package author. Valerie has refined the GeoCBI for
+  Western Austrlian Flora.
 
 # rGeoCBI 0.0.1
 
