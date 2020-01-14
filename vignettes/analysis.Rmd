@@ -1,10 +1,12 @@
 ---
 title: "Data analysis"
-output: rmarkdown::html_vignette
-template:
-  bootswatch: yeti
-  params:
-    ganalytics: UA-155735563-1
+output: 
+  rmarkdown::html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    theme: yeti
+    highlight: tango
 resource_files:
   - media/1578488994992.jpg
   - media/1578489033729.jpg

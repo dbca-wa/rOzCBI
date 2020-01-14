@@ -1,10 +1,12 @@
 ---
 title: "Development"
-output: rmarkdown::html_vignette
-template:
-  params:
-    bootswatch: yeti
-    ganalytics: UA-155735563-1
+output: 
+  rmarkdown::html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    theme: yeti
+    highlight: tango
 vignette: >
   %\VignetteIndexEntry{development}
   %\VignetteEngine{knitr::rmarkdown}
@@ -47,20 +49,26 @@ if (fs::file_exists(here::here("README.html"))) fs::file_delete(here::here("READ
 
 ## Hex sticker 
 
-<img src="../man/figures/rGeoCBI.png" align="right" alt="How good was that burn?" width="120" />
+<img src="../man/figures/rGeoCBI.png" alt="How good was that burn?" width="500" />
+<br/>
 
 ```{r, eval=F}
 # remotes::install_github("GuangchuangYu/hexSticker")
 library(hexSticker)
 library(showtext)
+library(sysfonts)
+sysfonts::font_families()
 sysfonts::font_add_google("Fredoka One", "fire")
-# logo s_, text p_, bg h_
+sysfonts::font_add_google("Fredericka the Great", "fredericka")
+sysfonts::font_add_google("Big Shoulders Display", "shoulders")
+# logo s_, text p_, bg h_, url u_
 hexSticker::sticker(
   here::here("man", "figures", "fire.jpg"),
   asp = 1,
   s_x = 1.0, s_y = 1.05, s_width = 1.5, # s_height = 0.1,
-  package = "rGeoCBI", p_x = 1, p_y = 0.7, p_size = 30,
-  p_family = "fire", p_color = "#ffffff",
+  package = "rGeoCBI", p_x = 1, p_y = 0.7, p_size = 32,
+  p_family = "fredericka", p_color = "#ffffff",
+  url = "dbca-wa.github.io/rGeoCBI", u_size = 4, u_color = "#ffffff",
   h_fill = "#aaaaaa", h_color = "#000000",
   white_around_sticker = T,
   filename = here::here("man", "figures", "rGeoCBI.png")
