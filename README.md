@@ -30,8 +30,8 @@ rGeoCBI in a nutshell:
 
 ## What
 
-To evaluate the severity of burns, the differential NDVI of a burnt site
-(pre-and post-burn) can be derived from satellite imagery
+To evaluate the severity of burns, the differential normalised burn
+ratio (dNBR) of a burnt site can be derived from satellite imagery
 cost-effectively and on a large scale. To calibrate the dNDVI, ground
 truthing field work can derive an index called “GeoCBI” from the
 condition and composition of a burnt site.
@@ -41,32 +41,21 @@ visualisation for the calculation of GeoCBI, a composite burn index for
 the initial assessment of the short-term burn severity from remotely
 sensed data.
 
-The GeoCBI was first described in [Santis, Angela & Chuvieco, Emilio.
+The GeoCBI was first described in [De Santis, Angela & Chuvieco, Emilio.
 (2009)](https://doi.org/10.1016/j.rse.2008.10.011) ([Fulltext
-(pdf)](https://www.researchgate.net/publication/229043914_GeoCBI_A_modified_version_of_the_Composite_Burn_Index_for_the_initial_assessment_of_the_short-term_burn_severity_from_remotely_sensed_data)).
+(pdf)](https://www.researchgate.net/publication/229043914_GeoCBI_A_modified_version_of_the_Composite_Burn_Index_for_the_initial_assessment_of_the_short-term_burn_severity_from_remotely_sensed_data))
+GeoCBI: A modified version of the Composite Burn Index for the initial
+assessment of the short-term burn severity from remotely sensed data.
+Remote Sensing of Environment
+113  
+[DOI 10.1016/j.rse.2008.10.011](https://www.sciencedirect.com/science/article/abs/pii/S0034425708003246)
 
-Santis, Angela & Chuvieco, Emilio. (2009). GeoCBI: A modified version of
-the Composite Burn Index for the initial assessment of the short-term
-burn severity from remotely sensed data. Remote Sensing of Environment
-113. DOI 10.1016/j.rse.2008.10.011.
-
-Burn severity estimation is a key factor in the post-fire management.
-Previous studies using remotely sensed data to retrieve burn severity,
-as measured by the Composite Burn Index (CBI), have found
-inconsistencies, since spectral indices work well in some ecosystems but
-not in others. These inconsistencies may be caused by the lack of
-spectral uniqueness in the CBI definition, or by the performance of the
-spectral indices used. This paper analyses the former aspect, using a
-simulation analysis to study the relationships between the CBI and
-reflectance. Subsequently, a modified version of this index, called
-GeoCBI, is proposed to improve the retrieval of burn severity from
-remotely sensed data. GeoCBI takes into account the fraction of cover
-(FCOV) of the different vegetation strata used to compute the CBI.
-Moreover, it also includes the changes in the leaf area index (LAI) for
-the intermediate and tall tree strata (D+E). Field and simulation
-results show that GeoCBI is more consistently related to spectral
-reflectance than CBI for different ranges of burn severities, while
-keeping its ecological meaning.
+The GeoCBI we use here was further modified to suit Australian
+vegetation communities by Valerie Densmore at DBCA in Western Australia.
+This version of the GeoCBI is currently being tested and validated so
+the current version may not reflect the final form. Feedback on the use
+and validity of the Australian GeoCBI is welcome as [GitHub
+issues](https://github.com/dbca-wa/rGeoCBI/issues).
 
 ## How
 
@@ -114,16 +103,17 @@ citation("rGeoCBI")
 #> 
 #> To cite rGeoCBI in publications use:
 #> 
-#>   Florian W. Mayer (2020). rrGeoCBI: A burn severity assessment
-#>   toolkit. R package version 0.0.1. https://github.com/dbca-wa/rGeoCBI
+#>   Valerie Densmore, Florian W. Mayer (2020). rGeoCBI: A burn severity
+#>   assessment toolkit. R package version 0.0.2.
+#>   https://github.com/dbca-wa/rGeoCBI
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
 #>   @Misc{,
 #>     title = {rGeoCBI: A burn severity assessment toolkit},
-#>     author = {Florian W. Mayer},
-#>     note = {R package version 0.0.1},
-#>     year = {2019},
+#>     author = {Valerie Densmore and Florian W. Mayer},
+#>     note = {R package version 0.0.2},
+#>     year = {2020},
 #>     url = {https://github.com/dbca-wa/rGeoCBI},
 #>   }
 ```

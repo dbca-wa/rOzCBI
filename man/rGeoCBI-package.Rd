@@ -23,6 +23,11 @@ Useful links:
 \author{
 \strong{Maintainer}: Florian Mayer \email{Florian.Mayer@dbca.wa.gov.au} (\href{https://orcid.org/0000-0003-4269-4242}{ORCID})
 
+Authors:
+\itemize{
+  \item Valerie Densmore \email{Valerie.Densmore@dbca.wa.gov.au}
+}
+
 Other contributors:
 \itemize{
   \item DBCA [copyright holder, funder]

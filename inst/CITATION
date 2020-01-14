@@ -3,12 +3,12 @@ citHeader("To cite rGeoCBI in publications use:")
 citEntry(
   entry    = "Misc",
   title    = "rGeoCBI: A burn severity assessment toolkit",
-  author   = "Florian W. Mayer",
-  note = "R package version 0.0.1",
-  year     = 2019,
+  author   = "Valerie Densmore, Florian W. Mayer",
+  note = "R package version 0.0.2",
+  year     = 2020,
   url      = "https://github.com/dbca-wa/rGeoCBI",
   textVersion = paste(
-    "Florian W. Mayer (2020). rrGeoCBI: A burn severity assessment toolkit.",
-    "R package version 0.0.1. https://github.com/dbca-wa/rGeoCBI"
+    "Valerie Densmore, Florian W. Mayer (2020). rGeoCBI: A burn severity assessment toolkit.",
+    "R package version 0.0.2. https://github.com/dbca-wa/rGeoCBI"
   )
 )

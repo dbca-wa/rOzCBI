@@ -6,8 +6,12 @@ Authors@R:
            family = "Mayer",
            role = c("aut", "cre"),
            email = "Florian.Mayer@dbca.wa.gov.au",
-           comment = c(ORCID = "0000-0003-4269-4242")
-           ),
+           comment = c(ORCID = "0000-0003-4269-4242")),
+      person(given = "Valerie",
+           family = "Densmore",
+           role = c("aut"),
+           email = "Valerie.Densmore@dbca.wa.gov.au",
+           comment = c(ORCID = "")),
     person(given = "DBCA", role = c("cph", "fnd")))
 Description: rGeoCBI contains background, digital data capture, analysis, and
              visualisation for the calculation of GeoCBI, a composite burn index
