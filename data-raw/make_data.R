@@ -10,21 +10,24 @@ ruODK::ru_setup(
   pw = Sys.getenv("ODKC_PW")
 )
 
+loc <- fs::path("man/figures/odk")
+fs::dir_create(loc)
+
 burngrading01 <- ruODK::odata_submission_get(
   verbose = TRUE,
   tz = "Australia/Perth",
-  local_dir = fs::path("media"),
+  local_dir = loc,
   wkt = T
 )
 
-fs::dir_copy(fs::path("media"), here::here("vignettes/media"), overwrite = TRUE)
-fs::dir_delete(fs::path("media"))
+# fs::dir_copy(fs::path("media"), here::here("vignettes/media"), overwrite = TRUE)
+# fs::dir_delete(fs::path("media"))
 
 usethis::use_data(burngrading01, overwrite = T, compress = "xz")
 
 # Update vignette "analysis" header with:
-ymlthis::yml_resource_files(ymlthis::yml(), fs::dir_ls(here::here("vignettes/media")))
+ymlthis::yml_resource_files(ymlthis::yml(), fs::dir_ls(loc))
 
 
 # Resize images to minimise package size
-system("find vignettes/media -name *.jpg -exec mogrify -resize 200x150 {} \\;")
+system("find man/figures/odk -name *.jpg -exec mogrify -resize 200x150 {} \\;")
