@@ -10,7 +10,7 @@ ruODK::ru_setup(
   pw = Sys.getenv("ODKC_PW")
 )
 
-loc <- fs::path("articles/media")
+loc <- fs::path("media")
 fs::dir_create(loc)
 
 burngrading01 <- ruODK::odata_submission_get(
@@ -20,14 +20,17 @@ burngrading01 <- ruODK::odata_submission_get(
   wkt = T
 )
 
+# Resize images to minimise package size
+system("find media -name *.jpg -exec mogrify -resize 200x150 {} \\;")
+
+# Update vignette "analysis" header with:
+ymlthis::yml_resource_files(ymlthis::yml(), fs::dir_ls(loc))
+
+# Move files where header expects them
 fs::dir_copy(loc, here::here("vignettes/media"), overwrite = TRUE)
-fs::dir_delete(here::here("articles"))
+fs::dir_delete(loc)
 
 usethis::use_data(burngrading01, overwrite = T, compress = "xz")
 
-# Update vignette "analysis" header with:
-ymlthis::yml_resource_files(ymlthis::yml(), fs::dir_ls(here::here("vignettes/media")))
 
 
-# Resize images to minimise package size
-system("find articles/media -name *.jpg -exec mogrify -resize 200x150 {} \\;")
