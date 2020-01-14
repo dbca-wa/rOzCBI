@@ -44,27 +44,27 @@ Device {device_id}</br>
 <!-- Wrapper for slides -->
 <div class="carousel-inner" style="height:200px;" role="listbox">
 <div class="item active">
-<img src="{plot_photo}" height="200px;" alt="Plot overview">
+<img src="{plot_photo}" alt="Plot overview">
 <div class="carousel-caption">Plot overview</div>
 </div>
 <div class="item">
-<img src="{s1_photo}" height="200px;" alt="Stratum 1">
+<img src="{s1_photo}" alt="Stratum 1">
 <div class="carousel-caption">Stratum 1</div>
 </div>
 <div class="item">
-<img src="{s2_photo}" height="200px;" alt="Stratum 2: {s2_dominant_vegetation}">
+<img src="{s2_photo}" alt="Stratum 2: {s2_dominant_vegetation}">
 <div class="carousel-caption">Stratum 2: {s2_dominant_vegetation}</div>
 </div>
 <div class="item">
-<img src="{s3_photo}" height="200px;" alt="Stratum 3: {s3_dominant_vegetation}">
+<img src="{s3_photo}" alt="Stratum 3: {s3_dominant_vegetation}">
 <div class="carousel-caption">Stratum 3: {s3_dominant_vegetation}</div>
 </div>
 <div class="item">
-<img src="{s4_photo}" height="200px;" alt="Stratum 4: {s4_dominant_vegetation}">
+<img src="{s4_photo}" alt="Stratum 4: {s4_dominant_vegetation}">
 <div class="carousel-caption">Stratum 4: {s4_dominant_vegetation}</div>
 </div>
 <div class="item">
-<img src="{s5_photo}" height="200px;" alt="Stratum 5: {s5_dominant_vegetation}">
+<img src="{s5_photo}" alt="Stratum 5: {s5_dominant_vegetation}">
 <div class="carousel-caption">Stratum 5: {s5_dominant_vegetation}</div>
 </div>
 </div>
