@@ -24,12 +24,13 @@ map_burngrading <- function(data) {
     # leaflet::setView(130,-33, 4) %>%
     leaflet::addAwesomeMarkers(
       data = data,
-      lng = ~location_longitude, lat = ~location_latitude,
+      lng = ~location_longitude,
+      lat = ~location_latitude,
       icon = leaflet::makeAwesomeIcon(
         text = ~round(as.numeric(geocbi), 2),
         markerColor = ~ geocbi_colours(geocbi)
       ),
-      label = ~ glue::glue("[{geocbi}] {plot_name} {observation_start_time}"),
+      label = ~ glue::glue("[{round(as.numeric(geocbi), 2)}] {plot_name} {observation_start_time}"),
       popup = ~ glue::glue('
 <h3>{plot_name}</h3><h4>GeoCBI {round(as.numeric(geocbi), 4)}</h4>
 Survey start {observation_start_time}</br>
