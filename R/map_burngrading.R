@@ -13,14 +13,8 @@
 #' }
 map_burngrading <- function(data) {
 
-  getColour <- function(geocbi) {
-      if(geocbi <= 1) {
-        "green"
-      } else if(geocbi <= 2) {
-        "orange"
-      } else {
-        "red"
-      }
+  geocbi_colours <- function(geocbi) {
+      if (geocbi <= 1) {"green"} else if (geocbi <= 2) {"orange"} else {"red"}
   }
 
   leaflet::leaflet(width = 800, height = 600) %>%
@@ -33,7 +27,7 @@ map_burngrading <- function(data) {
       lng = ~location_longitude, lat = ~location_latitude,
       icon = leaflet::makeAwesomeIcon(
         text = ~round(as.numeric(geocbi), 2),
-        markerColor = ~ getColour(geocbi)
+        markerColor = ~ geocbi_colours(geocbi)
       ),
       label = ~ glue::glue("[{geocbi}] {plot_name} {observation_start_time}"),
       popup = ~ glue::glue('

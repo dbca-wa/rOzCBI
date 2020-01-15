@@ -25,7 +25,7 @@ Useful links:
 
 Authors:
 \itemize{
-  \item Valerie Densmore \email{Valerie.Densmore@dbca.wa.gov.au}
+  \item Valerie Densmore \email{Valerie.Densmore@dbca.wa.gov.au} (\href{https://orcid.org/0000-0003-0121-8709}{ORCID})
 }
 
 Other contributors:
