@@ -34,7 +34,7 @@ rGeoCBI in a nutshell:
 
 To evaluate the severity of burns, the differential normalised burn
 ratio (dNBR) of a burnt site can be derived from satellite imagery
-cost-effectively and on a large scale. To calibrate the dNDVI, ground
+cost-effectively and on a large scale. To calibrate the dNBR, ground
 truthing field work can derive an index called “GeoCBI” from the
 condition and composition of a burnt site.
 

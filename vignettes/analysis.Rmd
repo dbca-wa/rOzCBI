@@ -156,9 +156,9 @@ bg_geocbi %>% reactable_burngrading()
 ```
 
 ## Calibrate dNBR
+**Note** This section is pending review and refinement.
 
-Access Landsat in R:
-* Get Landsat imagery pre and post burn: [ropenSci/getlandsat](https://docs.ropensci.org/getlandsat/)
+* Get Landsat/Sentinel imagery pre and post burn: [ropenSci/getlandsat](https://docs.ropensci.org/getlandsat/)
 * Calculate NBR for each pre and post burn scene as $(NIR - SWIR) / (NIR + SWIR)$
   [Tutorial at earthdatascience.org](https://www.earthdatascience.org/courses/earth-analytics/multispectral-remote-sensing-data/landsat-data-in-r-geotiff/)
 * Calculate $dNBR = NBR_{post} / NBR_{pre}$
