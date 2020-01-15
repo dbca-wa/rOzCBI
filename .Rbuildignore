@@ -11,3 +11,5 @@
 ^appveyor\.yml$
 ^.github$
 ^data-raw$
+^\.circleci$
+^\.circleci/config\.yml$
