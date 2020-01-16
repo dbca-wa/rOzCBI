@@ -31,6 +31,3 @@ fs::dir_copy(loc, here::here("vignettes/media"), overwrite = TRUE)
 fs::dir_delete(loc)
 
 usethis::use_data(burngrading01, overwrite = T, compress = "xz")
-
-
-

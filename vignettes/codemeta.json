@@ -8,7 +8,7 @@
   "relatedLink": "https://dbca-wa.github.io/rGeoCBI",
   "issueTracker": "https://github.com/dbca-wa/rGeoCBI/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -23,6 +23,13 @@
       "familyName": "Mayer",
       "email": "Florian.Mayer@dbca.wa.gov.au",
       "@id": "https://orcid.org/0000-0003-4269-4242"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Valerie",
+      "familyName": "Densmore",
+      "email": "Valerie.Densmore@dbca.wa.gov.au",
+      "@id": "https://orcid.org/0000-0003-0121-8709"
     }
   ],
   "contributor": {},
@@ -428,11 +435,21 @@
       "sameAs": "https://CRAN.R-project.org/package=stringr"
     }
   ],
+  "releaseNotes": "https://github.com/dbca-wa/rGeoCBI/blob/master/NEWS.md",
+  "readme": "https://github.com/dbca-wa/rGeoCBI/blob/master/README.md",
+  "fileSize": "1326.313KB",
+  "contIntegration": ["https://travis-ci.org/dbca-wa/rGeoCBI", "https://circleci.com/gh/dbca-wa/rGeoCBI", "https://ci.appveyor.com/project/florianm/rGeoCBI", "https://codecov.io/gh/dbca-wa/rGeoCBI?branch=master"],
+  "developmentStatus": "https://www.repostatus.org/#active",
   "citation": [
     {
       "@type": "CreativeWork",
-      "datePublished": "2019",
+      "datePublished": "2020",
       "author": [
+        {
+          "@type": "Person",
+          "givenName": "Valerie",
+          "familyName": "Densmore"
+        },
         {
           "@type": "Person",
           "givenName": ["Florian", "W."],
@@ -441,7 +458,7 @@
       ],
       "name": "rGeoCBI: A burn severity assessment toolkit",
       "url": "https://github.com/dbca-wa/rGeoCBI",
-      "description": "R package version 0.0.1"
+      "description": "R package version 0.0.3"
     }
   ]
 }

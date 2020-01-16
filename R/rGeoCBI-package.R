@@ -31,6 +31,7 @@ utils::globalVariables(
     "s5_fcov",
     "s5_fcov_original_crown_intact",
     "s5_no_trees_over_20cm_fallen",
-    "s5_resprouting_on_live_trees"
+    "s5_resprouting_on_live_trees",
+    "geocbi"
   )
 )

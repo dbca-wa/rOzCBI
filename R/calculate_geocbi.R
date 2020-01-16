@@ -237,7 +237,14 @@ calculate_geocbi <- function(s1_fcov_post_fire_leaf_fall = NA_real_,
   }
 
   # GeoCBI
-  score_sum <- sum(s1_score, s2_score, s3_score, s4_score, s5_score, na.rm = T)
+  score_sum <- sum(
+    s1_score,
+    s2_score,
+    s3_score,
+    s4_score,
+    s5_score,
+    na.rm = TRUE
+  )
   fcov_sum <- sum(s1_fcov, s2_fcov, s3_fcov, s4_fcov, s5_fcov)
   geocbi <- score_sum / fcov_sum
   if (verbose == TRUE) {
