@@ -1,9 +1,6 @@
 version: 2
 jobs:
   build:
-    branches:
-        only:
-          - master
     docker:
       - image: rocker/verse:latest
     environment:
@@ -38,3 +35,12 @@ jobs:
           key: r-pkg-cache-{{ arch }}-{{ .Branch }}
           paths:
             - "~/R/Library"
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only:
+                - master
