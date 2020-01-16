@@ -157,10 +157,14 @@ bg_geocbi %>% reactable_burngrading()
 
 ## Calibrate dNBR
 **Note** This section is pending review and refinement.
+Currently, this is a manual process happening outside of R. We could imagine
+to integrate that process into this package as follows.
 
-* Get Landsat/Sentinel imagery pre and post burn: [ropenSci/getlandsat](https://docs.ropensci.org/getlandsat/)
-* Calculate NBR for each pre and post burn scene as $(NIR - SWIR) / (NIR + SWIR)$
-  [Tutorial at earthdatascience.org](https://www.earthdatascience.org/courses/earth-analytics/multispectral-remote-sensing-data/landsat-data-in-r-geotiff/)
+* Get Landsat/Sentinel imagery pre and post burn: 
+  [ropenSci/getlandsat](https://docs.ropensci.org/getlandsat/)
+* Calculate NBR for each pre and post burn scene as 
+  $(NIR - SWIR) / (NIR + SWIR)$ see e.g. 
+  [tutorial at earthdatascience.org](https://www.earthdatascience.org/courses/earth-analytics/multispectral-remote-sensing-data/landsat-data-in-r-geotiff/)
 * Calculate $dNBR = NBR_{post} / NBR_{pre}$
 * Annotate each burn grading ground truthing location with the dNBR at that site
 * Model $GeoCBI = lm(dNBR)$

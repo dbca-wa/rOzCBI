@@ -34,7 +34,10 @@ rGeoCBI in a nutshell:
 
 To evaluate the severity of burns, the differential normalised burn
 ratio (dNBR) of a burnt site can be derived from satellite imagery
-cost-effectively and on a large scale. To calibrate the dNBR, ground
+cost-effectively and on a large scale. The NBR is calculated from NIR
+and SWIR bands as \(NBR = (NIR - SWIR) / (NIR + SWIR)\). The dNBR is
+calculated from pre- and post-burn NBR as
+\(dNBR = NBR_{post} / NBR_{pre}\). To calibrate the dNBR, ground
 truthing field work can derive an index called “GeoCBI” from the
 condition and composition of a burnt site.
 
@@ -105,8 +108,7 @@ citation("rGeoCBI")
 #> 
 #> To cite rGeoCBI in publications use:
 #> 
-#>   Valerie Densmore, Florian W. Mayer (2020). rGeoCBI: A burn severity
-#>   assessment toolkit. R package version 0.0.2.
+#>   Valerie Densmore, Florian W. Mayer (2020). rGeoCBI: A burn severity assessment toolkit. R package version 0.0.3.
 #>   https://github.com/dbca-wa/rGeoCBI
 #> 
 #> A BibTeX entry for LaTeX users is
@@ -114,7 +116,7 @@ citation("rGeoCBI")
 #>   @Misc{,
 #>     title = {rGeoCBI: A burn severity assessment toolkit},
 #>     author = {Valerie Densmore and Florian W. Mayer},
-#>     note = {R package version 0.0.2},
+#>     note = {R package version 0.0.3},
 #>     year = {2020},
 #>     url = {https://github.com/dbca-wa/rGeoCBI},
 #>   }
