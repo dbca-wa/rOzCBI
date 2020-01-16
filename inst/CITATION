@@ -2,7 +2,7 @@ citHeader("To cite rGeoCBI in publications use:")
 
 citEntry(
   entry    = "Misc",
-  title    = "rGeoCBI: A burn severity assessment toolkit",
+  title    = "rGeoCBI: A Burn Severity Assessment Toolkit",
   author   = "Valerie Densmore, Florian W. Mayer",
   note = "R package version 0.0.3",
   year     = 2020,

@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# `rGeoCBI`: A burn severity assessment toolkit <img src="man/figures/rGeoCBI.png" align="right" alt="How good was that burn?" width="120" />
+# `rGeoCBI`: A Burn Severity Assessment Toolkit <img src="man/figures/rGeoCBI.png" align="right" alt="How good was that burn?" width="120" />
 
 <!-- badges: start -->
 
@@ -13,9 +13,9 @@ status](https://circleci.com/gh/dbca-wa/rGeoCBI.svg?style=svg)](https://circleci
 status](https://ci.appveyor.com/api/projects/status/github/dbca-wa/rGeoCBI?branch=master&svg=true)](https://ci.appveyor.com/project/florianm/rGeoCBI)
 [![Codecov test
 coverage](https://codecov.io/gh/dbca-wa/rGeoCBI/branch/master/graph/badge.svg)](https://codecov.io/gh/dbca-wa/rGeoCBI?branch=master)
-[![Project Status: Active – The project has reached a stable, usable
-state and is being actively
-developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+[![Project Status: WIP – Initial development is in progress, but there
+has not yet been a stable, usable release suitable for the
+public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 [![Last-changedate](https://img.shields.io/github/last-commit/dbca-wa/rGeoCBI.svg)](https://github.com/dbca-wa/rGeoCBI/commits/master)
 [![GitHub
 issues](https://img.shields.io/github/issues/dbca-wa/rGeoCBI.svg?style=popout)](https://github.com/dbca-wa/rGeoCBI/issues/)
@@ -46,7 +46,7 @@ visualisation for the calculation of GeoCBI, a composite burn index for
 the initial assessment of the short-term burn severity from remotely
 sensed data.
 
-The GeoCBI was first described in [De Santis, Angela & Chuvieco, Emilio.
+GeoCBI was first described in [De Santis, Angela & Chuvieco, Emilio.
 (2009)](https://doi.org/10.1016/j.rse.2008.10.011) ([Fulltext
 (pdf)](https://www.researchgate.net/publication/229043914_GeoCBI_A_modified_version_of_the_Composite_Burn_Index_for_the_initial_assessment_of_the_short-term_burn_severity_from_remotely_sensed_data))
 GeoCBI: A modified version of the Composite Burn Index for the initial
@@ -64,6 +64,11 @@ issues](https://github.com/dbca-wa/rGeoCBI/issues).
 
 ## How
 
+`rGeoCBI` supplies an Xform to capture data digitally using OpenDataKit,
+then goes on to access the data directly from R using the package
+`ruODK`, and provides helper methods to calculate the GeoCBI from the
+captured data.
+
 You can install the development version from
 [GitHub](https://github.com/) with:
 
@@ -72,12 +77,7 @@ You can install the development version from
 remotes::install_github("dbca-wa/rGeoCBI")
 ```
 
-`rGeoCBI` supplies an Xform to capture data digitally using OpenDataKit,
-then goes on to access the data directly from R using the package
-`ruODK`, and provides helper methods to calculate the GeoCBI from the
-captured data.
-
-The overall data flow is described at
+The overall data flow from digital form to data analysis is described at
 [ruODK](https://dbca-wa.github.io/ruODK/index.html).
 
 ![An ODK setup with ODK Build, Central, Collect, and
@@ -94,11 +94,14 @@ using the GeoCBI assessment method.
 
 ## Who
 
-`rGeoCBI` was developed, and is maintained, by Florian Mayer for the
-Western Australian [Department of Biodiversity, Conservation and
-Attractions (DBCA)](https://www.dbca.wa.gov.au/).
+The methodology was compiled and adapted to Western Australian
+vegetation by Valerie Densmore (DBCA).
 
-The background image in package logo shows the aerial view of a
+The R package `rGeoCBI` was developed, and is maintained, by Florian
+Mayer (DBCA) for the Western Australian [Department of Biodiversity,
+Conservation and Attractions (DBCA)](https://www.dbca.wa.gov.au/).
+
+The background image in the package logo shows the aerial view of a
 prescribed burn in the Pilbara. Photo: Paul Rampant (DBCA).
 
 To cite package `rGeoCBI` in publications use:
@@ -108,7 +111,8 @@ citation("rGeoCBI")
 #> 
 #> To cite rGeoCBI in publications use:
 #> 
-#>   Valerie Densmore, Florian W. Mayer (2020). rGeoCBI: A burn severity assessment toolkit. R package version 0.0.3.
+#>   Valerie Densmore, Florian W. Mayer (2020). rGeoCBI: A burn severity
+#>   assessment toolkit. R package version 0.0.3.
 #>   https://github.com/dbca-wa/rGeoCBI
 #> 
 #> A BibTeX entry for LaTeX users is
@@ -127,5 +131,5 @@ citation("rGeoCBI")
 Feedback and bug reports are welcome as
 [issues](https://github.com/dbca-wa/rGeoCBI/issues).
 
-The development workflow is described in vignette
+The package development workflow is described in vignette
 [Development](https://dbca-wa.github.io/rGeoCBI/articles/dev.html).
