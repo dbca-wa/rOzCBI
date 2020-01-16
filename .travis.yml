@@ -5,7 +5,7 @@ os: linux
 cache: packages
 r:
   - release
-  # - devel # fails on map_burngrading - geocbi_colours - length > 1
+  - devel
 
 before_cache: Rscript -e 'remotes::install_cran("pkgdown")'
 deploy:
