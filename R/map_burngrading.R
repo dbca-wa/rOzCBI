@@ -12,10 +12,15 @@
 #'   map_burngrading()
 #' }
 map_burngrading <- function(data) {
-
-  geocbi_colours <- function(geocbi) {
-      if (geocbi <= 1) {"green"} else if (geocbi <= 2) {"orange"} else {"red"}
-  }
+  data_map <- data %>%
+    dplyr::mutate(
+      geocbi_rnd = round(as.numeric(geocbi), 2),
+      marker_colour = dplyr::case_when(
+        geocbi <= 1 ~ "green",
+        geocbi <= 2 ~ "orange",
+        geocbi > 2 ~ "red"
+      )
+    )
 
   leaflet::leaflet(width = 800, height = 600) %>%
     leaflet::addProviderTiles("Esri.WorldImagery", group = "Aerial") %>%
@@ -23,16 +28,18 @@ map_burngrading <- function(data) {
     leaflet::clearBounds() %>%
     # leaflet::setView(130,-33, 4) %>%
     leaflet::addAwesomeMarkers(
-      data = data,
+      data = data_map,
       lng = ~location_longitude,
       lat = ~location_latitude,
       icon = leaflet::makeAwesomeIcon(
-        text = ~round(as.numeric(geocbi), 2),
-        markerColor = ~ geocbi_colours(geocbi)
+        text = ~geocbi_rnd,
+        markerColor = ~marker_colour
       ),
-      label = ~ glue::glue("[{round(as.numeric(geocbi), 2)}] {plot_name} {observation_start_time}"),
+      label = ~ glue::glue(
+        '[{geocbi_rnd}] {plot_name} {observation_start_time}'
+      ),
       popup = ~ glue::glue('
-<h3>{plot_name}</h3><h4>GeoCBI {round(as.numeric(geocbi), 4)}</h4>
+<h3>{plot_name}</h3><h4>GeoCBI {geocbi_rnd}</h4>
 Survey start {observation_start_time}</br>
 Reporter {reporter}</br>
 Device {device_id}</br>
