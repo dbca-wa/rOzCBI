@@ -119,12 +119,14 @@ data("burngrading01")
 
 ## Calculate GeoCBI
 
-Parse raw data into numeric scale values, apply GeoCBI formula.
+Task: Parse raw data into numeric scale values, apply GeoCBI formula.
 
 Values are coded as `<grade>_<url-safe-label>`, where grade are numbers 0.0, 0.5,
-1.0, 1.5 through to 3.0, and the labels are intelligible but url-safe variable
-names. Fraction of coverages (fcov) also are prefixed with their grade, which
+1.0, 1.5 through to 3.0, and the labels are intelligible but url-safe factor levels. 
+Fraction of coverages (fcov) also are prefixed with their grade, which
 ranges from 0.0 to 1.0 in increments of 0.25.
+Each grade is three digits (two decimals) followed by an underscore.
+`extract_grading()` extracts the grade from values.
 
 The function `add_geocbi()` is highly specific to the underlying form "Burn Grading 0.1".
 It translates the form fields to the generic form `calculate_geocbi()`, which

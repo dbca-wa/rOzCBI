@@ -14,7 +14,7 @@
 map_burngrading <- function(data) {
   data_map <- data %>%
     dplyr::mutate(
-      geocbi_rnd = round(as.numeric(geocbi), 2),
+      geocbi_rnd = round(geocbi, 2),
       marker_colour = dplyr::case_when(
         geocbi <= 1 ~ "green",
         geocbi <= 2 ~ "orange",

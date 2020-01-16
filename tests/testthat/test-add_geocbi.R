@@ -15,10 +15,13 @@ test_that("add_geocbi adds a column geocbi", {
   testthat::expect_true("geocbi" %in% names(data_with_geocbi))
 
   # add_geocbi adds more variables
-  testthat::expect_equal(
-    ncol(data_with_geocbi),
-    ncol(data_witout_geocbi) + 1
-  )
+  testthat::expect_equal(ncol(data_with_geocbi),ncol(data_witout_geocbi) + 1)
+
+  # geocbi column is numeric
+  testthat::expect_equal(class(data_with_geocbi$geocbi), "numeric")
+
 })
+
+
 
 # usethis::use_r("add_geocbi")

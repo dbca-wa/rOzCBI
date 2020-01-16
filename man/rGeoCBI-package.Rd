@@ -4,7 +4,7 @@
 \name{rGeoCBI-package}
 \alias{rGeoCBI}
 \alias{rGeoCBI-package}
-\title{rGeoCBI: A burn severity assessment toolkit}
+\title{rGeoCBI: A Burn Severity Assessment Toolkit}
 \description{
 rGeoCBI contains background, digital data capture, analysis, and
              visualisation for the calculation of GeoCBI, a composite burn index
