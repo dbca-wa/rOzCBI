@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Development • rGeoCBI</title>
+<title>Development • rOzCBI</title>
 <!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/yeti/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous">
@@ -36,7 +36,7 @@
         <span class="icon-bar"></span>
       </button>
       <span class="navbar-brand">
-        <a class="navbar-link" href="../index.html">rGeoCBI</a>
+        <a class="navbar-link" href="../index.html">rOzCBI</a>
         <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.3</span>
       </span>
     </div>
@@ -82,7 +82,7 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/dbca-wa/rGeoCBI">
+  <a href="https://github.com/dbca-wa/rOzCBI">
     <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
@@ -103,20 +103,20 @@
       <h1>Development</h1>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/dbca-wa/rGeoCBI/blob/master/vignettes/dev.Rmd"><code>vignettes/dev.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/dbca-wa/rOzCBI/blob/master/vignettes/dev.Rmd"><code>vignettes/dev.Rmd</code></a></small>
       <div class="hidden name"><code>dev.Rmd</code></div>
 
     </div>
 
     
     
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(rGeoCBI)</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(rOzCBI)</a></code></pre></div>
 <p>This vignette contains handy commands for the package development workflow.</p>
 <div id="develop" class="section level2">
 <h2 class="hasAnchor">
 <a href="#develop" class="anchor"></a>Develop</h2>
 <ul>
-<li>Create <a href="https://github.com/dbca-wa/rGeoCBI/issues">issue</a>
+<li>Create <a href="https://github.com/dbca-wa/rOzCBI/issues">issue</a>
 </li>
 <li>Add new code, docs, tests. Update or expand vignettes and README where applicable.</li>
 <li>Once tests pass, commit referencing the issue.</li>
@@ -132,15 +132,16 @@
 <a class="sourceLine" id="cb2-3" data-line-number="3">spelling<span class="op">::</span><span class="kw">spell_check_package</span>(here<span class="op">::</span><span class="kw">here</span>())</a>
 <a class="sourceLine" id="cb2-4" data-line-number="4">spelling<span class="op">::</span><span class="kw">spell_check_files</span>(here<span class="op">::</span><span class="kw">here</span>(<span class="st">"README.Rmd"</span>), <span class="dt">lang =</span> <span class="st">"en_AU"</span>)</a>
 <a class="sourceLine" id="cb2-5" data-line-number="5">spelling<span class="op">::</span><span class="kw">update_wordlist</span>(here<span class="op">::</span><span class="kw">here</span>())</a>
-<a class="sourceLine" id="cb2-6" data-line-number="6">codemetar<span class="op">::</span><span class="kw">write_codemeta</span>(<span class="st">"rGeoCBI"</span>)</a>
+<a class="sourceLine" id="cb2-6" data-line-number="6">codemetar<span class="op">::</span><span class="kw">write_codemeta</span>(<span class="st">"rOzCBI"</span>)</a>
 <a class="sourceLine" id="cb2-7" data-line-number="7">rmarkdown<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/rmarkdown/man/render.html">render</a></span>(here<span class="op">::</span><span class="kw">here</span>(<span class="st">"README.Rmd"</span>), <span class="dt">encoding =</span> <span class="st">"UTF-8"</span>, <span class="dt">clean =</span> <span class="ot">TRUE</span>)</a>
 <a class="sourceLine" id="cb2-8" data-line-number="8"><span class="cf">if</span> (fs<span class="op">::</span><span class="kw"><a href="http://fs.r-lib.org/reference/file_access.html">file_exists</a></span>(here<span class="op">::</span><span class="kw">here</span>(<span class="st">"README.html"</span>))) fs<span class="op">::</span><span class="kw"><a href="http://fs.r-lib.org/reference/delete.html">file_delete</a></span>(here<span class="op">::</span><span class="kw">here</span>(<span class="st">"README.html"</span>))</a>
-<a class="sourceLine" id="cb2-9" data-line-number="9">goodpractice<span class="op">::</span><span class="kw">goodpractice</span>(<span class="dt">path =</span> here<span class="op">::</span><span class="kw">here</span>(), <span class="dt">quiet =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
+<a class="sourceLine" id="cb2-9" data-line-number="9">codemetar<span class="op">::</span><span class="kw">give_opinions</span>(<span class="st">'/home/florian/projects/rGeoCBI/.'</span>)</a>
+<a class="sourceLine" id="cb2-10" data-line-number="10">goodpractice<span class="op">::</span><span class="kw">goodpractice</span>(<span class="dt">path =</span> here<span class="op">::</span><span class="kw">here</span>(), <span class="dt">quiet =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
 </div>
 <div id="hex-sticker" class="section level2">
 <h2 class="hasAnchor">
 <a href="#hex-sticker" class="anchor"></a>Hex sticker</h2>
-<p><img src="../man/figures/rGeoCBI.png" alt="How good was that burn?" width="500"><br></p>
+<p><img src="../man/figures/rOzCBI.png" alt="How good was that burn?" width="500"><br></p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="co"># remotes::install_github("GuangchuangYu/hexSticker")</span></a>
 <a class="sourceLine" id="cb3-2" data-line-number="2"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(hexSticker)</a>
 <a class="sourceLine" id="cb3-3" data-line-number="3"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(showtext)</a>
@@ -148,18 +149,18 @@
 <a class="sourceLine" id="cb3-5" data-line-number="5">sysfonts<span class="op">::</span><span class="kw">font_families</span>()</a>
 <a class="sourceLine" id="cb3-6" data-line-number="6">sysfonts<span class="op">::</span><span class="kw">font_add_google</span>(<span class="st">"Fredoka One"</span>, <span class="st">"fire"</span>)</a>
 <a class="sourceLine" id="cb3-7" data-line-number="7">sysfonts<span class="op">::</span><span class="kw">font_add_google</span>(<span class="st">"Fredericka the Great"</span>, <span class="st">"fredericka"</span>)</a>
-<a class="sourceLine" id="cb3-8" data-line-number="8">sysfonts<span class="op">::</span><span class="kw">font_add_google</span>(<span class="st">"Big Shoulders Display"</span>, <span class="st">"shoulders"</span>)</a>
+<a class="sourceLine" id="cb3-8" data-line-number="8"><span class="co"># sysfonts::font_add_google("Big Shoulders Display", "shoulders")</span></a>
 <a class="sourceLine" id="cb3-9" data-line-number="9"><span class="co"># logo s_, text p_, bg h_, url u_</span></a>
 <a class="sourceLine" id="cb3-10" data-line-number="10">hexSticker<span class="op">::</span><span class="kw">sticker</span>(</a>
 <a class="sourceLine" id="cb3-11" data-line-number="11">  here<span class="op">::</span><span class="kw">here</span>(<span class="st">"man"</span>, <span class="st">"figures"</span>, <span class="st">"fire.jpg"</span>),</a>
 <a class="sourceLine" id="cb3-12" data-line-number="12">  <span class="dt">asp =</span> <span class="dv">1</span>,</a>
 <a class="sourceLine" id="cb3-13" data-line-number="13">  <span class="dt">s_x =</span> <span class="fl">1.0</span>, <span class="dt">s_y =</span> <span class="fl">1.05</span>, <span class="dt">s_width =</span> <span class="fl">1.5</span>, <span class="co"># s_height = 0.1,</span></a>
-<a class="sourceLine" id="cb3-14" data-line-number="14">  <span class="dt">package =</span> <span class="st">"rGeoCBI"</span>, <span class="dt">p_x =</span> <span class="dv">1</span>, <span class="dt">p_y =</span> <span class="fl">0.7</span>, <span class="dt">p_size =</span> <span class="dv">32</span>,</a>
+<a class="sourceLine" id="cb3-14" data-line-number="14">  <span class="dt">package =</span> <span class="st">"rOzCBI"</span>, <span class="dt">p_x =</span> <span class="dv">1</span>, <span class="dt">p_y =</span> <span class="fl">0.7</span>, <span class="dt">p_size =</span> <span class="dv">32</span>,</a>
 <a class="sourceLine" id="cb3-15" data-line-number="15">  <span class="dt">p_family =</span> <span class="st">"fredericka"</span>, <span class="dt">p_color =</span> <span class="st">"#ffffff"</span>,</a>
-<a class="sourceLine" id="cb3-16" data-line-number="16">  <span class="dt">url =</span> <span class="st">"dbca-wa.github.io/rGeoCBI"</span>, <span class="dt">u_size =</span> <span class="dv">4</span>, <span class="dt">u_color =</span> <span class="st">"#ffffff"</span>,</a>
+<a class="sourceLine" id="cb3-16" data-line-number="16">  <span class="dt">url =</span> <span class="st">"dbca-wa.github.io/rOzCBI"</span>, <span class="dt">u_size =</span> <span class="dv">4</span>, <span class="dt">u_color =</span> <span class="st">"#ffffff"</span>,</a>
 <a class="sourceLine" id="cb3-17" data-line-number="17">  <span class="dt">h_fill =</span> <span class="st">"#aaaaaa"</span>, <span class="dt">h_color =</span> <span class="st">"#000000"</span>,</a>
 <a class="sourceLine" id="cb3-18" data-line-number="18">  <span class="dt">white_around_sticker =</span> T,</a>
-<a class="sourceLine" id="cb3-19" data-line-number="19">  <span class="dt">filename =</span> here<span class="op">::</span><span class="kw">here</span>(<span class="st">"man"</span>, <span class="st">"figures"</span>, <span class="st">"rGeoCBI.png"</span>)</a>
+<a class="sourceLine" id="cb3-19" data-line-number="19">  <span class="dt">filename =</span> here<span class="op">::</span><span class="kw">here</span>(<span class="st">"man"</span>, <span class="st">"figures"</span>, <span class="st">"rOzCBI.png"</span>)</a>
 <a class="sourceLine" id="cb3-20" data-line-number="20">)</a></code></pre></div>
 </div>
   </div>

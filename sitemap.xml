@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://dbca-wa.github.io/rGeoCBI/index.html</loc>
+    <loc>https://dbca-wa.github.io/rOzCBI/index.html</loc>
   </url>
   <url>
-    <loc>https://dbca-wa.github.io/rGeoCBI/reference/add_geocbi.html</loc>
+    <loc>https://dbca-wa.github.io/rOzCBI/reference/add_geocbi.html</loc>
   </url>
   <url>
-    <loc>https://dbca-wa.github.io/rGeoCBI/reference/burngrading01.html</loc>
+    <loc>https://dbca-wa.github.io/rOzCBI/reference/burngrading01.html</loc>
   </url>
   <url>
-    <loc>https://dbca-wa.github.io/rGeoCBI/reference/calculate_geocbi.html</loc>
+    <loc>https://dbca-wa.github.io/rOzCBI/reference/calculate_geocbi.html</loc>
   </url>
   <url>
-    <loc>https://dbca-wa.github.io/rGeoCBI/reference/extract_grading.html</loc>
+    <loc>https://dbca-wa.github.io/rOzCBI/reference/extract_grading.html</loc>
   </url>
   <url>
-    <loc>https://dbca-wa.github.io/rGeoCBI/reference/map_burngrading.html</loc>
+    <loc>https://dbca-wa.github.io/rOzCBI/reference/map_burngrading.html</loc>
   </url>
   <url>
-    <loc>https://dbca-wa.github.io/rGeoCBI/reference/pipe.html</loc>
+    <loc>https://dbca-wa.github.io/rOzCBI/reference/pipe.html</loc>
   </url>
   <url>
-    <loc>https://dbca-wa.github.io/rGeoCBI/reference/rGeoCBI-package.html</loc>
+    <loc>https://dbca-wa.github.io/rOzCBI/reference/rOzCBI-package.html</loc>
   </url>
   <url>
-    <loc>https://dbca-wa.github.io/rGeoCBI/reference/reactable_burngrading.html</loc>
+    <loc>https://dbca-wa.github.io/rOzCBI/reference/reactable_burngrading.html</loc>
   </url>
   <url>
-    <loc>https://dbca-wa.github.io/rGeoCBI/articles/analysis.html</loc>
+    <loc>https://dbca-wa.github.io/rOzCBI/articles/analysis.html</loc>
   </url>
   <url>
-    <loc>https://dbca-wa.github.io/rGeoCBI/articles/dev.html</loc>
+    <loc>https://dbca-wa.github.io/rOzCBI/articles/dev.html</loc>
   </url>
   <url>
-    <loc>https://dbca-wa.github.io/rGeoCBI/articles/forms.html</loc>
+    <loc>https://dbca-wa.github.io/rOzCBI/articles/forms.html</loc>
   </url>
 </urlset>
