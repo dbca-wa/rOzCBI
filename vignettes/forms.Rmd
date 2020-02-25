@@ -21,7 +21,7 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup, include=F}
-library(rGeoCBI)
+library(rOzCBI)
 ```
 
 This vignette provides background and transparency for the digital data capture
@@ -32,11 +32,11 @@ of burn grading surveys.
 * Design form in [ODK Build](https://build.opendatakit.org/)
 * The GeoCBI burn grading form is included in three versions in this package:
   * ODK Build save file (resume form design from this file):
-    `system.file("odk/BurnGrading01.odkbuild", package = "rGeoCBI")`
+    `system.file("odk/BurnGrading01.odkbuild", package = "rOzCBI")`
   * XForm (upload to ODK Central): 
-    `system.file("odk/BurnGrading01.xml", package = "rGeoCBI")`
+    `system.file("odk/BurnGrading01.xml", package = "rOzCBI")`
   * XlsForm (can edit by hand and add embedded media): 
-    `system.file("odk/BurnGrading01.xlsx", package = "rGeoCBI")`
+    `system.file("odk/BurnGrading01.xlsx", package = "rOzCBI")`
 * Deploy Xform (or XlsForm) to an ODK Central server, e.g. the 
   [DBCA ODK Central server](https://odkcentral.dbca.wa.gov.au/#/projects/2)
 

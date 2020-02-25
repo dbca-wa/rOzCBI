@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: rGeoCBI is missing something
+about: rOzCBI is missing something
 title: ''
 labels: enhancement
 assignees: florianm

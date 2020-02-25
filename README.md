@@ -1,27 +1,27 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# `rGeoCBI`: A Burn Severity Assessment Toolkit <img src="man/figures/rGeoCBI.png" align="right" alt="How good was that burn?" width="120" />
+# `rOzCBI`: A Burn Severity Assessment Toolkit <img src="man/figures/rOzCBI.png" align="right" alt="How good was that burn?" width="120" />
 
 <!-- badges: start -->
 
 [![Travis build
-status](https://travis-ci.org/dbca-wa/rGeoCBI.svg?branch=master)](https://travis-ci.org/dbca-wa/rGeoCBI)
+status](https://travis-ci.org/dbca-wa/rOzCBI.svg?branch=master)](https://travis-ci.org/dbca-wa/rOzCBI)
 [![CircleCI build
-status](https://circleci.com/gh/dbca-wa/rGeoCBI.svg?style=svg)](https://circleci.com/gh/dbca-wa/rGeoCBI)
+status](https://circleci.com/gh/dbca-wa/rOzCBI.svg?style=svg)](https://circleci.com/gh/dbca-wa/rOzCBI)
 [![AppVeyor build
-status](https://ci.appveyor.com/api/projects/status/github/dbca-wa/rGeoCBI?branch=master&svg=true)](https://ci.appveyor.com/project/florianm/rGeoCBI)
+status](https://ci.appveyor.com/api/projects/status/github/dbca-wa/rOzCBI?branch=master&svg=true)](https://ci.appveyor.com/project/florianm/rOzCBI)
 [![Codecov test
-coverage](https://codecov.io/gh/dbca-wa/rGeoCBI/branch/master/graph/badge.svg)](https://codecov.io/gh/dbca-wa/rGeoCBI?branch=master)
+coverage](https://codecov.io/gh/dbca-wa/rOzCBI/branch/master/graph/badge.svg)](https://codecov.io/gh/dbca-wa/rOzCBI?branch=master)
 [![Project Status: WIP – Initial development is in progress, but there
 has not yet been a stable, usable release suitable for the
 public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
-[![Last-changedate](https://img.shields.io/github/last-commit/dbca-wa/rGeoCBI.svg)](https://github.com/dbca-wa/rGeoCBI/commits/master)
+[![Last-changedate](https://img.shields.io/github/last-commit/dbca-wa/rOzCBI.svg)](https://github.com/dbca-wa/rOzCBI/commits/master)
 [![GitHub
-issues](https://img.shields.io/github/issues/dbca-wa/rGeoCBI.svg?style=popout)](https://github.com/dbca-wa/rGeoCBI/issues/)
+issues](https://img.shields.io/github/issues/dbca-wa/rOzCBI.svg?style=popout)](https://github.com/dbca-wa/rOzCBI/issues/)
 <!-- badges: end -->
 
-rGeoCBI in a nutshell:
+rOzCBI in a nutshell:
 
   - [OpenDataKit](https://opendatakit.org/) forms to evaluate a burnt
     site.
@@ -41,7 +41,7 @@ calculated from pre- and post-burn NBR as
 truthing field work can derive an index called “GeoCBI” from the
 condition and composition of a burnt site.
 
-rGeoCBI contains background, digital data capture, analysis, and
+rOzCBI contains background, digital data capture, analysis, and
 visualisation for the calculation of GeoCBI, a composite burn index for
 the initial assessment of the short-term burn severity from remotely
 sensed data.
@@ -60,11 +60,11 @@ vegetation communities by Valerie Densmore at DBCA in Western Australia.
 This version of the GeoCBI is currently being tested and validated so
 the current version may not reflect the final form. Feedback on the use
 and validity of the Australian GeoCBI is welcome as [GitHub
-issues](https://github.com/dbca-wa/rGeoCBI/issues).
+issues](https://github.com/dbca-wa/rOzCBI/issues).
 
 ## How
 
-`rGeoCBI` supplies an Xform to capture data digitally using OpenDataKit,
+`rOzCBI` supplies an Xform to capture data digitally using OpenDataKit,
 then goes on to access the data directly from R using the package
 `ruODK`, and provides helper methods to calculate the GeoCBI from the
 captured data.
@@ -74,7 +74,7 @@ You can install the development version from
 
 ``` r
 # install.packages("devtools")
-remotes::install_github("dbca-wa/rGeoCBI")
+remotes::install_github("dbca-wa/rOzCBI")
 ```
 
 The overall data flow from digital form to data analysis is described at
@@ -84,11 +84,11 @@ The overall data flow from digital form to data analysis is described at
 ruODK](https://www.lucidchart.com/publicSegments/view/952c1350-3003-48c1-a2c8-94bad74cdb46/image.png)
 
 Read vignette [Digital Data
-Capture](https://dbca-wa.github.io/rGeoCBI/articles/forms.html) on the
+Capture](https://dbca-wa.github.io/rOzCBI/articles/forms.html) on the
 design and setup of the digital data capture form and infrastructure.
 
 Read vignette [Data
-analysis](https://dbca-wa.github.io/rGeoCBI/articles/analysis.html) on
+analysis](https://dbca-wa.github.io/rOzCBI/articles/analysis.html) on
 access, analysis, and visualisation of the captured burn grading data
 using the GeoCBI assessment method.
 
@@ -97,39 +97,38 @@ using the GeoCBI assessment method.
 The methodology was compiled and adapted to Western Australian
 vegetation by Valerie Densmore (DBCA).
 
-The R package `rGeoCBI` was developed, and is maintained, by Florian
+The R package `rOzCBI` was developed, and is maintained, by Florian
 Mayer (DBCA) for the Western Australian [Department of Biodiversity,
 Conservation and Attractions (DBCA)](https://www.dbca.wa.gov.au/).
 
 The background image in the package logo shows the aerial view of a
 prescribed burn in the Pilbara. Photo: Paul Rampant (DBCA).
 
-To cite package `rGeoCBI` in publications use:
+To cite package `rOzCBI` in publications use:
 
 ``` r
-citation("rGeoCBI")
+citation("rOzCBI")
+#> Warning in packageDescription(pkg = package, lib.loc = dirname(dir)): no package 'rOzCBI' was found
 #> 
-#> To cite rGeoCBI in publications use:
+#> To cite rOzCBI in publications use:
 #> 
-#>   Valerie Densmore, Florian W. Mayer (2020). rGeoCBI: A burn severity
-#>   assessment toolkit. R package version 0.0.3.
-#>   https://github.com/dbca-wa/rGeoCBI
+#>   Valerie Densmore, Florian W. Mayer (2020). rOzCBI: A burn severity assessment toolkit. R package version 0.0.3. https://github.com/dbca-wa/rOzCBI
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
 #>   @Misc{,
-#>     title = {rGeoCBI: A burn severity assessment toolkit},
+#>     title = {rOzCBI: A Burn Severity Assessment Toolkit},
 #>     author = {Valerie Densmore and Florian W. Mayer},
 #>     note = {R package version 0.0.3},
 #>     year = {2020},
-#>     url = {https://github.com/dbca-wa/rGeoCBI},
+#>     url = {https://github.com/dbca-wa/rOzCBI},
 #>   }
 ```
 
 ## Contribute
 
 Feedback and bug reports are welcome as
-[issues](https://github.com/dbca-wa/rGeoCBI/issues).
+[issues](https://github.com/dbca-wa/rOzCBI/issues).
 
 The package development workflow is described in vignette
-[Development](https://dbca-wa.github.io/rGeoCBI/articles/dev.html).
+[Development](https://dbca-wa.github.io/rOzCBI/articles/dev.html).

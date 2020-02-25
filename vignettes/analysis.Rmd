@@ -34,7 +34,7 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup}
-library(rGeoCBI)
+library(rOzCBI)
 library(ruODK)
 library(magrittr)
 library(leaflet)
@@ -46,7 +46,7 @@ burn grading submissions, and calculating the GeoCBI from the raw data.
 
 ## Request an ODK Central account
 
-Request an ODK Central account [here](https://github.com/dbca-wa/rGeoCBI/issues).
+Request an ODK Central account [here](https://github.com/dbca-wa/rOzCBI/issues).
 You will receive a registration email. Your username will be your email address,
 you can choose your own password. With those credentials, you have read access
 to ODK Central, the place where burn grading submissions are uploaded to.

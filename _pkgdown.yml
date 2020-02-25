@@ -1,5 +1,5 @@
 destination: docs
-url: https://dbca-wa.github.io/rGeoCBI
+url: https://dbca-wa.github.io/rOzCBI
 authors:
   DBCA:
     html: "<img src='man/figures/dbca_bcs.png' width='150' alt='DBCA'/>"

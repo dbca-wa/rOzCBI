@@ -36,7 +36,7 @@ map_burngrading <- function(data) {
         markerColor = ~marker_colour
       ),
       label = ~ glue::glue(
-        '[{geocbi_rnd}] {plot_name} {observation_start_time}'
+        "[{geocbi_rnd}] {plot_name} {observation_start_time}"
       ),
       popup = ~ glue::glue('
 <h3>{plot_name}</h3><h4>GeoCBI {geocbi_rnd}</h4>

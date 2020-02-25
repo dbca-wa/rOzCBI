@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: rGeoCBI is doing something wrong
+about: rOzCBI is doing something wrong
 title: ''
 labels: bug
 assignees: florianm
@@ -11,7 +11,10 @@ assignees: florianm
 <!-- Please briefly describe your problem and what output you expect. -->
 
 ## Reproducible example
-<!-- If this issue refers to a bug or unexpected behaviour of rGeoCBI, please include a minimal reproducible example ([reprex](https://reprex.tidyverse.org/), see also <https://www.tidyverse.org/help/#reprex>). -->
+<!-- If this issue refers to a bug or unexpected behaviour of rOzCBI, 
+please include a minimal reproducible example 
+([reprex](https://reprex.tidyverse.org/), 
+see also <https://www.tidyverse.org/help/#reprex>). -->
 
 ```{r}
 # insert reprex here

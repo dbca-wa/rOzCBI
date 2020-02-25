@@ -1,4 +1,4 @@
 library(testthat)
-library(rGeoCBI)
+library(rOzCBI)
 
-test_check("rGeoCBI")
+test_check("rOzCBI")

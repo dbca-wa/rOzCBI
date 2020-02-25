@@ -1,21 +1,21 @@
 {
   "@context": ["https://doi.org/10.5063/schema/codemeta-2.0", "http://schema.org"],
   "@type": "SoftwareSourceCode",
-  "identifier": "rGeoCBI",
-  "description": "rGeoCBI contains background, digital data capture, analysis, and\n             visualisation for the calculation of GeoCBI, a composite burn index\n             for the initial assessment of the short-term burn severity from\n             remotely sensed data.",
-  "name": "rGeoCBI: A burn severity assessment toolkit",
-  "codeRepository": "https://github.com/dbca-wa/rGeoCBI",
-  "relatedLink": "https://dbca-wa.github.io/rGeoCBI",
-  "issueTracker": "https://github.com/dbca-wa/rGeoCBI/issues",
+  "identifier": "rOzCBI",
+  "description": "rOzCBI contains background, digital data capture, analysis, and\n             visualisation for the calculation of OzCBI, a composite burn index\n             for the initial assessment of the short-term burn severity from\n             remotely sensed data.",
+  "name": "rOzCBI: A Burn Severity Assessment Toolkit",
+  "codeRepository": "https://github.com/dbca-wa/rOzCBI",
+  "relatedLink": "https://dbca-wa.github.io/rOzCBI",
+  "issueTracker": "https://github.com/dbca-wa/rOzCBI/issues",
   "license": "https://spdx.org/licenses/MIT",
   "version": "0.0.3",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
-    "version": "3.6.1",
+    "version": "3.6.2",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 3.6.1 (2019-07-05)",
+  "runtimePlatform": "R version 3.6.2 (2019-12-12)",
   "author": [
     {
       "@type": "Person",
@@ -435,11 +435,11 @@
       "sameAs": "https://CRAN.R-project.org/package=stringr"
     }
   ],
-  "releaseNotes": "https://github.com/dbca-wa/rGeoCBI/blob/master/NEWS.md",
-  "readme": "https://github.com/dbca-wa/rGeoCBI/blob/master/README.md",
-  "fileSize": "1326.313KB",
-  "contIntegration": ["https://travis-ci.org/dbca-wa/rGeoCBI", "https://circleci.com/gh/dbca-wa/rGeoCBI", "https://ci.appveyor.com/project/florianm/rGeoCBI", "https://codecov.io/gh/dbca-wa/rGeoCBI?branch=master"],
-  "developmentStatus": "https://www.repostatus.org/#active",
+  "releaseNotes": "https://github.com/dbca-wa/rOzCBI/blob/master/NEWS.md",
+  "readme": "https://github.com/dbca-wa/rOzCBI/blob/master/README.md",
+  "fileSize": "1327.275KB",
+  "contIntegration": ["https://travis-ci.org/dbca-wa/rOzCBI", "https://circleci.com/gh/dbca-wa/rOzCBI", "https://ci.appveyor.com/project/florianm/rOzCBI", "https://codecov.io/gh/dbca-wa/rOzCBI?branch=master"],
+  "developmentStatus": "https://www.repostatus.org/#wip",
   "citation": [
     {
       "@type": "CreativeWork",
@@ -456,8 +456,8 @@
           "familyName": "Mayer"
         }
       ],
-      "name": "rGeoCBI: A burn severity assessment toolkit",
-      "url": "https://github.com/dbca-wa/rGeoCBI",
+      "name": "rOzCBI: A Burn Severity Assessment Toolkit",
+      "url": "https://github.com/dbca-wa/rOzCBI",
       "description": "R package version 0.0.3"
     }
   ]

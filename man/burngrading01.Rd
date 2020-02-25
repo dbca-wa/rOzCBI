@@ -7,7 +7,7 @@
 \format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 2 rows and 56 columns.}
 \source{
 Form submissions of form
-\code{system.file("odk/BurnGrading01.xml", package = "rGeoCBI")}
+\code{system.file("odk/BurnGrading01.xml", package = "rOzCBI")}
 downloaded from ODK Central using \code{ruODK::odata_submission_get()}
 (see \code{vignette("analysis")}).
 }
