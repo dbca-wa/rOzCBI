@@ -12,7 +12,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# `rOzCBI`: A Burn Severity Assessment Toolkit <img src="man/figures/rOzCBI.png" align="right" alt="How good was that burn?" width="120" />
+# rOzCBI: A Burn Severity Assessment Toolkit for Austral Vegetation Communities <img src="man/figures/rOzCBI.png" align="right" alt="How good was that burn?" width="120" />
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/dbca-wa/rOzCBI/workflows/R-CMD-check/badge.svg?branch=master)](https://github.com/dbca-wa/rOzCBI/actions)

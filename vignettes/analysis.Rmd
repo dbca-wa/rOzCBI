@@ -106,7 +106,7 @@ output.
 
 ```{r, eval=FALSE}
 burngrading01 <- ruODK::odata_submission_get(
-  verbose = T, 
+  verbose = F, 
   tz = "Australia/Perth", 
   local_dir = fs::path("media"), 
   wkt = T

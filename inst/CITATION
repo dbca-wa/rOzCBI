@@ -2,13 +2,14 @@ citHeader("To cite rOzCBI in publications use:")
 
 citEntry(
   entry    = "Misc",
-  title    = "rOzCBI: A Burn Severity Assessment Toolkit",
+  title    = "rOzCBI: A Burn Severity Assessment Toolkit for Austral Vegetation Communities",
   author   = "Valerie Densmore, Florian W. Mayer",
   note = "R package version 0.0.3",
   year     = 2020,
   url      = "https://github.com/dbca-wa/rOzCBI",
   textVersion = paste(
-    "Valerie Densmore, Florian W. Mayer (2020). rOzCBI: A burn severity assessment toolkit.",
+    "Valerie Densmore, Florian W. Mayer (2020).",
+    "rOzCBI: A Burn Severity Assessment Toolkit for Austral Vegetation Communities.",
     "R package version 0.0.3. https://github.com/dbca-wa/rOzCBI"
   )
 )
