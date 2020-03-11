@@ -3,8 +3,13 @@
 * All references and function names are now renamed from `geocbi` to `ozcbi`.
 * Tests pass on 
 
-  * Windows (latest) with R 3.5
+  * Windows Server 2019 (latest) with R 3.5
   * Ubuntu 18.04 (Bionic Beaver) with R 3.5 and 3.6
+* Tests fail due to tidyr/dplyr/rlang unavailabilities on
+
+  * Windows Server 2019 (latest) with R 3.6
+  * macOS Catalina 10.15 (latest) with R 3.5 and 3.6
+  * Ubuntu 16.04 (Xenial Xerus) with R 3.5 and 3.6
 
 # rOzCBI 0.0.3
 * Fix media attachments in package vignettes.
