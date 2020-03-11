@@ -23,6 +23,7 @@ knitr::opts_chunk$set(
 [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 [![Last-changedate](https://img.shields.io/github/last-commit/dbca-wa/rOzCBI.svg)](https://github.com/dbca-wa/rOzCBI/commits/master)
 [![GitHub issues](https://img.shields.io/github/issues/dbca-wa/rOzCBI.svg?style=popout)](https://github.com/dbca-wa/rOzCBI/issues/)
+[![R build status](https://github.com/dbca-wa/rOzCBI/workflows/R-CMD-check/badge.svg)](https://github.com/dbca-wa/rOzCBI/actions)
 <!-- badges: end -->
 
 rOzCBI in a nutshell:
