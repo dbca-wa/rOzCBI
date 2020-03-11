@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/dbca-wa/rOzCBI/workflows/R-CMD-check/badge.svg?branch=master)](https://github.com/dbca-wa/rOzCBI/actions)
 [![Travis build status](https://travis-ci.org/dbca-wa/rOzCBI.svg?branch=master)](https://travis-ci.org/dbca-wa/rOzCBI)
-[![CircleCI build status](https://circleci.com/gh/dbca-wa/rOzCBI.svg?style=svg)](https://circleci.com/gh/dbca-wa/rOzCBI)
+[![CircleCI build status](https://circleci.com/gh/dbca-wa/rOzCBI/tree/master.svg?style=svg)](https://circleci.com/gh/dbca-wa/rOzCBI/tree/master)
 [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/dbca-wa/rOzCBI?branch=master&svg=true)](https://ci.appveyor.com/project/florianm/rOzCBI)
 [![Codecov test coverage](https://codecov.io/gh/dbca-wa/rOzCBI/branch/master/graph/badge.svg)](https://codecov.io/gh/dbca-wa/rOzCBI?branch=master)
 [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)

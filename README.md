@@ -9,7 +9,7 @@
 [![Travis build
 status](https://travis-ci.org/dbca-wa/rOzCBI.svg?branch=master)](https://travis-ci.org/dbca-wa/rOzCBI)
 [![CircleCI build
-status](https://circleci.com/gh/dbca-wa/rOzCBI.svg?style=svg)](https://circleci.com/gh/dbca-wa/rOzCBI)
+status](https://circleci.com/gh/dbca-wa/rOzCBI/tree/master.svg?style=svg)](https://circleci.com/gh/dbca-wa/rOzCBI/tree/master)
 [![AppVeyor build
 status](https://ci.appveyor.com/api/projects/status/github/dbca-wa/rOzCBI?branch=master&svg=true)](https://ci.appveyor.com/project/florianm/rOzCBI)
 [![Codecov test
@@ -20,6 +20,8 @@ public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostat
 [![Last-changedate](https://img.shields.io/github/last-commit/dbca-wa/rOzCBI.svg)](https://github.com/dbca-wa/rOzCBI/commits/master)
 [![GitHub
 issues](https://img.shields.io/github/issues/dbca-wa/rOzCBI.svg?style=popout)](https://github.com/dbca-wa/rOzCBI/issues/)
+[![R build
+status](https://github.com/dbca-wa/rOzCBI/workflows/R-CMD-check/badge.svg)](https://github.com/dbca-wa/rOzCBI/actions)
 <!-- badges: end -->
 
 rOzCBI in a nutshell:
@@ -28,7 +30,7 @@ rOzCBI in a nutshell:
     site.
   - Helpers to calculate the OzCBI from the burn grading field data.
   - Instructions to get up and running with digital data capture and
-    data anlysis.
+    data analysis.
   - Working examples of the entire data flow.
 
 ## What
