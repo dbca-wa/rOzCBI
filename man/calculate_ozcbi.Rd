@@ -5,32 +5,34 @@
 \title{Calculate the OzCBI from input variables}
 \usage{
 calculate_ozcbi(
-  s1_fcov_post_fire_leaf_fall = NA_real_,
-  s1_area_unburnt = NA_real_,
-  s1_duff = NA_real_,
-  s1_coarse_fuel = NA_real_,
-  s2_area_unburnt = NA_real_,
-  s2_grass_trees_with_skirts = NA_real_,
-  s2_unburnt_shrub_density = NA_real_,
-  s2_fcov_regenerating_plants = NA_real_,
-  s3_fcov_original_crown_intact = NA_real_,
-  s3_density_bare_shrubs = NA_real_,
-  s4_fcov_original_crown_intact = NA_real_,
-  s4_resprouting_on_live_trees = NA_real_,
-  s4_char_height = NA_real_,
-  s5_fcov_original_crown_intact = NA_real_,
-  s5_no_trees_over_20cm_fallen = NA_real_,
-  s5_resprouting_on_live_trees = NA_real_,
-  s5_char_height = NA_real_,
-  s1_fcov = 1,
-  s2_fcov = 0,
-  s3_fcov = 0,
-  s4_fcov = 0,
-  s5_fcov = 0,
+  stratum_1_surface_s1_fcov_post_fire_leaf_fall = NA_real_,
+  stratum_1_surface_s1_area_unburnt = NA_real_,
+  stratum_1_surface_s1_duff = NA_real_,
+  stratum_1_surface_s1_coarse_fuel = NA_real_,
+  stratum_2_near_surface_s2_area_unburnt = NA_real_,
+  stratum_2_near_surface_s2_grass_trees_with_skirts = NA_real_,
+  stratum_2_near_surface_s2_unburnt_shrub_density = NA_real_,
+  stratum_2_near_surface_s2_fcov_regenerating_plants = NA_real_,
+  stratum_3_elevated_s3_fcov_original_crown_intact = NA_real_,
+  stratum_3_elevated_s3_density_bare_shrubs = NA_real_,
+  straum_4_intermediate_s4_fcov_original_crown_intact = NA_real_,
+  straum_4_intermediate_s4_resprouting_on_live_trees = NA_real_,
+  straum_4_intermediate_s4_char_height = NA_real_,
+  stratum_5_overstorey_s5_fcov_original_crown_intact = NA_real_,
+  stratum_5_overstorey_s5_no_trees_over_20cm_fallen = NA_real_,
+  stratum_5_overstorey_s5_resprouting_on_live_trees = NA_real_,
+  stratum_5_overstorey_s5_char_height = NA_real_,
+  stratum_1_surface_s1_fcov = 1,
+  stratum_2_near_surface_s2_fcov = 0,
+  stratum_3_elevated_s3_fcov = 0,
+  straum_4_intermediate_s4_fcov = 0,
+  stratum_5_overstorey_s5_fcov = 0,
   verbose = FALSE
 )
 }
 \arguments{
+\item{verbose}{Whether to display diagnostic messages, default: FALSE.}
+
 \item{s1_fcov_post_fire_leaf_fall}{A numeric grade from 0.0 to 3.0.
 Post-fire leaf fall cover.
 Includes leaves that have fallen after the burn but not unburnt patches.}
@@ -113,8 +115,6 @@ from 0.0 to 1.0. Default: 0.}
 
 \item{s5_fcov}{The fraction of coverage of stratum 2 in quarter steps
 from 0.0 to 1.0. Default: 0.}
-
-\item{verbose}{Whether to display diagnostic messages, default: FALSE.}
 }
 \description{
 Calculate the OzCBI from input variables

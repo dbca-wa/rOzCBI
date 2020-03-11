@@ -128,113 +128,121 @@
 #'   s5_fcov = 1,
 #'   verbose = TRUE
 #' )
-calculate_ozcbi <- function(s1_fcov_post_fire_leaf_fall = NA_real_,
-                            s1_area_unburnt = NA_real_,
-                            s1_duff = NA_real_,
-                            s1_coarse_fuel = NA_real_,
-                            s2_area_unburnt = NA_real_,
-                            s2_grass_trees_with_skirts = NA_real_,
-                            s2_unburnt_shrub_density = NA_real_,
-                            s2_fcov_regenerating_plants = NA_real_,
-                            s3_fcov_original_crown_intact = NA_real_,
-                            s3_density_bare_shrubs = NA_real_,
-                            s4_fcov_original_crown_intact = NA_real_,
-                            s4_resprouting_on_live_trees = NA_real_,
-                            s4_char_height = NA_real_,
-                            s5_fcov_original_crown_intact = NA_real_,
-                            s5_no_trees_over_20cm_fallen = NA_real_,
-                            s5_resprouting_on_live_trees = NA_real_,
-                            s5_char_height = NA_real_,
-                            s1_fcov = 1,
-                            s2_fcov = 0,
-                            s3_fcov = 0,
-                            s4_fcov = 0,
-                            s5_fcov = 0,
+calculate_ozcbi <- function(stratum_1_surface_s1_fcov_post_fire_leaf_fall = NA_real_,
+                            stratum_1_surface_s1_area_unburnt = NA_real_,
+                            stratum_1_surface_s1_duff = NA_real_,
+                            stratum_1_surface_s1_coarse_fuel = NA_real_,
+                            stratum_2_near_surface_s2_area_unburnt = NA_real_,
+                            stratum_2_near_surface_s2_grass_trees_with_skirts = NA_real_,
+                            stratum_2_near_surface_s2_unburnt_shrub_density = NA_real_,
+                            stratum_2_near_surface_s2_fcov_regenerating_plants = NA_real_,
+                            stratum_3_elevated_s3_fcov_original_crown_intact = NA_real_,
+                            stratum_3_elevated_s3_density_bare_shrubs = NA_real_,
+                            straum_4_intermediate_s4_fcov_original_crown_intact = NA_real_,
+                            straum_4_intermediate_s4_resprouting_on_live_trees = NA_real_,
+                            straum_4_intermediate_s4_char_height = NA_real_,
+                            stratum_5_overstorey_s5_fcov_original_crown_intact = NA_real_,
+                            stratum_5_overstorey_s5_no_trees_over_20cm_fallen = NA_real_,
+                            stratum_5_overstorey_s5_resprouting_on_live_trees = NA_real_,
+                            stratum_5_overstorey_s5_char_height = NA_real_,
+                            stratum_1_surface_s1_fcov = 1,
+                            stratum_2_near_surface_s2_fcov = 0,
+                            stratum_3_elevated_s3_fcov = 0,
+                            straum_4_intermediate_s4_fcov = 0,
+                            stratum_5_overstorey_s5_fcov = 0,
                             verbose = FALSE) {
 
   # -------------------------------------------------------------------------- #
   # Stratum 1
   #
   s1_cbi <- c(
-    s1_fcov_post_fire_leaf_fall,
-    s1_area_unburnt,
-    s1_duff,
-    s1_coarse_fuel
+    stratum_1_surface_s1_fcov_post_fire_leaf_fall,
+    stratum_1_surface_s1_area_unburnt,
+    stratum_1_surface_s1_duff,
+    stratum_1_surface_s1_coarse_fuel
   ) %>%
     purrr::discard(is.na) %>%
     mean()
-  s1_score <- s1_cbi * s1_fcov
-  if (verbose == TRUE) {
-    message(
-      glue::glue("Stratum 1: CBI {s1_cbi} * FCOV {s1_fcov} = Score {s1_score}")
+  s1_score <- s1_cbi * stratum_1_surface_s1_fcov
+  if (verbose == TRUE)
+    ruODK::ru_msg_info(
+      glue::glue(
+        "Stratum 1: CBI {s1_cbi} * FCOV ",
+        "{stratum_1_surface_s1_fcov} = Score {s1_score}"
+      )
     )
-  }
 
   # -------------------------------------------------------------------------- #
   # Stratum 2
   #
   s2_cbi <- c(
-    s2_area_unburnt,
-    s2_grass_trees_with_skirts,
-    s2_unburnt_shrub_density,
-    s2_fcov_regenerating_plants
+    stratum_2_near_surface_s2_area_unburnt,
+    stratum_2_near_surface_s2_grass_trees_with_skirts,
+    stratum_2_near_surface_s2_unburnt_shrub_density,
+    stratum_2_near_surface_s2_fcov_regenerating_plants
   ) %>%
     purrr::discard(is.na) %>%
     mean()
-  s2_score <- s2_cbi * s2_fcov
-  if (verbose == TRUE) {
-    message(
-      glue::glue("Stratum 2: CBI {s2_cbi} * FCOV {s2_fcov} = Score {s2_score}")
+  s2_score <- s2_cbi * stratum_2_near_surface_s2_fcov
+  if (verbose == TRUE)
+    ruODK::ru_msg_info(
+      glue::glue(
+        "Stratum 2: CBI {s2_cbi} * FCOV ",
+        "{stratum_2_near_surface_s2_fcov} = Score {s2_score}"
+        )
     )
-  }
 
   # -------------------------------------------------------------------------- #
   # Stratum 3
   s3_cbi <- c(
-    s3_fcov_original_crown_intact,
-    s3_density_bare_shrubs
+    stratum_3_elevated_s3_fcov_original_crown_intact,
+    stratum_3_elevated_s3_density_bare_shrubs
   ) %>%
     purrr::discard(is.na) %>%
     mean()
-  s3_score <- s3_cbi * s3_fcov
-  if (verbose == TRUE) {
-    message(
-      glue::glue("Stratum 3: CBI {s3_cbi} * FCOV {s3_fcov} = Score {s3_score}")
+  s3_score <- s3_cbi * stratum_3_elevated_s3_fcov
+  if (verbose == TRUE)
+    ruODK::ru_msg_info(
+      glue::glue(
+        "Stratum 3: CBI {s3_cbi} * FCOV ",
+        "{stratum_3_elevated_s3_fcov} = Score {s3_score}"
+      )
     )
-  }
 
   # -------------------------------------------------------------------------- #
   # Stratum 4
   s4_cbi <- c(
-    s4_fcov_original_crown_intact,
-    s4_resprouting_on_live_trees,
-    s4_char_height
+    straum_4_intermediate_s4_fcov_original_crown_intact,
+    straum_4_intermediate_s4_resprouting_on_live_trees,
+    straum_4_intermediate_s4_char_height
   ) %>%
     purrr::discard(is.na) %>%
     mean()
-  s4_score <- s4_cbi * s4_fcov
-  if (verbose == TRUE) {
-    message(
-      glue::glue("Stratum 4: CBI {s4_cbi} * FCOV {s4_fcov} = Score {s4_score}")
+  s4_score <- s4_cbi * straum_4_intermediate_s4_fcov
+  if (verbose == TRUE)
+    ruODK::ru_msg_info(
+      glue::glue("Stratum 4: CBI {s4_cbi} * FCOV ",
+                 "{straum_4_intermediate_s4_fcov} = Score {s4_score}")
     )
-  }
 
   # -------------------------------------------------------------------------- #
   # Stratum 5
   s5_cbi <- c(
-    s5_fcov_original_crown_intact,
-    s5_no_trees_over_20cm_fallen,
-    s5_resprouting_on_live_trees,
-    s5_char_height
+    stratum_5_overstorey_s5_fcov_original_crown_intact,
+    stratum_5_overstorey_s5_no_trees_over_20cm_fallen,
+    stratum_5_overstorey_s5_resprouting_on_live_trees,
+    stratum_5_overstorey_s5_char_height
   ) %>%
     purrr::discard(is.na) %>%
     mean()
-  s5_score <- s5_cbi * s5_fcov
-  if (verbose == TRUE) {
-    message(
-      glue::glue("Stratum 5: CBI {s5_cbi} * FCOV {s5_fcov} = Score {s5_score}")
+  s5_score <- s5_cbi * stratum_5_overstorey_s5_fcov
+  if (verbose == TRUE)
+    ruODK::ru_msg_info(
+      glue::glue(
+        "Stratum 5: CBI {s5_cbi} * FCOV ",
+                 "{stratum_5_overstorey_s5_fcov} = Score {s5_score}"
+        )
     )
-  }
 
   # OzCBI
   score_sum <- sum(
@@ -245,15 +253,21 @@ calculate_ozcbi <- function(s1_fcov_post_fire_leaf_fall = NA_real_,
     s5_score,
     na.rm = TRUE
   )
-  fcov_sum <- sum(s1_fcov, s2_fcov, s3_fcov, s4_fcov, s5_fcov)
+  fcov_sum <- sum(
+    stratum_1_surface_s1_fcov,
+    stratum_2_near_surface_s2_fcov,
+    stratum_3_elevated_s3_fcov,
+    straum_4_intermediate_s4_fcov,
+    stratum_5_overstorey_s5_fcov
+    )
   ozcbi <- score_sum / fcov_sum
-  if (verbose == TRUE) {
-    message(
+  if (verbose == TRUE)
+    ruODK::ru_msg_success(
       glue::glue(
         "OzCBI: {ozcbi} = Score sum {score_sum} / FCOV sums {fcov_sum}"
       )
     )
-  }
+
   ozcbi
 }
 

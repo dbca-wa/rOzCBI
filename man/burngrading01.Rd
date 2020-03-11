@@ -4,7 +4,7 @@
 \name{burngrading01}
 \alias{burngrading01}
 \title{Burn Grading 0.1 form submission data}
-\format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 2 rows and 56 columns.}
+\format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 4 rows and 56 columns.}
 \source{
 Form submissions of form
 \code{system.file("odk/BurnGrading01.xml", package = "rOzCBI")}
