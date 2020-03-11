@@ -20,8 +20,6 @@ public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostat
 [![Last-changedate](https://img.shields.io/github/last-commit/dbca-wa/rOzCBI.svg)](https://github.com/dbca-wa/rOzCBI/commits/master)
 [![GitHub
 issues](https://img.shields.io/github/issues/dbca-wa/rOzCBI.svg?style=popout)](https://github.com/dbca-wa/rOzCBI/issues/)
-[![R build
-status](https://github.com/dbca-wa/rOzCBI/workflows/R-CMD-check/badge.svg)](https://github.com/dbca-wa/rOzCBI/actions)
 <!-- badges: end -->
 
 rOzCBI in a nutshell:
@@ -114,14 +112,14 @@ citation("rOzCBI")
 #> 
 #> To cite rOzCBI in publications use:
 #> 
-#>   Valerie Densmore, Florian W. Mayer (2020). rOzCBI: A burn severity
-#>   assessment toolkit. R package version 0.0.3.
-#>   https://github.com/dbca-wa/rOzCBI
+#>   Valerie Densmore, Florian W. Mayer (2020). rOzCBI: A Burn Severity
+#>   Assessment Toolkit for Austral Vegetation Communities. R package
+#>   version 0.0.3. https://github.com/dbca-wa/rOzCBI
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
 #>   @Misc{,
-#>     title = {rOzCBI: A Burn Severity Assessment Toolkit},
+#>     title = {rOzCBI: A Burn Severity Assessment Toolkit for Austral Vegetation Communities},
 #>     author = {Valerie Densmore and Florian W. Mayer},
 #>     note = {R package version 0.0.3},
 #>     year = {2020},
