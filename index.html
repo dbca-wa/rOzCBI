@@ -5,12 +5,12 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A Burn Severity Assessment Toolkit • rOzCBI</title>
+<title>A Burn Severity Assessment Toolkit for Austral Vegetation Communities • rOzCBI</title>
 <!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/yeti/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/all.min.css" integrity="sha256-PbSmjxuVAzJ6FPvNYsrXygfGhNJYyZ2GktDbkMBqQZg=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/v4-shims.min.css" integrity="sha256-A6jcAdwFD48VMjlI3GDxUd+eCQa7/KWy6G9oe/ovaPA=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
-<script src="pkgdown.js"></script><meta property="og:title" content="A Burn Severity Assessment Toolkit">
+<script src="pkgdown.js"></script><meta property="og:title" content="A Burn Severity Assessment Toolkit for Austral Vegetation Communities">
 <meta property="og:description" content="rOzCBI contains background, digital data capture, analysis, and
              visualisation for the calculation of OzCBI, a composite burn index
              for the initial assessment of the short-term burn severity from
@@ -40,7 +40,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">rOzCBI</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.3</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.4</span>
       </span>
     </div>
 
@@ -102,9 +102,9 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-<div id="rozcbi-a-burn-severity-assessment-toolkit" class="section level1">
+<div id="rozcbi-a-burn-severity-assessment-toolkit-" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
-<a href="#rozcbi-a-burn-severity-assessment-toolkit" class="anchor"></a><code>rOzCBI</code>: A Burn Severity Assessment Toolkit <img src="reference/figures/rOzCBI.png" align="right" alt="How good was that burn?" width="120">
+<a href="#rozcbi-a-burn-severity-assessment-toolkit-" class="anchor"></a><code>rOzCBI</code>: A Burn Severity Assessment Toolkit <img src="reference/figures/rOzCBI.png" align="right" alt="How good was that burn?" width="120">
 </h1></div>
 <!-- badges: start -->
 
@@ -112,25 +112,25 @@
 <ul>
 <li>
 <a href="https://opendatakit.org/">OpenDataKit</a> forms to evaluate a burnt site.</li>
-<li>Helpers to calculate the GeoCBI from the burn grading field data.</li>
+<li>Helpers to calculate the OzCBI from the burn grading field data.</li>
 <li>Instructions to get up and running with digital data capture and data anlysis.</li>
 <li>Working examples of the entire data flow.</li>
 </ul>
 <div id="what" class="section level2">
 <h2 class="hasAnchor">
 <a href="#what" class="anchor"></a>What</h2>
-<p>To evaluate the severity of burns, the differential normalised burn ratio (dNBR) of a burnt site can be derived from satellite imagery cost-effectively and on a large scale. The NBR is calculated from NIR and SWIR bands as (NBR = (NIR - SWIR) / (NIR + SWIR)). The dNBR is calculated from pre- and post-burn NBR as (dNBR = NBR_{post} / NBR_{pre}). To calibrate the dNBR, ground truthing field work can derive an index called “GeoCBI” from the condition and composition of a burnt site.</p>
-<p>rOzCBI contains background, digital data capture, analysis, and visualisation for the calculation of GeoCBI, a composite burn index for the initial assessment of the short-term burn severity from remotely sensed data.</p>
-<p>GeoCBI was first described in <a href="https://doi.org/10.1016/j.rse.2008.10.011">De Santis, Angela &amp; Chuvieco, Emilio. (2009)</a> (<a href="https://www.researchgate.net/publication/229043914_GeoCBI_A_modified_version_of_the_Composite_Burn_Index_for_the_initial_assessment_of_the_short-term_burn_severity_from_remotely_sensed_data">Fulltext (pdf)</a>) GeoCBI: A modified version of the Composite Burn Index for the initial assessment of the short-term burn severity from remotely sensed data. Remote Sensing of Environment 113<br><a href="https://www.sciencedirect.com/science/article/abs/pii/S0034425708003246">DOI 10.1016/j.rse.2008.10.011</a></p>
-<p>The GeoCBI we use here was further modified to suit Australian vegetation communities by Valerie Densmore at DBCA in Western Australia. This version of the GeoCBI is currently being tested and validated so the current version may not reflect the final form. Feedback on the use and validity of the Australian GeoCBI is welcome as <a href="https://github.com/dbca-wa/rOzCBI/issues">GitHub issues</a>.</p>
+<p>To evaluate the severity of burns, the differential normalised burn ratio (dNBR) of a burnt site can be derived from satellite imagery cost-effectively and on a large scale. The NBR is calculated from NIR and SWIR bands as <span class="math inline"><em>N</em><em>B</em><em>R</em> = (<em>N</em><em>I</em><em>R</em> − <em>S</em><em>W</em><em>I</em><em>R</em>)/(<em>N</em><em>I</em><em>R</em> + <em>S</em><em>W</em><em>I</em><em>R</em>)</span>. The dNBR is calculated from pre- and post-burn NBR as <span class="math inline"><em>d</em><em>N</em><em>B</em><em>R</em> = <em>N</em><em>B</em><em>R</em><sub><em>p</em><em>o</em><em>s</em><em>t</em></sub>/<em>N</em><em>B</em><em>R</em><sub><em>p</em><em>r</em><em>e</em></sub></span>. To calibrate the dNBR, ground truthing field work can derive an index called “OzCBI” from the condition and composition of a burnt site.</p>
+<p>rOzCBI contains background, digital data capture, analysis, and visualisation for the calculation of OzCBI, a composite burn index for the initial assessment of the short-term burn severity from remotely sensed data.</p>
+<p>OzCBI was derived from GeoCBI, which was first described in <a href="https://doi.org/10.1016/j.rse.2008.10.011">De Santis, Angela &amp; Chuvieco, Emilio. (2009)</a> (<a href="https://www.researchgate.net/publication/229043914_GeoCBI_A_modified_version_of_the_Composite_Burn_Index_for_the_initial_assessment_of_the_short-term_burn_severity_from_remotely_sensed_data">Fulltext (pdf)</a>) GeoCBI: A modified version of the Composite Burn Index for the initial assessment of the short-term burn severity from remotely sensed data. Remote Sensing of Environment 113<br><a href="https://www.sciencedirect.com/science/article/abs/pii/S0034425708003246">DOI 10.1016/j.rse.2008.10.011</a></p>
+<p>OzCBI was further modified to suit Australian vegetation communities by Valerie Densmore at DBCA in Western Australia. This version of the OzCBI is currently being tested and validated so the current version may not reflect the final form. Feedback on the use and validity of OzCBI is welcome as <a href="https://github.com/dbca-wa/rOzCBI/issues">GitHub issues</a>.</p>
 </div>
 <div id="how" class="section level2">
 <h2 class="hasAnchor">
 <a href="#how" class="anchor"></a>How</h2>
-<p><code>rOzCBI</code> supplies an Xform to capture data digitally using OpenDataKit, then goes on to access the data directly from R using the package <code>ruODK</code>, and provides helper methods to calculate the GeoCBI from the captured data.</p>
+<p><code>rOzCBI</code> supplies an Xform to capture data digitally using OpenDataKit, then goes on to access the data directly from R using the package <code>ruODK</code>, and provides helper methods to calculate the OzCBI from the captured data.</p>
 <p>You can install the development version from <a href="https://github.com/">GitHub</a> with:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co"># install.packages("devtools")</span></a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">remotes<span class="op">::</span><span class="kw"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"dbca-wa/rOzCBI"</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># install.packages("devtools")</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a>remotes<span class="op">::</span><span class="kw"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"dbca-wa/rOzCBI"</span>)</span></code></pre></div>
 <p>The overall data flow from digital form to data analysis is described at <a href="https://dbca-wa.github.io/ruODK/index.html">ruODK</a>.</p>
 <p><img src="https://www.lucidchart.com/publicSegments/view/952c1350-3003-48c1-a2c8-94bad74cdb46/image.png" alt="An ODK setup with ODK Build, Central, Collect, and ruODK"></p>
 <p>Read vignette <a href="https://dbca-wa.github.io/rOzCBI/articles/forms.html">Digital Data Capture</a> on the design and setup of the digital data capture form and infrastructure.</p>
@@ -143,22 +143,23 @@
 <p>The R package <code>rOzCBI</code> was developed, and is maintained, by Florian Mayer (DBCA) for the Western Australian <a href="https://www.dbca.wa.gov.au/">Department of Biodiversity, Conservation and Attractions (DBCA)</a>.</p>
 <p>The background image in the package logo shows the aerial view of a prescribed burn in the Pilbara. Photo: Paul Rampant (DBCA).</p>
 <p>To cite package <code>rOzCBI</code> in publications use:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/utils/citation.html">citation</a></span>(<span class="st">"rOzCBI"</span>)</a>
-<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="co">#&gt; Warning in packageDescription(pkg = package, lib.loc = dirname(dir)): no package 'rOzCBI' was found</span></a>
-<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="co">#&gt; </span></a>
-<a class="sourceLine" id="cb2-4" data-line-number="4"><span class="co">#&gt; To cite rOzCBI in publications use:</span></a>
-<a class="sourceLine" id="cb2-5" data-line-number="5"><span class="co">#&gt; </span></a>
-<a class="sourceLine" id="cb2-6" data-line-number="6"><span class="co">#&gt;   Valerie Densmore, Florian W. Mayer (2020). rOzCBI: A burn severity assessment toolkit. R package version 0.0.3. https://github.com/dbca-wa/rOzCBI</span></a>
-<a class="sourceLine" id="cb2-7" data-line-number="7"><span class="co">#&gt; </span></a>
-<a class="sourceLine" id="cb2-8" data-line-number="8"><span class="co">#&gt; A BibTeX entry for LaTeX users is</span></a>
-<a class="sourceLine" id="cb2-9" data-line-number="9"><span class="co">#&gt; </span></a>
-<a class="sourceLine" id="cb2-10" data-line-number="10"><span class="co">#&gt;   @Misc{,</span></a>
-<a class="sourceLine" id="cb2-11" data-line-number="11"><span class="co">#&gt;     title = {rOzCBI: A Burn Severity Assessment Toolkit},</span></a>
-<a class="sourceLine" id="cb2-12" data-line-number="12"><span class="co">#&gt;     author = {Valerie Densmore and Florian W. Mayer},</span></a>
-<a class="sourceLine" id="cb2-13" data-line-number="13"><span class="co">#&gt;     note = {R package version 0.0.3},</span></a>
-<a class="sourceLine" id="cb2-14" data-line-number="14"><span class="co">#&gt;     year = {2020},</span></a>
-<a class="sourceLine" id="cb2-15" data-line-number="15"><span class="co">#&gt;     url = {https://github.com/dbca-wa/rOzCBI},</span></a>
-<a class="sourceLine" id="cb2-16" data-line-number="16"><span class="co">#&gt;   }</span></a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw"><a href="https://rdrr.io/r/utils/citation.html">citation</a></span>(<span class="st">"rOzCBI"</span>)</span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="co">#&gt; </span></span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="co">#&gt; To cite rOzCBI in publications use:</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="co">#&gt; </span></span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="co">#&gt;   Valerie Densmore, Florian W. Mayer (2020). rOzCBI: A burn severity</span></span>
+<span id="cb2-6"><a href="#cb2-6"></a><span class="co">#&gt;   assessment toolkit. R package version 0.0.3.</span></span>
+<span id="cb2-7"><a href="#cb2-7"></a><span class="co">#&gt;   https://github.com/dbca-wa/rOzCBI</span></span>
+<span id="cb2-8"><a href="#cb2-8"></a><span class="co">#&gt; </span></span>
+<span id="cb2-9"><a href="#cb2-9"></a><span class="co">#&gt; A BibTeX entry for LaTeX users is</span></span>
+<span id="cb2-10"><a href="#cb2-10"></a><span class="co">#&gt; </span></span>
+<span id="cb2-11"><a href="#cb2-11"></a><span class="co">#&gt;   @Misc{,</span></span>
+<span id="cb2-12"><a href="#cb2-12"></a><span class="co">#&gt;     title = {rOzCBI: A Burn Severity Assessment Toolkit},</span></span>
+<span id="cb2-13"><a href="#cb2-13"></a><span class="co">#&gt;     author = {Valerie Densmore and Florian W. Mayer},</span></span>
+<span id="cb2-14"><a href="#cb2-14"></a><span class="co">#&gt;     note = {R package version 0.0.3},</span></span>
+<span id="cb2-15"><a href="#cb2-15"></a><span class="co">#&gt;     year = {2020},</span></span>
+<span id="cb2-16"><a href="#cb2-16"></a><span class="co">#&gt;     url = {https://github.com/dbca-wa/rOzCBI},</span></span>
+<span id="cb2-17"><a href="#cb2-17"></a><span class="co">#&gt;   }</span></span></code></pre></div>
 </div>
 <div id="contribute" class="section level2">
 <h2 class="hasAnchor">
@@ -169,7 +170,7 @@
 </div>
   </div>
 
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="links">
 <h2>Links</h2>
 <ul class="list-unstyled">
@@ -195,8 +196,8 @@
 <div class="developers">
 <h2>Developers</h2>
 <ul class="list-unstyled">
-<li>Florian Mayer <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0003-4269-4242" target="orcid.widget"><img src="https://members.orcid.org/sites/default/files/vector_iD_icon.svg" class="orcid" alt="ORCID"></a> </li>
-<li>Valerie Densmore <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0003-0121-8709" target="orcid.widget"><img src="https://members.orcid.org/sites/default/files/vector_iD_icon.svg" class="orcid" alt="ORCID"></a> </li>
+<li>Florian Mayer <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0003-4269-4242" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>Valerie Densmore <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0003-0121-8709" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 <li>
 <a href="https://www.dbca.wa.gov.au/science/"><img src="reference/figures/dbca_bcs.png" width="150" alt="DBCA"></a> <br><small class="roles"> Copyright holder, funder </small>  </li>
 </ul>
@@ -205,6 +206,7 @@
   <div class="dev-status">
 <h2>Dev status</h2>
 <ul class="list-unstyled">
+<li><a href="https://github.com/dbca-wa/rOzCBI/actions"><img src="https://github.com/dbca-wa/rOzCBI/workflows/R-CMD-check/badge.svg?branch=master" alt="R-CMD-check"></a></li>
 <li><a href="https://travis-ci.org/dbca-wa/rOzCBI"><img src="https://travis-ci.org/dbca-wa/rOzCBI.svg?branch=master" alt="Travis build status"></a></li>
 <li><a href="https://circleci.com/gh/dbca-wa/rOzCBI"><img src="https://circleci.com/gh/dbca-wa/rOzCBI.svg?style=svg" alt="CircleCI build status"></a></li>
 <li><a href="https://ci.appveyor.com/project/florianm/rOzCBI"><img src="https://ci.appveyor.com/api/projects/status/github/dbca-wa/rOzCBI?branch=master&amp;svg=true" alt="AppVeyor build status"></a></li>
@@ -223,7 +225,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.1.9000.</p>
 </div>
 
       </footer>

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Function reference • rOzCBI</title>
+<title>Add the OzCBI calculated from the burn grading data — add_ozcbi • rOzCBI</title>
 
 
 <!-- jquery -->
@@ -35,7 +35,9 @@
 
 
 
-<meta property="og:title" content="Function reference" />
+<meta property="og:title" content="Add the OzCBI calculated from the burn grading data — add_ozcbi" />
+<meta property="og:description" content="Add the OzCBI calculated from the burn grading data" />
+<meta name="twitter:card" content="summary" />
 
 
 
@@ -64,7 +66,7 @@
   </head>
 
   <body>
-    <div class="container template-reference-index">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -138,90 +140,80 @@
       </header>
 
 <div class="row">
-  <div class="contents col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Reference</h1>
+    <h1>Add the OzCBI calculated from the burn grading data</h1>
+    <small class="dont-index">Source: <a href='https://github.com/dbca-wa/rOzCBI/blob/master/R/add_ozcbi.R'><code>R/add_ozcbi.R</code></a></small>
+    <div class="hidden name"><code>add_ozcbi.Rd</code></div>
     </div>
 
-    <table class="ref-index">
+    <div class="ref-description">
+    <p>Add the OzCBI calculated from the burn grading data</p>
+    </div>
 
-    <colgroup>
-      
-      <col class="alias" />
-      <col class="title" />
-    </colgroup>
+    <pre class="usage"><span class='fu'>add_ozcbi</span>(<span class='no'>burngrading</span>)</pre>
 
-    <tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-ozcbi" class="hasAnchor"><a href="#section-ozcbi" class="anchor"></a>OzCBI</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
-      <tr>
-        
-        <td>
-          <p><code><a href="add_ozcbi.html">add_ozcbi()</a></code> </p>
-        </td>
-        <td><p>Add the OzCBI calculated from the burn grading data</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="calculate_ozcbi.html">calculate_ozcbi()</a></code> </p>
-        </td>
-        <td><p>Calculate the OzCBI from input variables</p></td>
-      </tr>
-    </tbody><tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-helpers" class="hasAnchor"><a href="#section-helpers" class="anchor"></a>Helpers</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
-      <tr>
-        
-        <td>
-          <p><code><a href="extract_grading.html">extract_grading()</a></code> </p>
-        </td>
-        <td><p>Extract the grading from a Burn Grading field value</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="map_burngrading.html">map_burngrading()</a></code> </p>
-        </td>
-        <td><p>Map Burn Grading data (incl OzCBI) with labels and popups</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="reactable_burngrading.html">reactable_burngrading()</a></code> </p>
-        </td>
-        <td><p>Display a reactable of Burn Grading data (incl OzCBI) with details</p></td>
-      </tr>
-    </tbody><tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-example-data" class="hasAnchor"><a href="#section-example-data" class="anchor"></a>Example data</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
-      <tr>
-        
-        <td>
-          <p><code><a href="burngrading01.html">burngrading01</a></code> </p>
-        </td>
-        <td><p>Burn Grading 0.1 form submission data</p></td>
-      </tr>
-    </tbody>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>burngrading</th>
+      <td><p>A data.frame of burn grading data,
+collected with ODK Collect from the form "Burn Grading 0.1"
+and downloaded with <code><a href='https://rdrr.io/pkg/ruODK/man/odata_submission_get.html'>ruODK::odata_submission_get(wkt=T)</a></code>.</p></td>
+    </tr>
     </table>
-  </div>
 
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+
+    <p>The input data.frame with an extra variable, 'ozcbi'.</p>
+    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
+
+    <div class='dont-index'><p>Other ozcbi: 
+<code><a href='calculate_ozcbi.html'>calculate_ozcbi</a>()</code></p></div>
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='st'>"burngrading01"</span>)
+<span class='no'>data_with_ozcbi</span> <span class='kw'>&lt;-</span> <span class='fu'>add_ozcbi</span>(<span class='no'>burngrading01</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/names.html'>names</a></span>(<span class='no'>data_with_ozcbi</span>)</div><div class='output co'>#&gt;  [1] "id"                              "observation_start_time"         
+#&gt;  [3] "reporter"                        "device_id"                      
+#&gt;  [5] "observation_end_time"            "submission_date"                
+#&gt;  [7] "submitter_id"                    "submitter_name"                 
+#&gt;  [9] "instance_id"                     "location_longitude"             
+#&gt; [11] "location_latitude"               "location_altitude"              
+#&gt; [13] "plot_photo"                      "plot_name"                      
+#&gt; [15] "homogeneous_burn_severity"       "s1_fcov_post_fire_leaf_fall"    
+#&gt; [17] "s1_area_unburnt"                 "s1_duff"                        
+#&gt; [19] "s1_coarse_fuel"                  "s1_photo"                       
+#&gt; [21] "s2_dominant_vegetation"          "s2_fcov"                        
+#&gt; [23] "s2_area_unburnt"                 "s2_grass_trees_with_skirts"     
+#&gt; [25] "s2_unburnt_shrub_density"        "s2_fcov_regenerating_plants"    
+#&gt; [27] "s2_photo"                        "s3_dominant_vegetation"         
+#&gt; [29] "s3_fcov"                         "s3_fcov_original_crown_intact"  
+#&gt; [31] "s3_density_bare_shrubs"          "s3_photo"                       
+#&gt; [33] "s4_dominant_vegetation"          "s4_fcov"                        
+#&gt; [35] "s4_avg_tree_height_m"            "s4_fcov_original_crown_intact"  
+#&gt; [37] "s4_resprouting_on_live_trees"    "s4_char_height"                 
+#&gt; [39] "s4_photo"                        "s5_dominant_vegetation"         
+#&gt; [41] "s5_fcov"                         "s5_avg_tree_height_m"           
+#&gt; [43] "s5_fcov_original_crown_intact"   "s5_no_trees_over_20cm_fallen"   
+#&gt; [45] "s5_resprouting_on_live_trees"    "s5_char_height"                 
+#&gt; [47] "s5_photo"                        "no_grass_trees"                 
+#&gt; [49] "no_hollow_logs"                  "no_standing_trees_gt20cm"       
+#&gt; [51] "no_standing_trees_with_hollows"  "depth_leaf_litter_cm"           
+#&gt; [53] "avg_gap_between_unburnt_patches" "evidence_of_native_fauna"       
+#&gt; [55] "evidence_of_feral_fauna"         "odata_context"                  
+#&gt; [57] "ozcbi"                          </div></pre>
+  </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="#section-ozcbi">OzCBI</a></li>
-      <li><a href="#section-helpers">Helpers</a></li>
-      <li><a href="#section-example-data">Example data</a></li>
+      <li><a href="#arguments">Arguments</a></li>
+      <li><a href="#value">Value</a></li>
+      <li><a href="#see-also">See also</a></li>
+      <li><a href="#examples">Examples</a></li>
     </ul>
+
   </div>
 </div>
 
