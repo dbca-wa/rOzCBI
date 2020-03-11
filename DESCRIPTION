@@ -30,6 +30,7 @@ Imports:
     leaflet (>= 2.0.3),
     magrittr (>= 1.5),
     purrr (>= 0.3.3),
+    rlang (>= 0.4.5),
     stringr (>= 1.4.0)
 Remotes:
     github::dbca-wa/ruODK
@@ -46,7 +47,6 @@ Suggests:
     lubridate (>= 1.7.4),
     htmltools (>= 0.4.0),
     reactable (>= 0.1.0),
-    rlang (>= 0.4.5),
     rmarkdown (>= 2.0),
     ruODK (>= 0.6.6.9015),
     skimr (>= 2.0.2),
