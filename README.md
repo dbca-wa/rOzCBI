@@ -5,6 +5,7 @@
 
 <!-- badges: start -->
 
+[![R-CMD-check](https://github.com/dbca-wa/rOzCBI/workflows/R-CMD-check/badge.svg?branch=master)](https://github.com/dbca-wa/rOzCBI/actions)
 [![Travis build
 status](https://travis-ci.org/dbca-wa/rOzCBI.svg?branch=master)](https://travis-ci.org/dbca-wa/rOzCBI)
 [![CircleCI build
@@ -108,11 +109,12 @@ To cite package `rOzCBI` in publications use:
 
 ``` r
 citation("rOzCBI")
-#> Warning in packageDescription(pkg = package, lib.loc = dirname(dir)): no package 'rOzCBI' was found
 #> 
 #> To cite rOzCBI in publications use:
 #> 
-#>   Valerie Densmore, Florian W. Mayer (2020). rOzCBI: A burn severity assessment toolkit. R package version 0.0.3. https://github.com/dbca-wa/rOzCBI
+#>   Valerie Densmore, Florian W. Mayer (2020). rOzCBI: A burn severity
+#>   assessment toolkit. R package version 0.0.3.
+#>   https://github.com/dbca-wa/rOzCBI
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
