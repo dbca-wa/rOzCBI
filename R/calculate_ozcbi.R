@@ -8,7 +8,7 @@
 #' * Stratum scores (CBI): The average grading from all non-null gradings out of
 #'   all captured variables for each stratum.
 #'   The variables are named with a stratum prefix.
-#'   E.g., all variables for stratum 1 are prefixed `s1_`.
+#'   E.g., all variables for stratum 1 are prefixed `stratum_1_surface_s1_`.
 #'
 #' ### Overall index: OzCBI
 #' The OzCBI is calculated as:
@@ -30,66 +30,84 @@
 #' "evidence_of_native_fauna" "evidence_of_feral_fauna" "odata_context"
 #'
 #'
-#' @param s1_fcov_post_fire_leaf_fall A numeric grade from 0.0 to 3.0.
+#' @param stratum_1_surface_s1_fcov_post_fire_leaf_fall A numeric grade from 0.0 to 3.0.
 #'   Post-fire leaf fall cover.
 #'   Includes leaves that have fallen after the burn but not unburnt patches.
-#' @param s1_area_unburnt A numeric grade from 0.0 to 3.0.
+#' @param stratum_1_surface_s1_area_unburnt A numeric grade from 0.0 to 3.0.
 #'   Unburnt area.
 #'   The approximate percentage of area not burned.
-#' @param s1_duff A numeric grade from 0.0 to 3.0.
+#' @param stratum_1_surface_s1_duff A numeric grade from 0.0 to 3.0.
 #'   Duff condition (crushed sticks and leaves).
 #'   Broken leaf pieces that form a type of mulch under the litter layer.
 #'   If necessary, scrape down to mineral soil to see how deeply the char has
 #'   penetrated.
-#' @param s1_coarse_fuel A numeric grade from 0.0 to 3.0.
+#' @param stratum_1_surface_s1_coarse_fuel A numeric grade from 0.0 to 3.0.
 #'   Coarse fuel condition (logs).
 #'   Logs greater than 6 mm diameter that were on the ground prior to the burn.
-#' @param s2_area_unburnt A numeric grade from 0.0 to 3.0.
+#' @param stratum_2_near_surface_s2_area_unburnt
+#'   A numeric grade from 0.0 to 3.0.
 #'   Unburnt area.
 #'   The approximate percentage of area not burned.
-#' @param s2_grass_trees_with_skirts A numeric grade from 0.0 to 3.0.
+#' @param stratum_2_near_surface_s2_grass_trees_with_skirts
+#'   A numeric grade from 0.0 to 3.0.
 #'   Grass trees with skirts.
 #'   How many grass trees still have skirts?
-#' @param s2_unburnt_shrub_density A numeric grade from 0.0 to 3.0.
+#' @param stratum_2_near_surface_s2_unburnt_shrub_density
+#'   A numeric grade from 0.0 to 3.0.
 #'   Density of unburnt shrubs.
 #'   When walking across plot, how would you touch shrubs below 1m?
-#' @param s2_fcov_regenerating_plants A numeric grade from 0.0 to 3.0.
+#' @param stratum_2_near_surface_s2_fcov_regenerating_plants
+#'   A numeric grade from 0.0 to 3.0.
 #'   Regenerating plants cover.
 #'   All green growth associated at the base of shrubs or apparently out in the
 #'   open. Include seedlings in the approximate area.
-#' @param s3_fcov_original_crown_intact A numeric grade from 0.0 to 3.0.
+#' @param stratum_3_elevated_s3_fcov_original_crown_intact
+#'   A numeric grade from 0.0 to 3.0.
 #'   Intact original crown cover.
 #'   How much original crown is intact?
-#' @param s3_density_bare_shrubs A numeric grade from 0.0 to 3.0.
+#' @param stratum_3_elevated_s3_density_bare_shrubs
+#'   A numeric grade from 0.0 to 3.0.
 #'   Density of bare shrubs > 1m.
-#' @param s4_fcov_original_crown_intact A numeric grade from 0.0 to 3.0.
+#' @param straum_4_intermediate_s4_fcov_original_crown_intact
+#'   A numeric grade from 0.0 to 3.0.
 #'   Intact original crown cover.
 #'   How much original crown is intact?
-#' @param s4_resprouting_on_live_trees A numeric grade from 0.0 to 3.0.
+#' @param straum_4_intermediate_s4_resprouting_on_live_trees
+#'   A numeric grade from 0.0 to 3.0.
 #'   Resprouting on live trees.
-#' @param s4_char_height A numeric grade from 0.0 to 3.0.
+#' @param straum_4_intermediate_s4_char_height
+#'   A numeric grade from 0.0 to 3.0.
 #'   Char height.
 #'   Fraction of total stratum height charred.
-#' @param s5_fcov_original_crown_intact A numeric grade from 0.0 to 3.0.
+#' @param stratum_5_overstorey_s5_fcov_original_crown_intact
+#'   A numeric grade from 0.0 to 3.0.
 #'   Intact original crown cover.
 #'   How much original crown is intact?
-#' @param s5_no_trees_over_20cm_fallen A numeric grade from 0.0 to 3.0.
+#' @param stratum_5_overstorey_s5_no_trees_over_20cm_fallen
+#'   A numeric grade from 0.0 to 3.0.
 #'   Number of trees > 20cm fallen.
-#' @param s5_resprouting_on_live_trees A numeric grade from 0.0 to 3.0.
+#' @param stratum_5_overstorey_s5_resprouting_on_live_trees
+#'   A numeric grade from 0.0 to 3.0.
 #'   Resprouting on live trees.
-#' @param s5_char_height A numeric grade from 0.0 to 3.0.
+#' @param stratum_5_overstorey_s5_char_height
+#'   A numeric grade from 0.0 to 3.0.
 #'   Char height.
 #'   Fraction of total stratum height charred.
-#' @param s1_fcov The fraction of coverage of stratum 1, default: 1. This value
+#' @param stratum_1_surface_s1_fcov
+#'   The fraction of coverage of stratum 1, default: 1. This value
 #'   is never captured in the digital form as it always is 1 (100%).
 #'   The variable is however provided here to allow different values.
-#' @param s2_fcov The fraction of coverage of stratum 2 in quarter steps
+#' @param stratum_2_near_surface_s2_fcov
+#'   The fraction of coverage of stratum 2 in quarter steps
 #'   from 0.0 to 1.0. Default: 0.
-#' @param s3_fcov The fraction of coverage of stratum 2 in quarter steps
+#' @param stratum_3_elevated_s3_fcov
+#'   The fraction of coverage of stratum 2 in quarter steps
 #'   from 0.0 to 1.0. Default: 0.
-#' @param s4_fcov The fraction of coverage of stratum 2 in quarter steps
+#' @param straum_4_intermediate_s4_fcov
+#'   The fraction of coverage of stratum 2 in quarter steps
 #'   from 0.0 to 1.0. Default: 0.
-#' @param s5_fcov The fraction of coverage of stratum 2 in quarter steps
+#' @param stratum_5_overstorey_s5_fcov
+#'   The fraction of coverage of stratum 2 in quarter steps
 #'   from 0.0 to 1.0. Default: 0.
 #' @param verbose Whether to display diagnostic messages, default: FALSE.
 #' @family ozcbi
@@ -97,35 +115,35 @@
 #' @examples
 #' # With missing variables
 #' calculate_ozcbi(
-#'   s1_fcov_post_fire_leaf_fall = 1,
-#'   s2_area_unburnt = 2.5,
-#'   s2_fcov = 0.5,
+#'   stratum_1_surface_s1_fcov_post_fire_leaf_fall = 1,
+#'   stratum_2_near_surface_s2_area_unburnt = 2.5,
+#'   stratum_2_near_surface_s2_fcov = 0.5,
 #'   verbose = TRUE
 #' )
 #'
 #' # With complete variables, all set to 1
 #' calculate_ozcbi(
-#'   s1_fcov_post_fire_leaf_fall = 1,
-#'   s1_area_unburnt = 1,
-#'   s1_duff = 1,
-#'   s1_coarse_fuel = 1,
-#'   s2_area_unburnt = 1,
-#'   s2_grass_trees_with_skirts = 1,
-#'   s2_unburnt_shrub_density = 1,
-#'   s2_fcov_regenerating_plants = 1,
-#'   s3_fcov_original_crown_intact = 1,
-#'   s3_density_bare_shrubs = 1,
-#'   s4_fcov_original_crown_intact = 1,
-#'   s4_resprouting_on_live_trees = 1,
-#'   s4_char_height = 1,
-#'   s5_fcov_original_crown_intact = 1,
-#'   s5_no_trees_over_20cm_fallen = 1,
-#'   s5_resprouting_on_live_trees = 1,
-#'   s5_char_height = 1,
-#'   s2_fcov = 1,
-#'   s3_fcov = 1,
-#'   s4_fcov = 1,
-#'   s5_fcov = 1,
+#'   stratum_1_surface_s1_fcov_post_fire_leaf_fall = 1,
+#'   stratum_1_surface_s1_area_unburnt = 1,
+#'   stratum_1_surface_s1_duff = 1,
+#'   stratum_1_surface_s1_coarse_fuel = 1,
+#'   stratum_2_near_surface_s2_area_unburnt = 1,
+#'   stratum_2_near_surface_s2_grass_trees_with_skirts = 1,
+#'   stratum_2_near_surface_s2_unburnt_shrub_density = 1,
+#'   stratum_2_near_surface_s2_fcov_regenerating_plants = 1,
+#'   stratum_3_elevated_s3_fcov_original_crown_intact = 1,
+#'   stratum_3_elevated_s3_density_bare_shrubs = 1,
+#'   straum_4_intermediate_s4_fcov_original_crown_intact = 1,
+#'   straum_4_intermediate_s4_resprouting_on_live_trees = 1,
+#'   straum_4_intermediate_s4_char_height = 1,
+#'   stratum_5_overstorey_s5_fcov_original_crown_intact = 1,
+#'   stratum_5_overstorey_s5_no_trees_over_20cm_fallen = 1,
+#'   stratum_5_overstorey_s5_resprouting_on_live_trees = 1,
+#'   stratum_5_overstorey_s5_char_height = 1,
+#'   stratum_2_near_surface_s2_fcov = 1,
+#'   stratum_3_elevated_s3_fcov = 1,
+#'   straum_4_intermediate_s4_fcov = 1,
+#'   stratum_5_overstorey_s5_fcov = 1,
 #'   verbose = TRUE
 #' )
 calculate_ozcbi <- function(stratum_1_surface_s1_fcov_post_fire_leaf_fall = NA_real_,
