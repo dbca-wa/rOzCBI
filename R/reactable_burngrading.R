@@ -1,6 +1,6 @@
-#' Display a reactable of Burn Grading data (incl GeoCBI) with details
+#' Display a reactable of Burn Grading data (incl OzCBI) with details
 #'
-#' @param data Data from form Burn Grading with GeoCBI.
+#' @param data Data from form Burn Grading with OzCBI.
 #' @return An interactive reactable.
 #' @export
 #' @family helpers
@@ -8,7 +8,7 @@
 #' \dontrun{
 #' data("burngrading01")
 #' burngrading01 %>%
-#'   add_geocbi() %>%
+#'   add_ozcbi() %>%
 #'   reactable_burngrading()
 #' }
 reactable_burngrading <- function(data) {

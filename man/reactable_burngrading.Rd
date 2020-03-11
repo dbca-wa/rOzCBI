@@ -2,24 +2,24 @@
 % Please edit documentation in R/reactable_burngrading.R
 \name{reactable_burngrading}
 \alias{reactable_burngrading}
-\title{Display a reactable of Burn Grading data (incl GeoCBI) with details}
+\title{Display a reactable of Burn Grading data (incl OzCBI) with details}
 \usage{
 reactable_burngrading(data)
 }
 \arguments{
-\item{data}{Data from form Burn Grading with GeoCBI.}
+\item{data}{Data from form Burn Grading with OzCBI.}
 }
 \value{
 An interactive reactable.
 }
 \description{
-Display a reactable of Burn Grading data (incl GeoCBI) with details
+Display a reactable of Burn Grading data (incl OzCBI) with details
 }
 \examples{
 \dontrun{
 data("burngrading01")
 burngrading01 \%>\%
-  add_geocbi() \%>\%
+  add_ozcbi() \%>\%
   reactable_burngrading()
 }
 }

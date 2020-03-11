@@ -45,9 +45,9 @@ spelling::update_wordlist(here::here())
 codemetar::write_codemeta("rOzCBI")
 rmarkdown::render(here::here("README.Rmd"), encoding = "UTF-8", clean = TRUE)
 if (fs::file_exists(here::here("README.html"))) fs::file_delete(here::here("README.html"))
-codemetar::give_opinions('/home/florian/projects/rGeoCBI/.')
+codemetar::give_opinions('/home/florian/projects/rOzCBI/.')
 goodpractice::goodpractice(path = here::here(), quiet = FALSE)
-```
+1```
 
 ## Hex sticker 
 

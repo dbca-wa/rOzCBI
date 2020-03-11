@@ -42,7 +42,7 @@ library(reactable)
 ```
 
 This vignette will provide a worked example of accessing and downloading the
-burn grading submissions, and calculating the GeoCBI from the raw data.
+burn grading submissions, and calculating the OzCBI from the raw data.
 
 ## Request an ODK Central account
 
@@ -109,7 +109,7 @@ burngrading01 <- ruODK::odata_submission_get(
   verbose = T, 
   tz = "Australia/Perth", 
   local_dir = fs::path("media"), 
-  wkt=T
+  wkt = T
 )
 ```
 
@@ -117,9 +117,9 @@ burngrading01 <- ruODK::odata_submission_get(
 data("burngrading01")
 ```
 
-## Calculate GeoCBI
+## Calculate OzCBI
 
-Task: Parse raw data into numeric scale values, apply GeoCBI formula.
+Task: Parse raw data into numeric scale values, apply OzCBI formula.
 
 Values are coded as `<grade>_<url-safe-label>`, where grade are numbers 0.0, 0.5,
 1.0, 1.5 through to 3.0, and the labels are intelligible but url-safe factor levels. 
@@ -128,12 +128,12 @@ ranges from 0.0 to 1.0 in increments of 0.25.
 Each grade is three digits (two decimals) followed by an underscore.
 `extract_grading()` extracts the grade from values.
 
-The function `add_geocbi()` is highly specific to the underlying form "Burn Grading 0.1".
-It translates the form fields to the generic form `calculate_geocbi()`, which
+The function `add_ozcbi()` is highly specific to the underlying form "Burn Grading 0.1".
+It translates the form fields to the generic form `calculate_ozcbi()`, which
 can be fed by data from any other compatible data source.
 
 ```{r}
-bg_geocbi <- burngrading01 %>% add_geocbi()
+bg_ozcbi <- burngrading01 %>% add_ozcbi()
 ```
 
 ## Visualise
@@ -146,7 +146,7 @@ The source code of `map_burngrading()` can serve as a starting point for other
 customised maps.
 
 ```{r}
-bg_geocbi %>% map_burngrading()
+bg_ozcbi %>% map_burngrading()
 ```
 
 
@@ -154,7 +154,7 @@ bg_geocbi %>% map_burngrading()
 Each row expands to show details.
 
 ```{r}
-bg_geocbi %>% reactable_burngrading()
+bg_ozcbi %>% reactable_burngrading()
 ```
 
 ## Calibrate dNBR
@@ -169,8 +169,8 @@ to integrate that process into this package as follows.
   [tutorial at earthdatascience.org](https://www.earthdatascience.org/courses/earth-analytics/multispectral-remote-sensing-data/landsat-data-in-r-geotiff/)
 * Calculate $dNBR = NBR_{post} / NBR_{pre}$
 * Annotate each burn grading ground truthing location with the dNBR at that site
-* Model $GeoCBI = lm(dNBR)$
-* Predict modelled GeoCBI for other sites
+* Model $OzCBI = lm(dNBR)$
+* Predict modelled OzCBI for other sites
 
 ## Publish
 

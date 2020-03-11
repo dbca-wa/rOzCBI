@@ -1,18 +1,18 @@
-#' Add the GeoCBI calculated from the burn grading data
+#' Add the OzCBI calculated from the burn grading data
 #'
 #' @param burngrading A data.frame of burn grading data,
 #'   collected with ODK Collect from the form "Burn Grading 0.1"
 #'   and downloaded with `ruODK::odata_submission_get(wkt=T)`.
-#' @return The input data.frame with an extra variable, 'geocbi'.
+#' @return The input data.frame with an extra variable, 'ozcbi'.
 #' @export
-#' @family geocbi
+#' @family ozcbi
 #' @examples
 #' data("burngrading01")
-#' data_with_geocbi <- add_geocbi(burngrading01)
-#' names(data_with_geocbi)
-add_geocbi <- function(burngrading) {
+#' data_with_ozcbi <- add_ozcbi(burngrading01)
+#' names(data_with_ozcbi)
+add_ozcbi <- function(burngrading) {
   burngrading %>%
-    dplyr::mutate(geocbi = {
+    dplyr::mutate(ozcbi = {
       burngrading %>%
         dplyr::select(
           s1_fcov_post_fire_leaf_fall,
@@ -38,9 +38,9 @@ add_geocbi <- function(burngrading) {
           s5_fcov
         ) %>%
         dplyr::mutate_all(extract_grading) %>%
-        purrr::pmap(calculate_geocbi) %>%
+        purrr::pmap(calculate_ozcbi) %>%
         as.numeric()
     })
 }
 
-# usethis::use_test("add_geocbi")
+# usethis::use_test("add_ozcbi")

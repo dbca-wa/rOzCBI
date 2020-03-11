@@ -1,6 +1,6 @@
-#' Map Burn Grading data (incl GeoCBI) with labels and popups
+#' Map Burn Grading data (incl OzCBI) with labels and popups
 #'
-#' @param data Data from form Burn Grading with GeoCBI.
+#' @param data Data from form Burn Grading with OzCBI.
 #' @return A leaflet map
 #' @export
 #' @family helpers
@@ -8,17 +8,17 @@
 #' \dontrun{
 #' data("burngrading01")
 #' burngrading01 %>%
-#'   add_geocbi() %>%
+#'   add_ozcbi() %>%
 #'   map_burngrading()
 #' }
 map_burngrading <- function(data) {
   data_map <- data %>%
     dplyr::mutate(
-      geocbi_rnd = round(geocbi, 2),
+      ozcbi_rnd = round(ozcbi, 2),
       marker_colour = dplyr::case_when(
-        geocbi <= 1 ~ "green",
-        geocbi <= 2 ~ "orange",
-        geocbi > 2 ~ "red"
+        ozcbi <= 1 ~ "green",
+        ozcbi <= 2 ~ "orange",
+        ozcbi > 2 ~ "red"
       )
     )
 
@@ -32,14 +32,14 @@ map_burngrading <- function(data) {
       lng = ~location_longitude,
       lat = ~location_latitude,
       icon = leaflet::makeAwesomeIcon(
-        text = ~geocbi_rnd,
+        text = ~ozcbi_rnd,
         markerColor = ~marker_colour
       ),
       label = ~ glue::glue(
-        "[{geocbi_rnd}] {plot_name} {observation_start_time}"
+        "[{ozcbi_rnd}] {plot_name} {observation_start_time}"
       ),
       popup = ~ glue::glue('
-<h3>{plot_name}</h3><h4>GeoCBI {geocbi_rnd}</h4>
+<h3>{plot_name}</h3><h4>OzCBI {ozcbi_rnd}</h4>
 Survey start {observation_start_time}</br>
 Reporter {reporter}</br>
 Device {device_id}</br>

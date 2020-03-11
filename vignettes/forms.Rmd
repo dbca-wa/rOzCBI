@@ -30,7 +30,7 @@ of burn grading surveys.
 ## Creating the data capture form
 
 * Design form in [ODK Build](https://build.opendatakit.org/)
-* The GeoCBI burn grading form is included in three versions in this package:
+* The OzCBI burn grading form is included in three versions in this package:
   * ODK Build save file (resume form design from this file):
     `system.file("odk/BurnGrading01.odkbuild", package = "rOzCBI")`
   * XForm (upload to ODK Central): 

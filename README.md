@@ -26,7 +26,7 @@ rOzCBI in a nutshell:
 
   - [OpenDataKit](https://opendatakit.org/) forms to evaluate a burnt
     site.
-  - Helpers to calculate the GeoCBI from the burn grading field data.
+  - Helpers to calculate the OzCBI from the burn grading field data.
   - Instructions to get up and running with digital data capture and
     data anlysis.
   - Working examples of the entire data flow.
@@ -39,15 +39,16 @@ cost-effectively and on a large scale. The NBR is calculated from NIR
 and SWIR bands as \(NBR = (NIR - SWIR) / (NIR + SWIR)\). The dNBR is
 calculated from pre- and post-burn NBR as
 \(dNBR = NBR_{post} / NBR_{pre}\). To calibrate the dNBR, ground
-truthing field work can derive an index called “GeoCBI” from the
+truthing field work can derive an index called “OzCBI” from the
 condition and composition of a burnt site.
 
 rOzCBI contains background, digital data capture, analysis, and
-visualisation for the calculation of GeoCBI, a composite burn index for
+visualisation for the calculation of OzCBI, a composite burn index for
 the initial assessment of the short-term burn severity from remotely
 sensed data.
 
-GeoCBI was first described in [De Santis, Angela & Chuvieco, Emilio.
+OzCBI was derived from GeoCBI, which was first described in [De Santis,
+Angela & Chuvieco, Emilio.
 (2009)](https://doi.org/10.1016/j.rse.2008.10.011) ([Fulltext
 (pdf)](https://www.researchgate.net/publication/229043914_GeoCBI_A_modified_version_of_the_Composite_Burn_Index_for_the_initial_assessment_of_the_short-term_burn_severity_from_remotely_sensed_data))
 GeoCBI: A modified version of the Composite Burn Index for the initial
@@ -56,18 +57,17 @@ Remote Sensing of Environment
 113  
 [DOI 10.1016/j.rse.2008.10.011](https://www.sciencedirect.com/science/article/abs/pii/S0034425708003246)
 
-The GeoCBI we use here was further modified to suit Australian
-vegetation communities by Valerie Densmore at DBCA in Western Australia.
-This version of the GeoCBI is currently being tested and validated so
-the current version may not reflect the final form. Feedback on the use
-and validity of the Australian GeoCBI is welcome as [GitHub
-issues](https://github.com/dbca-wa/rOzCBI/issues).
+OzCBI was further modified to suit Australian vegetation communities by
+Valerie Densmore at DBCA in Western Australia. This version of the OzCBI
+is currently being tested and validated so the current version may not
+reflect the final form. Feedback on the use and validity of OzCBI is
+welcome as [GitHub issues](https://github.com/dbca-wa/rOzCBI/issues).
 
 ## How
 
 `rOzCBI` supplies an Xform to capture data digitally using OpenDataKit,
 then goes on to access the data directly from R using the package
-`ruODK`, and provides helper methods to calculate the GeoCBI from the
+`ruODK`, and provides helper methods to calculate the OzCBI from the
 captured data.
 
 You can install the development version from

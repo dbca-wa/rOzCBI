@@ -3,12 +3,12 @@
   "@type": "SoftwareSourceCode",
   "identifier": "rOzCBI",
   "description": "rOzCBI contains background, digital data capture, analysis, and\n             visualisation for the calculation of OzCBI, a composite burn index\n             for the initial assessment of the short-term burn severity from\n             remotely sensed data.",
-  "name": "rOzCBI: A Burn Severity Assessment Toolkit",
+  "name": "rOzCBI: A Burn Severity Assessment Toolkit for Austral Vegetation\n        Communities",
   "codeRepository": "https://github.com/dbca-wa/rOzCBI",
   "relatedLink": "https://dbca-wa.github.io/rOzCBI",
   "issueTracker": "https://github.com/dbca-wa/rOzCBI/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -57,45 +57,6 @@
   "softwareSuggestions": [
     {
       "@type": "SoftwareApplication",
-      "identifier": "tidyr",
-      "name": "tidyr",
-      "version": ">= 1.0.0",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=tidyr"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "identifier": "tibble",
-      "name": "tibble",
-      "version": ">= 2.1.3",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=tibble"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "identifier": "rlang",
-      "name": "rlang",
-      "version": ">= 0.4.2",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=rlang"
-    },
-    {
-      "@type": "SoftwareApplication",
       "identifier": "ckanr",
       "name": "ckanr",
       "version": ">= 0.4.0",
@@ -106,45 +67,6 @@
         "url": "https://cran.r-project.org"
       },
       "sameAs": "https://CRAN.R-project.org/package=ckanr"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "identifier": "ggplot2",
-      "name": "ggplot2",
-      "version": ">= 3.2.1",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=ggplot2"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "identifier": "lifecycle",
-      "name": "lifecycle",
-      "version": ">= 0.1.0.9000",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://github.com/r-lib/lifecycle"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "identifier": "lubridate",
-      "name": "lubridate",
-      "version": ">= 1.7.4",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=lubridate"
     },
     {
       "@type": "SoftwareApplication",
@@ -161,36 +83,16 @@
     },
     {
       "@type": "SoftwareApplication",
-      "identifier": "ruODK",
-      "name": "ruODK",
-      "version": ">= 0.6.6.9007",
-      "sameAs": "https://github.com/dbca-wa/ruODK"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "identifier": "reactable",
-      "name": "reactable",
-      "version": ">= 0.1.0",
+      "identifier": "ggplot2",
+      "name": "ggplot2",
+      "version": ">= 3.2.1",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
         "name": "Comprehensive R Archive Network (CRAN)",
         "url": "https://cran.r-project.org"
       },
-      "sameAs": "https://CRAN.R-project.org/package=reactable"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "identifier": "janitor",
-      "name": "janitor",
-      "version": ">= 1.2.0",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=janitor"
+      "sameAs": "https://CRAN.R-project.org/package=ggplot2"
     },
     {
       "@type": "SoftwareApplication",
@@ -220,6 +122,19 @@
     },
     {
       "@type": "SoftwareApplication",
+      "identifier": "janitor",
+      "name": "janitor",
+      "version": ">= 1.2.1",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=janitor"
+    },
+    {
+      "@type": "SoftwareApplication",
       "identifier": "knitr",
       "name": "knitr",
       "version": ">= 1.26",
@@ -230,6 +145,19 @@
         "url": "https://cran.r-project.org"
       },
       "sameAs": "https://CRAN.R-project.org/package=knitr"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "lifecycle",
+      "name": "lifecycle",
+      "version": ">= 0.2.0",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=lifecycle"
     },
     {
       "@type": "SoftwareApplication",
@@ -246,16 +174,16 @@
     },
     {
       "@type": "SoftwareApplication",
-      "identifier": "plyr",
-      "name": "plyr",
-      "version": ">= 1.8.5",
+      "identifier": "lubridate",
+      "name": "lubridate",
+      "version": ">= 1.7.4",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
         "name": "Comprehensive R Archive Network (CRAN)",
         "url": "https://cran.r-project.org"
       },
-      "sameAs": "https://CRAN.R-project.org/package=plyr"
+      "sameAs": "https://CRAN.R-project.org/package=lubridate"
     },
     {
       "@type": "SoftwareApplication",
@@ -272,6 +200,19 @@
     },
     {
       "@type": "SoftwareApplication",
+      "identifier": "reactable",
+      "name": "reactable",
+      "version": ">=\n        0.1.0",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=reactable"
+    },
+    {
+      "@type": "SoftwareApplication",
       "identifier": "rmarkdown",
       "name": "rmarkdown",
       "version": ">= 2.0",
@@ -285,9 +226,16 @@
     },
     {
       "@type": "SoftwareApplication",
+      "identifier": "ruODK",
+      "name": "ruODK",
+      "version": ">= 0.6.6.9015",
+      "sameAs": "https://github.com/dbca-wa/ruODK"
+    },
+    {
+      "@type": "SoftwareApplication",
       "identifier": "skimr",
       "name": "skimr",
-      "version": ">= 2.0.2",
+      "version": ">=\n        2.0.2",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -298,16 +246,16 @@
     },
     {
       "@type": "SoftwareApplication",
-      "identifier": "tidyverse",
-      "name": "tidyverse",
-      "version": ">= 1.3.0",
+      "identifier": "spelling",
+      "name": "spelling",
+      "version": ">= 2.1",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
         "name": "Comprehensive R Archive Network (CRAN)",
         "url": "https://cran.r-project.org"
       },
-      "sameAs": "https://CRAN.R-project.org/package=tidyverse"
+      "sameAs": "https://CRAN.R-project.org/package=spelling"
     },
     {
       "@type": "SoftwareApplication",
@@ -321,6 +269,32 @@
         "url": "https://cran.r-project.org"
       },
       "sameAs": "https://CRAN.R-project.org/package=testthat"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "tidyr",
+      "name": "tidyr",
+      "version": ">=\n        1.0.0",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=tidyr"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "tibble",
+      "name": "tibble",
+      "version": ">= 2.1.3",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=tibble"
     },
     {
       "@type": "SoftwareApplication",
@@ -360,7 +334,7 @@
       "@type": "SoftwareApplication",
       "identifier": "dplyr",
       "name": "dplyr",
-      "version": ">= 0.8.3",
+      "version": ">= 0.8.4",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -423,6 +397,19 @@
     },
     {
       "@type": "SoftwareApplication",
+      "identifier": "rlang",
+      "name": "rlang",
+      "version": ">= 0.4.5",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=rlang"
+    },
+    {
+      "@type": "SoftwareApplication",
       "identifier": "stringr",
       "name": "stringr",
       "version": ">= 1.4.0",
@@ -435,11 +422,6 @@
       "sameAs": "https://CRAN.R-project.org/package=stringr"
     }
   ],
-  "releaseNotes": "https://github.com/dbca-wa/rOzCBI/blob/master/NEWS.md",
-  "readme": "https://github.com/dbca-wa/rOzCBI/blob/master/README.md",
-  "fileSize": "1327.275KB",
-  "contIntegration": ["https://travis-ci.org/dbca-wa/rOzCBI", "https://circleci.com/gh/dbca-wa/rOzCBI", "https://ci.appveyor.com/project/florianm/rOzCBI", "https://codecov.io/gh/dbca-wa/rOzCBI?branch=master"],
-  "developmentStatus": "https://www.repostatus.org/#wip",
   "citation": [
     {
       "@type": "CreativeWork",

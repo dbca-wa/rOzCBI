@@ -9,9 +9,9 @@ template:
     bootswatch: yeti
     ganalytics: UA-155735563-1
 reference:
-- title: GeoCBI
+- title: OzCBI
   contents:
-  - has_concept("geocbi")
+  - has_concept("ozcbi")
 - title: Helpers
   contents:
   - has_concept("helpers")

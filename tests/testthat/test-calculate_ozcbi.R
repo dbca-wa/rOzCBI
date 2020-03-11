@@ -1,14 +1,14 @@
-test_that("calculate_geocbi returns 0 if no data given", {
-  testthat::expect_equal(calculate_geocbi(), 0)
+test_that("calculate_ozcbi returns 0 if no data given", {
+  testthat::expect_equal(calculate_ozcbi(), 0)
 })
 
-test_that("calculate_geocbi sends its regards", {
-  testthat::expect_message(calculate_geocbi(verbose = TRUE))
+test_that("calculate_ozcbi sends its regards", {
+  testthat::expect_message(calculate_ozcbi(verbose = TRUE))
 })
 
-test_that("calculate_geocbi is 1 if all scores are 1", {
+test_that("calculate_ozcbi is 1 if all scores are 1", {
   testthat::expect_equal(
-    calculate_geocbi(
+    calculate_ozcbi(
       s1_fcov_post_fire_leaf_fall = 1,
       s1_area_unburnt = 1,
       s1_duff = 1,
@@ -37,9 +37,9 @@ test_that("calculate_geocbi is 1 if all scores are 1", {
   )
 })
 
-test_that("calculate_geocbi is 2 if all scores=2 and all fcov=2", {
+test_that("calculate_ozcbi is 2 if all scores=2 and all fcov=2", {
   testthat::expect_equal(
-    calculate_geocbi(
+    calculate_ozcbi(
       s1_fcov_post_fire_leaf_fall = 2,
       s1_area_unburnt = 2,
       s1_duff = 2,
@@ -68,9 +68,9 @@ test_that("calculate_geocbi is 2 if all scores=2 and all fcov=2", {
   )
 })
 
-test_that("calculate_geocbi ignores grades from strata with fcov 0", {
+test_that("calculate_ozcbi ignores grades from strata with fcov 0", {
   testthat::expect_equal(
-    calculate_geocbi(
+    calculate_ozcbi(
       s1_fcov_post_fire_leaf_fall = 1,
       s1_area_unburnt = 1,
       s1_duff = 1,
@@ -100,14 +100,14 @@ test_that("calculate_geocbi ignores grades from strata with fcov 0", {
 })
 
 
-test_that("calculate_geocbi gets different geocbi from real data", {
+test_that("calculate_ozcbi gets different ozcbi from real data", {
   data("burngrading01")
 
-  data_with_geocbi <- burngrading01 %>% add_geocbi()
+  data_with_ozcbi <- burngrading01 %>% add_ozcbi()
   testthat::expect_false(
-    data_with_geocbi$geocbi[[1]] == data_with_geocbi$geocbi[[2]]
+    data_with_ozcbi$ozcbi[[1]] == data_with_ozcbi$ozcbi[[2]]
   )
 })
 
 
-# usethis::use_r("calculate_geocbi")
+# usethis::use_r("calculate_ozcbi")

@@ -1,6 +1,6 @@
-#' Calculate the GeoCBI from input variables
+#' Calculate the OzCBI from input variables
 #'
-#' @details The GeoCBI is calculated from the following components:
+#' @details The OzCBI is calculated from the following components:
 #'
 #' * Stratum 1 fraction of cover: always 1 (100%), therefore never captured.
 #' * Stratum {2..5} fcov: the extracted gradings of surface cover in quarter
@@ -10,13 +10,13 @@
 #'   The variables are named with a stratum prefix.
 #'   E.g., all variables for stratum 1 are prefixed `s1_`.
 #'
-#' ### Overall index: GeoCBI
-#' The GeoCBI is calculated as:
+#' ### Overall index: OzCBI
+#' The OzCBI is calculated as:
 #'
 #' (sum of stratum scores) / (sum of stratum fraction of cover)
 #'
-#' ### Vars not used in GeoCBI formula
-#' Some variables are captured, but not used for GeoCBI calculation.
+#' ### Vars not used in OzCBI formula
+#' Some variables are captured, but not used for OzCBI calculation.
 #' They provide context and metadata, and include representative photos.
 #'
 #' "id" "observation_start_time" "reporter" "device_id" "observation_end_time"
@@ -92,11 +92,11 @@
 #' @param s5_fcov The fraction of coverage of stratum 2 in quarter steps
 #'   from 0.0 to 1.0. Default: 0.
 #' @param verbose Whether to display diagnostic messages, default: FALSE.
-#' @family geocbi
+#' @family ozcbi
 #' @export
 #' @examples
 #' # With missing variables
-#' calculate_geocbi(
+#' calculate_ozcbi(
 #'   s1_fcov_post_fire_leaf_fall = 1,
 #'   s2_area_unburnt = 2.5,
 #'   s2_fcov = 0.5,
@@ -104,7 +104,7 @@
 #' )
 #'
 #' # With complete variables, all set to 1
-#' calculate_geocbi(
+#' calculate_ozcbi(
 #'   s1_fcov_post_fire_leaf_fall = 1,
 #'   s1_area_unburnt = 1,
 #'   s1_duff = 1,
@@ -128,29 +128,29 @@
 #'   s5_fcov = 1,
 #'   verbose = TRUE
 #' )
-calculate_geocbi <- function(s1_fcov_post_fire_leaf_fall = NA_real_,
-                             s1_area_unburnt = NA_real_,
-                             s1_duff = NA_real_,
-                             s1_coarse_fuel = NA_real_,
-                             s2_area_unburnt = NA_real_,
-                             s2_grass_trees_with_skirts = NA_real_,
-                             s2_unburnt_shrub_density = NA_real_,
-                             s2_fcov_regenerating_plants = NA_real_,
-                             s3_fcov_original_crown_intact = NA_real_,
-                             s3_density_bare_shrubs = NA_real_,
-                             s4_fcov_original_crown_intact = NA_real_,
-                             s4_resprouting_on_live_trees = NA_real_,
-                             s4_char_height = NA_real_,
-                             s5_fcov_original_crown_intact = NA_real_,
-                             s5_no_trees_over_20cm_fallen = NA_real_,
-                             s5_resprouting_on_live_trees = NA_real_,
-                             s5_char_height = NA_real_,
-                             s1_fcov = 1,
-                             s2_fcov = 0,
-                             s3_fcov = 0,
-                             s4_fcov = 0,
-                             s5_fcov = 0,
-                             verbose = FALSE) {
+calculate_ozcbi <- function(s1_fcov_post_fire_leaf_fall = NA_real_,
+                            s1_area_unburnt = NA_real_,
+                            s1_duff = NA_real_,
+                            s1_coarse_fuel = NA_real_,
+                            s2_area_unburnt = NA_real_,
+                            s2_grass_trees_with_skirts = NA_real_,
+                            s2_unburnt_shrub_density = NA_real_,
+                            s2_fcov_regenerating_plants = NA_real_,
+                            s3_fcov_original_crown_intact = NA_real_,
+                            s3_density_bare_shrubs = NA_real_,
+                            s4_fcov_original_crown_intact = NA_real_,
+                            s4_resprouting_on_live_trees = NA_real_,
+                            s4_char_height = NA_real_,
+                            s5_fcov_original_crown_intact = NA_real_,
+                            s5_no_trees_over_20cm_fallen = NA_real_,
+                            s5_resprouting_on_live_trees = NA_real_,
+                            s5_char_height = NA_real_,
+                            s1_fcov = 1,
+                            s2_fcov = 0,
+                            s3_fcov = 0,
+                            s4_fcov = 0,
+                            s5_fcov = 0,
+                            verbose = FALSE) {
 
   # -------------------------------------------------------------------------- #
   # Stratum 1
@@ -236,7 +236,7 @@ calculate_geocbi <- function(s1_fcov_post_fire_leaf_fall = NA_real_,
     )
   }
 
-  # GeoCBI
+  # OzCBI
   score_sum <- sum(
     s1_score,
     s2_score,
@@ -246,15 +246,15 @@ calculate_geocbi <- function(s1_fcov_post_fire_leaf_fall = NA_real_,
     na.rm = TRUE
   )
   fcov_sum <- sum(s1_fcov, s2_fcov, s3_fcov, s4_fcov, s5_fcov)
-  geocbi <- score_sum / fcov_sum
+  ozcbi <- score_sum / fcov_sum
   if (verbose == TRUE) {
     message(
       glue::glue(
-        "GeoCBI: {geocbi} = Score sum {score_sum} / FCOV sums {fcov_sum}"
+        "OzCBI: {ozcbi} = Score sum {score_sum} / FCOV sums {fcov_sum}"
       )
     )
   }
-  geocbi
+  ozcbi
 }
 
-# usethis::use_test("calculate_geocbi")
+# usethis::use_test("calculate_ozcbi")

@@ -2,24 +2,24 @@
 % Please edit documentation in R/map_burngrading.R
 \name{map_burngrading}
 \alias{map_burngrading}
-\title{Map Burn Grading data (incl GeoCBI) with labels and popups}
+\title{Map Burn Grading data (incl OzCBI) with labels and popups}
 \usage{
 map_burngrading(data)
 }
 \arguments{
-\item{data}{Data from form Burn Grading with GeoCBI.}
+\item{data}{Data from form Burn Grading with OzCBI.}
 }
 \value{
 A leaflet map
 }
 \description{
-Map Burn Grading data (incl GeoCBI) with labels and popups
+Map Burn Grading data (incl OzCBI) with labels and popups
 }
 \examples{
 \dontrun{
 data("burngrading01")
 burngrading01 \%>\%
-  add_geocbi() \%>\%
+  add_ozcbi() \%>\%
   map_burngrading()
 }
 }
