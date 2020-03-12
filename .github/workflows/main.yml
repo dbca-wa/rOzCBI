@@ -20,9 +20,10 @@ jobs:
         config:
           - {os: windows-latest, r: '3.5'}
           - {os: windows-latest, r: '3.6'}
+          - {os: windows-latest, r: 'devel'}
           - {os: macOS-latest, r: '3.5'}
           - {os: macOS-latest, r: '3.6'}
-          # - {os: macOS-latest, r: 'devel'}
+          - {os: macOS-latest, r: 'devel'}
           # - {os: ubuntu-16.04, r: '3.5', rspm: "https://demo.rstudiopm.com/all/__linux__/xenial/latest"}
           # - {os: ubuntu-16.04, r: '3.6', rspm: "https://demo.rstudiopm.com/all/__linux__/xenial/latest"}
           - {os: ubuntu-18.04, r: '3.5', rspm: "https://demo.rstudiopm.com/all/__linux__/bionic/latest"}
@@ -68,7 +69,12 @@ jobs:
           sysreqs=$(Rscript -e "cat(sysreqs::sysreq_commands('DESCRIPTION'))")
           sudo -s eval "$sysreqs"
 
-      - name: Install dependencies
+      - name: Bash Windows over the head with a source install of dplyr
+        if: runner.os == 'Windows'
+        run: install.packages("dplyr", type = "source")
+        shell: Rscript {0}
+
+      - name: Install R dependencies
         run: |
           remotes::install_deps(dependencies = TRUE)
           remotes::install_cran("rcmdcheck")
