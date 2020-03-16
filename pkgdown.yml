@@ -1,10 +1,11 @@
 pandoc: 2.7.3
 pkgdown: 1.4.1.9000
-pkgdown_sha: 2ae20f3d3c207330f5972642ec42a7be277c6a7a
+pkgdown_sha: 17d069073e39a73cf09b54eb756a83d55f8fa96b
 articles:
   analysis: analysis.html
   dev: dev.html
   forms: forms.html
+last_built: 2020-03-16T05:54Z
 urls:
   reference: https://dbca-wa.github.io/rOzCBI/reference
   article: https://dbca-wa.github.io/rOzCBI/articles
