@@ -14,3 +14,4 @@
 ^\.circleci$
 ^\.circleci/config\.yml$
 ^\.github$
+^man-roxygen$
