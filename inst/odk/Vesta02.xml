@@ -1,0 +1,1536 @@
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa">
+  <h:head>
+    <h:title>Vesta 0.2</h:title>
+    <model>
+      <instance>
+        <data id="build_Vesta-0-2_1598430994">
+          <meta>
+            <instanceID/>
+          </meta>
+          <start/>
+          <reporter/>
+          <device_id/>
+          <details>
+            <Burn_ID/>
+            <site/>
+            <TSF/>
+          </details>
+          <plot_1>
+            <p1_litter_depth/>
+            <p1_surface_fhs/>
+            <p1__near_surface_height/>
+            <p1__near_surface_fhs/>
+            <p1__elevated_height/>
+            <p1_elevated_fhs/>
+            <p1_bark__fhs/>
+            <p1_photo/>
+          </plot_1>
+          <plot_2>
+            <location/>
+            <p2_green/>
+            <p2_cwd/>
+            <p2_near_surface_veg/>
+            <p2_near_surface_fcov/>
+            <p2_shrubs/>
+            <p2_elevated_veg/>
+            <p2_elevated_fcov/>
+            <p2_understorey_veg/>
+            <p2_understorey_fcov/>
+            <p2_understorey_resprout/>
+            <p2_height/>
+            <p2_canopy_veg/>
+            <p2_canopy_fcov/>
+            <p2_canopy_resprout/>
+            <p2_hollows/>
+            <p2_photo/>
+            <p2_overstorey/>
+          </plot_2>
+          <plot_3>
+            <p3_litter_depth/>
+            <p3_surface_fhs/>
+            <p3_near_surface_height/>
+            <p3_near_surface_fhs/>
+            <p3_elevated_height/>
+            <p3_elevated_fhs/>
+            <p3_bark_fhs/>
+            <p3_photo/>
+          </plot_3>
+          <plot_4>
+            <p4_litter_depth/>
+            <p4_surface_fhs/>
+            <p4_near_surface_height/>
+            <p4_near_surface_fhs/>
+            <p4_elevated_height/>
+            <p4_elevated_fhs/>
+            <p4_bark_fhs/>
+            <p4_photo/>
+          </plot_4>
+          <finish/>
+        </data>
+      </instance>
+      <itext>
+        <translation lang="English">
+          <text id="/data/details:label">
+            <value>Site overview</value>
+          </text>
+          <text id="/data/details/Burn_ID:label">
+            <value>Burn ID</value>
+          </text>
+          <text id="/data/details/Burn_ID:hint">
+            <value>Three letters for district then 2-3 numbers</value>
+          </text>
+          <text id="/data/details/site:label">
+            <value>Site name</value>
+          </text>
+          <text id="/data/details/site:hint">
+            <value>Event name (first letter), veg type, severity class, site number</value>
+          </text>
+          <text id="/data/details/TSF:label">
+            <value>Site Age</value>
+          </text>
+          <text id="/data/details/TSF:hint">
+            <value>Year(s) since last fire or burn</value>
+          </text>
+          <text id="/data/plot_1:label">
+            <value>Plot 1 - 0-5m along 20m transect</value>
+          </text>
+          <text id="/data/plot_1/p1_litter_depth:label">
+            <value>Litter Depth (mm) </value>
+          </text>
+          <text id="/data/plot_1/p1_litter_depth:hint">
+            <value>Use Sneeuwj-o-meter</value>
+          </text>
+          <text id="/data/plot_1/p1_surface_fhs:label">
+            <value>Surface Fuel Hazard Score </value>
+          </text>
+          <text id="/data/plot_1/p1_surface_fhs:hint">
+            <value>Dead leaves, twigs and bark of overstorey and understorey plants</value>
+          </text>
+          <text id="/data/plot_1/p1_surface_fhs:option0">
+            <value>Nil - No surface litter, bare ground</value>
+          </text>
+          <text id="/data/plot_1/p1_surface_fhs:option1">
+            <value>Low - Very thin layer, no decomp, discontinuous</value>
+          </text>
+          <text id="/data/plot_1/p1_surface_fhs:option2">
+            <value>Moderate - Thin layer, no decomp, continuous</value>
+          </text>
+          <text id="/data/plot_1/p1_surface_fhs:option3">
+            <value>High - Established litter layer, continuous, decomposing</value>
+          </text>
+          <text id="/data/plot_1/p1_surface_fhs:option4">
+            <value>Very High - Thick litter layer, continuous, decomposing, duff layer may be present</value>
+          </text>
+          <text id="/data/plot_1/p1_surface_fhs:option5">
+            <value>Extreme - Very thick continuous layer of litter with duff present</value>
+          </text>
+          <text id="/data/plot_1/p1__near_surface_height:label">
+            <value>Near Surface Height (cm) </value>
+          </text>
+          <text id="/data/plot_1/p1__near_surface_height:hint">
+            <value>Height in cm using ruler or metric rod</value>
+          </text>
+          <text id="/data/plot_1/p1__near_surface_fhs:label">
+            <value>Near-Surface Fuel Hazard Score </value>
+          </text>
+          <text id="/data/plot_1/p1__near_surface_fhs:hint">
+            <value>Grasses, low shrubs, creepers and collapsed understorey plus any suspended leaf, twig and bark from the overstorey</value>
+          </text>
+          <text id="/data/plot_1/p1__near_surface_fhs:requiredMsg">
+            <value/>
+          </text>
+          <text id="/data/plot_1/p1__near_surface_fhs:option0">
+            <value>Nil - no near-surface fuel</value>
+          </text>
+          <text id="/data/plot_1/p1__near_surface_fhs:option1">
+            <value>Low - sparse dispersed fuel, dead material virtually absent</value>
+          </text>
+          <text id="/data/plot_1/p1__near_surface_fhs:option2">
+            <value>Moderate - Scattered suspended leaves, twigs and bark, proportion of dead material is &lt;20%</value>
+          </text>
+          <text id="/data/plot_1/p1__near_surface_fhs:option3">
+            <value>High - Suspended leaves, twigs and bark, starting to obscure logs and rocks, proportion of dead material is 20-50%</value>
+          </text>
+          <text id="/data/plot_1/p1__near_surface_fhs:option4">
+            <value>Very High - Suspended leaves and bark with a cover of 40-60% cover, proportion of dead material is 20-50%</value>
+          </text>
+          <text id="/data/plot_1/p1__near_surface_fhs:option5">
+            <value>Extreme - Very large amounts of suspended leaves, twigs and bark, high proportion of dead material &gt;50%, vegetation is senescent, obscuring logs and rocks</value>
+          </text>
+          <text id="/data/plot_1/p1__elevated_height:label">
+            <value>Elevated Height (m) </value>
+          </text>
+          <text id="/data/plot_1/p1__elevated_height:hint">
+            <value>Height in metres using metric rod</value>
+          </text>
+          <text id="/data/plot_1/p1_elevated_fhs:label">
+            <value>Elevated Fuel Hazard Score </value>
+          </text>
+          <text id="/data/plot_1/p1_elevated_fhs:hint">
+            <value>Tall shrubs and other understorey plants without significant suspended material.</value>
+          </text>
+          <text id="/data/plot_1/p1_elevated_fhs:option0">
+            <value>Nil - No elevated fuel</value>
+          </text>
+          <text id="/data/plot_1/p1_elevated_fhs:option1">
+            <value>Low - Sparse and dispersed, with &lt;5% dead</value>
+          </text>
+          <text id="/data/plot_1/p1_elevated_fhs:option2">
+            <value>Moderate - Sparse and dispersed, brush against occasionally with &lt;20% dead</value>
+          </text>
+          <text id="/data/plot_1/p1_elevated_fhs:option3">
+            <value>High - Little fine fuel at base, patchy or mesic shrubs with 10-30% dead</value>
+          </text>
+          <text id="/data/plot_1/p1_elevated_fhs:option4">
+            <value>Very High - Difficult to walk through, good vertical continuity of dead material with &gt;20% dead</value>
+          </text>
+          <text id="/data/plot_1/p1_elevated_fhs:option5">
+            <value>Extreme - Difficult to walk through, vertical continuity of fine dead fuel from ground up with &gt;30% dead</value>
+          </text>
+          <text id="/data/plot_1/p1_bark__fhs:label">
+            <value>Bark Hazard Score </value>
+          </text>
+          <text id="/data/plot_1/p1_bark__fhs:hint">
+            <value>The bark on the bole and branches of trees, either alive or dead, extending right back to the cambial layer</value>
+          </text>
+          <text id="/data/plot_1/p1_bark__fhs:option0">
+            <value>Low - no fibrous bark, no spotting</value>
+          </text>
+          <text id="/data/plot_1/p1_bark__fhs:option1">
+            <value>Moderate - 1) stringybark where bark is well charred or tightly held; 2) ironbarks w/very tight platy or fibrous bark; or 3) smooth-barks which do not produce long ribbons of bark</value>
+          </text>
+          <text id="/data/plot_1/p1_bark__fhs:option2">
+            <value>High - 1) stringybark where most of bark is black on the lower trunk; 2) few pieces of bark are loosely attached to trunks; 3) bloodwood w/tight fibrous bark which has not been burnt for many years; or 4) smooth/candle bark which shed long ribbons of bark but have smooth bark down to ground level</value>
+          </text>
+          <text id="/data/plot_1/p1_bark__fhs:option3">
+            <value>Very High - 1) stringybarks where &gt;50% of surface area of the trees is black; 2) upper parts of trunk may not be charred; 3) smooth/candle barks with long ribbons of bark which are loose; or 4) fibrous or platy bark on lower trunk, which have not been burnt for many years</value>
+          </text>
+          <text id="/data/plot_1/p1_bark__fhs:option4">
+            <value>Extreme - 1) stringybark with large flakes of bark that can be easily dislodged; 2) huge amounts of bark are available for spotting; 3) outer bark on the trees is attached weakly; or 4) minimal evidence of charring (complete grey appearance on trunks)</value>
+          </text>
+          <text id="/data/plot_1/p1_photo:label">
+            <value>Plot 1 photo </value>
+          </text>
+          <text id="/data/plot_1/p1_photo:hint">
+            <value>Take a portait photo of fuel structure and bark</value>
+          </text>
+          <text id="/data/plot_2:label">
+            <value>Plot 2 overview - 7m along 20m transect</value>
+          </text>
+          <text id="/data/plot_2/location:label">
+            <value>Location</value>
+          </text>
+          <text id="/data/plot_2/location:hint">
+            <value/>
+          </text>
+          <text id="/data/plot_2/location:requiredMsg">
+            <value>Location is required</value>
+          </text>
+          <text id="/data/plot_2/p2_green:label">
+            <value>Green Surface Cover </value>
+          </text>
+          <text id="/data/plot_2/p2_green:hint">
+            <value>Cover from surface plants (e.g., grass, herbs, annuals, creepers)</value>
+          </text>
+          <text id="/data/plot_2/p2_green:option0">
+            <value>More than 90%</value>
+          </text>
+          <text id="/data/plot_2/p2_green:option1">
+            <value>75 to 90%</value>
+          </text>
+          <text id="/data/plot_2/p2_green:option2">
+            <value>50 to 75%</value>
+          </text>
+          <text id="/data/plot_2/p2_green:option3">
+            <value>25 to 50%</value>
+          </text>
+          <text id="/data/plot_2/p2_green:option4">
+            <value>10 to 25%</value>
+          </text>
+          <text id="/data/plot_2/p2_green:option5">
+            <value>Less than 10%</value>
+          </text>
+          <text id="/data/plot_2/p2_green:option6">
+            <value>None</value>
+          </text>
+          <text id="/data/plot_2/p2_cwd:label">
+            <value>Number of Logs </value>
+          </text>
+          <text id="/data/plot_2/p2_cwd:hint">
+            <value>Count the number of logs over 20 cm diameter</value>
+          </text>
+          <text id="/data/plot_2/p2_near_surface_veg:label">
+            <value>Vegetation Observed in the Near-Surface Layer </value>
+          </text>
+          <text id="/data/plot_2/p2_near_surface_veg:hint">
+            <value>Record first few letters of species common name or Scientific name (genus/species). i.e., for Jarrah use 'Jar' or 'Eucmar' </value>
+          </text>
+          <text id="/data/plot_2/p2_near_surface_fcov:label">
+            <value>Near-Surface Cover </value>
+          </text>
+          <text id="/data/plot_2/p2_near_surface_fcov:hint">
+            <value>How much area does the near-surface fuel cover? First ask, was it more than half (50%)? Then ask if it was more than 25% or more than 75%.</value>
+          </text>
+          <text id="/data/plot_2/p2_near_surface_fcov:option0">
+            <value>75 to 100%</value>
+          </text>
+          <text id="/data/plot_2/p2_near_surface_fcov:option1">
+            <value>50 to 75%</value>
+          </text>
+          <text id="/data/plot_2/p2_near_surface_fcov:option2">
+            <value>25 to 50%</value>
+          </text>
+          <text id="/data/plot_2/p2_near_surface_fcov:option3">
+            <value>0 to 25%</value>
+          </text>
+          <text id="/data/plot_2/p2_near_surface_fcov:option4">
+            <value>Stratum entirely absent</value>
+          </text>
+          <text id="/data/plot_2/p2_shrubs:label">
+            <value>Density of Shrubs</value>
+          </text>
+          <text id="/data/plot_2/p2_shrubs:hint">
+            <value>When looking down at a shrub, how much ground is visible between the leaves?</value>
+          </text>
+          <text id="/data/plot_2/p2_shrubs:option0">
+            <value>The ground is not visible.</value>
+          </text>
+          <text id="/data/plot_2/p2_shrubs:option1">
+            <value>Less than 25% of the ground is visible.</value>
+          </text>
+          <text id="/data/plot_2/p2_shrubs:option2">
+            <value>Half or less of the ground is visible, and the shrub is at least 1.5 m long or wide.</value>
+          </text>
+          <text id="/data/plot_2/p2_shrubs:option3">
+            <value>Half or less of the ground is visible, but the shrub is less than 1.5 m long or wide</value>
+          </text>
+          <text id="/data/plot_2/p2_shrubs:option4">
+            <value>Can see more ground than leaves or twigs,  and the shrub is at least 1.5 m long or wide.</value>
+          </text>
+          <text id="/data/plot_2/p2_shrubs:option5">
+            <value>Can see more ground than leaves or twigs,  and the shrub is smaller than 1.5 m long or wide.</value>
+          </text>
+          <text id="/data/plot_2/p2_shrubs:option6">
+            <value>No shrub layer</value>
+          </text>
+          <text id="/data/plot_2/p2_elevated_veg:label">
+            <value>Vegetation Observed in the Elevated Layer</value>
+          </text>
+          <text id="/data/plot_2/p2_elevated_veg:hint">
+            <value>Record first few letters of species common name or Scientific name (genus/species). i.e., for Jarrah use 'Jar' or 'Eucmar' </value>
+          </text>
+          <text id="/data/plot_2/p2_elevated_fcov:label">
+            <value>Elevated Cover </value>
+          </text>
+          <text id="/data/plot_2/p2_elevated_fcov:hint">
+            <value>How much area does the elevated fuel cover? First ask, was it more than half (50%)? Then ask if it was more than 25% or more than 75%.</value>
+          </text>
+          <text id="/data/plot_2/p2_elevated_fcov:requiredMsg">
+            <value>Percentage cover is required</value>
+          </text>
+          <text id="/data/plot_2/p2_elevated_fcov:option0">
+            <value>75 to 100%</value>
+          </text>
+          <text id="/data/plot_2/p2_elevated_fcov:option1">
+            <value>50 to 75%</value>
+          </text>
+          <text id="/data/plot_2/p2_elevated_fcov:option2">
+            <value>25 to 50%</value>
+          </text>
+          <text id="/data/plot_2/p2_elevated_fcov:option3">
+            <value>0 to 25%</value>
+          </text>
+          <text id="/data/plot_2/p2_elevated_fcov:option4">
+            <value>Stratum entirely absent</value>
+          </text>
+          <text id="/data/plot_2/p2_understorey_veg:label">
+            <value>Vegetation Observed in the Understorey Layer</value>
+          </text>
+          <text id="/data/plot_2/p2_understorey_veg:hint">
+            <value>Record first few letters of species common name or Scientific name (genus/species). i.e., for Jarrah use 'Jar' or 'Eucmar' </value>
+          </text>
+          <text id="/data/plot_2/p2_understorey_fcov:label">
+            <value>Understorey Cover </value>
+          </text>
+          <text id="/data/plot_2/p2_understorey_fcov:hint">
+            <value>How much area does the intermediate/understorey fuel cover? First ask, was it more than half (50%)? Then ask if it was more than 25% or more than 75%.</value>
+          </text>
+          <text id="/data/plot_2/p2_understorey_fcov:requiredMsg">
+            <value>Percentage cover is required</value>
+          </text>
+          <text id="/data/plot_2/p2_understorey_fcov:option0">
+            <value>75 to 100%</value>
+          </text>
+          <text id="/data/plot_2/p2_understorey_fcov:option1">
+            <value>50 to 75%</value>
+          </text>
+          <text id="/data/plot_2/p2_understorey_fcov:option2">
+            <value>25 to 50%</value>
+          </text>
+          <text id="/data/plot_2/p2_understorey_fcov:option3">
+            <value>0 to 25%</value>
+          </text>
+          <text id="/data/plot_2/p2_understorey_fcov:option4">
+            <value>Stratum entirely absent</value>
+          </text>
+          <text id="/data/plot_2/p2_understorey_resprout:label">
+            <value>Resprouting on Understorey Trees </value>
+          </text>
+          <text id="/data/plot_2/p2_understorey_resprout:hint">
+            <value>What is the lowest level where most understorey trees are resprouting?</value>
+          </text>
+          <text id="/data/plot_2/p2_understorey_resprout:option0">
+            <value>Nil</value>
+          </text>
+          <text id="/data/plot_2/p2_understorey_resprout:option1">
+            <value>Fine branches</value>
+          </text>
+          <text id="/data/plot_2/p2_understorey_resprout:option2">
+            <value>Large branches</value>
+          </text>
+          <text id="/data/plot_2/p2_understorey_resprout:option3">
+            <value>Upper stem</value>
+          </text>
+          <text id="/data/plot_2/p2_understorey_resprout:option4">
+            <value>Lower stem</value>
+          </text>
+          <text id="/data/plot_2/p2_understorey_resprout:option5">
+            <value>Coppice and low stem</value>
+          </text>
+          <text id="/data/plot_2/p2_understorey_resprout:option6">
+            <value>Coppice only</value>
+          </text>
+          <text id="/data/plot_2/p2_understorey_resprout:option7">
+            <value>Resprouting not started</value>
+          </text>
+          <text id="/data/plot_2/p2_height:label">
+            <value>Sapling Height </value>
+          </text>
+          <text id="/data/plot_2/p2_height:hint">
+            <value>How tall are the seedlings or saplings of overstorey trees? </value>
+          </text>
+          <text id="/data/plot_2/p2_height:option0">
+            <value>Less than 1 metre</value>
+          </text>
+          <text id="/data/plot_2/p2_height:option1">
+            <value>1 - 3 metres</value>
+          </text>
+          <text id="/data/plot_2/p2_height:option2">
+            <value>4 - 6 metres</value>
+          </text>
+          <text id="/data/plot_2/p2_height:option3">
+            <value>7 - 9 metres</value>
+          </text>
+          <text id="/data/plot_2/p2_height:option4">
+            <value>10 metres or taller</value>
+          </text>
+          <text id="/data/plot_2/p2_canopy_veg:label">
+            <value>Vegetation Observed in the Canopy </value>
+          </text>
+          <text id="/data/plot_2/p2_canopy_veg:hint">
+            <value>Record first few letters of species common name or Scientific name (genus/species). i.e., for Jarrah use 'Jar' or 'Eucmar' </value>
+          </text>
+          <text id="/data/plot_2/p2_canopy_fcov:label">
+            <value>Canopy Cover </value>
+          </text>
+          <text id="/data/plot_2/p2_canopy_fcov:hint">
+            <value>How much area does the over-storey/canopy fuel cover? First ask, was it more than half (50%)? Then ask if it was more than 25% or more than 75%.</value>
+          </text>
+          <text id="/data/plot_2/p2_canopy_fcov:requiredMsg">
+            <value>Percentage cover is required</value>
+          </text>
+          <text id="/data/plot_2/p2_canopy_fcov:option0">
+            <value>75 to 100%</value>
+          </text>
+          <text id="/data/plot_2/p2_canopy_fcov:option1">
+            <value>50 to 75%</value>
+          </text>
+          <text id="/data/plot_2/p2_canopy_fcov:option2">
+            <value>25 to 50%</value>
+          </text>
+          <text id="/data/plot_2/p2_canopy_fcov:option3">
+            <value>0 to 25%</value>
+          </text>
+          <text id="/data/plot_2/p2_canopy_fcov:option4">
+            <value>Stratum entirely absent</value>
+          </text>
+          <text id="/data/plot_2/p2_canopy_resprout:label">
+            <value>Resprouting on Canopy Trees </value>
+          </text>
+          <text id="/data/plot_2/p2_canopy_resprout:hint">
+            <value>What is the lowest level where most canopy trees are resprouting?</value>
+          </text>
+          <text id="/data/plot_2/p2_canopy_resprout:option0">
+            <value>Nil</value>
+          </text>
+          <text id="/data/plot_2/p2_canopy_resprout:option1">
+            <value>Fine branches</value>
+          </text>
+          <text id="/data/plot_2/p2_canopy_resprout:option2">
+            <value>Large branches</value>
+          </text>
+          <text id="/data/plot_2/p2_canopy_resprout:option3">
+            <value>Upper stem</value>
+          </text>
+          <text id="/data/plot_2/p2_canopy_resprout:option4">
+            <value>Lower stem</value>
+          </text>
+          <text id="/data/plot_2/p2_canopy_resprout:option5">
+            <value>Coppice and low stem</value>
+          </text>
+          <text id="/data/plot_2/p2_canopy_resprout:option6">
+            <value>Coppice only</value>
+          </text>
+          <text id="/data/plot_2/p2_hollows:label">
+            <value>Tree Hollows </value>
+          </text>
+          <text id="/data/plot_2/p2_hollows:hint">
+            <value>Count how many trees have hollows.</value>
+          </text>
+          <text id="/data/plot_2/p2_photo:label">
+            <value>Plot 2 Photo </value>
+          </text>
+          <text id="/data/plot_2/p2_photo:hint">
+            <value>Take a portait photo of fuel structure and bark</value>
+          </text>
+          <text id="/data/plot_2/p2_overstorey:label">
+            <value>Canopy Photo </value>
+          </text>
+          <text id="/data/plot_2/p2_overstorey:hint">
+            <value>Take a photo upwards through the understorey and canopy</value>
+          </text>
+          <text id="/data/plot_3:label">
+            <value>Plot 3 - 8-13m along 20m transect</value>
+          </text>
+          <text id="/data/plot_3/p3_litter_depth:label">
+            <value>Litter Depth (mm) </value>
+          </text>
+          <text id="/data/plot_3/p3_litter_depth:hint">
+            <value>Use Sneeuwj-o-meter</value>
+          </text>
+          <text id="/data/plot_3/p3_surface_fhs:label">
+            <value>Surface Fuel Hazard Score </value>
+          </text>
+          <text id="/data/plot_3/p3_surface_fhs:hint">
+            <value>Dead leaves, twigs and bark of overstorey and understorey plants</value>
+          </text>
+          <text id="/data/plot_3/p3_surface_fhs:option0">
+            <value>Nil - No surface litter, bare ground</value>
+          </text>
+          <text id="/data/plot_3/p3_surface_fhs:option1">
+            <value>Low - Very thin layer, no decomp, discontinuous</value>
+          </text>
+          <text id="/data/plot_3/p3_surface_fhs:option2">
+            <value>Moderate - Thin layer, no decomp, continuous</value>
+          </text>
+          <text id="/data/plot_3/p3_surface_fhs:option3">
+            <value>High - Established litter layer, continuous, decomposing</value>
+          </text>
+          <text id="/data/plot_3/p3_surface_fhs:option4">
+            <value>Very High - Thick litter layer, continuous, decomposing, duff layer may be present</value>
+          </text>
+          <text id="/data/plot_3/p3_surface_fhs:option5">
+            <value>Extreme - Very thick continuous layer of litter with duff present</value>
+          </text>
+          <text id="/data/plot_3/p3_near_surface_height:label">
+            <value>Near Surface Height (cm) </value>
+          </text>
+          <text id="/data/plot_3/p3_near_surface_height:hint">
+            <value>Height in cm using ruler or metric rod</value>
+          </text>
+          <text id="/data/plot_3/p3_near_surface_fhs:label">
+            <value>Near-Surface Fuel Hazard Score </value>
+          </text>
+          <text id="/data/plot_3/p3_near_surface_fhs:hint">
+            <value>Grasses, low shrubs, creepers and collapsed understorey plus any suspended leaf, twig and bark from the overstorey</value>
+          </text>
+          <text id="/data/plot_3/p3_near_surface_fhs:option0">
+            <value>Nil - no near-surface fuel</value>
+          </text>
+          <text id="/data/plot_3/p3_near_surface_fhs:option1">
+            <value>Low - sparse dispersed fuel, dead material virtually absent</value>
+          </text>
+          <text id="/data/plot_3/p3_near_surface_fhs:option2">
+            <value>Moderate - Scattered suspended leaves, twigs and bark, proportion of dead material is &lt;20%</value>
+          </text>
+          <text id="/data/plot_3/p3_near_surface_fhs:option3">
+            <value>High - Suspended leaves, twigs and bark, starting to obscure logs and rocks, proportion of dead material is 20-50%</value>
+          </text>
+          <text id="/data/plot_3/p3_near_surface_fhs:option4">
+            <value>Very High - Suspended leaves and bark with a cover of 40-60% cover, proportion of dead material is 20-50%</value>
+          </text>
+          <text id="/data/plot_3/p3_near_surface_fhs:option5">
+            <value>Extreme - Very large amounts of suspended leaves, twigs and bark, high proportion of dead material &gt;50%, vegetation is senescent, obscuring logs and rocks</value>
+          </text>
+          <text id="/data/plot_3/p3_elevated_height:label">
+            <value>Elevated Height (m) </value>
+          </text>
+          <text id="/data/plot_3/p3_elevated_height:hint">
+            <value>Height in metres using metric rod</value>
+          </text>
+          <text id="/data/plot_3/p3_elevated_fhs:label">
+            <value>Elevated Fuel Hazard Score </value>
+          </text>
+          <text id="/data/plot_3/p3_elevated_fhs:hint">
+            <value>Tall shrubs and other understorey plants without significant suspended material.</value>
+          </text>
+          <text id="/data/plot_3/p3_elevated_fhs:option0">
+            <value>Nil - No elevated fuel</value>
+          </text>
+          <text id="/data/plot_3/p3_elevated_fhs:option1">
+            <value>Low - Sparse and dispersed, with &lt;5% dead</value>
+          </text>
+          <text id="/data/plot_3/p3_elevated_fhs:option2">
+            <value>Moderate - Sparse and dispersed, brush against occasionally with &lt;20% dead</value>
+          </text>
+          <text id="/data/plot_3/p3_elevated_fhs:option3">
+            <value>High - Little fine fuel at base, patchy or mesic shrubs with 10-30% dead</value>
+          </text>
+          <text id="/data/plot_3/p3_elevated_fhs:option4">
+            <value>Very High - Difficult to walk through, good vertical continuity of dead material with &gt;20% dead</value>
+          </text>
+          <text id="/data/plot_3/p3_elevated_fhs:option5">
+            <value>Extreme - Difficult to walk through, vertical continuity of fine dead fuel from ground up with &gt;30% dead</value>
+          </text>
+          <text id="/data/plot_3/p3_bark_fhs:label">
+            <value>Bark Hazard Score </value>
+          </text>
+          <text id="/data/plot_3/p3_bark_fhs:hint">
+            <value>The bark on the bole and branches of trees, either alive or dead, extending right back to the cambial layer</value>
+          </text>
+          <text id="/data/plot_3/p3_bark_fhs:option0">
+            <value>Low - no fibrous bark, no spotting</value>
+          </text>
+          <text id="/data/plot_3/p3_bark_fhs:option1">
+            <value>Moderate - 1) stringybark where bark is well charred or tightly held; 2) ironbarks w/very tight platy or fibrous bark; or 3) smooth-barks which do not produce long ribbons of bark</value>
+          </text>
+          <text id="/data/plot_3/p3_bark_fhs:option2">
+            <value>High - 1) stringybark where most of bark is black on the lower trunk; 2) few pieces of bark are loosely attached to trunks; 3) bloodwood w/tight fibrous bark which has not been burnt for many years; or 4) smooth/candle bark which shed long ribbons of bark but have smooth bark down to ground level</value>
+          </text>
+          <text id="/data/plot_3/p3_bark_fhs:option3">
+            <value>Very High - 1) stringybarks where &gt;50% of surface area of the trees is black; 2) upper parts of trunk may not be charred; 3) smooth/candle barks with long ribbons of bark which are loose; or 4) fibrous or platy bark on lower trunk, which have not been burnt for many years</value>
+          </text>
+          <text id="/data/plot_3/p3_bark_fhs:option4">
+            <value>Extreme - 1) stringybark with large flakes of bark that can be easily dislodged; 2) huge amounts of bark are available for spotting; 3) outer bark on the trees is attached weakly; or 4) minimal evidence of charring (complete grey appearance on trunks)</value>
+          </text>
+          <text id="/data/plot_3/p3_photo:label">
+            <value>Plot 3 Photo</value>
+          </text>
+          <text id="/data/plot_3/p3_photo:hint">
+            <value>Take a portait photo of fuel structure and bark</value>
+          </text>
+          <text id="/data/plot_4:label">
+            <value>Plot 4 - 15-20m along 20m transect</value>
+          </text>
+          <text id="/data/plot_4/p4_litter_depth:label">
+            <value>Litter Depth (mm) </value>
+          </text>
+          <text id="/data/plot_4/p4_litter_depth:hint">
+            <value>Use Sneeuwj-o-meter</value>
+          </text>
+          <text id="/data/plot_4/p4_surface_fhs:label">
+            <value>Surface Fuel Hazard Score </value>
+          </text>
+          <text id="/data/plot_4/p4_surface_fhs:hint">
+            <value>Dead leaves, twigs and bark of overstorey and understorey plants</value>
+          </text>
+          <text id="/data/plot_4/p4_surface_fhs:option0">
+            <value>Nil - No surface litter, bare ground</value>
+          </text>
+          <text id="/data/plot_4/p4_surface_fhs:option1">
+            <value>Low - Very thin layer, no decomp, discontinuous</value>
+          </text>
+          <text id="/data/plot_4/p4_surface_fhs:option2">
+            <value>Moderate - Thin layer, no decomp, continuous</value>
+          </text>
+          <text id="/data/plot_4/p4_surface_fhs:option3">
+            <value>High - Established litter layer, continuous, decomposing</value>
+          </text>
+          <text id="/data/plot_4/p4_surface_fhs:option4">
+            <value>Very High - Thick litter layer, continuous, decomposing, duff layer may be present</value>
+          </text>
+          <text id="/data/plot_4/p4_surface_fhs:option5">
+            <value>Extreme - Very thick continuous layer of litter with duff present</value>
+          </text>
+          <text id="/data/plot_4/p4_near_surface_height:label">
+            <value>Near Surface Height (cm) </value>
+          </text>
+          <text id="/data/plot_4/p4_near_surface_height:hint">
+            <value>Height in cm using ruler or metric rod</value>
+          </text>
+          <text id="/data/plot_4/p4_near_surface_fhs:label">
+            <value>Near-Surface Fuel Hazard Score </value>
+          </text>
+          <text id="/data/plot_4/p4_near_surface_fhs:hint">
+            <value>Grasses, low shrubs, creepers and collapsed understorey plus any suspended leaf, twig and bark from the overstorey</value>
+          </text>
+          <text id="/data/plot_4/p4_near_surface_fhs:option0">
+            <value>Nil - no near-surface fuel</value>
+          </text>
+          <text id="/data/plot_4/p4_near_surface_fhs:option1">
+            <value>Low - sparse dispersed fuel, dead material virtually absent</value>
+          </text>
+          <text id="/data/plot_4/p4_near_surface_fhs:option2">
+            <value>Moderate - Scattered suspended leaves, twigs and bark, proportion of dead material is &lt;20%</value>
+          </text>
+          <text id="/data/plot_4/p4_near_surface_fhs:option3">
+            <value>High - Suspended leaves, twigs and bark, starting to obscure logs and rocks, proportion of dead material is 20-50%</value>
+          </text>
+          <text id="/data/plot_4/p4_near_surface_fhs:option4">
+            <value>Very High - Suspended leaves and bark with a cover of 40-60% cover, proportion of dead material is 20-50%</value>
+          </text>
+          <text id="/data/plot_4/p4_near_surface_fhs:option5">
+            <value>Extreme - Very large amounts of suspended leaves, twigs and bark, high proportion of dead material &gt;50%, vegetation is senescent, obscuring logs and rocks</value>
+          </text>
+          <text id="/data/plot_4/p4_elevated_height:label">
+            <value>Elevated Height (m) </value>
+          </text>
+          <text id="/data/plot_4/p4_elevated_height:hint">
+            <value>Height in metres using metric rod</value>
+          </text>
+          <text id="/data/plot_4/p4_elevated_fhs:label">
+            <value>Elevated Fuel Hazard Score </value>
+          </text>
+          <text id="/data/plot_4/p4_elevated_fhs:hint">
+            <value>Tall shrubs and other understorey plants without significant suspended material.</value>
+          </text>
+          <text id="/data/plot_4/p4_elevated_fhs:option0">
+            <value>Nil - No elevated fuel</value>
+          </text>
+          <text id="/data/plot_4/p4_elevated_fhs:option1">
+            <value>Low - Sparse and dispersed, with &lt;5% dead</value>
+          </text>
+          <text id="/data/plot_4/p4_elevated_fhs:option2">
+            <value>Moderate - Sparse and dispersed, brush against occasionally with &lt;20% dead</value>
+          </text>
+          <text id="/data/plot_4/p4_elevated_fhs:option3">
+            <value>High - Little fine fuel at base, patchy or mesic shrubs with 10-30% dead</value>
+          </text>
+          <text id="/data/plot_4/p4_elevated_fhs:option4">
+            <value>Very High - Difficult to walk through, good vertical continuity of dead material with &gt;20% dead</value>
+          </text>
+          <text id="/data/plot_4/p4_elevated_fhs:option5">
+            <value>Extreme - Difficult to walk through, vertical continuity of fine dead fuel from ground up with &gt;30% dead</value>
+          </text>
+          <text id="/data/plot_4/p4_bark_fhs:label">
+            <value>Bark Hazard Score </value>
+          </text>
+          <text id="/data/plot_4/p4_bark_fhs:hint">
+            <value>The bark on the bole and branches of trees, either alive or dead, extending right back to the cambial layer</value>
+          </text>
+          <text id="/data/plot_4/p4_bark_fhs:option0">
+            <value>Low - no fibrous bark, no spotting</value>
+          </text>
+          <text id="/data/plot_4/p4_bark_fhs:option1">
+            <value>Moderate - 1) stringybark where bark is well charred or tightly held; 2) ironbarks w/very tight platy or fibrous bark; or 3) smooth-barks which do not produce long ribbons of bark</value>
+          </text>
+          <text id="/data/plot_4/p4_bark_fhs:option2">
+            <value>High - 1) stringybark where most of bark is black on the lower trunk; 2) few pieces of bark are loosely attached to trunks; 3) bloodwood w/tight fibrous bark which has not been burnt for many years; or 4) smooth/candle bark which shed long ribbons of bark but have smooth bark down to ground level</value>
+          </text>
+          <text id="/data/plot_4/p4_bark_fhs:option3">
+            <value>Very High - 1) stringybarks where &gt;50% of surface area of the trees is black; 2) upper parts of trunk may not be charred; 3) smooth/candle barks with long ribbons of bark which are loose; or 4) fibrous or platy bark on lower trunk, which have not been burnt for many years</value>
+          </text>
+          <text id="/data/plot_4/p4_bark_fhs:option4">
+            <value>Extreme - 1) stringybark with large flakes of bark that can be easily dislodged; 2) huge amounts of bark are available for spotting; 3) outer bark on the trees is attached weakly; or 4) minimal evidence of charring (complete grey appearance on trunks)</value>
+          </text>
+          <text id="/data/plot_4/p4_photo:label">
+            <value>Plot 4 Photo</value>
+          </text>
+          <text id="/data/plot_4/p4_photo:hint">
+            <value>Take a portait photo of fuel structure and bark</value>
+          </text>
+        </translation>
+      </itext>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+      <bind nodeset="/data/start" type="dateTime" jr:preload="timestamp" jr:preloadParams="start"/>
+      <bind nodeset="/data/reporter" type="string" jr:preload="property" jr:preloadParams="username"/>
+      <bind nodeset="/data/device_id" type="string" jr:preload="property" jr:preloadParams="deviceid"/>
+      <bind nodeset="/data/details/Burn_ID" type="string"/>
+      <bind nodeset="/data/details/site" type="string" required="true()"/>
+      <bind nodeset="/data/details/TSF" type="string"/>
+      <bind nodeset="/data/plot_1/p1_litter_depth" type="string" required="true()"/>
+      <bind nodeset="/data/plot_1/p1_surface_fhs" type="select1" required="true()"/>
+      <bind nodeset="/data/plot_1/p1__near_surface_height" type="string" required="true()"/>
+      <bind nodeset="/data/plot_1/p1__near_surface_fhs" type="select1" required="true()" jr:requiredMsg="jr:itext('/data/plot_1/p1__near_surface_fhs:requiredMsg')"/>
+      <bind nodeset="/data/plot_1/p1__elevated_height" type="string" required="true()"/>
+      <bind nodeset="/data/plot_1/p1_elevated_fhs" type="select1" required="true()"/>
+      <bind nodeset="/data/plot_1/p1_bark__fhs" type="select1" required="true()"/>
+      <bind nodeset="/data/plot_1/p1_photo" type="binary"/>
+      <bind nodeset="/data/plot_2/location" type="geopoint" required="true()" jr:requiredMsg="jr:itext('/data/plot_2/location:requiredMsg')"/>
+      <bind nodeset="/data/plot_2/p2_green" type="select1"/>
+      <bind nodeset="/data/plot_2/p2_cwd" type="string" required="true()"/>
+      <bind nodeset="/data/plot_2/p2_near_surface_veg" type="string"/>
+      <bind nodeset="/data/plot_2/p2_near_surface_fcov" type="select1" required="true()"/>
+      <bind nodeset="/data/plot_2/p2_shrubs" type="select1"/>
+      <bind nodeset="/data/plot_2/p2_elevated_veg" type="string"/>
+      <bind nodeset="/data/plot_2/p2_elevated_fcov" type="select1" required="true()" jr:requiredMsg="jr:itext('/data/plot_2/p2_elevated_fcov:requiredMsg')"/>
+      <bind nodeset="/data/plot_2/p2_understorey_veg" type="string"/>
+      <bind nodeset="/data/plot_2/p2_understorey_fcov" type="select1" required="true()" jr:requiredMsg="jr:itext('/data/plot_2/p2_understorey_fcov:requiredMsg')"/>
+      <bind nodeset="/data/plot_2/p2_understorey_resprout" type="select1"/>
+      <bind nodeset="/data/plot_2/p2_height" type="select1"/>
+      <bind nodeset="/data/plot_2/p2_canopy_veg" type="string"/>
+      <bind nodeset="/data/plot_2/p2_canopy_fcov" type="select1" required="true()" jr:requiredMsg="jr:itext('/data/plot_2/p2_canopy_fcov:requiredMsg')"/>
+      <bind nodeset="/data/plot_2/p2_canopy_resprout" type="select1"/>
+      <bind nodeset="/data/plot_2/p2_hollows" type="int"/>
+      <bind nodeset="/data/plot_2/p2_photo" type="binary"/>
+      <bind nodeset="/data/plot_2/p2_overstorey" type="binary"/>
+      <bind nodeset="/data/plot_3/p3_litter_depth" type="string" required="true()"/>
+      <bind nodeset="/data/plot_3/p3_surface_fhs" type="select1" required="true()"/>
+      <bind nodeset="/data/plot_3/p3_near_surface_height" type="string" required="true()"/>
+      <bind nodeset="/data/plot_3/p3_near_surface_fhs" type="select1" required="true()"/>
+      <bind nodeset="/data/plot_3/p3_elevated_height" type="string" required="true()"/>
+      <bind nodeset="/data/plot_3/p3_elevated_fhs" type="select1" required="true()"/>
+      <bind nodeset="/data/plot_3/p3_bark_fhs" type="select1" required="true()"/>
+      <bind nodeset="/data/plot_3/p3_photo" type="binary"/>
+      <bind nodeset="/data/plot_4/p4_litter_depth" type="string" required="true()"/>
+      <bind nodeset="/data/plot_4/p4_surface_fhs" type="select1" required="true()"/>
+      <bind nodeset="/data/plot_4/p4_near_surface_height" type="string" required="true()"/>
+      <bind nodeset="/data/plot_4/p4_near_surface_fhs" type="select1" required="true()"/>
+      <bind nodeset="/data/plot_4/p4_elevated_height" type="string" required="true()"/>
+      <bind nodeset="/data/plot_4/p4_elevated_fhs" type="select1" required="true()"/>
+      <bind nodeset="/data/plot_4/p4_bark_fhs" type="select1" required="true()"/>
+      <bind nodeset="/data/plot_4/p4_photo" type="binary"/>
+      <bind nodeset="/data/finish" type="dateTime" jr:preload="timestamp" jr:preloadParams="end"/>
+    </model>
+  <script xmlns="">try {
+                        Object.defineProperty(screen, "availTop", { value: 0 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "availLeft", { value: 0 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "availWidth", { value: 1920 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "availHeight", { value: 1200 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "colorDepth", { value: 24 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(screen, "pixelDepth", { value: 24 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(navigator, "hardwareConcurrency", { value: 8 });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(navigator, "appVersion", { value: "5.0 (X11)" });
+                    } catch (e) {}
+                    try {
+                        Object.defineProperty(navigator, "doNotTrack", { value: "unspecified" });
+                    } catch (e) {}
+                    
+            try {
+                window.screenY = 0
+            } catch (e) { }
+        
+            try {
+                window.screenTop = 0
+            } catch (e) { }
+        
+            try {
+                window.top.window.outerHeight = window.screen.height
+            } catch (e) { }
+        
+            try {
+                window.screenX = 0
+            } catch (e) { }
+        
+            try {
+                window.screenLeft = 0
+            } catch (e) { }
+        
+            try {
+                window.top.window.outerWidth = window.screen.width
+            } catch (e) { }
+        </script></h:head>
+  <h:body>
+    <group ref="/data/details" appearance="field-list">
+      <label ref="jr:itext('/data/details:label')"/>
+      <input ref="/data/details/Burn_ID">
+        <label ref="jr:itext('/data/details/Burn_ID:label')"/>
+        <hint ref="jr:itext('/data/details/Burn_ID:hint')"/>
+      </input>
+      <input ref="/data/details/site">
+        <label ref="jr:itext('/data/details/site:label')"/>
+        <hint ref="jr:itext('/data/details/site:hint')"/>
+      </input>
+      <input ref="/data/details/TSF">
+        <label ref="jr:itext('/data/details/TSF:label')"/>
+        <hint ref="jr:itext('/data/details/TSF:hint')"/>
+      </input>
+    </group>
+    <group ref="/data/plot_1" appearance="field-list">
+      <label ref="jr:itext('/data/plot_1:label')"/>
+      <input ref="/data/plot_1/p1_litter_depth">
+        <label ref="jr:itext('/data/plot_1/p1_litter_depth:label')"/>
+        <hint ref="jr:itext('/data/plot_1/p1_litter_depth:hint')"/>
+      </input>
+      <select1 ref="/data/plot_1/p1_surface_fhs">
+        <label ref="jr:itext('/data/plot_1/p1_surface_fhs:label')"/>
+        <hint ref="jr:itext('/data/plot_1/p1_surface_fhs:hint')"/>
+        <item>
+          <label ref="jr:itext('/data/plot_1/p1_surface_fhs:option0')"/>
+          <value>0.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_1/p1_surface_fhs:option1')"/>
+          <value>1.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_1/p1_surface_fhs:option2')"/>
+          <value>2.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_1/p1_surface_fhs:option3')"/>
+          <value>3.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_1/p1_surface_fhs:option4')"/>
+          <value>3.5</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_1/p1_surface_fhs:option5')"/>
+          <value>4.0</value>
+        </item>
+      </select1>
+      <input ref="/data/plot_1/p1__near_surface_height">
+        <label ref="jr:itext('/data/plot_1/p1__near_surface_height:label')"/>
+        <hint ref="jr:itext('/data/plot_1/p1__near_surface_height:hint')"/>
+      </input>
+      <select1 ref="/data/plot_1/p1__near_surface_fhs">
+        <label ref="jr:itext('/data/plot_1/p1__near_surface_fhs:label')"/>
+        <hint ref="jr:itext('/data/plot_1/p1__near_surface_fhs:hint')"/>
+        <item>
+          <label ref="jr:itext('/data/plot_1/p1__near_surface_fhs:option0')"/>
+          <value>0.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_1/p1__near_surface_fhs:option1')"/>
+          <value>1.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_1/p1__near_surface_fhs:option2')"/>
+          <value>2.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_1/p1__near_surface_fhs:option3')"/>
+          <value>3.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_1/p1__near_surface_fhs:option4')"/>
+          <value>3.5</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_1/p1__near_surface_fhs:option5')"/>
+          <value>4.0</value>
+        </item>
+      </select1>
+      <input ref="/data/plot_1/p1__elevated_height">
+        <label ref="jr:itext('/data/plot_1/p1__elevated_height:label')"/>
+        <hint ref="jr:itext('/data/plot_1/p1__elevated_height:hint')"/>
+      </input>
+      <select1 ref="/data/plot_1/p1_elevated_fhs">
+        <label ref="jr:itext('/data/plot_1/p1_elevated_fhs:label')"/>
+        <hint ref="jr:itext('/data/plot_1/p1_elevated_fhs:hint')"/>
+        <item>
+          <label ref="jr:itext('/data/plot_1/p1_elevated_fhs:option0')"/>
+          <value>0.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_1/p1_elevated_fhs:option1')"/>
+          <value>1.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_1/p1_elevated_fhs:option2')"/>
+          <value>2.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_1/p1_elevated_fhs:option3')"/>
+          <value>3.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_1/p1_elevated_fhs:option4')"/>
+          <value>3.5</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_1/p1_elevated_fhs:option5')"/>
+          <value>4.0</value>
+        </item>
+      </select1>
+      <select1 ref="/data/plot_1/p1_bark__fhs">
+        <label ref="jr:itext('/data/plot_1/p1_bark__fhs:label')"/>
+        <hint ref="jr:itext('/data/plot_1/p1_bark__fhs:hint')"/>
+        <item>
+          <label ref="jr:itext('/data/plot_1/p1_bark__fhs:option0')"/>
+          <value>0.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_1/p1_bark__fhs:option1')"/>
+          <value>1.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_1/p1_bark__fhs:option2')"/>
+          <value>2.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_1/p1_bark__fhs:option3')"/>
+          <value>3.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_1/p1_bark__fhs:option4')"/>
+          <value>4.0</value>
+        </item>
+      </select1>
+      <upload ref="/data/plot_1/p1_photo" mediatype="image/*">
+        <label ref="jr:itext('/data/plot_1/p1_photo:label')"/>
+        <hint ref="jr:itext('/data/plot_1/p1_photo:hint')"/>
+      </upload>
+    </group>
+    <group ref="/data/plot_2" appearance="field-list">
+      <label ref="jr:itext('/data/plot_2:label')"/>
+      <input ref="/data/plot_2/location">
+        <label ref="jr:itext('/data/plot_2/location:label')"/>
+        <hint ref="jr:itext('/data/plot_2/location:hint')"/>
+      </input>
+      <select1 ref="/data/plot_2/p2_green">
+        <label ref="jr:itext('/data/plot_2/p2_green:label')"/>
+        <hint ref="jr:itext('/data/plot_2/p2_green:hint')"/>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_green:option0')"/>
+          <value>0.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_green:option1')"/>
+          <value>0.5</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_green:option2')"/>
+          <value>1.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_green:option3')"/>
+          <value>1.5</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_green:option4')"/>
+          <value>2.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_green:option5')"/>
+          <value>2.5</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_green:option6')"/>
+          <value>3.0</value>
+        </item>
+      </select1>
+      <input ref="/data/plot_2/p2_cwd">
+        <label ref="jr:itext('/data/plot_2/p2_cwd:label')"/>
+        <hint ref="jr:itext('/data/plot_2/p2_cwd:hint')"/>
+      </input>
+      <input ref="/data/plot_2/p2_near_surface_veg">
+        <label ref="jr:itext('/data/plot_2/p2_near_surface_veg:label')"/>
+        <hint ref="jr:itext('/data/plot_2/p2_near_surface_veg:hint')"/>
+      </input>
+      <select1 ref="/data/plot_2/p2_near_surface_fcov">
+        <label ref="jr:itext('/data/plot_2/p2_near_surface_fcov:label')"/>
+        <hint ref="jr:itext('/data/plot_2/p2_near_surface_fcov:hint')"/>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_near_surface_fcov:option0')"/>
+          <value>1.00</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_near_surface_fcov:option1')"/>
+          <value>0.75</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_near_surface_fcov:option2')"/>
+          <value>0.5</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_near_surface_fcov:option3')"/>
+          <value>0.25</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_near_surface_fcov:option4')"/>
+          <value>0.0</value>
+        </item>
+      </select1>
+      <select1 ref="/data/plot_2/p2_shrubs">
+        <label ref="jr:itext('/data/plot_2/p2_shrubs:label')"/>
+        <hint ref="jr:itext('/data/plot_2/p2_shrubs:hint')"/>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_shrubs:option0')"/>
+          <value>0.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_shrubs:option1')"/>
+          <value>0.5</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_shrubs:option2')"/>
+          <value>1.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_shrubs:option3')"/>
+          <value>1.5</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_shrubs:option4')"/>
+          <value>2.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_shrubs:option5')"/>
+          <value>2.5</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_shrubs:option6')"/>
+          <value>888</value>
+        </item>
+      </select1>
+      <input ref="/data/plot_2/p2_elevated_veg">
+        <label ref="jr:itext('/data/plot_2/p2_elevated_veg:label')"/>
+        <hint ref="jr:itext('/data/plot_2/p2_elevated_veg:hint')"/>
+      </input>
+      <select1 ref="/data/plot_2/p2_elevated_fcov">
+        <label ref="jr:itext('/data/plot_2/p2_elevated_fcov:label')"/>
+        <hint ref="jr:itext('/data/plot_2/p2_elevated_fcov:hint')"/>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_elevated_fcov:option0')"/>
+          <value>1.00</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_elevated_fcov:option1')"/>
+          <value>0.75</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_elevated_fcov:option2')"/>
+          <value>0.50</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_elevated_fcov:option3')"/>
+          <value>0.25</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_elevated_fcov:option4')"/>
+          <value>0</value>
+        </item>
+      </select1>
+      <input ref="/data/plot_2/p2_understorey_veg">
+        <label ref="jr:itext('/data/plot_2/p2_understorey_veg:label')"/>
+        <hint ref="jr:itext('/data/plot_2/p2_understorey_veg:hint')"/>
+      </input>
+      <select1 ref="/data/plot_2/p2_understorey_fcov">
+        <label ref="jr:itext('/data/plot_2/p2_understorey_fcov:label')"/>
+        <hint ref="jr:itext('/data/plot_2/p2_understorey_fcov:hint')"/>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_understorey_fcov:option0')"/>
+          <value>1.00</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_understorey_fcov:option1')"/>
+          <value>0.75</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_understorey_fcov:option2')"/>
+          <value>0.50</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_understorey_fcov:option3')"/>
+          <value>0.25</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_understorey_fcov:option4')"/>
+          <value>0</value>
+        </item>
+      </select1>
+      <select1 ref="/data/plot_2/p2_understorey_resprout">
+        <label ref="jr:itext('/data/plot_2/p2_understorey_resprout:label')"/>
+        <hint ref="jr:itext('/data/plot_2/p2_understorey_resprout:hint')"/>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_understorey_resprout:option0')"/>
+          <value>0.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_understorey_resprout:option1')"/>
+          <value>0.5</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_understorey_resprout:option2')"/>
+          <value>1.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_understorey_resprout:option3')"/>
+          <value>1.5</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_understorey_resprout:option4')"/>
+          <value>2.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_understorey_resprout:option5')"/>
+          <value>2.5</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_understorey_resprout:option6')"/>
+          <value>3.0_coppice-only</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_understorey_resprout:option7')"/>
+          <value>888</value>
+        </item>
+      </select1>
+      <select1 ref="/data/plot_2/p2_height">
+        <label ref="jr:itext('/data/plot_2/p2_height:label')"/>
+        <hint ref="jr:itext('/data/plot_2/p2_height:hint')"/>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_height:option0')"/>
+          <value>0.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_height:option1')"/>
+          <value>1.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_height:option2')"/>
+          <value>2.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_height:option3')"/>
+          <value>3.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_height:option4')"/>
+          <value>4.0</value>
+        </item>
+      </select1>
+      <input ref="/data/plot_2/p2_canopy_veg">
+        <label ref="jr:itext('/data/plot_2/p2_canopy_veg:label')"/>
+        <hint ref="jr:itext('/data/plot_2/p2_canopy_veg:hint')"/>
+      </input>
+      <select1 ref="/data/plot_2/p2_canopy_fcov">
+        <label ref="jr:itext('/data/plot_2/p2_canopy_fcov:label')"/>
+        <hint ref="jr:itext('/data/plot_2/p2_canopy_fcov:hint')"/>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_canopy_fcov:option0')"/>
+          <value>1.00</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_canopy_fcov:option1')"/>
+          <value>0.75</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_canopy_fcov:option2')"/>
+          <value>0.50</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_canopy_fcov:option3')"/>
+          <value>0.25</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_canopy_fcov:option4')"/>
+          <value>0</value>
+        </item>
+      </select1>
+      <select1 ref="/data/plot_2/p2_canopy_resprout">
+        <label ref="jr:itext('/data/plot_2/p2_canopy_resprout:label')"/>
+        <hint ref="jr:itext('/data/plot_2/p2_canopy_resprout:hint')"/>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_canopy_resprout:option0')"/>
+          <value>0.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_canopy_resprout:option1')"/>
+          <value>0.5</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_canopy_resprout:option2')"/>
+          <value>1.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_canopy_resprout:option3')"/>
+          <value>1.5</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_canopy_resprout:option4')"/>
+          <value>2.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_canopy_resprout:option5')"/>
+          <value>2.5</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_2/p2_canopy_resprout:option6')"/>
+          <value>3.0</value>
+        </item>
+      </select1>
+      <input ref="/data/plot_2/p2_hollows">
+        <label ref="jr:itext('/data/plot_2/p2_hollows:label')"/>
+        <hint ref="jr:itext('/data/plot_2/p2_hollows:hint')"/>
+      </input>
+      <upload ref="/data/plot_2/p2_photo" mediatype="image/*">
+        <label ref="jr:itext('/data/plot_2/p2_photo:label')"/>
+        <hint ref="jr:itext('/data/plot_2/p2_photo:hint')"/>
+      </upload>
+      <upload ref="/data/plot_2/p2_overstorey" mediatype="image/*">
+        <label ref="jr:itext('/data/plot_2/p2_overstorey:label')"/>
+        <hint ref="jr:itext('/data/plot_2/p2_overstorey:hint')"/>
+      </upload>
+    </group>
+    <group ref="/data/plot_3" appearance="field-list">
+      <label ref="jr:itext('/data/plot_3:label')"/>
+      <input ref="/data/plot_3/p3_litter_depth">
+        <label ref="jr:itext('/data/plot_3/p3_litter_depth:label')"/>
+        <hint ref="jr:itext('/data/plot_3/p3_litter_depth:hint')"/>
+      </input>
+      <select1 ref="/data/plot_3/p3_surface_fhs">
+        <label ref="jr:itext('/data/plot_3/p3_surface_fhs:label')"/>
+        <hint ref="jr:itext('/data/plot_3/p3_surface_fhs:hint')"/>
+        <item>
+          <label ref="jr:itext('/data/plot_3/p3_surface_fhs:option0')"/>
+          <value>0.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_3/p3_surface_fhs:option1')"/>
+          <value>1.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_3/p3_surface_fhs:option2')"/>
+          <value>2.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_3/p3_surface_fhs:option3')"/>
+          <value>3.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_3/p3_surface_fhs:option4')"/>
+          <value>3.5</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_3/p3_surface_fhs:option5')"/>
+          <value>4.0</value>
+        </item>
+      </select1>
+      <input ref="/data/plot_3/p3_near_surface_height">
+        <label ref="jr:itext('/data/plot_3/p3_near_surface_height:label')"/>
+        <hint ref="jr:itext('/data/plot_3/p3_near_surface_height:hint')"/>
+      </input>
+      <select1 ref="/data/plot_3/p3_near_surface_fhs">
+        <label ref="jr:itext('/data/plot_3/p3_near_surface_fhs:label')"/>
+        <hint ref="jr:itext('/data/plot_3/p3_near_surface_fhs:hint')"/>
+        <item>
+          <label ref="jr:itext('/data/plot_3/p3_near_surface_fhs:option0')"/>
+          <value>0.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_3/p3_near_surface_fhs:option1')"/>
+          <value>1.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_3/p3_near_surface_fhs:option2')"/>
+          <value>2.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_3/p3_near_surface_fhs:option3')"/>
+          <value>3.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_3/p3_near_surface_fhs:option4')"/>
+          <value>3.5</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_3/p3_near_surface_fhs:option5')"/>
+          <value>4.0</value>
+        </item>
+      </select1>
+      <input ref="/data/plot_3/p3_elevated_height">
+        <label ref="jr:itext('/data/plot_3/p3_elevated_height:label')"/>
+        <hint ref="jr:itext('/data/plot_3/p3_elevated_height:hint')"/>
+      </input>
+      <select1 ref="/data/plot_3/p3_elevated_fhs">
+        <label ref="jr:itext('/data/plot_3/p3_elevated_fhs:label')"/>
+        <hint ref="jr:itext('/data/plot_3/p3_elevated_fhs:hint')"/>
+        <item>
+          <label ref="jr:itext('/data/plot_3/p3_elevated_fhs:option0')"/>
+          <value>0.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_3/p3_elevated_fhs:option1')"/>
+          <value>1.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_3/p3_elevated_fhs:option2')"/>
+          <value>2.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_3/p3_elevated_fhs:option3')"/>
+          <value>3.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_3/p3_elevated_fhs:option4')"/>
+          <value>3.5</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_3/p3_elevated_fhs:option5')"/>
+          <value>4.0</value>
+        </item>
+      </select1>
+      <select1 ref="/data/plot_3/p3_bark_fhs">
+        <label ref="jr:itext('/data/plot_3/p3_bark_fhs:label')"/>
+        <hint ref="jr:itext('/data/plot_3/p3_bark_fhs:hint')"/>
+        <item>
+          <label ref="jr:itext('/data/plot_3/p3_bark_fhs:option0')"/>
+          <value>0.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_3/p3_bark_fhs:option1')"/>
+          <value>1.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_3/p3_bark_fhs:option2')"/>
+          <value>2.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_3/p3_bark_fhs:option3')"/>
+          <value>3.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_3/p3_bark_fhs:option4')"/>
+          <value>4.0</value>
+        </item>
+      </select1>
+      <upload ref="/data/plot_3/p3_photo" mediatype="image/*">
+        <label ref="jr:itext('/data/plot_3/p3_photo:label')"/>
+        <hint ref="jr:itext('/data/plot_3/p3_photo:hint')"/>
+      </upload>
+    </group>
+    <group ref="/data/plot_4" appearance="field-list">
+      <label ref="jr:itext('/data/plot_4:label')"/>
+      <input ref="/data/plot_4/p4_litter_depth">
+        <label ref="jr:itext('/data/plot_4/p4_litter_depth:label')"/>
+        <hint ref="jr:itext('/data/plot_4/p4_litter_depth:hint')"/>
+      </input>
+      <select1 ref="/data/plot_4/p4_surface_fhs">
+        <label ref="jr:itext('/data/plot_4/p4_surface_fhs:label')"/>
+        <hint ref="jr:itext('/data/plot_4/p4_surface_fhs:hint')"/>
+        <item>
+          <label ref="jr:itext('/data/plot_4/p4_surface_fhs:option0')"/>
+          <value>0.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_4/p4_surface_fhs:option1')"/>
+          <value>1.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_4/p4_surface_fhs:option2')"/>
+          <value>2.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_4/p4_surface_fhs:option3')"/>
+          <value>3.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_4/p4_surface_fhs:option4')"/>
+          <value>3.5</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_4/p4_surface_fhs:option5')"/>
+          <value>4.0</value>
+        </item>
+      </select1>
+      <input ref="/data/plot_4/p4_near_surface_height">
+        <label ref="jr:itext('/data/plot_4/p4_near_surface_height:label')"/>
+        <hint ref="jr:itext('/data/plot_4/p4_near_surface_height:hint')"/>
+      </input>
+      <select1 ref="/data/plot_4/p4_near_surface_fhs">
+        <label ref="jr:itext('/data/plot_4/p4_near_surface_fhs:label')"/>
+        <hint ref="jr:itext('/data/plot_4/p4_near_surface_fhs:hint')"/>
+        <item>
+          <label ref="jr:itext('/data/plot_4/p4_near_surface_fhs:option0')"/>
+          <value>0.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_4/p4_near_surface_fhs:option1')"/>
+          <value>1.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_4/p4_near_surface_fhs:option2')"/>
+          <value>2.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_4/p4_near_surface_fhs:option3')"/>
+          <value>3.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_4/p4_near_surface_fhs:option4')"/>
+          <value>3.5</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_4/p4_near_surface_fhs:option5')"/>
+          <value>4.0</value>
+        </item>
+      </select1>
+      <input ref="/data/plot_4/p4_elevated_height">
+        <label ref="jr:itext('/data/plot_4/p4_elevated_height:label')"/>
+        <hint ref="jr:itext('/data/plot_4/p4_elevated_height:hint')"/>
+      </input>
+      <select1 ref="/data/plot_4/p4_elevated_fhs">
+        <label ref="jr:itext('/data/plot_4/p4_elevated_fhs:label')"/>
+        <hint ref="jr:itext('/data/plot_4/p4_elevated_fhs:hint')"/>
+        <item>
+          <label ref="jr:itext('/data/plot_4/p4_elevated_fhs:option0')"/>
+          <value>0.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_4/p4_elevated_fhs:option1')"/>
+          <value>1.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_4/p4_elevated_fhs:option2')"/>
+          <value>2.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_4/p4_elevated_fhs:option3')"/>
+          <value>3.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_4/p4_elevated_fhs:option4')"/>
+          <value>3.5</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_4/p4_elevated_fhs:option5')"/>
+          <value>4.0</value>
+        </item>
+      </select1>
+      <select1 ref="/data/plot_4/p4_bark_fhs">
+        <label ref="jr:itext('/data/plot_4/p4_bark_fhs:label')"/>
+        <hint ref="jr:itext('/data/plot_4/p4_bark_fhs:hint')"/>
+        <item>
+          <label ref="jr:itext('/data/plot_4/p4_bark_fhs:option0')"/>
+          <value>0.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_4/p4_bark_fhs:option1')"/>
+          <value>1.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_4/p4_bark_fhs:option2')"/>
+          <value>2.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_4/p4_bark_fhs:option3')"/>
+          <value>3.0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/plot_4/p4_bark_fhs:option4')"/>
+          <value>4.0</value>
+        </item>
+      </select1>
+      <upload ref="/data/plot_4/p4_photo" mediatype="image/*">
+        <label ref="jr:itext('/data/plot_4/p4_photo:label')"/>
+        <hint ref="jr:itext('/data/plot_4/p4_photo:hint')"/>
+      </upload>
+    </group>
+  </h:body>
+</h:html>
