@@ -13,7 +13,7 @@ reactable_burngrading(data)
 An interactive reactable.
 }
 \description{
-Display a reactable of Burn Grading data (incl OzCBI) with details
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#superseded}{\figure{lifecycle-superseded.svg}{options: alt='[Superseded]'}}}{\strong{[Superseded]}}
 }
 \examples{
 \dontrun{

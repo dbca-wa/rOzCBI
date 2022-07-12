@@ -1,5 +1,7 @@
 #' Extract the grading from a Burn Grading field value
 #'
+#' `r lifecycle::badge("stable")`
+#'
 #' @param grading_string A string in the format `<grading>_<label>`.
 #'   These strings are field values of the form "Burn Grading".
 #'   E.g. "0.5_test-label", "2.0_other-label".

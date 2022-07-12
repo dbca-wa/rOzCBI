@@ -1,5 +1,7 @@
 #' Calculate the OzCBI from input variables
 #'
+#' `r lifecycle::badge("superseded")`
+#'
 #' @details The OzCBI is calculated from the following components:
 #'
 #' * Stratum 1 fraction of cover: always 1 (100%), therefore never captured.

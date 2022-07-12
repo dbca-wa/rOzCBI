@@ -15,7 +15,7 @@ and downloaded with \code{ruODK::odata_submission_get(wkt=T)}.}
 The input data.frame with an extra variable, 'ozcbi'.
 }
 \description{
-Add the OzCBI calculated from the burn grading data
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#superseded}{\figure{lifecycle-superseded.svg}{options: alt='[Superseded]'}}}{\strong{[Superseded]}}
 }
 \examples{
 data("burngrading01")

@@ -1,5 +1,7 @@
 #' Add the OzCBI calculated from the burn grading data
 #'
+#' `r lifecycle::badge("superseded")`
+#'
 #' @param burngrading A data.frame of burn grading data,
 #'   collected with ODK Collect from the form "Burn Grading 0.1"
 #'   and downloaded with `ruODK::odata_submission_get(wkt=T)`.

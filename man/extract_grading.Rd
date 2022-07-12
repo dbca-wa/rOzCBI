@@ -15,7 +15,7 @@ E.g. "0.5_test-label", "2.0_other-label".}
 The grading as numeric value, e.g. 0.5, 2.0.
 }
 \description{
-Extract the grading from a Burn Grading field value
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#stable}{\figure{lifecycle-stable.svg}{options: alt='[Stable]'}}}{\strong{[Stable]}}
 }
 \examples{
 testthat::expect_equal(extract_grading("0.0_test"), 0.0)

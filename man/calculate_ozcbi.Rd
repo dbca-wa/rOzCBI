@@ -117,7 +117,7 @@ from 0.0 to 1.0. Default: 0.}
 \item{verbose}{Whether to display diagnostic messages, default: FALSE.}
 }
 \description{
-Calculate the OzCBI from input variables
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#superseded}{\figure{lifecycle-superseded.svg}{options: alt='[Superseded]'}}}{\strong{[Superseded]}}
 }
 \details{
 The OzCBI is calculated from the following components:

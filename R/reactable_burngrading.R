@@ -1,5 +1,7 @@
 #' Display a reactable of Burn Grading data (incl OzCBI) with details
 #'
+#' `r lifecycle::badge("superseded")`
+#'
 #' @param data Data from form Burn Grading with OzCBI.
 #' @return An interactive reactable.
 #' @export
