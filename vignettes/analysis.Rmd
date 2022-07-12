@@ -25,6 +25,8 @@ resource_files:
 - media/1583917551350.jpg
 - media/1583917578867.jpg
 - media/1583917861778.jpg
+- media/1645667500672.jpg
+- media/1645667813921.jpg
 vignette: >
   %\VignetteIndexEntry{data-analysis}
   %\VignetteEngine{knitr::rmarkdown}
@@ -70,11 +72,11 @@ Changes to `.Renviron` require a restart of the R session.
 usethis::edit_r_environ()
 
 # Paste with your credentials
-ODKC_URL="https://odkcentral.dbca.wa.gov.au"
+ODKC_URL="https://odkc.dbca.wa.gov.au"
 ODKC_UN="YOUR_EMAIL"
 ODKC_PW="YOUR_PASSWORD"
-ODKC_PID=27
-ODKC_FID="build_Burn-Grading-0-1_1578487677"
+ODKC_PID=4
+ODKC_FID="FMS-verify-severity"
 
 # Save .Renviron and restart your R session.
 ```
@@ -89,8 +91,8 @@ respective OData service URL:
 # ODK Central's OData URL contains base URL, project ID, and form ID
 # ODK Central credentials can live in .Renviron, see vignette "setup"
 ruODK::ru_setup(
-  svc = paste0("https://odkcentral.dbca.wa.gov.au/v1/projects/27/",
-               "forms/build_Burn-Grading-0-1_1578487677.svc"),
+  svc = paste0("https://odkc.dbca.wa.gov.au/v1/projects/4/",
+               "forms/FMS-verify-severity.svc"),
   un = Sys.getenv("ODKC_UN"),
   pw = Sys.getenv("ODKC_PW")
 )
@@ -120,6 +122,7 @@ burngrading01 <- ruODK::odata_submission_get(
 
 ```{r, echo=F}
 data("burngrading01")
+data("fms")
 ```
 
 ## Calculate OzCBI
@@ -139,6 +142,7 @@ can be fed by data from any other compatible data source.
 
 ```{r}
 bg_ozcbi <- burngrading01 %>% add_ozcbi()
+# bg_fms <- fms %>% add_ozcbi()
 ```
 
 ## Visualise

@@ -1,6 +1,6 @@
 Package: rOzCBI
 Title: A Burn Severity Assessment Toolkit for Austral Vegetation Communities
-Version: 0.0.4
+Version: 0.0.5
 Authors@R: 
     c(person(given = "Florian",
            family = "Mayer",
@@ -23,15 +23,15 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Depends:
-    R (>= 3.5.0)
+    R (>= 4.1.0)
 Imports:
-    dplyr (>= 0.8.3),
-    glue (>= 1.3.1),
-    leaflet (>= 2.0.3),
-    magrittr (>= 1.5),
-    purrr (>= 0.3.3),
-    rlang (>= 0.4.5),
-    ruODK (>= 0.6.6.9016),
+    dplyr (>= 1.0.7),
+    glue (>= 1.4.2),
+    leaflet (>= 2.1.1),
+    magrittr (>= 2.0.1),
+    purrr (>= 0.3.4),
+    rlang (>= 0.4.11),
+    ruODK (>= 1.2.0),
     stringr (>= 1.4.0)
 Remotes:
     github::dbca-wa/ruODK

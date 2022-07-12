@@ -3,8 +3,8 @@
 #
 ruODK::ru_setup(
   svc = paste0(
-    "https://odkcentral.dbca.wa.gov.au/v1/projects/27/",
-    "forms/build_Burn-Grading-0-1_1578487677.svc"
+    "https://odkc.dbca.wa.gov.au/v1/projects/4/",
+    "forms/FMS-verify-severity.svc"
   ),
   un = Sys.getenv("ODKC_UN"),
   pw = Sys.getenv("ODKC_PW")
@@ -13,11 +13,12 @@ ruODK::ru_setup(
 loc <- fs::path("media")
 fs::dir_create(loc)
 
-burngrading01 <- ruODK::odata_submission_get(
+fms <- ruODK::odata_submission_get(
   verbose = TRUE,
   tz = "Australia/Perth",
   local_dir = loc,
-  wkt = T
+  wkt = T,
+  top = 10
 )
 
 # Resize images to minimise package size
@@ -30,4 +31,5 @@ ymlthis::yml_resource_files(ymlthis::yml(), fs::dir_ls(loc))
 fs::dir_copy(loc, here::here("vignettes/media"), overwrite = TRUE)
 fs::dir_delete(loc)
 
-usethis::use_data(burngrading01, overwrite = T, compress = "xz")
+# usethis::use_data(burngrading01, overwrite = T, compress = "xz")
+usethis::use_data(fms, overwrite = T, compress = "xz")
