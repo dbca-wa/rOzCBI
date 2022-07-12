@@ -35,7 +35,7 @@ jobs:
       ODKC_URL: ${{secrets.ODKC_URL}}
       ODKC_UN: ${{secrets.ODKC_UN}}
       ODKC_PW: ${{secrets.ODKC_PW}}
-      GITHUB_PAT: ${{secrets.GITHUB_PAT}}
+      GITHUB_PAT: ${{secrets.GH_PAT}}
 
     steps:
       - uses: actions/checkout@v2
