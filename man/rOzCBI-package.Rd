@@ -6,10 +6,7 @@
 \alias{rOzCBI-package}
 \title{rOzCBI: A Burn Severity Assessment Toolkit for Austral Vegetation Communities}
 \description{
-rOzCBI contains background, digital data capture, analysis, and
-             visualisation for the calculation of OzCBI, a composite burn index
-             for the initial assessment of the short-term burn severity from
-             remotely sensed data.
+rOzCBI contains background, digital data capture, analysis, and visualisation for the calculation of OzCBI, a composite burn index for the initial assessment of the short-term burn severity from remotely sensed data.
 }
 \seealso{
 Useful links:
