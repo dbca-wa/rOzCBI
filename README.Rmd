@@ -91,12 +91,23 @@ Read vignette
 access, analysis, and visualisation of the captured burn grading data using 
 the GeoCBI assessment method.
 
+Windows users might see the `curl` error `unable to get local issuer certificate`
+when using an ODK Central instance with self-signed SSL certificates.
+This can be fixed ([source](https://stackoverflow.com/a/54660072/2813717)) 
+through the following line:
+```{r}
+library(httr)
+httr::set_config(httr::config(ssl_verifypeer = FALSE))
+```
+As it decreases security, it is recommended to only run this when necessary.
+
+
 ## Who
 The methodology was compiled and adapted to Western Australian vegetation by 
 Valerie Densmore (DBCA).
 
 The R package `rOzCBI` was developed, and is maintained, 
-by Florian Mayer (DBCA) for the Western Australian 
+by Florian Mayer for the Western Australian 
 [Department of Biodiversity, Conservation and Attractions (DBCA)](https://www.dbca.wa.gov.au/).
 
 The background image in the package logo shows the aerial view of a prescribed 

@@ -42,7 +42,7 @@ of burn grading surveys.
 
 ## Setting up a data capture device
 
-<img src="../man/figures/odkcentral.png" align="right" alt="ODK Central setup QR code" width="120" />
+<img src="../man/figures/odkcentral.gif" align="right" alt="ODK Central setup QR code" width="120" />
 
 * Install [ODK Collect from Google Play](https://play.google.com/store/apps/details?id=org.odk.collect.android) 
   onto an Android tablet and from Admin settings > Import settings, 

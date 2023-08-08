@@ -24,23 +24,23 @@ issues](https://img.shields.io/github/issues/dbca-wa/rOzCBI.svg?style=popout)](h
 
 rOzCBI in a nutshell:
 
-  - [OpenDataKit](https://opendatakit.org/) forms to evaluate a burnt
-    site.
-  - Helpers to calculate the OzCBI from the burn grading field data.
-  - Instructions to get up and running with digital data capture and
-    data analysis.
-  - Working examples of the entire data flow.
+- [OpenDataKit](https://opendatakit.org/) forms to evaluate a burnt
+  site.
+- Helpers to calculate the OzCBI from the burn grading field data.
+- Instructions to get up and running with digital data capture and data
+  analysis.
+- Working examples of the entire data flow.
 
 ## What
 
 To evaluate the severity of burns, the differential normalised burn
 ratio (dNBR) of a burnt site can be derived from satellite imagery
 cost-effectively and on a large scale. The NBR is calculated from NIR
-and SWIR bands as \(NBR = (NIR - SWIR) / (NIR + SWIR)\). The dNBR is
+and SWIR bands as $NBR = (NIR - SWIR) / (NIR + SWIR)$. The dNBR is
 calculated from pre- and post-burn NBR as
-\(dNBR = NBR_{post} / NBR_{pre}\). To calibrate the dNBR, ground
-truthing field work can derive an index called “OzCBI” from the
-condition and composition of a burnt site.
+$dNBR = NBR_{post} / NBR_{pre}$. To calibrate the dNBR, ground truthing
+field work can derive an index called “OzCBI” from the condition and
+composition of a burnt site.
 
 rOzCBI contains background, digital data capture, analysis, and
 visualisation for the calculation of OzCBI, a composite burn index for
@@ -53,9 +53,9 @@ Angela & Chuvieco, Emilio.
 (pdf)](https://www.researchgate.net/publication/229043914_GeoCBI_A_modified_version_of_the_Composite_Burn_Index_for_the_initial_assessment_of_the_short-term_burn_severity_from_remotely_sensed_data))
 GeoCBI: A modified version of the Composite Burn Index for the initial
 assessment of the short-term burn severity from remotely sensed data.
-Remote Sensing of Environment
-113  
-[DOI 10.1016/j.rse.2008.10.011](https://www.sciencedirect.com/science/article/abs/pii/S0034425708003246)
+Remote Sensing of Environment 113  
+[DOI
+10.1016/j.rse.2008.10.011](https://www.sciencedirect.com/science/article/abs/pii/S0034425708003246)
 
 OzCBI was further modified to suit Australian vegetation communities by
 Valerie Densmore at DBCA in Western Australia. This version of the OzCBI
@@ -81,8 +81,13 @@ remotes::install_github("dbca-wa/rOzCBI")
 The overall data flow from digital form to data analysis is described at
 [ruODK](https://dbca-wa.github.io/ruODK/index.html).
 
-![An ODK setup with ODK Build, Central, Collect, and
-ruODK](https://www.lucidchart.com/publicSegments/view/952c1350-3003-48c1-a2c8-94bad74cdb46/image.png)
+<figure>
+<img
+src="https://www.lucidchart.com/publicSegments/view/952c1350-3003-48c1-a2c8-94bad74cdb46/image.png"
+alt="An ODK setup with ODK Build, Central, Collect, and ruODK" />
+<figcaption aria-hidden="true">An ODK setup with ODK Build, Central,
+Collect, and ruODK</figcaption>
+</figure>
 
 Read vignette [Digital Data
 Capture](https://dbca-wa.github.io/rOzCBI/articles/forms.html) on the
@@ -93,13 +98,27 @@ analysis](https://dbca-wa.github.io/rOzCBI/articles/analysis.html) on
 access, analysis, and visualisation of the captured burn grading data
 using the GeoCBI assessment method.
 
+Windows users might see the `curl` error
+`unable to get local issuer certificate` when using an ODK Central
+instance with self-signed SSL certificates. This can be fixed
+([source](https://stackoverflow.com/a/54660072/2813717)) through the
+following line:
+
+``` r
+library(httr)
+httr::set_config(httr::config(ssl_verifypeer = FALSE))
+```
+
+As it decreases security, it is recommended to only run this when
+necessary.
+
 ## Who
 
 The methodology was compiled and adapted to Western Australian
 vegetation by Valerie Densmore (DBCA).
 
 The R package `rOzCBI` was developed, and is maintained, by Florian
-Mayer (DBCA) for the Western Australian [Department of Biodiversity,
+Mayer for the Western Australian [Department of Biodiversity,
 Conservation and Attractions (DBCA)](https://www.dbca.wa.gov.au/).
 
 The background image in the package logo shows the aerial view of a
@@ -109,7 +128,6 @@ To cite package `rOzCBI` in publications use:
 
 ``` r
 citation("rOzCBI")
-#> 
 #> To cite rOzCBI in publications use:
 #> 
 #>   Valerie Densmore, Florian W. Mayer (2020). rOzCBI: A Burn Severity
