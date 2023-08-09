@@ -26,6 +26,15 @@ library(rOzCBI)
 
 This vignette contains handy commands for the package development workflow.
 
+## Test data
+<img src="../man/figures/test.gif" align="right" alt="ODK Central setup QR code" width="120" />
+To generate test data and run package tests, the XLSForm versions of the 
+package forms are deployed to the ruODK test server.
+
+Only package maintainers should use this QR code to add more test data.
+No guarantees are given about the longevity of data submitted to the test server.
+Submitted data should be considered potentially publicly visible and ephemeral.
+
 ## Develop
 
 * Create [issue](https://github.com/dbca-wa/rOzCBI/issues)

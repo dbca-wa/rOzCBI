@@ -1,4 +1,4 @@
-# rOzCBI development
+# rOzCBI 0.1.0 (development)
 ## Form templates
 * Retire BurnGrading 0.1 and include new forms OzCBI (Burn Grading Forest), 
   HeathOzCBI (Burn Grading Heath), FMS Verify Severity (Burn Grading 
