@@ -56,7 +56,7 @@ Suggests:
     roxygen2 (>= 7.0.2)
 Language: en_US
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.0
+RoxygenNote: 7.2.3
 RdMacros: 
     lifecycle
 VignetteBuilder: knitr

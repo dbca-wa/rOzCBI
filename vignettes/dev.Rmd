@@ -35,6 +35,17 @@ Only package maintainers should use this QR code to add more test data.
 No guarantees are given about the longevity of data submitted to the test server.
 Submitted data should be considered potentially publicly visible and ephemeral.
 
+Packaged data is refreshed from the test data by running
+
+```{r refresh_pkg_data, eval=FALSE}
+Sys.setenv(RUODK_UN="...")
+Sys.setenv(RUODK_PW="...")
+source("data_raw/make_data.R")
+```
+
+with credentials `RUODK_UN` and `RUODK_PW` for a web user with access to the
+test project.
+
 ## Develop
 
 * Create [issue](https://github.com/dbca-wa/rOzCBI/issues)
