@@ -49,6 +49,7 @@ bgv <- ruODK::odata_submission_get(
 
 # Resize images to minimise package size
 # This works only under Linux based OS
+# sudo apt install imagemagick
 system("find media -name *.jpg -exec mogrify -resize 200x150 {} \\;")
 
 # Update vignette "analysis" header with:

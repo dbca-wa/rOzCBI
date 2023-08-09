@@ -27,6 +27,12 @@ resource_files:
 - media/1583917861778.jpg
 - media/1645667500672.jpg
 - media/1645667813921.jpg
+- media/1691557455419.jpg
+- media/1691557501897.jpg
+- media/1691557557243.jpg
+- media/1691557629931.jpg
+- media/1691557709643.jpg
+- media/1691557774426.jpg
 vignette: >
   %\VignetteIndexEntry{data-analysis}
   %\VignetteEngine{knitr::rmarkdown}
