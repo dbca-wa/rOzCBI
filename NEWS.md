@@ -1,3 +1,17 @@
+# rOzCBI development
+## Form templates
+* Retire BurnGrading 0.1 and include new forms OzCBI (Burn Grading Forest), 
+  HeathOzCBI (Burn Grading Heath), FMS Verify Severity (Burn Grading 
+  Verification) #6
+
+## Major changes
+* Upgrade 
+
+## Minor changes
+
+## Documentation
+* Update docs and vignettes #7
+
 # rOzCBI 0.0.4
 * Add GitHub Actions for CI, test coverage, website build and deployment.
 * All references and function names are now renamed from `geocbi` to `ozcbi`.
