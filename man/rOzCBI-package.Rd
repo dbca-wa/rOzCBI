@@ -13,15 +13,17 @@ Useful links:
 \itemize{
   \item \url{https://dbca-wa.github.io/rOzCBI}
   \item \url{https://github.com/dbca-wa/rOzCBI}
+  \item \url{https://dbca-wa.github.io/rOzCBI/}
   \item Report bugs at \url{https://github.com/dbca-wa/rOzCBI/issues}
 }
 
 }
 \author{
-\strong{Maintainer}: Florian Mayer \email{Florian.Mayer@dbca.wa.gov.au} (\href{https://orcid.org/0000-0003-4269-4242}{ORCID})
+\strong{Maintainer}: Florian Mayer \email{Florian.Mayer@dpc.wa.gov.au} (\href{https://orcid.org/0000-0003-4269-4242}{ORCID})
 
 Authors:
 \itemize{
+  \item Bart Huntley \email{Bart.Huntley@dbca.wa.gov.au} (\href{https://orcid.org/0000-0002-9519-4105}{ORCID})
   \item Valerie Densmore \email{Valerie.Densmore@dbca.wa.gov.au} (\href{https://orcid.org/0000-0003-0121-8709}{ORCID})
 }
 

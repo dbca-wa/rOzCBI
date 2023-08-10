@@ -24,13 +24,10 @@ articles:
   contents: '`dev`'
 navbar:
   components:
-    twitter:
-      icon: fab fa-twitter fa-lg
-      href: https://twitter.com/fistful_of_bass
     articles:
       text: Articles
       menu:
-      - text: Digital Data Capture
+      - text: Data capture
         href: articles/forms.html
       - text: Data analysis
         href: articles/analysis.html
