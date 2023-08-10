@@ -7,9 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Development • rOzCBI</title>
 <!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/yeti/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/all.min.css" integrity="sha256-PbSmjxuVAzJ6FPvNYsrXygfGhNJYyZ2GktDbkMBqQZg=" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/v4-shims.min.css" integrity="sha256-A6jcAdwFD48VMjlI3GDxUd+eCQa7/KWy6G9oe/ovaPA=" crossorigin="anonymous">
-<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
+<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
 <script src="../pkgdown.js"></script><meta property="og:title" content="Development">
 <meta property="og:description" content="rOzCBI">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
@@ -23,7 +24,9 @@
   gtag('config', 'UA-155735563-1');
 </script>
 </head>
-<body>
+<body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-article">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -36,23 +39,17 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">rOzCBI</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.4</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.0.5</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
 <li>
-  <a href="../index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
-<li>
   <a href="../reference/index.html">Reference</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Articles
      
     <span class="caret"></span>
@@ -72,17 +69,11 @@
 <li>
   <a href="../news/index.html">Changelog</a>
 </li>
-<li>
-  <a href="https://twitter.com/fistful_of_bass">
-    <span class="fab fa fab fa-twitter fa-lg"></span>
-     
-  </a>
-</li>
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/dbca-wa/rOzCBI">
-    <span class="fab fa fab fa-github fa-lg"></span>
+  <a href="https://github.com/dbca-wa/rOzCBI/" class="external-link">
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -99,94 +90,113 @@
       </header><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
-      <h1>Development</h1>
+      <h1 data-toc-skip>Development</h1>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/dbca-wa/rOzCBI/blob/master/vignettes/dev.Rmd"><code>vignettes/dev.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/dbca-wa/rOzCBI/blob/HEAD/vignettes/dev.Rmd" class="external-link"><code>vignettes/dev.Rmd</code></a></small>
       <div class="hidden name"><code>dev.Rmd</code></div>
 
     </div>
 
     
     
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(rOzCBI)</span></code></pre></div>
-<p>This vignette contains handy commands for the package development workflow.</p>
-<div id="develop" class="section level2">
-<h2 class="hasAnchor">
-<a href="#develop" class="anchor"></a>Develop</h2>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dbca-wa.github.io/rOzCBI">rOzCBI</a></span><span class="op">)</span></span></code></pre></div>
+<p>This vignette contains handy commands for the package development
+workflow.</p>
+<div class="section level2">
+<h2 id="test-data">Test data<a class="anchor" aria-label="anchor" href="#test-data"></a>
+</h2>
+<p><img src="../reference/figures/test.gif" align="right" alt="ODK Central setup QR code" width="120">
+To generate test data and run package tests, the XLSForm versions of the
+package forms are deployed to the ruODK test server.</p>
+<p>Only package maintainers should use this QR code to add more test
+data. No guarantees are given about the longevity of data submitted to
+the test server. Submitted data should be considered potentially
+publicly visible and ephemeral.</p>
+<p>Packaged data is refreshed from the test data by running</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Sys.setenv.html" class="external-link">Sys.setenv</a></span><span class="op">(</span>RUODK_UN <span class="op">=</span> <span class="st">"..."</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/Sys.setenv.html" class="external-link">Sys.setenv</a></span><span class="op">(</span>RUODK_PW <span class="op">=</span> <span class="st">"..."</span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/source.html" class="external-link">source</a></span><span class="op">(</span><span class="st">"data_raw/make_data.R"</span><span class="op">)</span></span></code></pre></div>
+<p>with credentials <code>RUODK_UN</code> and <code>RUODK_PW</code> for
+a web user with access to the test project.</p>
+</div>
+<div class="section level2">
+<h2 id="develop">Develop<a class="anchor" aria-label="anchor" href="#develop"></a>
+</h2>
 <ul>
-<li>Create <a href="https://github.com/dbca-wa/rOzCBI/issues">issue</a>
+<li>Create <a href="https://github.com/dbca-wa/rOzCBI/issues" class="external-link">issue</a>
 </li>
-<li>Add new code, docs, tests. Update or expand vignettes and README where applicable.</li>
+<li>Add new code, docs, tests. Update or expand vignettes and README
+where applicable.</li>
 <li>Once tests pass, commit referencing the issue.</li>
-<li>If the change is user-facing, add a line in <code>NEWS.md</code> referencing the issue.</li>
+<li>If the change is user-facing, add a line in <code>NEWS.md</code>
+referencing the issue.</li>
 <li>Increase version number.</li>
 </ul>
 </div>
-<div id="release" class="section level2">
-<h2 class="hasAnchor">
-<a href="#release" class="anchor"></a>Release</h2>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>styler<span class="op">::</span><span class="kw">style_pkg</span>()</span>
-<span id="cb2-2"><a href="#cb2-2"></a>devtools<span class="op">::</span><span class="kw">document</span>(<span class="dt">roclets =</span> <span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"rd"</span>, <span class="st">"collate"</span>, <span class="st">"namespace"</span>))</span>
-<span id="cb2-3"><a href="#cb2-3"></a>spelling<span class="op">::</span><span class="kw"><a href="https://docs.ropensci.org/spelling/reference/spell_check_package.html">spell_check_package</a></span>(here<span class="op">::</span><span class="kw">here</span>())</span>
-<span id="cb2-4"><a href="#cb2-4"></a>spelling<span class="op">::</span><span class="kw"><a href="https://docs.ropensci.org/spelling/reference/spell_check_files.html">spell_check_files</a></span>(here<span class="op">::</span><span class="kw">here</span>(<span class="st">"README.Rmd"</span>), <span class="dt">lang =</span> <span class="st">"en_AU"</span>)</span>
-<span id="cb2-5"><a href="#cb2-5"></a>spelling<span class="op">::</span><span class="kw"><a href="https://docs.ropensci.org/spelling/reference/wordlist.html">update_wordlist</a></span>(here<span class="op">::</span><span class="kw">here</span>())</span>
-<span id="cb2-6"><a href="#cb2-6"></a>codemetar<span class="op">::</span><span class="kw">write_codemeta</span>(<span class="st">"rOzCBI"</span>)</span>
-<span id="cb2-7"><a href="#cb2-7"></a>rmarkdown<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/rmarkdown/man/render.html">render</a></span>(here<span class="op">::</span><span class="kw">here</span>(<span class="st">"README.Rmd"</span>), <span class="dt">encoding =</span> <span class="st">"UTF-8"</span>, <span class="dt">clean =</span> <span class="ot">TRUE</span>)</span>
-<span id="cb2-8"><a href="#cb2-8"></a><span class="cf">if</span> (fs<span class="op">::</span><span class="kw"><a href="http://fs.r-lib.org/reference/file_access.html">file_exists</a></span>(here<span class="op">::</span><span class="kw">here</span>(<span class="st">"README.html"</span>))) fs<span class="op">::</span><span class="kw"><a href="http://fs.r-lib.org/reference/delete.html">file_delete</a></span>(here<span class="op">::</span><span class="kw">here</span>(<span class="st">"README.html"</span>))</span>
-<span id="cb2-9"><a href="#cb2-9"></a>codemetar<span class="op">::</span><span class="kw">give_opinions</span>(<span class="st">'/home/florian/projects/rOzCBI/.'</span>)</span>
-<span id="cb2-10"><a href="#cb2-10"></a>goodpractice<span class="op">::</span><span class="kw">goodpractice</span>(<span class="dt">path =</span> here<span class="op">::</span><span class="kw">here</span>(), <span class="dt">quiet =</span> <span class="ot">FALSE</span>)</span>
-<span id="cb2-11"><a href="#cb2-11"></a><span class="dv">1</span><span class="st">```</span></span>
-<span id="cb2-12"><a href="#cb2-12"></a></span>
-<span id="cb2-13"><a href="#cb2-13"></a><span class="dt">## Hex sticker </span></span>
-<span id="cb2-14"><a href="#cb2-14"></a></span>
-<span id="cb2-15"><a href="#cb2-15"></a><span class="dt">&lt;img src="../man/figures/rOzCBI.png" alt="How good was that burn?" width="500" /&gt;</span></span>
-<span id="cb2-16"><a href="#cb2-16"></a><span class="dt">&lt;br/&gt;</span></span></code></pre></div>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># remotes::install_github("GuangchuangYu/hexSticker")</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(hexSticker)</span>
-<span id="cb3-3"><a href="#cb3-3"></a><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(showtext)</span>
-<span id="cb3-4"><a href="#cb3-4"></a><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(sysfonts)</span>
-<span id="cb3-5"><a href="#cb3-5"></a>sysfonts<span class="op">::</span><span class="kw">font_families</span>()</span>
-<span id="cb3-6"><a href="#cb3-6"></a>sysfonts<span class="op">::</span><span class="kw">font_add_google</span>(<span class="st">"Fredoka One"</span>, <span class="st">"fire"</span>)</span>
-<span id="cb3-7"><a href="#cb3-7"></a>sysfonts<span class="op">::</span><span class="kw">font_add_google</span>(<span class="st">"Fredericka the Great"</span>, <span class="st">"fredericka"</span>)</span>
-<span id="cb3-8"><a href="#cb3-8"></a><span class="co"># sysfonts::font_add_google("Big Shoulders Display", "shoulders")</span></span>
-<span id="cb3-9"><a href="#cb3-9"></a><span class="co"># logo s_, text p_, bg h_, url u_</span></span>
-<span id="cb3-10"><a href="#cb3-10"></a>hexSticker<span class="op">::</span><span class="kw">sticker</span>(</span>
-<span id="cb3-11"><a href="#cb3-11"></a>  here<span class="op">::</span><span class="kw">here</span>(<span class="st">"man"</span>, <span class="st">"figures"</span>, <span class="st">"fire.jpg"</span>),</span>
-<span id="cb3-12"><a href="#cb3-12"></a>  <span class="dt">asp =</span> <span class="dv">1</span>,</span>
-<span id="cb3-13"><a href="#cb3-13"></a>  <span class="dt">s_x =</span> <span class="fl">1.0</span>, <span class="dt">s_y =</span> <span class="fl">1.05</span>, <span class="dt">s_width =</span> <span class="fl">1.5</span>, <span class="co"># s_height = 0.1,</span></span>
-<span id="cb3-14"><a href="#cb3-14"></a>  <span class="dt">package =</span> <span class="st">"rOzCBI"</span>, <span class="dt">p_x =</span> <span class="dv">1</span>, <span class="dt">p_y =</span> <span class="fl">0.7</span>, <span class="dt">p_size =</span> <span class="dv">32</span>,</span>
-<span id="cb3-15"><a href="#cb3-15"></a>  <span class="dt">p_family =</span> <span class="st">"fredericka"</span>, <span class="dt">p_color =</span> <span class="st">"#ffffff"</span>,</span>
-<span id="cb3-16"><a href="#cb3-16"></a>  <span class="dt">url =</span> <span class="st">"dbca-wa.github.io/rOzCBI"</span>, <span class="dt">u_size =</span> <span class="dv">4</span>, <span class="dt">u_color =</span> <span class="st">"#ffffff"</span>,</span>
-<span id="cb3-17"><a href="#cb3-17"></a>  <span class="dt">h_fill =</span> <span class="st">"#aaaaaa"</span>, <span class="dt">h_color =</span> <span class="st">"#000000"</span>,</span>
-<span id="cb3-18"><a href="#cb3-18"></a>  <span class="dt">white_around_sticker =</span> T,</span>
-<span id="cb3-19"><a href="#cb3-19"></a>  <span class="dt">filename =</span> here<span class="op">::</span><span class="kw">here</span>(<span class="st">"man"</span>, <span class="st">"figures"</span>, <span class="st">"rOzCBI.png"</span>)</span>
-<span id="cb3-20"><a href="#cb3-20"></a>)</span></code></pre></div>
+<div class="section level2">
+<h2 id="release">Release<a class="anchor" aria-label="anchor" href="#release"></a>
+</h2>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">styler</span><span class="fu">::</span><span class="fu">style_pkg</span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">document</span><span class="op">(</span>roclets <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"rd"</span>, <span class="st">"collate"</span>, <span class="st">"namespace"</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="fu">spelling</span><span class="fu">::</span><span class="fu"><a href="https://docs.ropensci.org/spelling/reference/spell_check_package.html" class="external-link">spell_check_package</a></span><span class="op">(</span><span class="fu">here</span><span class="fu">::</span><span class="fu">here</span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="fu">spelling</span><span class="fu">::</span><span class="fu"><a href="https://docs.ropensci.org/spelling/reference/spell_check_files.html" class="external-link">spell_check_files</a></span><span class="op">(</span><span class="fu">here</span><span class="fu">::</span><span class="fu">here</span><span class="op">(</span><span class="st">"README.Rmd"</span><span class="op">)</span>, lang <span class="op">=</span> <span class="st">"en_AU"</span><span class="op">)</span></span>
+<span><span class="fu">spelling</span><span class="fu">::</span><span class="fu"><a href="https://docs.ropensci.org/spelling/reference/wordlist.html" class="external-link">update_wordlist</a></span><span class="op">(</span><span class="fu">here</span><span class="fu">::</span><span class="fu">here</span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="fu">codemetar</span><span class="fu">::</span><span class="fu">write_codemeta</span><span class="op">(</span><span class="st">"rOzCBI"</span><span class="op">)</span></span>
+<span><span class="fu">rmarkdown</span><span class="fu">::</span><span class="fu"><a href="https://pkgs.rstudio.com/rmarkdown/reference/render.html" class="external-link">render</a></span><span class="op">(</span><span class="fu">here</span><span class="fu">::</span><span class="fu">here</span><span class="op">(</span><span class="st">"README.Rmd"</span><span class="op">)</span>, encoding <span class="op">=</span> <span class="st">"UTF-8"</span>, clean <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
+<span><span class="kw">if</span> <span class="op">(</span><span class="fu">fs</span><span class="fu">::</span><span class="fu"><a href="https://fs.r-lib.org/reference/file_access.html" class="external-link">file_exists</a></span><span class="op">(</span><span class="fu">here</span><span class="fu">::</span><span class="fu">here</span><span class="op">(</span><span class="st">"README.html"</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> <span class="fu">fs</span><span class="fu">::</span><span class="fu"><a href="https://fs.r-lib.org/reference/delete.html" class="external-link">file_delete</a></span><span class="op">(</span><span class="fu">here</span><span class="fu">::</span><span class="fu">here</span><span class="op">(</span><span class="st">"README.html"</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="fu">codemetar</span><span class="fu">::</span><span class="fu">give_opinions</span><span class="op">(</span><span class="st">"/home/florian/projects/rOzCBI/."</span><span class="op">)</span></span>
+<span><span class="fu">goodpractice</span><span class="fu">::</span><span class="fu">goodpractice</span><span class="op">(</span>path <span class="op">=</span> <span class="fu">here</span><span class="fu">::</span><span class="fu">here</span><span class="op">(</span><span class="op">)</span>, quiet <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="hex-sticker">Hex sticker<a class="anchor" aria-label="anchor" href="#hex-sticker"></a>
+</h2>
+<p><img src="../reference/figures/rOzCBI.png" alt="How good was that burn?" width="500"><br></p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># remotes::install_github("GuangchuangYu/hexSticker")</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/GuangchuangYu/hexSticker" class="external-link">hexSticker</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/yixuan/showtext" class="external-link">showtext</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/yixuan/sysfonts" class="external-link">sysfonts</a></span><span class="op">)</span></span>
+<span><span class="fu">sysfonts</span><span class="fu">::</span><span class="fu">font_families</span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="fu">sysfonts</span><span class="fu">::</span><span class="fu">font_add_google</span><span class="op">(</span><span class="st">"Fredoka One"</span>, <span class="st">"fire"</span><span class="op">)</span></span>
+<span><span class="fu">sysfonts</span><span class="fu">::</span><span class="fu">font_add_google</span><span class="op">(</span><span class="st">"Fredericka the Great"</span>, <span class="st">"fredericka"</span><span class="op">)</span></span>
+<span><span class="co"># sysfonts::font_add_google("Big Shoulders Display", "shoulders")</span></span>
+<span><span class="co"># logo s_, text p_, bg h_, url u_</span></span>
+<span><span class="fu">hexSticker</span><span class="fu">::</span><span class="fu">sticker</span><span class="op">(</span></span>
+<span>  <span class="fu">here</span><span class="fu">::</span><span class="fu">here</span><span class="op">(</span><span class="st">"man"</span>, <span class="st">"figures"</span>, <span class="st">"fire.jpg"</span><span class="op">)</span>,</span>
+<span>  asp <span class="op">=</span> <span class="fl">1</span>,</span>
+<span>  s_x <span class="op">=</span> <span class="fl">1.0</span>, s_y <span class="op">=</span> <span class="fl">1.05</span>, s_width <span class="op">=</span> <span class="fl">1.5</span>, <span class="co"># s_height = 0.1,</span></span>
+<span>  package <span class="op">=</span> <span class="st">"rOzCBI"</span>, p_x <span class="op">=</span> <span class="fl">1</span>, p_y <span class="op">=</span> <span class="fl">0.7</span>, p_size <span class="op">=</span> <span class="fl">32</span>,</span>
+<span>  p_family <span class="op">=</span> <span class="st">"fredericka"</span>, p_color <span class="op">=</span> <span class="st">"#ffffff"</span>,</span>
+<span>  url <span class="op">=</span> <span class="st">"dbca-wa.github.io/rOzCBI"</span>, u_size <span class="op">=</span> <span class="fl">4</span>, u_color <span class="op">=</span> <span class="st">"#ffffff"</span>,</span>
+<span>  h_fill <span class="op">=</span> <span class="st">"#aaaaaa"</span>, h_color <span class="op">=</span> <span class="st">"#000000"</span>,</span>
+<span>  white_around_sticker <span class="op">=</span> <span class="cn">T</span>,</span>
+<span>  filename <span class="op">=</span> <span class="fu">here</span><span class="fu">::</span><span class="fu">here</span><span class="op">(</span><span class="st">"man"</span>, <span class="st">"figures"</span>, <span class="st">"rOzCBI.png"</span><span class="op">)</span></span>
+<span><span class="op">)</span></span></code></pre></div>
 </div>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
 
-        <div id="tocnav">
-      <h2 class="hasAnchor">
-<a href="#tocnav" class="anchor"></a>Contents</h2>
-      <ul class="nav nav-pills nav-stacked">
-<li><a href="#develop">Develop</a></li>
-      <li><a href="#release">Release</a></li>
-      </ul>
+        <nav id="toc" data-toggle="toc"><h2 data-toc-skip>Contents</h2>
+    </nav>
 </div>
-      </div>
 
 </div>
 
 
 
       <footer><div class="copyright">
-  <p>Developed by Florian Mayer, Valerie Densmore, <a href="https://www.dbca.wa.gov.au/science/"><img src="man/figures/dbca_bcs.png" width="150" alt="DBCA"></a>.</p>
+  <p></p>
+<p>Developed by Florian Mayer, Valerie Densmore, <a href="https://www.dbca.wa.gov.au/science/" class="external-link"><img src="reference/figures/dbca_bcs.png" width="150" alt="DBCA"></a>.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.1.9000.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer>
@@ -194,6 +204,8 @@
 
   
 
+
+  
 
   </body>
 </html>

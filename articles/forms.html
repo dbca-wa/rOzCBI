@@ -7,9 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Digital Data Capture • rOzCBI</title>
 <!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/yeti/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/all.min.css" integrity="sha256-PbSmjxuVAzJ6FPvNYsrXygfGhNJYyZ2GktDbkMBqQZg=" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/v4-shims.min.css" integrity="sha256-A6jcAdwFD48VMjlI3GDxUd+eCQa7/KWy6G9oe/ovaPA=" crossorigin="anonymous">
-<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
+<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
 <script src="../pkgdown.js"></script><meta property="og:title" content="Digital Data Capture">
 <meta property="og:description" content="rOzCBI">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
@@ -23,7 +24,9 @@
   gtag('config', 'UA-155735563-1');
 </script>
 </head>
-<body>
+<body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-article">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -36,23 +39,17 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">rOzCBI</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.4</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.0.5</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
 <li>
-  <a href="../index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
-<li>
   <a href="../reference/index.html">Reference</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Articles
      
     <span class="caret"></span>
@@ -72,17 +69,11 @@
 <li>
   <a href="../news/index.html">Changelog</a>
 </li>
-<li>
-  <a href="https://twitter.com/fistful_of_bass">
-    <span class="fab fa fab fa-twitter fa-lg"></span>
-     
-  </a>
-</li>
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/dbca-wa/rOzCBI">
-    <span class="fab fa fab fa-github fa-lg"></span>
+  <a href="https://github.com/dbca-wa/rOzCBI/" class="external-link">
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -99,62 +90,95 @@
       </header><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
-      <h1>Digital Data Capture</h1>
+      <h1 data-toc-skip>Digital Data Capture</h1>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/dbca-wa/rOzCBI/blob/master/vignettes/forms.Rmd"><code>vignettes/forms.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/dbca-wa/rOzCBI/blob/HEAD/vignettes/forms.Rmd" class="external-link"><code>vignettes/forms.Rmd</code></a></small>
       <div class="hidden name"><code>forms.Rmd</code></div>
 
     </div>
 
     
     
-<p>This vignette provides background and transparency for the digital data capture of burn grading surveys.</p>
-<div id="creating-the-data-capture-form" class="section level2">
-<h2 class="hasAnchor">
-<a href="#creating-the-data-capture-form" class="anchor"></a>Creating the data capture form</h2>
+<p>This vignette provides background and transparency for the digital
+data capture of burn grading surveys.</p>
+<div class="section level2">
+<h2 id="creating-the-data-capture-form">Creating the data capture form<a class="anchor" aria-label="anchor" href="#creating-the-data-capture-form"></a>
+</h2>
+<p>The forms are archived in this package in three formats:</p>
 <ul>
-<li>Design form in <a href="https://build.opendatakit.org/">ODK Build</a>
-</li>
-<li>The OzCBI burn grading form is included in three versions in this package:
-<ul>
-<li>ODK Build save file (resume form design from this file): <code><a href="https://rdrr.io/r/base/system.file.html">system.file("odk/BurnGrading01.odkbuild", package = "rOzCBI")</a></code>
-</li>
-<li>XForm (upload to ODK Central): <code><a href="https://rdrr.io/r/base/system.file.html">system.file("odk/BurnGrading01.xml", package = "rOzCBI")</a></code>
-</li>
-<li>XlsForm (can edit by hand and add embedded media): <code><a href="https://rdrr.io/r/base/system.file.html">system.file("odk/BurnGrading01.xlsx", package = "rOzCBI")</a></code>
-</li>
-</ul>
-</li>
-<li>Deploy Xform (or XlsForm) to an ODK Central server, e.g. the <a href="https://odkcentral.dbca.wa.gov.au/#/projects/2">DBCA ODK Central server</a>
-</li>
-</ul>
-</div>
-<div id="setting-up-a-data-capture-device" class="section level2">
-<h2 class="hasAnchor">
-<a href="#setting-up-a-data-capture-device" class="anchor"></a>Setting up a data capture device</h2>
-<p><img src="../man/figures/odkcentral.png" align="right" alt="ODK Central setup QR code" width="120"></p>
-<ul>
-<li>Install <a href="https://play.google.com/store/apps/details?id=org.odk.collect.android">ODK Collect from Google Play</a> onto an Android tablet and from Admin settings &gt; Import settings, scan the QR code shown here. This configures the tablet to our DBCA server.</li>
-<li>“Delete saved form” &gt; “Blank forms” &gt; delete older form versions.</li>
-<li>“Get blank form” and select the form “Burn Grading”.</li>
-<li>Adjust settings to taste - auto-upload data in WiFi, optimise camera resolution between clarity and file size.</li>
+<li>
+<code>.odkbuild</code> is the native <a href="https://build.getodk.org/" class="external-link">ODK Build</a> format. You can import
+and export <code>.odkbuild</code> files in ODK build via File &gt; Load
+form from file and File &gt; Save form to file, respectively. Exchange
+this file with other colleagues working on the form design. Currently,
+this format is the point of truth for form design. With the impending
+sunsetting of ODK Build, a move to XLSForm will be necessary.</li>
+<li>
+<code>.xml</code> is the <a href="http://getodk.github.io/xforms-spec/" class="external-link">XForm</a> exported from ODK
+Build, which you can import into the <a href="https://odkc.dbca.wa.gov.au/#/projects/4" class="external-link">DBCA ODK Central
+server</a>.</li>
+<li>
+<code>.xslx</code> is the <a href="https://xlsform.org/en/" class="external-link">XLSForm</a> exported from ODK Build,
+which can be modified further by hand, or even written from scratch by
+hand, and become the point of truth for form design.</li>
 </ul>
 </div>
-<div id="capture-data" class="section level2">
-<h2 class="hasAnchor">
-<a href="#capture-data" class="anchor"></a>Capture data</h2>
+<div class="section level2">
+<h2 id="included-forms">Included forms<a class="anchor" aria-label="anchor" href="#included-forms"></a>
+</h2>
+<p>This package provides three forms:</p>
 <ul>
-<li>Follow the protocol on how to collect data.</li>
-<li>Consult the <a href="https://docs.opendatakit.org/collect-intro/">ODK Collect user guide</a> on how to use the app in general.</li>
-<li>Nitpick: Aim to take all photos in landscape orientation (turn tablet sideways), as this displays nicer on computer screens and in documents.</li>
+<li>
+<code>OzCBI</code> as
+<code>system.file("odk/OzCBI.odkbuild", package = "rOzCBI")</code> for
+forest burn grading.</li>
+<li>
+<code>HeathOzCBI</code> as
+<code>system.file("odk/HeathOzCBI.odkbuild", package = "rOzCBI")</code>
+for heath burn grading.</li>
+<li>
+<code>FMSVerifySeverity</code> as
+<code>system.file("odk/FMSVerifySeverity", package = "rOzCBI")</code>
+for forest burn grading verification and re-recording.</li>
+</ul>
+<p>Each form is provided as <code>.odkbuild</code> ODK Build save file,
+<code>.xml</code> XForm, and as <code>.xlsx</code> XLSForm.</p>
+<p>Previous form versions are included in the
+<code>inst/odk/archive</code> folder.</p>
+</div>
+<div class="section level2">
+<h2 id="setting-up-a-data-capture-device">Setting up a data capture device<a class="anchor" aria-label="anchor" href="#setting-up-a-data-capture-device"></a>
+</h2>
+<p><img src="../reference/figures/odkcentral.gif" align="right" alt="ODK Central setup QR code" width="120"></p>
+<ul>
+<li>Install <a href="https://play.google.com/store/apps/details?id=org.odk.collect.android" class="external-link">ODK
+Collect from Google Play</a> onto an Android tablet, Add project, and
+scan the QR code shown here. This configures the tablet to our DBCA
+server.</li>
+<li>Adjust settings to taste - auto-upload data only with WiFi, change
+image size (medium, 2048px is a good balance between clarity and file
+size).</li>
 </ul>
 </div>
-<div id="upload-data" class="section level2">
-<h2 class="hasAnchor">
-<a href="#upload-data" class="anchor"></a>Upload data</h2>
+<div class="section level2">
+<h2 id="capture-data">Capture data<a class="anchor" aria-label="anchor" href="#capture-data"></a>
+</h2>
 <ul>
-<li>Adjust ODK Collect settings to auto-upload data where WiFi is available.</li>
+<li>Follow the data capture protocols.</li>
+<li>Consult the <a href="https://docs.getodk.org/collect-intro/" class="external-link">ODK
+Collect user guide</a> on how to use ODK Collect in general.</li>
+<li>Aim to take all photos in landscape orientation (turn device
+sideways), as landscape photos display better on computer screens and in
+documents.</li>
+</ul>
+</div>
+<div class="section level2">
+<h2 id="upload-data">Upload data<a class="anchor" aria-label="anchor" href="#upload-data"></a>
+</h2>
+<ul>
+<li>Adjust ODK Collect settings to auto-upload data where WiFi is
+available.</li>
 <li>Bring the tablets into an area with WiFi.</li>
 </ul>
 </div>
@@ -162,28 +186,22 @@
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
 
-        <div id="tocnav">
-      <h2 class="hasAnchor">
-<a href="#tocnav" class="anchor"></a>Contents</h2>
-      <ul class="nav nav-pills nav-stacked">
-<li><a href="#creating-the-data-capture-form">Creating the data capture form</a></li>
-      <li><a href="#setting-up-a-data-capture-device">Setting up a data capture device</a></li>
-      <li><a href="#capture-data">Capture data</a></li>
-      <li><a href="#upload-data">Upload data</a></li>
-      </ul>
+        <nav id="toc" data-toggle="toc"><h2 data-toc-skip>Contents</h2>
+    </nav>
 </div>
-      </div>
 
 </div>
 
 
 
       <footer><div class="copyright">
-  <p>Developed by Florian Mayer, Valerie Densmore, <a href="https://www.dbca.wa.gov.au/science/"><img src="man/figures/dbca_bcs.png" width="150" alt="DBCA"></a>.</p>
+  <p></p>
+<p>Developed by Florian Mayer, Valerie Densmore, <a href="https://www.dbca.wa.gov.au/science/" class="external-link"><img src="reference/figures/dbca_bcs.png" width="150" alt="DBCA"></a>.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.1.9000.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer>
@@ -191,6 +209,8 @@
 
   
 
+
+  
 
   </body>
 </html>

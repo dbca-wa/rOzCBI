@@ -1,31 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://dbca-wa.github.io/rOzCBI/index.html</loc>
+    <loc>https://dbca-wa.github.io/rOzCBI/404.html</loc>
   </url>
   <url>
-    <loc>https://dbca-wa.github.io/rOzCBI/reference/add_ozcbi.html</loc>
+    <loc>https://dbca-wa.github.io/rOzCBI/CONTRIBUTING.html</loc>
   </url>
   <url>
-    <loc>https://dbca-wa.github.io/rOzCBI/reference/burngrading01.html</loc>
+    <loc>https://dbca-wa.github.io/rOzCBI/LICENSE-text.html</loc>
   </url>
   <url>
-    <loc>https://dbca-wa.github.io/rOzCBI/reference/calculate_ozcbi.html</loc>
-  </url>
-  <url>
-    <loc>https://dbca-wa.github.io/rOzCBI/reference/extract_grading.html</loc>
-  </url>
-  <url>
-    <loc>https://dbca-wa.github.io/rOzCBI/reference/map_burngrading.html</loc>
-  </url>
-  <url>
-    <loc>https://dbca-wa.github.io/rOzCBI/reference/pipe.html</loc>
-  </url>
-  <url>
-    <loc>https://dbca-wa.github.io/rOzCBI/reference/rOzCBI-package.html</loc>
-  </url>
-  <url>
-    <loc>https://dbca-wa.github.io/rOzCBI/reference/reactable_burngrading.html</loc>
+    <loc>https://dbca-wa.github.io/rOzCBI/LICENSE.html</loc>
   </url>
   <url>
     <loc>https://dbca-wa.github.io/rOzCBI/articles/analysis.html</loc>
@@ -35,5 +20,59 @@
   </url>
   <url>
     <loc>https://dbca-wa.github.io/rOzCBI/articles/forms.html</loc>
+  </url>
+  <url>
+    <loc>https://dbca-wa.github.io/rOzCBI/articles/index.html</loc>
+  </url>
+  <url>
+    <loc>https://dbca-wa.github.io/rOzCBI/authors.html</loc>
+  </url>
+  <url>
+    <loc>https://dbca-wa.github.io/rOzCBI/index.html</loc>
+  </url>
+  <url>
+    <loc>https://dbca-wa.github.io/rOzCBI/news/index.html</loc>
+  </url>
+  <url>
+    <loc>https://dbca-wa.github.io/rOzCBI/reference/add_ozcbi_forest.html</loc>
+  </url>
+  <url>
+    <loc>https://dbca-wa.github.io/rOzCBI/reference/bgf.html</loc>
+  </url>
+  <url>
+    <loc>https://dbca-wa.github.io/rOzCBI/reference/bgh.html</loc>
+  </url>
+  <url>
+    <loc>https://dbca-wa.github.io/rOzCBI/reference/bgv.html</loc>
+  </url>
+  <url>
+    <loc>https://dbca-wa.github.io/rOzCBI/reference/burngrading01.html</loc>
+  </url>
+  <url>
+    <loc>https://dbca-wa.github.io/rOzCBI/reference/calculate_ozcbi_forest.html</loc>
+  </url>
+  <url>
+    <loc>https://dbca-wa.github.io/rOzCBI/reference/extract_grading.html</loc>
+  </url>
+  <url>
+    <loc>https://dbca-wa.github.io/rOzCBI/reference/fms.html</loc>
+  </url>
+  <url>
+    <loc>https://dbca-wa.github.io/rOzCBI/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>https://dbca-wa.github.io/rOzCBI/reference/lifecycle_shim.html</loc>
+  </url>
+  <url>
+    <loc>https://dbca-wa.github.io/rOzCBI/reference/map_ozcbi_forest.html</loc>
+  </url>
+  <url>
+    <loc>https://dbca-wa.github.io/rOzCBI/reference/pipe.html</loc>
+  </url>
+  <url>
+    <loc>https://dbca-wa.github.io/rOzCBI/reference/rOzCBI-package.html</loc>
+  </url>
+  <url>
+    <loc>https://dbca-wa.github.io/rOzCBI/reference/reactable_ozcbi_forest.html</loc>
   </url>
 </urlset>
