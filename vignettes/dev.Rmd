@@ -27,7 +27,7 @@ library(rOzCBI)
 This vignette contains handy commands for the package development workflow.
 
 ## Test data
-<img src="../man/figures/test.gif" align="right" alt="ODK Central setup QR code" width="120" />
+<img src="../man/figures/tests.gif" align="right" alt="ODK Central setup QR code for example data" width="120" />
 To generate test data and run package tests, the XLSForm versions of the 
 package forms are deployed to the ruODK test server.
 

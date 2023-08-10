@@ -17,8 +17,9 @@ issues](https://img.shields.io/github/issues/dbca-wa/rOzCBI.svg?style=popout)](h
 rOzCBI in a nutshell:
 
 - [OpenDataKit](https://getodk.org/) forms to evaluate a burnt site.
-- Helpers to calculate the OzCBI from the burn grading field data for
-  both forest and heath communities.
+- Helpers to calculate the
+  [OzCBI](https://doi.org/10.1080/00049158.2023.2168400) from the burn
+  grading field data for both forest and heath communities.
 - Instructions to get up and running with data capture and data
   analysis.
 - Working examples of the entire data flow.

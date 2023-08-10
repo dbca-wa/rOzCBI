@@ -1,16 +1,33 @@
-# rOzCBI 0.1.0 (development)
+# rOzCBI 0.0.6 (development)
+## Form templates
+## Package data
+## Major changes
+## Minor changes
+## Documentation
+
+# rOzCBI 0.0.5
 ## Form templates
 * Retire BurnGrading 0.1 and include new forms OzCBI (Burn Grading Forest), 
   HeathOzCBI (Burn Grading Heath), FMS Verify Severity (Burn Grading 
-  Verification) #6
+  Verification). #6
+
+## Package data
+* Update package data to include test submissions for the three new forms
+  as `data("bgf")`, `data("bgh")`, and `data("bgv")`. #12 #13
 
 ## Major changes
-* Upgrade 
+* Retire form `BurnGrading0.1`, package data `burngrading0.1`, 
+  functions `add_ozcbi`, `calculate_ozcbi`, `map_burngrading`, 
+  `reactable_burngrading` and related tests. #10
+* Add `add_ozcbi_forest`, `calculate_ozcbi_forest`, `map_ozcbi_forest`, 
+  and `reactable_ozcbi_forest` and related tests. #10
 
 ## Minor changes
+* `map_ozcbi_forest` colour-codes burn severity according to #11
 
 ## Documentation
-* Update docs and vignettes #7
+* Update vignette "analysis" to use `data("bgf")`. #13
+* Citation of official OzCBI publication added to README. #1
 
 # rOzCBI 0.0.4
 * Add GitHub Actions for CI, test coverage, website build and deployment.
