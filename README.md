@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# rOzCBI: A Burn Severity Assessment Toolkit for Austral Vegetation Communities <img src="man/figures/rOzCBI.png" align="right" alt="How good was that burn?" width="120" />
+# rOzCBI: A Burn Severity Assessment Toolkit for Austral Vegetation Communities <img src="man/figures/rOzCBI.png" align="right" alt="How good was that burn?" width="200" />
 
 <!-- badges: start -->
 
