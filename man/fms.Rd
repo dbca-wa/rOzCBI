@@ -9,7 +9,7 @@ An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) w
 }
 \source{
 Form submissions of form
-\code{system.file("odk/FMSVerifySeverity.xml", package = "rOzCBI")}
+\code{system.file("odk/archive/FMSVerifySeverity.xml", package = "rOzCBI")}
 downloaded from ODK Central using \code{ruODK::odata_submission_get()}
 (see \code{vignette("analysis")}).
 }
@@ -17,10 +17,16 @@ downloaded from ODK Central using \code{ruODK::odata_submission_get()}
 fms
 }
 \description{
-FMS verify severity form submission data
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#superseded}{\figure{lifecycle-superseded.svg}{options: alt='[Superseded]'}}}{\strong{[Superseded]}}
+}
+\details{
+Use data("bgv") instead.
 }
 \seealso{
 Other included: 
+\code{\link{bgf}},
+\code{\link{bgh}},
+\code{\link{bgv}},
 \code{\link{burngrading01}}
 }
 \concept{included}

@@ -23,6 +23,23 @@ lifecycle_shim <- function() {
 utils::globalVariables(
   c(
     ".",
+    "stratum_1_surface_p_s1_unburnt",
+    "stratum_1_surface_p_s1_duff",
+    "stratum_3_elevated_p_s3_crown",
+    "straum_4_intermediate_p_s4_crown",
+    "straum_4_intermediate_p_s4_char",
+    "stratum_5_overstorey_p_s5_crown",
+    "stratum_5_overstorey_p_s5_litter",
+    "stratum_5_overstorey_p_s5_char",
+    "stratum_3_elevated_p_s3_fcov",
+    "straum_4_intermediate_p_s4_fcov",
+    "stratum_5_overstorey_p_s5_fcov",
+    "stratum_1_surface_s1_fcov",
+    "stratum_2_near_surface_s2_fcov",
+    "stratum_3_elevated_s3_fcov",
+    "straum_4_intermediate_s4_fcov",
+    "stratum_5_overstorey_s5_fcov",
+    # old:
     "stratum_1_surface_s1_area_unburnt",
     "stratum_1_surface_s1_coarse_fuel",
     "stratum_1_surface_s1_duff",

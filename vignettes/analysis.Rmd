@@ -8,25 +8,6 @@ output:
     theme: yeti
     highlight: tango
 resource_files:
-- media/1578488994992.jpg
-- media/1578489033729.jpg
-- media/1578489072292.jpg
-- media/1578489127335.jpg
-- media/1578489161012.jpg
-- media/1578489206390.jpg
-- media/1578785576392.jpg
-- media/1578785648115.jpg
-- media/1578785727152.jpg
-- media/1578785808711.jpg
-- media/1578785863925.jpg
-- media/1578785920077.jpg
-- media/1583917155791.jpg
-- media/1583917163794.jpg
-- media/1583917551350.jpg
-- media/1583917578867.jpg
-- media/1583917861778.jpg
-- media/1645667500672.jpg
-- media/1645667813921.jpg
 - media/1691557455419.jpg
 - media/1691557501897.jpg
 - media/1691557557243.jpg
@@ -78,27 +59,29 @@ Changes to `.Renviron` require a restart of the R session.
 usethis::edit_r_environ()
 
 # Paste with your credentials
-ODKC_URL="https://odkc.dbca.wa.gov.au"
-ODKC_UN="YOUR_EMAIL"
-ODKC_PW="YOUR_PASSWORD"
-ODKC_PID=4
-ODKC_FID="FMS-verify-severity"
+ODKC_URL <- "https://odkc.dbca.wa.gov.au"
+ODKC_UN <- "YOUR_EMAIL"
+ODKC_PW <- "YOUR_PASSWORD"
+ODKC_PID <- 4
+ODKC_FID <- "FMS-verify-severity"
 
 # Save .Renviron and restart your R session.
 ```
 
-Since we'll only work with one form and have set the neccessary settings as defaults, 
+Since we'll only work with one form and have set the necessary settings as defaults, 
 `ruODK` will default to our form without any further ado.
 
-If you need to navigate between forms, you can setup `ruODK` with the
+If you need to navigate between forms, you can set up `ruODK` with the
 respective OData service URL:
 
-```{r}
+```{r, eval=F}
 # ODK Central's OData URL contains base URL, project ID, and form ID
 # ODK Central credentials can live in .Renviron, see vignette "setup"
 ruODK::ru_setup(
-  svc = paste0("https://odkc.dbca.wa.gov.au/v1/projects/4/",
-               "forms/FMS-verify-severity.svc"),
+  svc = paste0(
+    "https://odkc.dbca.wa.gov.au/v1/projects/4/",
+    "forms/FMS-verify-severity.svc"
+  ),
   un = Sys.getenv("ODKC_UN"),
   pw = Sys.getenv("ODKC_PW")
 )
@@ -118,37 +101,36 @@ Here, we'll use `ruODK` to download submissions from ODK Central with `verbose`
 output.
 
 ```{r, eval=FALSE}
-burngrading01 <- ruODK::odata_submission_get(
-  verbose = F, 
-  tz = "Australia/Perth", 
-  local_dir = fs::path("media"), 
+bgf <- ruODK::odata_submission_get(
+  verbose = F,
+  tz = "Australia/Perth",
+  local_dir = fs::path("media"),
   wkt = T
 )
 ```
 
 ```{r, echo=F}
-data("burngrading01")
-data("fms")
+data("bgf")
+
 ```
 
 ## Calculate OzCBI
 
 Task: Parse raw data into numeric scale values, apply OzCBI formula.
 
-Values are coded as `<grade>_<url-safe-label>`, where grade are numbers 0.0, 0.5,
-1.0, 1.5 through to 3.0, and the labels are intelligible but url-safe factor levels. 
+Values are coded as numbers 0.0, 0.5, 1.0, 1.5 through to 3.0.
 Fraction of coverages (fcov) also are prefixed with their grade, which
 ranges from 0.0 to 1.0 in increments of 0.25.
-Each grade is three digits (two decimals) followed by an underscore.
-`extract_grading()` extracts the grade from values.
+Each grade is three digits (two decimals).
+`extract_grading()` extracts the numerical grade from these character values.
 
-The function `add_ozcbi()` is highly specific to the underlying form "Burn Grading 0.1".
-It translates the form fields to the generic form `calculate_ozcbi()`, which
-can be fed by data from any other compatible data source.
+The function `add_ozcbi_forest()` is highly specific to the underlying 
+form "Burn Grading Forest".
+It translates the form fields to the generic form `calculate_ozcbi_forest()`, 
+which can be fed by data from any other compatible data source.
 
 ```{r}
-bg_ozcbi <- burngrading01 %>% add_ozcbi()
-# bg_fms <- fms %>% add_ozcbi()
+bg_ozcbi <- bgf %>% add_ozcbi_forest()
 ```
 
 ## Visualise
@@ -156,12 +138,13 @@ The data shown here are test data (not real burn gradings) and
 come from the real form.
 
 ### Map
-The helper function `map_burngrading()` provides a leaflet map with labels and popups.
-The source code of `map_burngrading()` can serve as a starting point for other
-customised maps.
+The helper function `map_ozcbi_forest()` provides a leaflet map with 
+labels and popups.
+The source code of `map_ozcbi_forest()` can serve as a starting point for 
+other customised maps.
 
 ```{r}
-bg_ozcbi %>% map_burngrading()
+bg_ozcbi %>% map_ozcbi_forest()
 ```
 
 
@@ -169,7 +152,7 @@ bg_ozcbi %>% map_burngrading()
 Each row expands to show details.
 
 ```{r}
-bg_ozcbi %>% reactable_burngrading()
+bg_ozcbi %>% reactable_ozcbi_forest()
 ```
 
 ## Calibrate dNBR

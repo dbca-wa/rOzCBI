@@ -1,24 +1,25 @@
-#' Map Burn Grading data (incl OzCBI) with labels and popups
+#' Map Burn Grading Forest data (incl OzCBI) with labels and popups
 #'
-#' @param data Data from form Burn Grading with OzCBI.
+#' @param data Data from form Burn Grading Forest with OzCBI.
 #' @return A leaflet map
 #' @export
 #' @family helpers
 #' @examples
 #' \dontrun{
-#' data("burngrading01")
-#' burngrading01 %>%
-#'   add_ozcbi() %>%
-#'   map_burngrading()
+#' data("bgf")
+#' bgf %>%
+#'   add_ozcbi_forest() %>%
+#'   map_ozcbi_forest()
 #' }
-map_burngrading <- function(data) {
+map_ozcbi_forest <- function(data) {
   data_map <- data %>%
     dplyr::mutate(
       ozcbi_rnd = round(ozcbi, 2),
       marker_colour = dplyr::case_when(
-        ozcbi <= 1 ~ "green",
-        ozcbi <= 2 ~ "orange",
-        ozcbi > 2 ~ "red"
+        ozcbi <= 0.3 ~ "green",
+        ozcbi <= 1.3 ~ "orange",
+        ozcbi <= 2.1 ~ "red",
+        ozcbi > 2.8 ~ "darkred"
       )
     )
 
@@ -36,11 +37,11 @@ map_burngrading <- function(data) {
         markerColor = ~marker_colour
       ),
       label = ~ glue::glue(
-        "[{ozcbi_rnd}] {details_plot_name} {observation_start_time}"
+        "[{ozcbi_rnd}] {details_site} {start}"
       ),
       popup = ~ glue::glue('
-<h3>{details_plot_name}</h3><h4>OzCBI {ozcbi_rnd}</h4>
-Survey start {observation_start_time}</br>
+<h3>{details_site}</h3><h4>OzCBI {ozcbi_rnd}</h4>
+Survey start {start}</br>
 Reporter {reporter}</br>
 Device {device_id}</br>
 <div>Burn homogeneous throughout plot: {details_homogeneous_burn_severity}</div>
@@ -69,27 +70,27 @@ Device {device_id}</br>
 </div>
 <div class="item">
 <img src="{stratum_2_near_surface_s2_photo}"
-alt="Stratum 2: {stratum_2_near_surface_s2_dominant_vegetation}">
+alt="Stratum 2: {stratum_2_near_surface_s2_veg}">
 <div class="carousel-caption">
-Stratum 2: {stratum_2_near_surface_s2_dominant_vegetation}</div>
+Stratum 2: {stratum_2_near_surface_s2_veg}</div>
 </div>
 <div class="item">
 <img src="{stratum_3_elevated_s3_photo}"
-alt="Stratum 3: {stratum_3_elevated_s3_dominant_vegetation}">
+alt="Stratum 3: {stratum_3_elevated_s3_veg}">
 <div class="carousel-caption">
-Stratum 3: {stratum_3_elevated_s3_dominant_vegetation}</div>
+Stratum 3: {stratum_3_elevated_s3_veg}</div>
 </div>
 <div class="item">
 <img src="{straum_4_intermediate_s4_photo}"
-alt="Stratum 4: {straum_4_intermediate_s4_dominant_vegetation}">
+alt="Stratum 4: {straum_4_intermediate_s4_veg}">
 <div class="carousel-caption">
-Stratum 4: {straum_4_intermediate_s4_dominant_vegetation}</div>
+Stratum 4: {straum_4_intermediate_s4_veg}</div>
 </div>
 <div class="item">
 <img src="{stratum_5_overstorey_s5_photo}"
-alt="Stratum 5: {stratum_5_overstorey_s5_dominant_vegetation}">
+alt="Stratum 5: {stratum_5_overstorey_s5_veg}">
 <div class="carousel-caption">
-Stratum 5: {stratum_5_overstorey_s5_dominant_vegetation}</div>
+Stratum 5: {stratum_5_overstorey_s5_veg}</div>
 </div>
 </div>
 
@@ -105,18 +106,6 @@ href="#carousel-photos" role="button" data-slide="next">
 <span class="sr-only">Next</span>
 </a>
 </div>
-
-<h5>Additional observations</h5>
-<div>{extra_data_no_grass_trees} grass trees</div>
-<div>{extra_data_no_hollow_logs} hollow logs</div>
-<div>{extra_data_no_standing_trees_gt20cm} standing trees &gt;20cm</div>
-<div>{extra_data_no_standing_trees_with_hollows}
-standing trees with hollows</div>
-<div>Litter leaf depth {extra_data_depth_leaf_litter_cm}cm</div>
-<div>Avg gap between unburnt patches:
-{extra_data_avg_gap_between_unburnt_patches}m</div>
-<div>Evidence of native fauna: {extra_data_evidence_of_native_fauna}</div>
-<div>Evidence of feral fauna: {extra_data_evidence_of_feral_fauna}</div>
       '),
       clusterOptions = leaflet::markerClusterOptions()
     ) %>%
@@ -128,4 +117,4 @@ standing trees with hollows</div>
 }
 
 
-# usethis::use_test("map_burngrading")
+# usethis::use_test("map_ozcbi_forest")

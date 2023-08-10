@@ -4,12 +4,12 @@ citEntry(
   entry    = "Misc",
   title    = "rOzCBI: A Burn Severity Assessment Toolkit for Austral Vegetation Communities",
   author   = "Valerie Densmore, Florian W. Mayer",
-  note = "R package version 0.0.3",
+  note = "R package version x.x.x",
   year     = 2020,
   url      = "https://github.com/dbca-wa/rOzCBI",
   textVersion = paste(
     "Valerie Densmore, Florian W. Mayer (2020).",
     "rOzCBI: A Burn Severity Assessment Toolkit for Austral Vegetation Communities.",
-    "R package version 0.0.3. https://github.com/dbca-wa/rOzCBI"
+    "R package version x.x.x. https://github.com/dbca-wa/rOzCBI"
   )
 )

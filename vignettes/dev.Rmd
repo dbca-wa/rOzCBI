@@ -38,8 +38,8 @@ Submitted data should be considered potentially publicly visible and ephemeral.
 Packaged data is refreshed from the test data by running
 
 ```{r refresh_pkg_data, eval=FALSE}
-Sys.setenv(RUODK_UN="...")
-Sys.setenv(RUODK_PW="...")
+Sys.setenv(RUODK_UN = "...")
+Sys.setenv(RUODK_PW = "...")
 source("data_raw/make_data.R")
 ```
 
@@ -65,7 +65,7 @@ spelling::update_wordlist(here::here())
 codemetar::write_codemeta("rOzCBI")
 rmarkdown::render(here::here("README.Rmd"), encoding = "UTF-8", clean = TRUE)
 if (fs::file_exists(here::here("README.html"))) fs::file_delete(here::here("README.html"))
-codemetar::give_opinions('/home/florian/projects/rOzCBI/.')
+codemetar::give_opinions("/home/florian/projects/rOzCBI/.")
 goodpractice::goodpractice(path = here::here(), quiet = FALSE)
 ```
 

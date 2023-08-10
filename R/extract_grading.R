@@ -18,6 +18,7 @@ extract_grading <- function(grading_string) {
   grading_string %>%
     stringr::str_remove("_.*") %>%
     stringr::str_replace_all("na", "") %>%
+    stringr::str_replace_all("-", "") %>%
     as.numeric(.)
 }
 

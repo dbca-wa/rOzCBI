@@ -6,9 +6,9 @@ loc <- fs::path("media")
 fs::dir_create(loc)
 
 ruODK::ru_setup(
-  svc="https://ruodk.getodk.cloud/v1/projects/1/forms/burn_grading_forest.svc",
-  un=Sys.getenv("RUODK_UN"),
-  pw=Sys.getenv("RUODK_PW")
+  svc = "https://ruodk.getodk.cloud/v1/projects/1/forms/burn_grading_forest.svc",
+  un = Sys.getenv("RUODK_UN"),
+  pw = Sys.getenv("RUODK_PW")
 )
 
 bgf <- ruODK::odata_submission_get(
@@ -20,9 +20,9 @@ bgf <- ruODK::odata_submission_get(
 )
 
 ruODK::ru_setup(
-  svc="https://ruodk.getodk.cloud/v1/projects/1/forms/burn_grading_heath.svc",
-  un=Sys.getenv("RUODK_UN"),
-  pw=Sys.getenv("RUODK_PW")
+  svc = "https://ruodk.getodk.cloud/v1/projects/1/forms/burn_grading_heath.svc",
+  un = Sys.getenv("RUODK_UN"),
+  pw = Sys.getenv("RUODK_PW")
 )
 
 bgh <- ruODK::odata_submission_get(
@@ -34,9 +34,9 @@ bgh <- ruODK::odata_submission_get(
 )
 
 ruODK::ru_setup(
-  svc="https://ruodk.getodk.cloud/v1/projects/1/forms/burn_grading_verify.svc",
-  un=Sys.getenv("RUODK_UN"),
-  pw=Sys.getenv("RUODK_PW")
+  svc = "https://ruodk.getodk.cloud/v1/projects/1/forms/burn_grading_verify.svc",
+  un = Sys.getenv("RUODK_UN"),
+  pw = Sys.getenv("RUODK_PW")
 )
 
 bgv <- ruODK::odata_submission_get(
