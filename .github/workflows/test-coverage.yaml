@@ -42,6 +42,9 @@ jobs:
           find ${{ runner.temp }}/package -name 'testthat.Rout*' -exec cat '{}' \; || true
         shell: bash
 
+      - name: Upload coverage to Coveralls
+        uses: coverallsapp/github-action@v2
+
       - name: Upload test results
         if: failure()
         uses: actions/upload-artifact@v3
