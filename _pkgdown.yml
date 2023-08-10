@@ -1,8 +1,8 @@
 destination: docs
-url: https://dbca-wa.github.io/rOzCBI
+url: https://dbca-wa.github.io/rOzCBI/
 authors:
   DBCA:
-    html: "<img src='man/figures/dbca_bcs.png' width='150' alt='DBCA'/>"
+    html: <img src='man/figures/dbca_bcs.png' width='150' alt='DBCA'/>
     href: https://www.dbca.wa.gov.au/science/
 template:
   params:
@@ -10,28 +10,22 @@ template:
     ganalytics: UA-155735563-1
 reference:
 - title: OzCBI
-  contents:
-  - has_concept("ozcbi")
+  contents: has_concept("ozcbi")
 - title: Helpers
-  contents:
-  - has_concept("helpers")
+  contents: has_concept("helpers")
 - title: Example data
-  contents:
-  - has_concept("included")
+  contents: has_concept("included")
 articles:
 - title: Data Capture
-  contents:
-  - '`forms`'
+  contents: '`forms`'
 - title: Data Analysis
-  contents:
-  - '`analysis`'
+  contents: '`analysis`'
 - title: Development
-  contents:
-  - '`dev`'
+  contents: '`dev`'
 navbar:
   components:
     twitter:
-      icon: "fab fa-twitter fa-lg"
+      icon: fab fa-twitter fa-lg
       href: https://twitter.com/fistful_of_bass
     articles:
       text: Articles
@@ -42,3 +36,4 @@ navbar:
         href: articles/analysis.html
       - text: Development
         href: articles/dev.html
+

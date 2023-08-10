@@ -17,7 +17,7 @@ Description: rOzCBI contains background, digital data capture, analysis, and
              visualisation for the calculation of OzCBI, a composite burn index
              for the initial assessment of the short-term burn severity from
              remotely sensed data.
-URL: https://dbca-wa.github.io/rOzCBI, https://github.com/dbca-wa/rOzCBI
+URL: https://dbca-wa.github.io/rOzCBI, https://github.com/dbca-wa/rOzCBI, https://dbca-wa.github.io/rOzCBI/
 BugReports: https://github.com/dbca-wa/rOzCBI/issues
 License: MIT + file LICENSE
 Encoding: UTF-8

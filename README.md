@@ -5,29 +5,21 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/dbca-wa/rOzCBI/workflows/R-CMD-check/badge.svg?branch=master)](https://github.com/dbca-wa/rOzCBI/actions)
-[![Travis build
-status](https://travis-ci.org/dbca-wa/rOzCBI.svg?branch=master)](https://travis-ci.org/dbca-wa/rOzCBI)
-[![CircleCI build
-status](https://circleci.com/gh/dbca-wa/rOzCBI/tree/master.svg?style=svg)](https://circleci.com/gh/dbca-wa/rOzCBI/tree/master)
-[![AppVeyor build
-status](https://ci.appveyor.com/api/projects/status/github/dbca-wa/rOzCBI?branch=master&svg=true)](https://ci.appveyor.com/project/florianm/rOzCBI)
-[![Codecov test
-coverage](https://codecov.io/gh/dbca-wa/rOzCBI/branch/master/graph/badge.svg)](https://codecov.io/gh/dbca-wa/rOzCBI?branch=master)
 [![Project Status: WIP – Initial development is in progress, but there
 has not yet been a stable, usable release suitable for the
 public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 [![Last-changedate](https://img.shields.io/github/last-commit/dbca-wa/rOzCBI.svg)](https://github.com/dbca-wa/rOzCBI/commits/master)
 [![GitHub
 issues](https://img.shields.io/github/issues/dbca-wa/rOzCBI.svg?style=popout)](https://github.com/dbca-wa/rOzCBI/issues/)
+[![R-CMD-check](https://github.com/dbca-wa/rOzCBI/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/dbca-wa/rOzCBI/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 rOzCBI in a nutshell:
 
-- [OpenDataKit](https://opendatakit.org/) forms to evaluate a burnt
-  site.
-- Helpers to calculate the OzCBI from the burn grading field data.
-- Instructions to get up and running with digital data capture and data
+- [OpenDataKit](https://getodk.org/) forms to evaluate a burnt site.
+- Helpers to calculate the OzCBI from the burn grading field data for
+  both forest and heath communities.
+- Instructions to get up and running with data capture and data
   analysis.
 - Working examples of the entire data flow.
 
@@ -62,6 +54,14 @@ Valerie Densmore at DBCA in Western Australia. This version of the OzCBI
 is currently being tested and validated so the current version may not
 reflect the final form. Feedback on the use and validity of OzCBI is
 welcome as [GitHub issues](https://github.com/dbca-wa/rOzCBI/issues).
+
+OzCBI has been published as
+
+V. S. Densmore, R. J. van Dongen, R. Ong & B. G. Harris (2023) OzCBI:
+the composite burn index adapted to assess fire severity and key fauna
+habitat features in Australian ecosystems, Australian Forestry, 86:1,
+1-21, DOI:
+[10.1080/00049158.2023.2168400](https://doi.org/10.1080/00049158.2023.2168400)
 
 ## How
 
@@ -132,14 +132,14 @@ citation("rOzCBI")
 #> 
 #>   Valerie Densmore, Florian W. Mayer (2020). rOzCBI: A Burn Severity
 #>   Assessment Toolkit for Austral Vegetation Communities. R package
-#>   version 0.0.3. https://github.com/dbca-wa/rOzCBI
+#>   version x.x.x. https://github.com/dbca-wa/rOzCBI
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
 #>   @Misc{,
 #>     title = {rOzCBI: A Burn Severity Assessment Toolkit for Austral Vegetation Communities},
 #>     author = {Valerie Densmore and Florian W. Mayer},
-#>     note = {R package version 0.0.3},
+#>     note = {R package version x.x.x},
 #>     year = {2020},
 #>     url = {https://github.com/dbca-wa/rOzCBI},
 #>   }
