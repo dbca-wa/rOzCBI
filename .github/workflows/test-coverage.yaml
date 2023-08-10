@@ -13,8 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-      COVERALLS_TOKEN: ${{ secrets.COVERALLS_TOKEN }}
-      CI_NAME: "github-actions"
 
     steps:
       - uses: actions/checkout@v3
@@ -29,7 +27,12 @@ jobs:
           needs: coverage
 
       - name: Test coverage
-        run: covr::coveralls(quiet = FALSE)
+        run: |
+          covr::codecov(
+            quiet = FALSE,
+            clean = FALSE,
+            install_path = file.path(Sys.getenv("RUNNER_TEMP"), "package")
+          )
         shell: Rscript {0}
 
       - name: Show testthat output
@@ -38,9 +41,6 @@ jobs:
           ## --------------------------------------------------------------------
           find ${{ runner.temp }}/package -name 'testthat.Rout*' -exec cat '{}' \; || true
         shell: bash
-
-      - name: Upload coverage to Coveralls
-        uses: coverallsapp/github-action@v2
 
       - name: Upload test results
         if: failure()

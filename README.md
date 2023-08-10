@@ -12,8 +12,7 @@ public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostat
 [![GitHub
 issues](https://img.shields.io/github/issues/dbca-wa/rOzCBI.svg?style=popout)](https://github.com/dbca-wa/rOzCBI/issues/)
 [![R-CMD-check](https://github.com/dbca-wa/rOzCBI/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/dbca-wa/rOzCBI/actions/workflows/R-CMD-check.yaml)
-[![Coveralls test
-coverage](https://coveralls.io/repos/github/dbca-wa/rOzCBI/badge.svg)](https://coveralls.io/r/dbca-wa/rOzCBI?branch=main)
+[![test-coverage](https://github.com/dbca-wa/rOzCBI/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/dbca-wa/rOzCBI/actions/workflows/test-coverage.yaml)
 <!-- badges: end -->
 
 rOzCBI in a nutshell:
